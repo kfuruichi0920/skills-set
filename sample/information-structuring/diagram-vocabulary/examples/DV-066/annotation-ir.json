@@ -1,0 +1,46 @@
+{
+  "source": {
+    "path": "source.svg",
+    "render": "source.svg",
+    "sha256": "3f1cf6c829163a407711ef0026ca0502e73a5d9370a47663fcb324dcb8fbbe62",
+    "meaning": "架空UIの原図を単一オブジェクトで保持"
+  },
+  "purpose": "画面のどの領域を何のために使うか",
+  "audience": "技術者・説明対象者",
+  "theme": "T01",
+  "annotations": [
+    {
+      "id": "num0",
+      "label": "1",
+      "normalized_position": {
+        "x": 0.16470588235294117,
+        "y": 0.3068181818181818
+      },
+      "target_text": "検索条件",
+      "confidence": "high",
+      "source": "架空UIの可視文字と元SVG"
+    },
+    {
+      "id": "num1",
+      "label": "2",
+      "normalized_position": {
+        "x": 0.5647058823529412,
+        "y": 0.3068181818181818
+      },
+      "target_text": "設備の候補一覧",
+      "confidence": "high",
+      "source": "架空UIの可視文字と元SVG"
+    },
+    {
+      "id": "num2",
+      "label": "3",
+      "normalized_position": {
+        "x": 0.888235294117647,
+        "y": 0.7545454545454545
+      },
+      "target_text": "選択して予約",
+      "confidence": "high",
+      "source": "架空UIの可視文字と元SVG"
+    }
+  ]
+}

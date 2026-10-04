@@ -1,0 +1,130 @@
+{
+  "id": "DV-058",
+  "key": "concept",
+  "title_ja": "概念と関係名を明示する",
+  "title_en": "Concept",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "概念間にはどの種類の関係があるか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "labelled-concept-graph"
+  ],
+  "composition_pattern": "labelled-concept-graph",
+  "source_refs": [
+    "SRC-032"
+  ],
+  "information_structure": [
+    "association",
+    "attributes",
+    "definition",
+    "relation"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "labelled-concept-graph",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "association"
+  ],
+  "when_to_use": [
+    "概念間にはどの種類の関係があるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "association",
+    "attributes",
+    "concept",
+    "definition",
+    "labelled-concept-graph",
+    "relation",
+    "概念と関係名を明示する"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "booking",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n2",
+      "semantic": "rectangle"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:40:39.029273+00:00",
+    "findings": "時間帯の関係を予約が指定する向きへ修正。左右の共有幹線を分離し、主語から対象への矢印を凡例で明示。再描画で確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-058/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-050",
+        "source_refs": [
+          "SRC-032",
+          "SRC-002"
+        ],
+        "analysis": "概念同士を関係ラベル付きで接続する",
+        "visual_observation": "概念同士を関係ラベル付きで接続する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-050.png",
+        "original": "sources/official-examples/blog/concept-maps.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "626be0b6175ee94ff836839218d0c802eadacd33e1d192b2cd37b9234827a84d",
+  "preview_hash": "710cfcb9d99aa00a1b0be3bea28e5fb0162ae8761f557c09af0f8fff5c1ac3e9",
+  "pattern": "labelled-concept-graph",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

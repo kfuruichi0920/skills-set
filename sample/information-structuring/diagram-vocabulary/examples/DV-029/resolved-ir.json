@@ -1,0 +1,190 @@
+{
+  "id": "DV-029",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "制御判断とデータ通信の分離",
+    "purpose": "許可判断と実データの経路はどう異なるか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "dual-plane",
+    "theme": "T07"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "制御判断とデータ通信の分離",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "許可判断と実データの経路はどう異なるか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "policy",
+      "label": "ポリシー判断",
+      "x": 430,
+      "y": 70,
+      "width": 230,
+      "height": 85,
+      "parent": "cp",
+      "role": "primary",
+      "style": "",
+      "primitive": "hexagon",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "hexagon",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "n0",
+      "label": "利用者",
+      "x": 40,
+      "y": 90,
+      "width": 210,
+      "height": 80,
+      "parent": "dp",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "n1",
+      "label": "アクセス実施点",
+      "x": 430,
+      "y": 90,
+      "width": 210,
+      "height": 80,
+      "parent": "dp",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "n2",
+      "label": "業務サービス",
+      "x": 780,
+      "y": 90,
+      "width": 210,
+      "height": 80,
+      "parent": "dp",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    }
+  ],
+  "containers": [
+    {
+      "id": "cp",
+      "label": "制御判断",
+      "x": 120,
+      "y": 210,
+      "width": 1040,
+      "height": 190,
+      "parent": "1"
+    },
+    {
+      "id": "dp",
+      "label": "データ通信",
+      "x": 120,
+      "y": 485,
+      "width": 1040,
+      "height": 210,
+      "parent": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "データ要求",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "dp",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "label": "許可時に転送",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "dp",
+      "style": ""
+    },
+    {
+      "id": "e2",
+      "source": "policy",
+      "target": "n1",
+      "label": "許可・拒否の指示",
+      "semantic_type": "dependency",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    }
+  ],
+  "tables": []
+}

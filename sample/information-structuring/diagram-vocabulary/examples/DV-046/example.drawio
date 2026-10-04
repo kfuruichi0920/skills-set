@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-046" name="タスクの状態と仕掛数">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="col0" value="予定" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="70" y="215" width="350" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="col1" value="対応中（WIP上限2）" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="470" y="215" width="350" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="col2" value="完了" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="870" y="215" width="350" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="heading" value="タスクの状態と仕掛数" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="どのタスクがどの状態にあり、仕掛はいくつか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c00" value="条件を整理" parent="col0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DCDFE4;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="35" y="95" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c01" value="通知案を検討" parent="col0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DCDFE4;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="35" y="245" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="画面を試作" parent="col1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#579DFF;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="35" y="95" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="APIを確認" parent="col1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#579DFF;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="35" y="245" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="用語を確定" parent="col2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#4BCE97;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="35" y="95" width="280" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

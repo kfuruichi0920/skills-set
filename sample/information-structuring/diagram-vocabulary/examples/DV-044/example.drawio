@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-044" name="並行作業の合流と所要日数">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="並行作業の合流と所要日数" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="並行作業はどこで合流し、どの経路が長いか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="A：準備 2日" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F7F8F9;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.document;">
+          <mxGeometry x="70" y="385" width="215" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="up" value="B：試作 4日" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F7F8F9;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="510" y="245" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="down" value="C：資料 3日" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F7F8F9;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="510" y="525" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="D：確認 1日" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F7F8F9;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="1000" y="385" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="calc" value="所要日数の例：A→B→D は7日、A→C→D は6日。資源制約を入れない場合の比較。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="80" y="735" width="1150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="start" target="up" parent="1" edge="1" value="A完了後" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#B3B9C4;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.25;entryX=0;entryY=0.5;strokeColor=#172B4D;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="407.5" />
+              <mxPoint x="360" y="287.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" source="start" target="down" parent="1" edge="1" value="A完了後" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#B3B9C4;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.75;entryX=0;entryY=0.5;strokeColor=#172B4D;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="452.5" />
+              <mxPoint x="360" y="567.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" source="up" target="end" parent="1" edge="1" value="B完了後" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#B3B9C4;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.25;strokeColor=#172B4D;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="287.5" />
+              <mxPoint x="860" y="407.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" source="down" target="end" parent="1" edge="1" value="C完了後" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#B3B9C4;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.75;strokeColor=#172B4D;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="567.5" />
+              <mxPoint x="860" y="452.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

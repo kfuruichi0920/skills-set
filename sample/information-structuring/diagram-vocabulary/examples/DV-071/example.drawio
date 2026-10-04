@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-071" name="対象数を段階ごとに絞る">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="対象数を段階ごとに絞る" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="候補はどの条件で何件へ絞られるか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f0" value="候補20件：対象条件で選別" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F8FAFC;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="120.0" y="225" width="1040" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" value="候補12件：必須条件を確認" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F8FAFC;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="328.0" y="400" width="624" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="候補8件：実行可能性を確認" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="432.0" y="575" width="416" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="横幅は件数に比例。減った件数の理由は別表で追跡する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="80" y="755" width="1130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="f0" target="f1" parent="1" edge="1" value="条件を満たす" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="f1" target="f2" parent="1" edge="1" value="条件を満たす" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

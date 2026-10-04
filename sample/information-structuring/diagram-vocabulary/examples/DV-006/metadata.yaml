@@ -1,0 +1,118 @@
+{
+  "id": "DV-006",
+  "key": "class",
+  "title_ja": "予約と利用者のクラス関係",
+  "title_en": "Class",
+  "domain": [
+    "software"
+  ],
+  "purpose": "予約は誰に属し、どの属性を持つか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "class-association"
+  ],
+  "composition_pattern": "class-association",
+  "source_refs": [
+    "SRC-012"
+  ],
+  "information_structure": [
+    "attributes",
+    "class-association"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "class-association",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "locked-source-layer"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "予約は誰に属し、どの属性を持つかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "class",
+    "class-association",
+    "software",
+    "予約と利用者のクラス関係"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "base",
+      "semantic": "image"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:07:51.001773+00:00",
+    "findings": "装飾的なクラスアイコンを除去。属性、関連名、両端の多重度が明確に読めることを再描画PNGで確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-006/example.drawio",
+  "external_source": {
+    "path": "source.puml",
+    "render": "source.svg",
+    "sha256": "07584dcc93f33cfe2f1c91cc0ac77d1541ebba6bdb198be5500bb0c99b7697e9",
+    "meaning": "PlantUMLが記法の正本。SVGは単一の表示オブジェクト"
+  },
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-002",
+        "source_refs": [
+          "SRC-012",
+          "SRC-002"
+        ],
+        "analysis": "クラスの名前・属性・操作を区画で分離し関連で結ぶ",
+        "visual_observation": "クラスの名前・属性・操作を区画で分離し関連で結ぶ",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-002.png",
+        "original": "sources/official-examples/examples/uml-class-example.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "7695ad2a0b5c194acb6c9c0afdad78d35f4407d0008f3f078e422bc53db54535",
+  "preview_hash": "37da08abfd87d6207823f908abfc69c84962b9eaff755fa364a056155eb988b7",
+  "pattern": "class-association",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "PlantUML正本を保持。内部SVGは単一オブジェクト。"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "DV-030",
+  "key": "threat",
+  "title_ja": "データフローに脅威を対応付ける",
+  "title_en": "Threat",
+  "domain": [
+    "security"
+  ],
+  "purpose": "どの処理・境界にどの脅威があるか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "threat-overlay"
+  ],
+  "composition_pattern": "threat-overlay",
+  "source_refs": [
+    "SRC-033",
+    "SRC-057"
+  ],
+  "information_structure": [
+    "containment",
+    "flow",
+    "reference",
+    "threat-overlay"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "threat-overlay",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T07",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow",
+    "reference"
+  ],
+  "when_to_use": [
+    "どの処理・境界にどの脅威があるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "containment",
+    "flow",
+    "reference",
+    "security",
+    "threat",
+    "threat-overlay",
+    "データフローに脅威を対応付ける"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "n0",
+      "semantic": "document"
+    },
+    {
+      "node": "n1",
+      "semantic": "process"
+    },
+    {
+      "node": "n2",
+      "semantic": "database"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:22:44.824435+00:00",
+    "findings": "データ流の線を要求データ・許可された予約へ修正。脅威の仮説を検査点に対応付ける点線と本文を確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-030/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-024",
+        "source_refs": [
+          "SRC-033",
+          "SRC-002"
+        ],
+        "analysis": "データ経路と信頼境界を重ねて脅威の位置を示す",
+        "visual_observation": "データ経路と信頼境界を重ねて脅威の位置を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-024.png",
+        "original": "sources/official-examples/blog/threat-modelling.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "d817ef12f813b415dbff514f543fed172288bab4777231f6274a7b136835a2a1",
+  "preview_hash": "3b8bc4e95e2bd4a180ddd18382e2177c3a686d529d510685f64c0d943513e99d",
+  "pattern": "threat-overlay",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

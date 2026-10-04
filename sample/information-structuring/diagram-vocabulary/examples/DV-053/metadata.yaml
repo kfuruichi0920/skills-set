@@ -1,0 +1,156 @@
+{
+  "id": "DV-053",
+  "key": "fishbone",
+  "title_ja": "問題の原因候補を観点別に分ける",
+  "title_en": "Fishbone",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "どの観点に原因候補があるか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "fishbone"
+  ],
+  "composition_pattern": "fishbone",
+  "source_refs": [
+    "SRC-030"
+  ],
+  "information_structure": [
+    "association",
+    "attributes",
+    "category",
+    "cause",
+    "hypothesis"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "fishbone",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "association"
+  ],
+  "when_to_use": [
+    "どの観点に原因候補があるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "相関や候補から原因確定を主張したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "association",
+    "attributes",
+    "category",
+    "cause",
+    "fishbone",
+    "hypothesis",
+    "問題の原因候補を観点別に分ける"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "effect",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "spine",
+      "semantic": "ellipse"
+    },
+    {
+      "node": "cause0",
+      "semantic": "note"
+    },
+    {
+      "node": "joint0",
+      "semantic": "ellipse"
+    },
+    {
+      "node": "cause1",
+      "semantic": "note"
+    },
+    {
+      "node": "joint1",
+      "semantic": "ellipse"
+    },
+    {
+      "node": "cause2",
+      "semantic": "note"
+    },
+    {
+      "node": "joint2",
+      "semantic": "ellipse"
+    },
+    {
+      "node": "cause3",
+      "semantic": "note"
+    },
+    {
+      "node": "joint3",
+      "semantic": "ellipse"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:37:02.493564+00:00",
+    "findings": "魚骨の幹線と四観点の斜線、結果と原因候補の区別を確認。一般的な矢印ネットワークではなく、観点別の原因整理として再構成。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-053/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-046",
+        "source_refs": [
+          "SRC-030",
+          "SRC-002"
+        ],
+        "analysis": "結果へ向かう主軸に原因分類を枝として付加する",
+        "visual_observation": "結果へ向かう主軸に原因分類を枝として付加する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-046.png",
+        "original": "sources/official-examples/examples/ishikawa-fishbone-examples.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "51af73429344279a8e366366231e3b5c5785c01de2e9fa8b05fcff3908e1b224",
+  "preview_hash": "95c792d86f2a9317f11283bda98d99c5f8fcd54b21ad021b940e048085994dfe",
+  "pattern": "fishbone",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

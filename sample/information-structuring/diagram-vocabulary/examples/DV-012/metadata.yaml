@@ -1,0 +1,126 @@
+{
+  "id": "DV-012",
+  "key": "dataflow",
+  "title_ja": "予約データの入力と保管",
+  "title_en": "Dataflow",
+  "domain": [
+    "software"
+  ],
+  "purpose": "どのデータがどの処理を通って保管されるか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "data-flow"
+  ],
+  "composition_pattern": "data-flow",
+  "source_refs": [
+    "SRC-017"
+  ],
+  "information_structure": [
+    "attributes",
+    "data-flow",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "data-flow",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T01",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "どのデータがどの処理を通って保管されるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "実行の並行性やイベント順を厳密に示したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "data-flow",
+    "dataflow",
+    "flow",
+    "software",
+    "予約データの入力と保管"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "n0",
+      "semantic": "document"
+    },
+    {
+      "node": "n1",
+      "semantic": "process"
+    },
+    {
+      "node": "n2",
+      "semantic": "database"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:10:09.288134+00:00",
+    "findings": "入力文書・処理・保存データの意味図形と、申請データ・確定予約のラベルを確認。データ流と実行順序の区別を補足。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-012/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-010",
+        "source_refs": [
+          "SRC-017",
+          "SRC-002"
+        ],
+        "analysis": "外部主体・処理・保存先・データ名を区別する",
+        "visual_observation": "外部主体・処理・保存先・データ名を区別する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-010.png",
+        "original": "sources/official-examples/blog/data-flow.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "99c809e95f02c2fe9734dfd56aba6ed699be7219ceaeae03abc172a450544387",
+  "preview_hash": "17aa8f6f6e3a380706b119bd303b08c4f8dd3223ca7929affcfbc13b550d2dd1",
+  "pattern": "data-flow",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

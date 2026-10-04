@@ -1,0 +1,112 @@
+{
+  "id": "DV-047",
+  "key": "phase-team",
+  "title_ja": "工程ごとのチーム関与",
+  "title_en": "Phase Team",
+  "domain": [
+    "project-management"
+  ],
+  "purpose": "どのチームがどの工程へ関与するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "phase-team-grid"
+  ],
+  "composition_pattern": "phase-team-grid",
+  "source_refs": [
+    "SRC-026"
+  ],
+  "information_structure": [
+    "attributes",
+    "phase",
+    "responsibility",
+    "team"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "phase-team-grid",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table"
+    ]
+  },
+  "visual": {
+    "theme": "T03",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "どのチームがどの工程へ関与するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "phase",
+    "phase-team",
+    "phase-team-grid",
+    "project-management",
+    "responsibility",
+    "team",
+    "工程ごとのチーム関与"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [],
+  "variant_of": "DV-033",
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:33:47.110641+00:00",
+    "findings": "担当×工程の関与を表で確認。処理をセルの子にするDV-033とは異なり、工程別の関与一覧として使う派生。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-047/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-039",
+        "source_refs": [
+          "SRC-026",
+          "SRC-002"
+        ],
+        "analysis": "横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+        "visual_observation": "横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-039.png",
+        "original": "sources/official-examples/blog/project-phase-timeline.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "7477ddfd70f96910f145668be09991ab14b94c306b247af3b0b63e556e835ce0",
+  "preview_hash": "d6a2b5353307200c04f61a7e9d7dc18bd7fa73a8fd51d7e8b5d7c028c3d05b75",
+  "pattern": "phase-team-grid",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

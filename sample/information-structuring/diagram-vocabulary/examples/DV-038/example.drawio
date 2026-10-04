@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-038" name="利用者行動とリリース範囲">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FAFAFA">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="利用者行動とリリース範囲" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="利用者の行動に対し何を先に提供するか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" value="行動の順序を横軸に置く。顧客感情や実測効果は、この架空例から推定しない。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="70" y="730" width="1160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="journey" value="" parent="1" vertex="1" style="shape=table;container=1;collapsible=0;startSize=0;childLayout=tableLayout;fixedHeader=1;">
+          <mxGeometry x="70" y="235" width="1150" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r0" value="" parent="journey" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="0" width="1150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r0_c0" value="行動段階" parent="journey_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D0EBFF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r0_c1" value="探す" parent="journey_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D0EBFF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="235" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r0_c2" value="選ぶ" parent="journey_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D0EBFF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="540" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r0_c3" value="予約する" parent="journey_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D0EBFF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="845" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r1" value="" parent="journey" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="100" width="1150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r1_c0" value="最小の機能" parent="journey_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r1_c1" value="候補一覧" parent="journey_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="235" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r1_c2" value="条件の比較" parent="journey_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="540" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r1_c3" value="予約受付" parent="journey_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="845" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r2" value="" parent="journey" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="200" width="1150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r2_c0" value="次の機能" parent="journey_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="235" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r2_c1" value="絞込み" parent="journey_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="235" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r2_c2" value="お気に入り" parent="journey_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="540" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="journey_r2_c3" value="変更・取消" parent="journey_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="845" y="0" width="305" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

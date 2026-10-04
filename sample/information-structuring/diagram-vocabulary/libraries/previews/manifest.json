@@ -1,0 +1,62 @@
+[
+  {
+    "title": "利用者と主対象",
+    "file": "fragment-01.drawio",
+    "preview": "fragment-01.png",
+    "sha256": "4b215eb9c79471e27bf87fcf7f8fa44d0c5574f1b3eb9e40a41d94aaa5ad5945"
+  },
+  {
+    "title": "クラウドの境界",
+    "file": "fragment-02.drawio",
+    "preview": "fragment-02.png",
+    "sha256": "89ee0ce11f7255951b533a55d27e28f9135ee12f1c77a66ec372d78fda6f6220"
+  },
+  {
+    "title": "稼働系と待機系",
+    "file": "fragment-03.drawio",
+    "preview": "fragment-03.png",
+    "sha256": "ef972e2ba4203072a7aab7bc0028259ed096d64bb69f3de4f5fc24fe02c9c723"
+  },
+  {
+    "title": "主系と複製先",
+    "file": "fragment-04.drawio",
+    "preview": "fragment-04.png",
+    "sha256": "c4a6240674ebfd623e064ef15cd6604844c8df22322d5adaf642237adac1d641"
+  },
+  {
+    "title": "三層の依存",
+    "file": "fragment-05.drawio",
+    "preview": "fragment-05.png",
+    "sha256": "a0ef99b1948aff5078e5046b5676b1aa5acc1e4364cf7884200864d574cf7fe3"
+  },
+  {
+    "title": "制御とデータ",
+    "file": "fragment-06.drawio",
+    "preview": "fragment-06.png",
+    "sha256": "e78ac97ec38e9f464fd3a2b74da60949c792e8accfae74fd01fe96b19ee69582"
+  },
+  {
+    "title": "意味の凡例",
+    "file": "fragment-07.drawio",
+    "preview": "fragment-07.png",
+    "sha256": "8a7b3928404938a3e2957a5287ad841977efb503ed906bc67881972e5e8fc62f"
+  },
+  {
+    "title": "外周の説明",
+    "file": "fragment-08.drawio",
+    "preview": "fragment-08.png",
+    "sha256": "705fa97766fde24b8ac99b5765eaf9f5c2c74cb77312f73aa6a92e69705b018f"
+  },
+  {
+    "title": "工程とチームの表",
+    "file": "fragment-09.drawio",
+    "preview": "fragment-09.png",
+    "sha256": "051880a51e6b26bdd2f2a282ba20fa651b7863b0ea1025f555e28b979f4f47af"
+  },
+  {
+    "title": "対策の注記",
+    "file": "fragment-10.drawio",
+    "preview": "fragment-10.png",
+    "sha256": "5fb7ca6653722171a886e9f443da5b2c10b6dfb22d7f9826305cd1c9bef9660c"
+  }
+]

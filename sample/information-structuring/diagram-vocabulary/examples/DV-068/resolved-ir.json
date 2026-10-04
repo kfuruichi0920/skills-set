@@ -1,0 +1,173 @@
+{
+  "id": "DV-068",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "主張と根拠を一図にまとめる",
+    "purpose": "判断に必要な主張と根拠は何か",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "claim-evidence",
+    "theme": "T04"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "主張と根拠を一図にまとめる",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "判断に必要な主張と根拠は何か。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "claimtext",
+      "label": "確認の往復を減らすため、申請時の必要情報を共通化する。",
+      "x": 35,
+      "y": 60,
+      "width": 1070,
+      "height": 65,
+      "parent": "claim",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t0",
+      "label": "受付条件が担当者で異なる",
+      "x": 25,
+      "y": 65,
+      "width": 295,
+      "height": 130,
+      "parent": "e0",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t1",
+      "label": "確認の往復が増える可能性",
+      "x": 25,
+      "y": 65,
+      "width": 295,
+      "height": 130,
+      "parent": "e1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t2",
+      "label": "必要条件と効果を実測する",
+      "x": 25,
+      "y": 65,
+      "width": 295,
+      "height": 130,
+      "parent": "e2",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [
+    {
+      "id": "claim",
+      "label": "提案：受付条件を揃える",
+      "x": 70,
+      "y": 215,
+      "width": 1140,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "e0",
+      "label": "観測",
+      "x": 70,
+      "y": 445,
+      "width": 350,
+      "height": 240,
+      "parent": "1"
+    },
+    {
+      "id": "e1",
+      "label": "影響の仮説",
+      "x": 460,
+      "y": 445,
+      "width": 350,
+      "height": 240,
+      "parent": "1"
+    },
+    {
+      "id": "e2",
+      "label": "次の確認",
+      "x": 850,
+      "y": 445,
+      "width": 350,
+      "height": 240,
+      "parent": "1"
+    }
+  ],
+  "edges": [],
+  "tables": []
+}

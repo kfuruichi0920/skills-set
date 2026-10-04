@@ -1,0 +1,140 @@
+{
+  "id": "DV-036",
+  "key": "organisation",
+  "title_ja": "組織の所属関係",
+  "title_en": "Organisation",
+  "domain": [
+    "business"
+  ],
+  "purpose": "各チームと班はどこへ所属するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "top-down-hierarchy"
+  ],
+  "composition_pattern": "top-down-hierarchy",
+  "source_refs": [
+    "SRC-029"
+  ],
+  "information_structure": [
+    "association",
+    "attributes",
+    "top-down-hierarchy"
+  ],
+  "layout": {
+    "primary_axis": "vertical",
+    "grouping": "top-down-hierarchy",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T01",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "association"
+  ],
+  "when_to_use": [
+    "各チームと班はどこへ所属するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "組織を越えた多対多の責任割当を示したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "association",
+    "attributes",
+    "business",
+    "organisation",
+    "top-down-hierarchy",
+    "組織の所属関係"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "top",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "b0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "l0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "b1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "l1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "b2",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "l2",
+      "semantic": "rectangle"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:29:00.349245+00:00",
+    "findings": "職務名と組織所属の混同を解消し、下位を班の名称へ修正。三段階の組織階層と線の意味を再確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-036/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-030",
+        "source_refs": [
+          "SRC-029",
+          "SRC-002"
+        ],
+        "analysis": "親子の責任系統を上から下へ分岐する",
+        "visual_observation": "親子の責任系統を上から下へ分岐する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-030.png",
+        "original": "sources/official-examples/templates/basic/orgchart.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "03db1fd7a16e8eff1b1ecd8149f986b39e5e1011edc22f131eec6a936790a9f3",
+  "preview_hash": "01e0a57a2e6221f6d07dcfabef7fc28de676a5d957527fa5082d44b94564aa46",
+  "pattern": "top-down-hierarchy",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

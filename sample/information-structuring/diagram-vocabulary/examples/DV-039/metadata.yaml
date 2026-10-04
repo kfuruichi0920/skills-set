@@ -1,0 +1,107 @@
+{
+  "id": "DV-039",
+  "key": "journey",
+  "title_ja": "利用者の接点と困りごと",
+  "title_en": "Journey",
+  "domain": [
+    "business"
+  ],
+  "purpose": "行動の各段階で何に困り、何を改善するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "journey-stage-panels"
+  ],
+  "composition_pattern": "journey-stage-panels",
+  "source_refs": [
+    "SRC-053"
+  ],
+  "information_structure": [
+    "attributes",
+    "journey-stage-panels"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "journey-stage-panels",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "行動の各段階で何に困り、何を改善するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "business",
+    "journey",
+    "journey-stage-panels",
+    "利用者の接点と困りごと"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:29:52.727930+00:00",
+    "findings": "段階・接点・困りごと・改善案の対応を確認。Story Mapの行動グリッドを応用した独自例で、専用Customer Journey原図を確認したとは扱わない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-039/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-032",
+        "source_refs": [
+          "SRC-053",
+          "SRC-002"
+        ],
+        "analysis": "ユーザー行動の横順序と優先度の縦構造を分ける",
+        "visual_observation": "ユーザー行動の横順序と優先度の縦構造を分ける",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-032.png",
+        "original": "sources/official-examples/blog/story-map.drawio"
+      }
+    ],
+    "adaptation": "REF-032の行動×段階のグリッドを応用。専用Customer Journey原図を確認したとは扱わない。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "e5bf80d9133bd1b765c9e9f9743876b627d01e8df48774b03b1e853f6ed8f8c9",
+  "preview_hash": "920b3a8e60db5c50be0ed4135bfcd59a5e3a6ad9bd09fa645359379833086513",
+  "pattern": "journey-stage-panels",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

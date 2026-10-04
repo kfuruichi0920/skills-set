@@ -1,0 +1,113 @@
+{
+  "id": "DV-035",
+  "key": "raci",
+  "title_ja": "作業と責任の対応",
+  "title_en": "Raci",
+  "domain": [
+    "business"
+  ],
+  "purpose": "各作業の実施者と承認者は誰か",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "responsibility-matrix"
+  ],
+  "composition_pattern": "responsibility-matrix",
+  "source_refs": [
+    "SRC-028"
+  ],
+  "information_structure": [
+    "attributes",
+    "responsibility",
+    "role",
+    "work"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "responsibility-matrix",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table"
+    ]
+  },
+  "visual": {
+    "theme": "T03",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "各作業の実施者と承認者は誰かを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "作業の実行順序や完了条件を示したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "business",
+    "raci",
+    "responsibility",
+    "responsibility-matrix",
+    "role",
+    "work",
+    "作業と責任の対応"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:28:13.764970+00:00",
+    "findings": "各作業のR・A・Cと凡例を確認。Aは各行一人、実施順序はこの表から読み取らせない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-035/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-029",
+        "source_refs": [
+          "SRC-028",
+          "SRC-002"
+        ],
+        "analysis": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す",
+        "visual_observation": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-029.png",
+        "original": "sources/official-examples/blog/website-roles-products.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "a6d95eaee5782481d9dd400fb79a1a66e93d72c059adc9b28be089f6eea28bea",
+  "preview_hash": "79aa703230bf614dc96f948d51d8772d67a0d94b174b86cd7889a179ee636d2f",
+  "pattern": "responsibility-matrix",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

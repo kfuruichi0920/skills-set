@@ -1,0 +1,107 @@
+{
+  "id": "DV-068",
+  "key": "executive",
+  "title_ja": "主張と根拠を一図にまとめる",
+  "title_en": "Executive",
+  "domain": [
+    "presentation"
+  ],
+  "purpose": "判断に必要な主張と根拠は何か",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "claim-evidence"
+  ],
+  "composition_pattern": "claim-evidence",
+  "source_refs": [
+    "SRC-035"
+  ],
+  "information_structure": [
+    "claim-evidence",
+    "containment"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "claim-evidence",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T04",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "判断に必要な主張と根拠は何かを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "claim-evidence",
+    "containment",
+    "executive",
+    "presentation",
+    "主張と根拠を一図にまとめる"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:53:28.379411+00:00",
+    "findings": "提案を上段、観測・影響の仮説・次の確認を下段に分離し、断定と仮説を混同していない。文字と枠に重なりがない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-068/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-056",
+        "source_refs": [
+          "SRC-001",
+          "SRC-002"
+        ],
+        "analysis": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+        "visual_observation": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-056.png",
+        "original": "sources/official-examples/blog/diagram-integrations.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "ebf2d1b118c7e969bd043616a9af35c7f1503125e2adad79708dd00cd0ed4492",
+  "preview_hash": "ed41a9d8c64397176a9f52b08b332275ae1e7e6345159539977a151bea347036",
+  "pattern": "claim-evidence",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

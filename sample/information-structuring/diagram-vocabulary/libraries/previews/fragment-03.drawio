@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="fragment-3" name="稼働系と待機系">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="active" value="A：稼働系" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="0.0" y="0.0" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="standby" value="B：待機系" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="0.0" y="270.0" width="260" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

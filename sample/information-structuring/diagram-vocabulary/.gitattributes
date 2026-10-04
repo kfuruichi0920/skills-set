@@ -1,0 +1,5 @@
+# Keep hashed XML assets and preserved input byte-for-byte across checkout.
+*.drawio -text whitespace=cr-at-eol
+*.xml -text whitespace=cr-at-eol
+sources/official-examples/** -text whitespace=cr-at-eol
+sources/user-specification.txt -text whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol

@@ -1,0 +1,113 @@
+{
+  "id": "DV-041",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "出来事を時点へ配置する",
+    "purpose": "どの出来事がいつ起きるか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "time-axis",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "出来事を時点へ配置する",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "どの出来事がいつ起きるか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "n0",
+      "label": "4月：要求を整理",
+      "x": 60.0,
+      "y": 340,
+      "width": 180,
+      "height": 80,
+      "parent": "1",
+      "role": "primary",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    },
+    {
+      "id": "n1",
+      "label": "5月：試作を公開",
+      "x": 540.0,
+      "y": 340,
+      "width": 180,
+      "height": 80,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    },
+    {
+      "id": "n2",
+      "label": "6月：受入を完了",
+      "x": 1020.0,
+      "y": 340,
+      "width": 180,
+      "height": 80,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    }
+  ],
+  "containers": [],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "時間の順",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "label": "時間の順",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    }
+  ],
+  "tables": []
+}

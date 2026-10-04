@@ -1,0 +1,792 @@
+{
+  "reviewed_at": "2026-10-04",
+  "asset_count": 60,
+  "reviews": [
+    {
+      "asset_id": "REF-001",
+      "analysis": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す"
+      }
+    },
+    {
+      "asset_id": "REF-002",
+      "analysis": "クラスの名前・属性・操作を区画で分離し関連で結ぶ",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "クラスの名前・属性・操作を区画で分離し関連で結ぶ"
+      }
+    },
+    {
+      "asset_id": "REF-003",
+      "analysis": "部品の提供・要求インターフェースを接続する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "部品の提供・要求インターフェースを接続する"
+      }
+    },
+    {
+      "asset_id": "REF-004",
+      "analysis": "実行環境の境界に配備物を配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "実行環境の境界に配備物を配置する"
+      }
+    },
+    {
+      "asset_id": "REF-005",
+      "analysis": "開始・判断・分岐・終了を区別する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "開始・判断・分岐・終了を区別する"
+      }
+    },
+    {
+      "asset_id": "REF-006",
+      "analysis": "パッケージ包含と依存線を区別する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "パッケージ包含と依存線を区別する"
+      }
+    },
+    {
+      "asset_id": "REF-007",
+      "analysis": "利用者とシステム境界内の機能を関連づける",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "利用者とシステム境界内の機能を関連づける"
+      }
+    },
+    {
+      "asset_id": "REF-008",
+      "analysis": "参加者の横配置とメッセージの縦順序を分離する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "参加者の横配置とメッセージの縦順序を分離する"
+      }
+    },
+    {
+      "asset_id": "REF-009",
+      "analysis": "状態ノードとイベント・条件付き遷移を結ぶ",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "状態ノードとイベント・条件付き遷移を結ぶ"
+      }
+    },
+    {
+      "asset_id": "REF-010",
+      "analysis": "外部主体・処理・保存先・データ名を区別する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "外部主体・処理・保存先・データ名を区別する"
+      }
+    },
+    {
+      "asset_id": "REF-011",
+      "analysis": "行を持つ実体テーブルを多重度付き関係で結ぶ",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "行を持つ実体テーブルを多重度付き関係で結ぶ"
+      }
+    },
+    {
+      "asset_id": "REF-012",
+      "analysis": "要求・画面・データの異種要素を関連で束ねる",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "要求・画面・データの異種要素を関連で束ねる"
+      }
+    },
+    {
+      "asset_id": "REF-013",
+      "analysis": "要求IDと要求内容を分け、導出・充足関係を識別する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "要求IDと要求内容を分け、導出・充足関係を識別する"
+      }
+    },
+    {
+      "asset_id": "REF-014",
+      "analysis": "ブロック構成と型の関係を階層的に表す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "ブロック構成と型の関係を階層的に表す"
+      }
+    },
+    {
+      "asset_id": "REF-015",
+      "analysis": "Ring、Star、Fully connected、Common Busを同じページで並べ、接続密度を比較する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "Ring、Star、Fully connected、Common Busを同じページで並べ、接続密度を比較する"
+      }
+    },
+    {
+      "asset_id": "REF-016",
+      "analysis": "LANの領域・機器・接続を分離する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "LANの領域・機器・接続を分離する"
+      }
+    },
+    {
+      "asset_id": "REF-017",
+      "analysis": "共通バスと機器への接続点を表す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "共通バスと機器への接続点を表す"
+      }
+    },
+    {
+      "asset_id": "REF-018",
+      "analysis": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+        "full_scale_preview_reviewed": true
+      }
+    },
+    {
+      "asset_id": "REF-019",
+      "analysis": "サービスと領域を階層化し、通信経路を結ぶ",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "サービスと領域を階層化し、通信経路を結ぶ"
+      }
+    },
+    {
+      "asset_id": "REF-020",
+      "analysis": "センサーから収集・処理・保存の流れを段階化する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "センサーから収集・処理・保存の流れを段階化する"
+      }
+    },
+    {
+      "asset_id": "REF-021",
+      "analysis": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す"
+      }
+    },
+    {
+      "asset_id": "REF-022",
+      "analysis": "オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない"
+      }
+    },
+    {
+      "asset_id": "REF-023",
+      "analysis": "ラックの物理位置を縦方向のスロットで表す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "ラックの物理位置を縦方向のスロットで表す"
+      }
+    },
+    {
+      "asset_id": "REF-024",
+      "analysis": "データ経路と信頼境界を重ねて脅威の位置を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "データ経路と信頼境界を重ねて脅威の位置を示す"
+      }
+    },
+    {
+      "asset_id": "REF-025",
+      "analysis": "処理矩形と判断菱形の区別で分岐を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "処理矩形と判断菱形の区別で分岐を示す"
+      }
+    },
+    {
+      "asset_id": "REF-026",
+      "analysis": "処理順序に担当レーンを重ねる",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "処理順序に担当レーンを重ねる"
+      }
+    },
+    {
+      "asset_id": "REF-027",
+      "analysis": "工程と担当の交差で引継ぎを可視化する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "工程と担当の交差で引継ぎを可視化する"
+      }
+    },
+    {
+      "asset_id": "REF-028",
+      "analysis": "イベント・タスク・ゲートウェイの専用記法を使う",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "イベント・タスク・ゲートウェイの専用記法を使う",
+        "full_scale_preview_reviewed": true
+      }
+    },
+    {
+      "asset_id": "REF-029",
+      "analysis": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す"
+      }
+    },
+    {
+      "asset_id": "REF-030",
+      "analysis": "親子の責任系統を上から下へ分岐する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "親子の責任系統を上から下へ分岐する"
+      }
+    },
+    {
+      "asset_id": "REF-031",
+      "analysis": "複数の事業観点を区画化したキャンバスに配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "複数の事業観点を区画化したキャンバスに配置する"
+      }
+    },
+    {
+      "asset_id": "REF-032",
+      "analysis": "ユーザー行動の横順序と優先度の縦構造を分ける",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "ユーザー行動の横順序と優先度の縦構造を分ける",
+        "full_scale_preview_reviewed": true
+      }
+    },
+    {
+      "asset_id": "REF-033",
+      "analysis": "時間軸上に節目と説明を配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "時間軸上に節目と説明を配置する"
+      }
+    },
+    {
+      "asset_id": "REF-034",
+      "analysis": "縦タイムライン、蛇行する連続工程、番号付き横帯、旗付き工程を同ページで比較する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "縦タイムライン、蛇行する連続工程、番号付き横帯、旗付き工程を同ページで比較する"
+      }
+    },
+    {
+      "asset_id": "REF-035",
+      "analysis": "タスク行と日程列に期間バーを重ねる",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "タスク行と日程列に期間バーを重ねる"
+      }
+    },
+    {
+      "asset_id": "REF-036",
+      "analysis": "作業の前後関係と分岐・合流をネットワークで示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "作業の前後関係と分岐・合流をネットワークで示す"
+      }
+    },
+    {
+      "asset_id": "REF-037",
+      "analysis": "複数の依存先を有向グラフとして配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "複数の依存先を有向グラフとして配置する"
+      }
+    },
+    {
+      "asset_id": "REF-038",
+      "analysis": "状態列と作業カードで滞留を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "状態列と作業カードで滞留を示す"
+      }
+    },
+    {
+      "asset_id": "REF-039",
+      "analysis": "横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+        "full_scale_preview_reviewed": true
+      }
+    },
+    {
+      "asset_id": "REF-040",
+      "analysis": "成果物や仕事を階層分解する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "成果物や仕事を階層分解する"
+      }
+    },
+    {
+      "asset_id": "REF-041",
+      "analysis": "コインと骰子の条件付き分岐と経路確率を対応づける。リスクの重大度評価表ではない",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "コインと骰子の条件付き分岐と経路確率を対応づける。リスクの重大度評価表ではない"
+      }
+    },
+    {
+      "asset_id": "REF-042",
+      "analysis": "独立する二軸を四象限に交差させる",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "独立する二軸を四象限に交差させる"
+      }
+    },
+    {
+      "asset_id": "REF-043",
+      "analysis": "内外と正負の観点を四区画に整理する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "内外と正負の観点を四区画に整理する"
+      }
+    },
+    {
+      "asset_id": "REF-044",
+      "analysis": "六つの外部環境要因を独立領域として配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "六つの外部環境要因を独立領域として配置する"
+      }
+    },
+    {
+      "asset_id": "REF-045",
+      "analysis": "市場の五観点を比較できるまとまりへ配置する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "市場の五観点を比較できるまとまりへ配置する"
+      }
+    },
+    {
+      "asset_id": "REF-046",
+      "analysis": "結果へ向かう主軸に原因分類を枝として付加する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "結果へ向かう主軸に原因分類を枝として付加する"
+      }
+    },
+    {
+      "asset_id": "REF-047",
+      "analysis": "望ましくない事象を論理条件へ分解する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "望ましくない事象を論理条件へ分解する"
+      }
+    },
+    {
+      "asset_id": "REF-048",
+      "analysis": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない"
+      }
+    },
+    {
+      "asset_id": "REF-049",
+      "analysis": "判断と選択枝を階層化する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "判断と選択枝を階層化する"
+      }
+    },
+    {
+      "asset_id": "REF-050",
+      "analysis": "概念同士を関係ラベル付きで接続する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "概念同士を関係ラベル付きで接続する"
+      }
+    },
+    {
+      "asset_id": "REF-051",
+      "analysis": "集合領域の重なりで共通部分を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "集合領域の重なりで共通部分を示す"
+      }
+    },
+    {
+      "asset_id": "REF-052",
+      "analysis": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+        "full_scale_preview_reviewed": true
+      }
+    },
+    {
+      "asset_id": "REF-053",
+      "analysis": "円柱・階段・ピラミッド・同心円・層状半円など同じ層構造の複数表現を横に並べる",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "円柱・階段・ピラミッド・同心円・層状半円など同じ層構造の複数表現を横に並べる"
+      }
+    },
+    {
+      "asset_id": "REF-054",
+      "analysis": "繰返し形状の配置で工程の順番を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "繰返し形状の配置で工程の順番を示す"
+      }
+    },
+    {
+      "asset_id": "REF-055",
+      "analysis": "二つの人物図形それぞれへ吹き出しの説明を対応づける",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "二つの人物図形それぞれへ吹き出しの説明を対応づける"
+      }
+    },
+    {
+      "asset_id": "REF-056",
+      "analysis": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない"
+      }
+    },
+    {
+      "asset_id": "REF-057",
+      "analysis": "画面全体のスクリーンショットではなく、選択ハンドルやメニュー断片に外周の矢印説明を付加したUIチュートリアル",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "画面全体のスクリーンショットではなく、選択ハンドルやメニュー断片に外周の矢印説明を付加したUIチュートリアル",
+        "full_scale_preview_reviewed": true
+      }
+    },
+    {
+      "asset_id": "REF-058",
+      "analysis": "重ねる説明要素をレイヤー単位で管理する",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "重ねる説明要素をレイヤー単位で管理する"
+      }
+    },
+    {
+      "asset_id": "REF-059",
+      "analysis": "中央のFood Chain Cycleを六つの周辺六角形で囲み、隣接する要素間の周回を示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "中央のFood Chain Cycleを六つの周辺六角形で囲み、隣接する要素間の周回を示す"
+      }
+    },
+    {
+      "asset_id": "REF-060",
+      "analysis": "並行する枝と合流を時間順序で示す",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "並行する枝と合流を時間順序で示す"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "DV-011",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "利用者と予約操作",
+    "purpose": "どの利用者がどの目的で操作するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "actor-usecase",
+    "theme": "T02"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "利用者と予約操作",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "どの利用者がどの目的で操作するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "base",
+      "label": "",
+      "x": 305.1546391752577,
+      "y": 210,
+      "width": 669.6907216494845,
+      "height": 560.0,
+      "parent": "1",
+      "role": "neutral",
+      "style": "image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBjb250ZW50U3R5bGVUeXBlPSJ0ZXh0L2NzcyIgZGF0YS1kaWFncmFtLXR5cGU9IkRFU0NSSVBUSU9OIiBoZWlnaHQ9IjI5MXB4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBzdHlsZT0id2lkdGg6MzQ4cHg7aGVpZ2h0OjI5MXB4O2JhY2tncm91bmQ6I0ZGRkZGRjsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDM0OCAyOTEiIHdpZHRoPSIzNDhweCIgem9vbUFuZFBhbj0ibWFnbmlmeSI+PGRlZnMvPjxnPjwhLS1jbHVzdGVyID8/Pz8/Py0tPjxnIGNsYXNzPSJjbHVzdGVyIiBkYXRhLWVudGl0eT0iJiMyMDEwNDsmIzMyMDA0OyYjMTI0Njk7JiMxMjU0MDsmIzEyNDk5OyYjMTI0NzM7IiBkYXRhLXNvdXJjZS1saW5lPSI5IiBkYXRhLXVpZD0iZW50MDAwNCIgaWQ9ImNsdXN0ZXJfJiMyMDEwNDsmIzMyMDA0OyYjMTI0Njk7JiMxMjU0MDsmIzEyNDk5OyYjMTI0NzM7Ij48cmVjdCBmaWxsPSJub25lIiBoZWlnaHQ9IjI3NiIgcng9IjIuNSIgcnk9IjIuNSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIgd2lkdGg9IjIzOCIgeD0iMTA0IiB5PSI3Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Ill1IEdvdGhpYyIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iMTA4IiB4PSIxNjkiIHk9IjMzLjgzNzkiPiYjMjAxMDQ7JiMzMjAwNDsmIzEyNDY5OyYjMTI1NDA7JiMxMjQ5OTsmIzEyNDczOzwvdGV4dD48L2c+PGcgY2xhc3M9ImVudGl0eSIgZGF0YS1lbnRpdHk9IkZpbmQiIGRhdGEtc291cmNlLWxpbmU9IjEwIiBkYXRhLXVpZD0iZW50MDAwNSIgaWQ9ImVudGl0eV9GaW5kIj48ZWxsaXBzZSBjeD0iMjIyLjgxNjciIGN5PSI3OC4yMjc3IiBmaWxsPSIjRjFGMUYxIiByeD0iNzYuMzE2NyIgcnk9IjIzLjcyNzciIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJZdSBHb3RoaWMiIGZvbnQtc2l6ZT0iMTgiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iOTAiIHg9IjE3NC44MTY3IiB5PSI4Ny44OTY3Ij4mIzMxMzU0OyYjMTIzNjU7JiMxMjQzNDsmIzI1NTA2OyYjMTIzNzc7PC90ZXh0PjwvZz48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iQm9vayIgZGF0YS1zb3VyY2UtbGluZT0iMTEiIGRhdGEtdWlkPSJlbnQwMDA2IiBpZD0iZW50aXR5X0Jvb2siPjxlbGxpcHNlIGN4PSIyMjMuMDMzMiIgY3k9IjE2MC4xMDkyIiBmaWxsPSIjRjFGMUYxIiByeD0iNjMuMDMzMiIgcnk9IjIzLjYwOTIiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJZdSBHb3RoaWMiIGZvbnQtc2l6ZT0iMTgiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNzIiIHg9IjE4NC4wMzMyIiB5PSIxNjkuNzc4MSI+JiMyMDEwNDsmIzMyMDA0OyYjMTIzNzc7JiMxMjQyNzs8L3RleHQ+PC9nPjxnIGNsYXNzPSJlbnRpdHkiIGRhdGEtZW50aXR5PSJNYW5hZ2UiIGRhdGEtc291cmNlLWxpbmU9IjEyIiBkYXRhLXVpZD0iZW50MDAwNyIgaWQ9ImVudGl0eV9NYW5hZ2UiPjxlbGxpcHNlIGN4PSIyMjIuODg5NiIgY3k9IjI0Mi44NzMzIiBmaWxsPSIjRjFGMUYxIiByeD0iMTAyLjg4OTYiIHJ5PSIyMy44NzMzIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiLz48dGV4dCBmaWxsPSIjMDAwMDAwIiBmb250LWZhbWlseT0iWXUgR290aGljIiBmb250LXNpemU9IjE4IiBsZW5ndGhBZGp1c3Q9InNwYWNpbmciIHRleHRMZW5ndGg9IjEyNiIgeD0iMTU2Ljg4OTYiIHk9IjI1Mi41NDIyIj4mIzM1MzczOyYjMjA2MzM7JiMxMjQzNDsmIzMxNjQ5OyYjMjk3MDI7JiMxMjM3NzsmIzEyNDI3OzwvdGV4dD48L2c+PCEtLWVudGl0eSA/Pz8tLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iJiMyMTAzMzsmIzI5OTkyOyYjMzI3NzM7IiBkYXRhLXNvdXJjZS1saW5lPSI3IiBkYXRhLXVpZD0iZW50MDAwMiIgaWQ9ImVudGl0eV8mIzIxMDMzOyYjMjk5OTI7JiMzMjc3MzsiPjxlbGxpcHNlIGN4PSIzMyIgY3k9IjYzIiBmaWxsPSIjRjFGMUYxIiByeD0iOCIgcnk9IjgiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjxwYXRoIGQ9Ik0zMyw3MSBMMzMsOTggTTIwLDc5IEw0Niw3OSBNMzMsOTggTDIwLDExMyBNMzMsOTggTDQ2LDExMyIgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDowLjU7Ii8+PHRleHQgZmlsbD0iIzAwMDAwMCIgZm9udC1mYW1pbHk9Ill1IEdvdGhpYyIgZm9udC1zaXplPSIxOCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nIiB0ZXh0TGVuZ3RoPSI1NCIgeD0iNiIgeT0iMTM5LjMzNzkiPiYjMjEwMzM7JiMyOTk5MjsmIzMyNzczOzwvdGV4dD48L2c+PCEtLWVudGl0eSA/Pz8tLT48ZyBjbGFzcz0iZW50aXR5IiBkYXRhLWVudGl0eT0iJiMzMTY0OTsmIzI5NzAyOyYjMzI3NzM7IiBkYXRhLXNvdXJjZS1saW5lPSI4IiBkYXRhLXVpZD0iZW50MDAwMyIgaWQ9ImVudGl0eV8mIzMxNjQ5OyYjMjk3MDI7JiMzMjc3MzsiPjxlbGxpcHNlIGN4PSIzMyIgY3k9IjIwNyIgZmlsbD0iI0YxRjFGMSIgcng9IjgiIHJ5PSI4IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjAuNTsiLz48cGF0aCBkPSJNMzMsMjE1IEwzMywyNDIgTTIwLDIyMyBMNDYsMjIzIE0zMywyNDIgTDIwLDI1NyBNMzMsMjQyIEw0NiwyNTciIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MC41OyIvPjx0ZXh0IGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJZdSBHb3RoaWMiIGZvbnQtc2l6ZT0iMTgiIGxlbmd0aEFkanVzdD0ic3BhY2luZyIgdGV4dExlbmd0aD0iNTQiIHg9IjYiIHk9IjI4My4zMzc5Ij4mIzMxNjQ5OyYjMjk3MDI7JiMzMjc3Mzs8L3RleHQ+PC9nPjwhLS1saW5rID8/PyB0byBGaW5kLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9IiYjMjEwMzM7JiMyOTk5MjsmIzMyNzczOyIgZGF0YS1lbnRpdHktMj0iRmluZCIgZGF0YS1zb3VyY2UtbGluZT0iMTQiIGRhdGEtdWlkPSJsbms4IiBpZD0ibGlua18mIzIxMDMzOyYjMjk5OTI7JiMzMjc3MztfRmluZCI+PHBhdGggZD0iTTYwLjE0LDk2LjA4IEM4My41NSw5My40NyAxMTMuMDE3Miw5MC4xNzY5IDE0NC43NTcyLDg2LjYyNjkiIGZpbGw9Im5vbmUiIGlkPSImIzIxMDMzOyYjMjk5OTI7JiMzMjc3MzstdG8tRmluZCIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMTUwLjcyLDg1Ljk2LDE0MS4zMzEyLDgyLjk4NTIsMTQ1Ljc1MSw4Ni41MTU4LDE0Mi4yMjA0LDkwLjkzNTYsMTUwLjcyLDg1Ljk2IiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PC9nPjwhLS1saW5rID8/PyB0byBCb29rLS0+PGcgY2xhc3M9ImxpbmsiIGRhdGEtZW50aXR5LTE9IiYjMjEwMzM7JiMyOTk5MjsmIzMyNzczOyIgZGF0YS1lbnRpdHktMj0iQm9vayIgZGF0YS1zb3VyY2UtbGluZT0iMTUiIGRhdGEtdWlkPSJsbms5IiBpZD0ibGlua18mIzIxMDMzOyYjMjk5OTI7JiMzMjc3MztfQm9vayI+PHBhdGggZD0iTTYwLjE0LDEwNy40OCBDODkuNywxMTcuMDcgMTMyLjczMjgsMTMxLjAzODUgMTY5LjAxMjgsMTQyLjgwODUiIGZpbGw9Im5vbmUiIGlkPSImIzIxMDMzOyYjMjk5OTI7JiMzMjc3MzstdG8tQm9vayIgc3R5bGU9InN0cm9rZTojMTgxODE4O3N0cm9rZS13aWR0aDoxOyIvPjxwb2x5Z29uIGZpbGw9IiMxODE4MTgiIHBvaW50cz0iMTc0LjcyLDE0NC42NiwxNjcuMzkzNiwxMzguMDc3OSwxNjkuOTY0LDE0My4xMTcxLDE2NC45MjQ5LDE0NS42ODc1LDE3NC43MiwxNDQuNjYiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLWxpbmsgPz8/IHRvIE1hbmFnZS0tPjxnIGNsYXNzPSJsaW5rIiBkYXRhLWVudGl0eS0xPSImIzMxNjQ5OyYjMjk3MDI7JiMzMjc3MzsiIGRhdGEtZW50aXR5LTI9Ik1hbmFnZSIgZGF0YS1zb3VyY2UtbGluZT0iMTYiIGRhdGEtdWlkPSJsbmsxMCIgaWQ9ImxpbmtfJiMzMTY0OTsmIzI5NzAyOyYjMzI3NzM7X01hbmFnZSI+PHBhdGggZD0iTTYwLjE0LDI0MyBDNzYuMDgsMjQzIDkxLjYsMjQzIDExMy43MywyNDMiIGZpbGw9Im5vbmUiIGlkPSImIzMxNjQ5OyYjMjk3MDI7JiMzMjc3MzstdG8tTWFuYWdlIiBzdHlsZT0ic3Ryb2tlOiMxODE4MTg7c3Ryb2tlLXdpZHRoOjE7Ii8+PHBvbHlnb24gZmlsbD0iIzE4MTgxOCIgcG9pbnRzPSIxMTkuNzMsMjQzLDExMC43MywyMzksMTE0LjczLDI0MywxMTAuNzMsMjQ3LDExOS43MywyNDMiIHN0eWxlPSJzdHJva2U6IzE4MTgxODtzdHJva2Utd2lkdGg6MTsiLz48L2c+PCEtLVNSQz1bUk93bkppRDA0NEp4LXVnTC1uSHFMMUgxMlhLcUw5SkItTW9WUkQtWWt4Q1kxSTVYMXIwYTE0QTE5WUxLSUc0TDU0SnlwSDZTcHkybjh5ajhiM0RsVGRQQ0JES1BRYW1YOUtLeXFmR0FpM2VKcEJKNEhFWkpLQWVHMGFuQ2J2bVlacUREY1ZCdEFJNERtcVpRQmxUNVc1Ylkxd0ppNExSNXRhYTYxc0dab1J0X0t5VG85NjFkYm9LWWk2MDlqMG1aMnh4S1diajlZWTZ0clBsTFA1NC1wVFVOcnJqVGxac04zcFNSbFNjWDJYQzF0eWo5LU54YllXeXRfZEJaSHJUeW1aYzNwMFlFZlhmSUJmT2tsdEY1ekVWLW5VS3AzejMwRzJnXzR6YXN2M0ROdERReUpuSHQtN2gta1llZ0U2dFVUdUE3ZzMwS3g4QXJHdzdOc3Nsd19yZnJQSmtfamZoWk5tMDBdLS0+PC9nPjwvc3ZnPg==;locked=1;movable=0;resizable=0;imageAspect=1;",
+      "primitive": "image",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    }
+  ],
+  "containers": [],
+  "edges": [],
+  "tables": []
+}

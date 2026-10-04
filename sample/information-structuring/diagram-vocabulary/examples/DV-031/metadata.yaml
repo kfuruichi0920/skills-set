@@ -1,0 +1,125 @@
+{
+  "id": "DV-031",
+  "key": "basic-flow",
+  "title_ja": "受付から回答までの基本フロー",
+  "title_en": "Basic Flow",
+  "domain": [
+    "business"
+  ],
+  "purpose": "入力はどの処理を経て結果になるか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "left-to-right-pipeline"
+  ],
+  "composition_pattern": "left-to-right-pipeline",
+  "source_refs": [
+    "SRC-027"
+  ],
+  "information_structure": [
+    "attributes",
+    "flow",
+    "left-to-right-pipeline"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "left-to-right-pipeline",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T01",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "入力はどの処理を経て結果になるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "basic-flow",
+    "business",
+    "flow",
+    "left-to-right-pipeline",
+    "受付から回答までの基本フロー"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "n0",
+      "semantic": "process"
+    },
+    {
+      "node": "n1",
+      "semantic": "process"
+    },
+    {
+      "node": "n2",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:24:23.508194+00:00",
+    "findings": "受付・確認・回答の処理と順方向を確認。図解を省略せず、基本フローの再利用例として登録する。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-031/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-025",
+        "source_refs": [
+          "SRC-001",
+          "SRC-002"
+        ],
+        "analysis": "処理矩形と判断菱形の区別で分岐を示す",
+        "visual_observation": "処理矩形と判断菱形の区別で分岐を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-025.png",
+        "original": "sources/official-examples/templates/basic/flowchart.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "1b2aae74c4fe9c32acbbc74415539e899a612bfb0b4734766d0fb3f71952c4ec",
+  "preview_hash": "e2f672b94e8ff8a697f9a3fcf6b8e4af05c437fb2dcb6a354b3aeab37721128c",
+  "pattern": "left-to-right-pipeline",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

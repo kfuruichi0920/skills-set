@@ -1,0 +1,107 @@
+{
+  "id": "DV-052",
+  "key": "pestel",
+  "title_ja": "外部環境の六つの観点",
+  "title_en": "Pestel",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "どの外部条件が企画に影響するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "faceted-environment"
+  ],
+  "composition_pattern": "faceted-environment",
+  "source_refs": [
+    "SRC-031"
+  ],
+  "information_structure": [
+    "attributes",
+    "faceted-environment"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "faceted-environment",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "どの外部条件が企画に影響するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "attributes",
+    "faceted-environment",
+    "pestel",
+    "外部環境の六つの観点"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:36:24.276188+00:00",
+    "findings": "政治・経済・社会・技術・環境・法律の六観点が欠けていないこと、例の確認条件と索引の目的をPNGで確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-052/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-044",
+        "source_refs": [
+          "SRC-031",
+          "SRC-002"
+        ],
+        "analysis": "六つの外部環境要因を独立領域として配置する",
+        "visual_observation": "六つの外部環境要因を独立領域として配置する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-044.png",
+        "original": "sources/official-examples/examples/pestel-analysis.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "5d98045b3b0f3d5e5bca5a6eb86b9de1b4d8f4df73f532edaff84edb55cfe0dd",
+  "preview_hash": "8e044769899b1bc8712530621debf51109de6be234341f9f981061153f31e8cf",
+  "pattern": "faceted-environment",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

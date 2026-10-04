@@ -1,0 +1,175 @@
+{
+  "id": "DV-074",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "全体から部分へ焦点を移す",
+    "purpose": "全体のどの部分を次の詳細図で説明するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "multi-level-zoom",
+    "theme": "T02"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "全体から部分へ焦点を移す",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "全体のどの部分を次の詳細図で説明するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "web",
+      "label": "画面",
+      "x": 30,
+      "y": 110,
+      "width": 170,
+      "height": 80,
+      "parent": "overview",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "api",
+      "label": "API",
+      "x": 240,
+      "y": 110,
+      "width": 170,
+      "height": 80,
+      "parent": "overview",
+      "role": "primary",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "d0",
+      "label": "認証",
+      "x": 35,
+      "y": 145,
+      "width": 120,
+      "height": 80,
+      "parent": "detail",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "d1",
+      "label": "受付",
+      "x": 185,
+      "y": 145,
+      "width": 120,
+      "height": 80,
+      "parent": "detail",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "d2",
+      "label": "保存",
+      "x": 335,
+      "y": 145,
+      "width": 120,
+      "height": 80,
+      "parent": "detail",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "note",
+      "label": "全体と詳細は同じAPIを別の抽象度で説明する。詳細への線は通信ではない。",
+      "x": 80,
+      "y": 735,
+      "width": 1130,
+      "height": 60,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [
+    {
+      "id": "overview",
+      "label": "全体：予約サービス",
+      "x": 70,
+      "y": 240,
+      "width": 460,
+      "height": 390,
+      "parent": "1"
+    },
+    {
+      "id": "detail",
+      "label": "詳細：APIの責務",
+      "x": 720,
+      "y": 240,
+      "width": 490,
+      "height": 390,
+      "parent": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "web",
+      "target": "api",
+      "label": "要求",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "overview",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "api",
+      "target": "detail",
+      "label": "この部分を展開",
+      "semantic_type": "reference",
+      "waypoints": [],
+      "parent": "1",
+      "style": "exitX=1;exitY=0.5;entryX=0;entryY=0.6;"
+    }
+  ],
+  "tables": []
+}

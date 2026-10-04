@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-040" name="成果で区切る開発ロードマップ">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="成果で区切る開発ロードマップ" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="各期間に何を実現するか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n0" value="探索：要求を確定" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="60.0" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="試行：受付を提供" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F3F4F6;strokeColor=#6B7280;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="540.0" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="拡張：運用を改善" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F3F4F6;strokeColor=#6B7280;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="1020.0" y="340" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="condition" value="日付ではなく成果の到達条件を主に示す。完了条件を満たした後に次へ進む。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="80" y="640" width="1100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="n0" target="n1" parent="1" edge="1" value="次の期間" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#6B7280;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="n1" target="n2" parent="1" edge="1" value="次の期間" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#6B7280;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

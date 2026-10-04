@@ -21,7 +21,7 @@ description: 雑多な文章・メモ・仕様・表・調査情報を整理し�
 2. [整理体系](references/framework.md)の16目的・19基本軸・12基本表現から該当する観点を選ぶ。複数目的やファセット分類を許し、この一覧も閉じた選択肢にしない。
 3. [選択ルール](references/selection-rules.md)で「整理目的 → 意味・整理軸 → 基本表現 → 必要な専門手法 → 説明方法」を選ぶ。概念の混同、時間と順序、処理と状態、相関と因果を先に区別する。
 4. 新規図解は[カタログから図解を選ぶ手順](references/catalog-selection.md)で各まとまりを照合する。該当する[表現カタログ](references/catalog.md)と[構成図一覧](assets/catalog-gallery.html)を確認し、候補の関係・前提・不足を比較する。[可視化の規則](references/visualization.md)でツールを選び、構造・配置図をDraw.io、シーケンス図をPlantUMLで制作する。既存図への説明追加はvisual-annotation.mdで注釈IRを作り、原図と注釈を分離する。
-5. 新規Draw.io図は[ネイティブ機能と図形選択](references/drawio-native.md)を読み、記法・ライブラリ・実在する図形・コンテナー・表・再利用部品を選び、IRへ確定する。その後、[テーマ選択と意味記号](references/diagram-themes.md)に従い、目的・読み手・内容からT01〜T10を選ぶ。注釈モードではテーマを注釈だけへ適用し、原図を再配色しない。図の型・テーマ・色形線の意味・配置を分けて記録する。[成果物テンプレート](assets/storyboard-template.md)で整理結果と配置を組み立て、確認した形式のファイルを制作する。
+5. 新規Draw.io図は[図解ボキャブラリーの選択](references/diagram-vocabulary.md)で説明パターンの候補をTop-K検索する。Coreから調べ、合わなければ全体・複合・新規構成へ広げる。候補の用途・不向きな条件・実表示を比較した後、[ネイティブ機能と図形選択](references/drawio-native.md)で実在する図形・所属・表・部品を選び、IRへ確定する。[テーマ選択と意味記号](references/diagram-themes.md)に従い、目的・読み手・内容からT01〜T10を選ぶ。注釈モードではテーマを注釈だけへ適用し、原図を再配色しない。図の型・テーマ・色形線の意味・配置を分けて記録する。[成果物テンプレート](assets/storyboard-template.md)で整理結果と配置を組み立て、確認した形式のファイルを制作する。
 6. [根拠記録テンプレート](assets/rationale-template.md)を使い、入力の出所 → 正規化した情報 → 検出軸 → 候補 → 採否理由 → 出力要素の対応を、別の補足資料として保存する。
 7. [制作と検証](references/production.md)と[Draw.ioの配置検査](references/drawio-layout-check.md)に従い、図の表示でコネクターと余白を点検する。問題を修正して再確認した後、作業対象のルートの`output/YYYYMMDD_HHMMSS_約20文字の日本語概要/`へ成果物を保存し、リンクを提出する。
 

@@ -1,0 +1,303 @@
+{
+  "id": "DV-037",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "予約サービスの事業構造",
+    "purpose": "誰に何を提供し、何で支えるか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "business-canvas",
+    "theme": "T04"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "予約サービスの事業構造",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "誰に何を提供し、何で支えるか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t0",
+      "label": "設備提供者",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b0",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t1",
+      "label": "予約の仲介",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t2",
+      "label": "空きの探索を短縮",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b2",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t3",
+      "label": "利用案内",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b3",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t4",
+      "label": "設備利用者",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b4",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t5",
+      "label": "設備情報",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b5",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t6",
+      "label": "予約画面",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b6",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t7",
+      "label": "開発・運用",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b7",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "t8",
+      "label": "利用料の例",
+      "x": 25,
+      "y": 60,
+      "width": 305,
+      "height": 70,
+      "parent": "b8",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [
+    {
+      "id": "b0",
+      "label": "協力者",
+      "x": 70,
+      "y": 205,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b1",
+      "label": "活動",
+      "x": 465,
+      "y": 205,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b2",
+      "label": "価値",
+      "x": 860,
+      "y": 205,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b3",
+      "label": "顧客関係",
+      "x": 70,
+      "y": 390,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b4",
+      "label": "顧客",
+      "x": 465,
+      "y": 390,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b5",
+      "label": "資源",
+      "x": 860,
+      "y": 390,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b6",
+      "label": "チャネル",
+      "x": 70,
+      "y": 575,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b7",
+      "label": "費用",
+      "x": 465,
+      "y": 575,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "b8",
+      "label": "収益",
+      "x": 860,
+      "y": 575,
+      "width": 360,
+      "height": 160,
+      "parent": "1"
+    }
+  ],
+  "edges": [],
+  "tables": []
+}

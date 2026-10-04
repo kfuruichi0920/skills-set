@@ -1,0 +1,131 @@
+{
+  "id": "DV-032",
+  "key": "swimlane",
+  "title_ja": "担当者ごとの引き渡し",
+  "title_en": "Swimlane",
+  "domain": [
+    "business"
+  ],
+  "purpose": "処理がどの担当からどの担当へ渡るか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "role-swimlane"
+  ],
+  "composition_pattern": "role-swimlane",
+  "source_refs": [
+    "SRC-054"
+  ],
+  "information_structure": [
+    "containment",
+    "flow",
+    "responsibility",
+    "role",
+    "sequence"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "role-swimlane",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T03",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "処理がどの担当からどの担当へ渡るかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "business",
+    "containment",
+    "flow",
+    "responsibility",
+    "role",
+    "role-swimlane",
+    "sequence",
+    "swimlane",
+    "担当者ごとの引き渡し"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "a0",
+      "semantic": "process"
+    },
+    {
+      "node": "a1",
+      "semantic": "process"
+    },
+    {
+      "node": "a2",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:25:56.732887+00:00",
+    "findings": "境界線と引渡し線の重なりを解消し、担当領域間へ40pxの余白を確保。主要線を濃色化し、二つの引渡し経路を再確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-032/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-026",
+        "source_refs": [
+          "SRC-054",
+          "SRC-002"
+        ],
+        "analysis": "処理順序に担当レーンを重ねる",
+        "visual_observation": "処理順序に担当レーンを重ねる",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-026.png",
+        "original": "sources/official-examples/templates/basic/swimlanes.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "727048884d107880ea09a0a32bccebb8caec50bafcd0716e3b898fd0599df856",
+  "preview_hash": "ebe24401bf27bc063f6162687dbabb09558e2498dc8a03a9abc0d267b3701788",
+  "pattern": "role-swimlane",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

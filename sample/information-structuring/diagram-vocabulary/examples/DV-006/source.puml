@@ -1,0 +1,18 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Yu Gothic"
+skinparam defaultFontSize 18
+hide circle
+skinparam classAttributeIconSize 0
+class 利用者 {
+ +利用者ID : String
+ +氏名 : String
+}
+class 予約 {
+ +予約ID : String
+ +開始日時 : DateTime
+}
+利用者 "1" -- "0..*" 予約 : 登録する
+@enduml

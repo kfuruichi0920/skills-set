@@ -1,0 +1,125 @@
+{
+  "id": "DV-019",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "物理機器と配線",
+    "purpose": "どの実機をどのケーブルで接続するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "physical-chain",
+    "theme": "T06"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "物理機器と配線",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "どの実機をどのケーブルで接続するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "n0",
+      "label": "端末 PC-01",
+      "x": 60.0,
+      "y": 350,
+      "width": 180,
+      "height": 80,
+      "parent": "1",
+      "role": "primary",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    },
+    {
+      "id": "n1",
+      "label": "スイッチ SW-01",
+      "x": 540.0,
+      "y": 350,
+      "width": 180,
+      "height": 80,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    },
+    {
+      "id": "n2",
+      "label": "サーバー SV-01",
+      "x": 1020.0,
+      "y": 350,
+      "width": 180,
+      "height": 80,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+    },
+    {
+      "id": "note",
+      "label": "機器IDと配線を示す。VLANやアクセス許可の論理条件は別図へ分ける。",
+      "x": 100,
+      "y": 620,
+      "width": 1140,
+      "height": 65,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "LANケーブル",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "label": "LANケーブル",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    }
+  ],
+  "tables": []
+}

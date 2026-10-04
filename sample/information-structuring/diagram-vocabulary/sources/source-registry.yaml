@@ -1,0 +1,2347 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-04",
+  "seed_count": 49,
+  "additional_count": 9,
+  "source_count": 58,
+  "asset_registry": "official-assets.json",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "draw.io Example technical diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/",
+      "source_class": "drawio-official",
+      "domains": [
+        "総合"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed. Direct urllib request returned HTTP403; web retrieval succeeded."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "処理矩形と判断菱形の区別で分岐を示す; 複数の事業観点を区画化したキャンバスに配置する; Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+      "example_links": [
+        {
+          "asset_id": "REF-025",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/flowchart.xml",
+          "local_path": "official-examples/templates/basic/flowchart.xml"
+        },
+        {
+          "asset_id": "REF-031",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/business-model-canvas-table.drawio",
+          "local_path": "official-examples/examples/business-model-canvas-table.drawio"
+        },
+        {
+          "asset_id": "REF-056",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/diagram-integrations.drawio",
+          "local_path": "official-examples/blog/diagram-integrations.drawio"
+        }
+      ],
+      "notes": "最重要。分野横断の実例と`.drawio`",
+      "reviewed_asset_ids": [
+        "REF-025",
+        "REF-031",
+        "REF-056"
+      ]
+    },
+    {
+      "id": "SRC-002",
+      "title": "jgraph/drawio-diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://github.com/jgraph/drawio-diagrams",
+      "source_class": "drawio-repository",
+      "domains": [
+        "Repository"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Pinned repository LICENSE; individual retained assets separately recorded.",
+      "summary": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す; クラスの名前・属性・操作を区画で分離し関連で結ぶ; 部品の提供・要求インターフェースを接続する; 実行環境の境界に配備物を配置する; 開始・判断・分岐・終了を区別する; パッケージ包含と依存線を区別する; 利用者とシステム境界内の機能を関連づける; 参加者の横配置とメッセージの縦順序を分離する; 状態ノードとイベント・条件付き遷移を結ぶ; 外部主体・処理・保存先・データ名を区別する; 行を持つ実体テーブルを多重度付き関係で結ぶ; 要求・画面・データの異種要素を関連で束ねる; 要求IDと要求内容を分け、導出・充足関係を識別する; ブロック構成と型の関係を階層的に表す; Ring、Star、Fully connected、Common Busを同じページで並べ、接続密度を比較する; LANの領域・機器・接続を分離する; 共通バスと機器への接続点を表す; AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する; サービスと領域を階層化し、通信経路を結ぶ; センサーから収集・処理・保存の流れを段階化する; 開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す; オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない; ラックの物理位置を縦方向のスロットで表す; データ経路と信頼境界を重ねて脅威の位置を示す; 処理矩形と判断菱形の区別で分岐を示す; 処理順序に担当レーンを重ねる; 工程と担当の交差で引継ぎを可視化する; イベント・タスク・ゲートウェイの専用記法を使う; Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す; 親子の責任系統を上から下へ分岐する; 複数の事業観点を区画化したキャンバスに配置する; ユーザー行動の横順序と優先度の縦構造を分ける; 時間軸上に節目と説明を配置する; 縦タイムライン、蛇行する連続工程、番号付き横帯、旗付き工程を同ページで比較する; タスク行と日程列に期間バーを重ねる; 作業の前後関係と分岐・合流をネットワークで示す; 複数の依存先を有向グラフとして配置する; 状態列と作業カードで滞留を示す; 横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない; 成果物や仕事を階層分解する; コインと骰子の条件付き分岐と経路確率を対応づける。リスクの重大度評価表ではない; 独立する二軸を四象限に交差させる; 内外と正負の観点を四区画に整理する; 六つの外部環境要因を独立領域として配置する; 市場の五観点を比較できるまとまりへ配置する; 結果へ向かう主軸に原因分類を枝として付加する; 望ましくない事象を論理条件へ分解する; 左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない; 判断と選択枝を階層化する; 概念同士を関係ラベル付きで接続する; 集合領域の重なりで共通部分を示す; 第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない; 円柱・階段・ピラミッド・同心円・層状半円など同じ層構造の複数表現を横に並べる; 繰返し形状の配置で工程の順番を示す; 二つの人物図形それぞれへ吹き出しの説明を対応づける; Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない; 画面全体のスクリーンショットではなく、選択ハンドルやメニュー断片に外周の矢印説明を付加したUIチュートリアル; 重ねる説明要素をレイヤー単位で管理する; 中央のFood Chain Cycleを六つの周辺六角形で囲み、隣接する要素間の周回を示す; 並行する枝と合流を時間順序で示す",
+      "example_links": [
+        {
+          "asset_id": "REF-001",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/C4.drawio",
+          "local_path": "official-examples/blog/C4.drawio"
+        },
+        {
+          "asset_id": "REF-002",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-class-example.drawio",
+          "local_path": "official-examples/examples/uml-class-example.drawio"
+        },
+        {
+          "asset_id": "REF-003",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-component-example.drawio",
+          "local_path": "official-examples/examples/uml-component-example.drawio"
+        },
+        {
+          "asset_id": "REF-004",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-deployment-example.drawio",
+          "local_path": "official-examples/examples/uml-deployment-example.drawio"
+        },
+        {
+          "asset_id": "REF-005",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-activity-example.drawio",
+          "local_path": "official-examples/examples/uml-activity-example.drawio"
+        },
+        {
+          "asset_id": "REF-006",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-package-example.drawio",
+          "local_path": "official-examples/examples/uml-package-example.drawio"
+        },
+        {
+          "asset_id": "REF-007",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-use-case-example.drawio",
+          "local_path": "official-examples/examples/uml-use-case-example.drawio"
+        },
+        {
+          "asset_id": "REF-008",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sequence-diagram-examples.drawio",
+          "local_path": "official-examples/examples/sequence-diagram-examples.drawio"
+        },
+        {
+          "asset_id": "REF-009",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/uml-state-diagram-smart-lock.drawio",
+          "local_path": "official-examples/blog/uml-state-diagram-smart-lock.drawio"
+        },
+        {
+          "asset_id": "REF-010",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/data-flow.drawio",
+          "local_path": "official-examples/blog/data-flow.drawio"
+        },
+        {
+          "asset_id": "REF-011",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/er-diagram-library.drawio",
+          "local_path": "official-examples/blog/er-diagram-library.drawio"
+        },
+        {
+          "asset_id": "REF-012",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/requirements-flow.drawio",
+          "local_path": "official-examples/blog/requirements-flow.drawio"
+        },
+        {
+          "asset_id": "REF-013",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sysml-requirements-diagram.drawio",
+          "local_path": "official-examples/examples/sysml-requirements-diagram.drawio"
+        },
+        {
+          "asset_id": "REF-014",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sysml-block-definition-diagram.drawio",
+          "local_path": "official-examples/examples/sysml-block-definition-diagram.drawio"
+        },
+        {
+          "asset_id": "REF-015",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/network/topology_1.xml",
+          "local_path": "official-examples/templates/network/topology_1.xml"
+        },
+        {
+          "asset_id": "REF-016",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/network/lan_1.xml",
+          "local_path": "official-examples/templates/network/lan_1.xml"
+        },
+        {
+          "asset_id": "REF-017",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/bus-topology-example.drawio",
+          "local_path": "official-examples/examples/bus-topology-example.drawio"
+        },
+        {
+          "asset_id": "REF-018",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/aws-simple-architecture.drawio",
+          "local_path": "official-examples/examples/aws-simple-architecture.drawio"
+        },
+        {
+          "asset_id": "REF-019",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/azure-architecture-example.drawio",
+          "local_path": "official-examples/blog/azure-architecture-example.drawio"
+        },
+        {
+          "asset_id": "REF-020",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+          "local_path": "official-examples/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml"
+        },
+        {
+          "asset_id": "REF-021",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/dev_test_jenkins_in_k8s.xml",
+          "local_path": "official-examples/templates/gcp/dev_test_jenkins_in_k8s.xml"
+        },
+        {
+          "asset_id": "REF-022",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+          "local_path": "official-examples/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml"
+        },
+        {
+          "asset_id": "REF-023",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/rack-diagram-simple-server.drawio",
+          "local_path": "official-examples/examples/rack-diagram-simple-server.drawio"
+        },
+        {
+          "asset_id": "REF-024",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/threat-modelling.drawio",
+          "local_path": "official-examples/blog/threat-modelling.drawio"
+        },
+        {
+          "asset_id": "REF-025",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/flowchart.xml",
+          "local_path": "official-examples/templates/basic/flowchart.xml"
+        },
+        {
+          "asset_id": "REF-026",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/swimlanes.xml",
+          "local_path": "official-examples/templates/basic/swimlanes.xml"
+        },
+        {
+          "asset_id": "REF-027",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/flowcharts/cross_functional_flowchart_1.xml",
+          "local_path": "official-examples/templates/flowcharts/cross_functional_flowchart_1.xml"
+        },
+        {
+          "asset_id": "REF-028",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/bpmn-example.drawio",
+          "local_path": "official-examples/examples/bpmn-example.drawio"
+        },
+        {
+          "asset_id": "REF-029",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/website-roles-products.drawio",
+          "local_path": "official-examples/blog/website-roles-products.drawio"
+        },
+        {
+          "asset_id": "REF-030",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/orgchart.xml",
+          "local_path": "official-examples/templates/basic/orgchart.xml"
+        },
+        {
+          "asset_id": "REF-031",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/business-model-canvas-table.drawio",
+          "local_path": "official-examples/examples/business-model-canvas-table.drawio"
+        },
+        {
+          "asset_id": "REF-032",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/story-map.drawio",
+          "local_path": "official-examples/blog/story-map.drawio"
+        },
+        {
+          "asset_id": "REF-033",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/timeline-example.drawio",
+          "local_path": "official-examples/examples/timeline-example.drawio"
+        },
+        {
+          "asset_id": "REF-034",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/timeline-infographic-shapes-vertical.drawio",
+          "local_path": "official-examples/examples/timeline-infographic-shapes-vertical.drawio"
+        },
+        {
+          "asset_id": "REF-035",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/gantt-table.drawio",
+          "local_path": "official-examples/examples/gantt-table.drawio"
+        },
+        {
+          "asset_id": "REF-036",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/business/pert_1.xml",
+          "local_path": "official-examples/templates/business/pert_1.xml"
+        },
+        {
+          "asset_id": "REF-037",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/gemfile-dependency-graph.drawio",
+          "local_path": "official-examples/examples/gemfile-dependency-graph.drawio"
+        },
+        {
+          "asset_id": "REF-038",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/kanban-examples.drawio",
+          "local_path": "official-examples/examples/kanban-examples.drawio"
+        },
+        {
+          "asset_id": "REF-039",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/project-phase-timeline.drawio",
+          "local_path": "official-examples/blog/project-phase-timeline.drawio"
+        },
+        {
+          "asset_id": "REF-040",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/charts/work_breakdown_structure.xml",
+          "local_path": "official-examples/templates/charts/work_breakdown_structure.xml"
+        },
+        {
+          "asset_id": "REF-041",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/probability-tree.drawio",
+          "local_path": "official-examples/blog/probability-tree.drawio"
+        },
+        {
+          "asset_id": "REF-042",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/business/ansoff_matrix.xml",
+          "local_path": "official-examples/templates/business/ansoff_matrix.xml"
+        },
+        {
+          "asset_id": "REF-043",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/SWOT.xml",
+          "local_path": "official-examples/examples/SWOT.xml"
+        },
+        {
+          "asset_id": "REF-044",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/pestel-analysis.drawio",
+          "local_path": "official-examples/examples/pestel-analysis.drawio"
+        },
+        {
+          "asset_id": "REF-045",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/5c-marketing-analysis.drawio",
+          "local_path": "official-examples/examples/5c-marketing-analysis.drawio"
+        },
+        {
+          "asset_id": "REF-046",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/ishikawa-fishbone-examples.drawio",
+          "local_path": "official-examples/examples/ishikawa-fishbone-examples.drawio"
+        },
+        {
+          "asset_id": "REF-047",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/engineering/fault_tree_1.xml",
+          "local_path": "official-examples/templates/engineering/fault_tree_1.xml"
+        },
+        {
+          "asset_id": "REF-048",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/education/compare_diagram.xml",
+          "local_path": "official-examples/templates/education/compare_diagram.xml"
+        },
+        {
+          "asset_id": "REF-049",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/decision_tree_1.xml",
+          "local_path": "official-examples/templates/other/decision_tree_1.xml"
+        },
+        {
+          "asset_id": "REF-050",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/concept-maps.drawio",
+          "local_path": "official-examples/blog/concept-maps.drawio"
+        },
+        {
+          "asset_id": "REF-051",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/VennDiagram.xml",
+          "local_path": "official-examples/examples/VennDiagram.xml"
+        },
+        {
+          "asset_id": "REF-052",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/sankey-diagrams.drawio",
+          "local_path": "official-examples/blog/sankey-diagrams.drawio"
+        },
+        {
+          "asset_id": "REF-053",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/infographic-shape-library-layers.drawio",
+          "local_path": "official-examples/blog/infographic-shape-library-layers.drawio"
+        },
+        {
+          "asset_id": "REF-054",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/infographic-project-steps.drawio",
+          "local_path": "official-examples/examples/infographic-project-steps.drawio"
+        },
+        {
+          "asset_id": "REF-055",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/callouts_1.xml",
+          "local_path": "official-examples/templates/other/callouts_1.xml"
+        },
+        {
+          "asset_id": "REF-056",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/diagram-integrations.drawio",
+          "local_path": "official-examples/blog/diagram-integrations.drawio"
+        },
+        {
+          "asset_id": "REF-057",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/board-visual-tutorial.drawio",
+          "local_path": "official-examples/blog/board-visual-tutorial.drawio"
+        },
+        {
+          "asset_id": "REF-058",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/layers-how-they-work.drawio",
+          "local_path": "official-examples/blog/layers-how-they-work.drawio"
+        },
+        {
+          "asset_id": "REF-059",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/cycle_1.xml",
+          "local_path": "official-examples/templates/other/cycle_1.xml"
+        },
+        {
+          "asset_id": "REF-060",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/gitflow-examples.drawio",
+          "local_path": "official-examples/blog/gitflow-examples.drawio"
+        }
+      ],
+      "notes": "編集可能な実例、Template、Fragment",
+      "reviewed_asset_ids": [
+        "REF-001",
+        "REF-002",
+        "REF-003",
+        "REF-004",
+        "REF-005",
+        "REF-006",
+        "REF-007",
+        "REF-008",
+        "REF-009",
+        "REF-010",
+        "REF-011",
+        "REF-012",
+        "REF-013",
+        "REF-014",
+        "REF-015",
+        "REF-016",
+        "REF-017",
+        "REF-018",
+        "REF-019",
+        "REF-020",
+        "REF-021",
+        "REF-022",
+        "REF-023",
+        "REF-024",
+        "REF-025",
+        "REF-026",
+        "REF-027",
+        "REF-028",
+        "REF-029",
+        "REF-030",
+        "REF-031",
+        "REF-032",
+        "REF-033",
+        "REF-034",
+        "REF-035",
+        "REF-036",
+        "REF-037",
+        "REF-038",
+        "REF-039",
+        "REF-040",
+        "REF-041",
+        "REF-042",
+        "REF-043",
+        "REF-044",
+        "REF-045",
+        "REF-046",
+        "REF-047",
+        "REF-048",
+        "REF-049",
+        "REF-050",
+        "REF-051",
+        "REF-052",
+        "REF-053",
+        "REF-054",
+        "REF-055",
+        "REF-056",
+        "REF-057",
+        "REF-058",
+        "REF-059",
+        "REF-060"
+      ]
+    },
+    {
+      "id": "SRC-003",
+      "title": "draw.io Template diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/manual/templates/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Template"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Template構造",
+      "example_links": [],
+      "notes": "Template構造",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-004",
+      "title": "draw.io Tutorials",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/tutorials/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Tutorial"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "画面全体のスクリーンショットではなく、選択ハンドルやメニュー断片に外周の矢印説明を付加したUIチュートリアル",
+      "example_links": [
+        {
+          "asset_id": "REF-057",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/board-visual-tutorial.drawio",
+          "local_path": "official-examples/blog/board-visual-tutorial.drawio"
+        }
+      ],
+      "notes": "高度機能活用例",
+      "reviewed_asset_ids": [
+        "REF-057"
+      ]
+    },
+    {
+      "id": "SRC-005",
+      "title": "Custom shape libraries",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/manual/advanced/custom-shape-libraries/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Custom Library"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "組織Vocabulary格納方式",
+      "example_links": [],
+      "notes": "組織Vocabulary格納方式",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-006",
+      "title": "Template Library Format",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/reference/format-template-library/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Template Library"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "独自Templateカタログ",
+      "example_links": [],
+      "notes": "独自Templateカタログ",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-007",
+      "title": "Custom Shape Library Format",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/reference/format-custom-shape-library/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Library Format"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Fragment/Template XML形式",
+      "example_links": [],
+      "notes": "Fragment/Template XML形式",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-008",
+      "title": "Public Custom Libraries",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/manual/shapes/public-custom-libraries/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Library"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "外部Library利用",
+      "example_links": [],
+      "notes": "外部Library利用",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-009",
+      "title": "Supported URL parameters",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/reference/supported-url-parameters/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Libraries"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "標準Library一覧",
+      "example_links": [],
+      "notes": "標準Library一覧",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-010",
+      "title": "C4 modelling",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/c4-modelling/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Software"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-001",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/C4.drawio",
+          "local_path": "official-examples/blog/C4.drawio"
+        }
+      ],
+      "notes": "Context/Container/Component",
+      "reviewed_asset_ids": [
+        "REF-001"
+      ]
+    },
+    {
+      "id": "SRC-011",
+      "title": "UML overview",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/uml/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Software"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "実行環境の境界に配備物を配置する; 開始・判断・分岐・終了を区別する; パッケージ包含と依存線を区別する; 利用者とシステム境界内の機能を関連づける; 参加者の横配置とメッセージの縦順序を分離する",
+      "example_links": [
+        {
+          "asset_id": "REF-004",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-deployment-example.drawio",
+          "local_path": "official-examples/examples/uml-deployment-example.drawio"
+        },
+        {
+          "asset_id": "REF-005",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-activity-example.drawio",
+          "local_path": "official-examples/examples/uml-activity-example.drawio"
+        },
+        {
+          "asset_id": "REF-006",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-package-example.drawio",
+          "local_path": "official-examples/examples/uml-package-example.drawio"
+        },
+        {
+          "asset_id": "REF-007",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-use-case-example.drawio",
+          "local_path": "official-examples/examples/uml-use-case-example.drawio"
+        },
+        {
+          "asset_id": "REF-008",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sequence-diagram-examples.drawio",
+          "local_path": "official-examples/examples/sequence-diagram-examples.drawio"
+        }
+      ],
+      "notes": "UML各種",
+      "reviewed_asset_ids": [
+        "REF-004",
+        "REF-005",
+        "REF-006",
+        "REF-007",
+        "REF-008"
+      ]
+    },
+    {
+      "id": "SRC-012",
+      "title": "UML Class",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/uml/class-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Software"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "クラスの名前・属性・操作を区画で分離し関連で結ぶ",
+      "example_links": [
+        {
+          "asset_id": "REF-002",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-class-example.drawio",
+          "local_path": "official-examples/examples/uml-class-example.drawio"
+        }
+      ],
+      "notes": "Class表現",
+      "reviewed_asset_ids": [
+        "REF-002"
+      ]
+    },
+    {
+      "id": "SRC-013",
+      "title": "UML Component",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/uml/component-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Software"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "部品の提供・要求インターフェースを接続する",
+      "example_links": [
+        {
+          "asset_id": "REF-003",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-component-example.drawio",
+          "local_path": "official-examples/examples/uml-component-example.drawio"
+        }
+      ],
+      "notes": "Component/Interface",
+      "reviewed_asset_ids": [
+        "REF-003"
+      ]
+    },
+    {
+      "id": "SRC-014",
+      "title": "UML State Machine",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/uml/state-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Software"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "状態ノードとイベント・条件付き遷移を結ぶ",
+      "example_links": [
+        {
+          "asset_id": "REF-009",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/uml-state-diagram-smart-lock.drawio",
+          "local_path": "official-examples/blog/uml-state-diagram-smart-lock.drawio"
+        }
+      ],
+      "notes": "状態・遷移",
+      "reviewed_asset_ids": [
+        "REF-009"
+      ]
+    },
+    {
+      "id": "SRC-015",
+      "title": "SysML vs UML",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/sysml-vs-uml/",
+      "source_class": "drawio-official",
+      "domains": [
+        "MBSE"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "要求IDと要求内容を分け、導出・充足関係を識別する; ブロック構成と型の関係を階層的に表す",
+      "example_links": [
+        {
+          "asset_id": "REF-013",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sysml-requirements-diagram.drawio",
+          "local_path": "official-examples/examples/sysml-requirements-diagram.drawio"
+        },
+        {
+          "asset_id": "REF-014",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sysml-block-definition-diagram.drawio",
+          "local_path": "official-examples/examples/sysml-block-definition-diagram.drawio"
+        }
+      ],
+      "notes": "Requirement等",
+      "reviewed_asset_ids": [
+        "REF-013",
+        "REF-014"
+      ]
+    },
+    {
+      "id": "SRC-016",
+      "title": "BPMN 2.0",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/bpmn-2-0/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Process"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "イベント・タスク・ゲートウェイの専用記法を使う",
+      "example_links": [
+        {
+          "asset_id": "REF-028",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/bpmn-example.drawio",
+          "local_path": "official-examples/examples/bpmn-example.drawio"
+        }
+      ],
+      "notes": "業務フロー",
+      "reviewed_asset_ids": [
+        "REF-028"
+      ]
+    },
+    {
+      "id": "SRC-017",
+      "title": "Data Flow Diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/data-flow-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Data"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "外部主体・処理・保存先・データ名を区別する",
+      "example_links": [
+        {
+          "asset_id": "REF-010",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/data-flow.drawio",
+          "local_path": "official-examples/blog/data-flow.drawio"
+        }
+      ],
+      "notes": "データ流",
+      "reviewed_asset_ids": [
+        "REF-010"
+      ]
+    },
+    {
+      "id": "SRC-018",
+      "title": "ER diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/entity-relationship-tables/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Data"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "行を持つ実体テーブルを多重度付き関係で結ぶ",
+      "example_links": [
+        {
+          "asset_id": "REF-011",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/er-diagram-library.drawio",
+          "local_path": "official-examples/blog/er-diagram-library.drawio"
+        }
+      ],
+      "notes": "DB・Table・Relation",
+      "reviewed_asset_ids": [
+        "REF-011"
+      ]
+    },
+    {
+      "id": "SRC-019",
+      "title": "Requirements flows",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/requirements-flows/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Requirements"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "要求・画面・データの異種要素を関連で束ねる",
+      "example_links": [
+        {
+          "asset_id": "REF-012",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/requirements-flow.drawio",
+          "local_path": "official-examples/blog/requirements-flow.drawio"
+        }
+      ],
+      "notes": "要求＋UI＋Data混在",
+      "reviewed_asset_ids": [
+        "REF-012"
+      ]
+    },
+    {
+      "id": "SRC-020",
+      "title": "Network diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/network-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Architecture"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Ring、Star、Fully connected、Common Busを同じページで並べ、接続密度を比較する; LANの領域・機器・接続を分離する; 共通バスと機器への接続点を表す; センサーから収集・処理・保存の流れを段階化する; 開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す; オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない",
+      "example_links": [
+        {
+          "asset_id": "REF-015",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/network/topology_1.xml",
+          "local_path": "official-examples/templates/network/topology_1.xml"
+        },
+        {
+          "asset_id": "REF-016",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/network/lan_1.xml",
+          "local_path": "official-examples/templates/network/lan_1.xml"
+        },
+        {
+          "asset_id": "REF-017",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/bus-topology-example.drawio",
+          "local_path": "official-examples/examples/bus-topology-example.drawio"
+        },
+        {
+          "asset_id": "REF-020",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+          "local_path": "official-examples/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml"
+        },
+        {
+          "asset_id": "REF-021",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/dev_test_jenkins_in_k8s.xml",
+          "local_path": "official-examples/templates/gcp/dev_test_jenkins_in_k8s.xml"
+        },
+        {
+          "asset_id": "REF-022",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+          "local_path": "official-examples/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml"
+        }
+      ],
+      "notes": "NW・領域・境界",
+      "reviewed_asset_ids": [
+        "REF-015",
+        "REF-016",
+        "REF-017",
+        "REF-020",
+        "REF-021",
+        "REF-022"
+      ]
+    },
+    {
+      "id": "SRC-021",
+      "title": "AWS diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/aws-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Cloud"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+      "example_links": [
+        {
+          "asset_id": "REF-018",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/aws-simple-architecture.drawio",
+          "local_path": "official-examples/examples/aws-simple-architecture.drawio"
+        }
+      ],
+      "notes": "Vendor icon/container",
+      "reviewed_asset_ids": [
+        "REF-018"
+      ]
+    },
+    {
+      "id": "SRC-022",
+      "title": "Gitflow diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/gitflow-diagram/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Dev"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "並行する枝と合流を時間順序で示す",
+      "example_links": [
+        {
+          "asset_id": "REF-060",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/gitflow-examples.drawio",
+          "local_path": "official-examples/blog/gitflow-examples.drawio"
+        }
+      ],
+      "notes": "Branch/時系列",
+      "reviewed_asset_ids": [
+        "REF-060"
+      ]
+    },
+    {
+      "id": "SRC-023",
+      "title": "Dependency graphs",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/dependency-graphs/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Dependency"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "作業の前後関係と分岐・合流をネットワークで示す; 複数の依存先を有向グラフとして配置する",
+      "example_links": [
+        {
+          "asset_id": "REF-036",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/business/pert_1.xml",
+          "local_path": "official-examples/templates/business/pert_1.xml"
+        },
+        {
+          "asset_id": "REF-037",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/gemfile-dependency-graph.drawio",
+          "local_path": "official-examples/examples/gemfile-dependency-graph.drawio"
+        }
+      ],
+      "notes": "依存・PERT",
+      "reviewed_asset_ids": [
+        "REF-036",
+        "REF-037"
+      ]
+    },
+    {
+      "id": "SRC-024",
+      "title": "Gantt charts",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/gantt-charts/",
+      "source_class": "drawio-official",
+      "domains": [
+        "PM"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "タスク行と日程列に期間バーを重ねる",
+      "example_links": [
+        {
+          "asset_id": "REF-035",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/gantt-table.drawio",
+          "local_path": "official-examples/examples/gantt-table.drawio"
+        }
+      ],
+      "notes": "日程",
+      "reviewed_asset_ids": [
+        "REF-035"
+      ]
+    },
+    {
+      "id": "SRC-025",
+      "title": "Kanban boards",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/kanban-boards/",
+      "source_class": "drawio-official",
+      "domains": [
+        "PM"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "状態列と作業カードで滞留を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-038",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/kanban-examples.drawio",
+          "local_path": "official-examples/examples/kanban-examples.drawio"
+        }
+      ],
+      "notes": "状態・タスク",
+      "reviewed_asset_ids": [
+        "REF-038"
+      ]
+    },
+    {
+      "id": "SRC-026",
+      "title": "Timelines and roadmaps",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/timeline-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "PM"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "時間軸上に節目と説明を配置する; 縦タイムライン、蛇行する連続工程、番号付き横帯、旗付き工程を同ページで比較する; 横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+      "example_links": [
+        {
+          "asset_id": "REF-033",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/timeline-example.drawio",
+          "local_path": "official-examples/examples/timeline-example.drawio"
+        },
+        {
+          "asset_id": "REF-034",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/timeline-infographic-shapes-vertical.drawio",
+          "local_path": "official-examples/examples/timeline-infographic-shapes-vertical.drawio"
+        },
+        {
+          "asset_id": "REF-039",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/project-phase-timeline.drawio",
+          "local_path": "official-examples/blog/project-phase-timeline.drawio"
+        }
+      ],
+      "notes": "Roadmap/Milestone",
+      "reviewed_asset_ids": [
+        "REF-033",
+        "REF-034",
+        "REF-039"
+      ]
+    },
+    {
+      "id": "SRC-027",
+      "title": "Cross-functional flowcharts",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/cross-functional-flowcharts/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Process"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "工程と担当の交差で引継ぎを可視化する",
+      "example_links": [
+        {
+          "asset_id": "REF-027",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/flowcharts/cross_functional_flowchart_1.xml",
+          "local_path": "official-examples/templates/flowcharts/cross_functional_flowchart_1.xml"
+        }
+      ],
+      "notes": "Swimlane/Container table",
+      "reviewed_asset_ids": [
+        "REF-027"
+      ]
+    },
+    {
+      "id": "SRC-028",
+      "title": "Role & Responsibility",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/role-responsibility-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Management"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す",
+      "example_links": [
+        {
+          "asset_id": "REF-029",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/website-roles-products.drawio",
+          "local_path": "official-examples/blog/website-roles-products.drawio"
+        }
+      ],
+      "notes": "役割・責任",
+      "reviewed_asset_ids": [
+        "REF-029"
+      ]
+    },
+    {
+      "id": "SRC-029",
+      "title": "Organisation Charts",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/org-charts/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Organisation"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "親子の責任系統を上から下へ分岐する",
+      "example_links": [
+        {
+          "asset_id": "REF-030",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/orgchart.xml",
+          "local_path": "official-examples/templates/basic/orgchart.xml"
+        }
+      ],
+      "notes": "Hierarchy",
+      "reviewed_asset_ids": [
+        "REF-030"
+      ]
+    },
+    {
+      "id": "SRC-030",
+      "title": "Ishikawa / Fishbone",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/ishikawa-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Analysis"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "結果へ向かう主軸に原因分類を枝として付加する",
+      "example_links": [
+        {
+          "asset_id": "REF-046",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/ishikawa-fishbone-examples.drawio",
+          "local_path": "official-examples/examples/ishikawa-fishbone-examples.drawio"
+        }
+      ],
+      "notes": "原因分析",
+      "reviewed_asset_ids": [
+        "REF-046"
+      ]
+    },
+    {
+      "id": "SRC-031",
+      "title": "SWOT / 5C / PEST",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/marketing-analysis-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Analysis"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "独立する二軸を四象限に交差させる; 内外と正負の観点を四区画に整理する; 六つの外部環境要因を独立領域として配置する; 市場の五観点を比較できるまとまりへ配置する",
+      "example_links": [
+        {
+          "asset_id": "REF-042",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/business/ansoff_matrix.xml",
+          "local_path": "official-examples/templates/business/ansoff_matrix.xml"
+        },
+        {
+          "asset_id": "REF-043",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/SWOT.xml",
+          "local_path": "official-examples/examples/SWOT.xml"
+        },
+        {
+          "asset_id": "REF-044",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/pestel-analysis.drawio",
+          "local_path": "official-examples/examples/pestel-analysis.drawio"
+        },
+        {
+          "asset_id": "REF-045",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/5c-marketing-analysis.drawio",
+          "local_path": "official-examples/examples/5c-marketing-analysis.drawio"
+        }
+      ],
+      "notes": "2×2/List/分析",
+      "reviewed_asset_ids": [
+        "REF-042",
+        "REF-043",
+        "REF-044",
+        "REF-045"
+      ]
+    },
+    {
+      "id": "SRC-032",
+      "title": "Concept Maps",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/concept-maps/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Analysis"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "概念同士を関係ラベル付きで接続する",
+      "example_links": [
+        {
+          "asset_id": "REF-050",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/concept-maps.drawio",
+          "local_path": "official-examples/blog/concept-maps.drawio"
+        }
+      ],
+      "notes": "思考整理",
+      "reviewed_asset_ids": [
+        "REF-050"
+      ]
+    },
+    {
+      "id": "SRC-033",
+      "title": "Threat Modelling",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/threat-modelling/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Security"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "データ経路と信頼境界を重ねて脅威の位置を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-024",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/threat-modelling.drawio",
+          "local_path": "official-examples/blog/threat-modelling.drawio"
+        }
+      ],
+      "notes": "Trust Boundary/Threat",
+      "reviewed_asset_ids": [
+        "REF-024"
+      ]
+    },
+    {
+      "id": "SRC-034",
+      "title": "Probability & Risk",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/probability-risk-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Risk"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "コインと骰子の条件付き分岐と経路確率を対応づける。リスクの重大度評価表ではない; 望ましくない事象を論理条件へ分解する; 判断と選択枝を階層化する",
+      "example_links": [
+        {
+          "asset_id": "REF-041",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/probability-tree.drawio",
+          "local_path": "official-examples/blog/probability-tree.drawio"
+        },
+        {
+          "asset_id": "REF-047",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/engineering/fault_tree_1.xml",
+          "local_path": "official-examples/templates/engineering/fault_tree_1.xml"
+        },
+        {
+          "asset_id": "REF-049",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/decision_tree_1.xml",
+          "local_path": "official-examples/templates/other/decision_tree_1.xml"
+        }
+      ],
+      "notes": "Risk表現",
+      "reviewed_asset_ids": [
+        "REF-041",
+        "REF-047",
+        "REF-049"
+      ]
+    },
+    {
+      "id": "SRC-035",
+      "title": "Charts and Graphs",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/charts-in-drawio/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Data Viz"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+      "example_links": [
+        {
+          "asset_id": "REF-048",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/education/compare_diagram.xml",
+          "local_path": "official-examples/templates/education/compare_diagram.xml"
+        }
+      ],
+      "notes": "Presentation chart",
+      "reviewed_asset_ids": [
+        "REF-048"
+      ]
+    },
+    {
+      "id": "SRC-036",
+      "title": "Sankey diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/sankey-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Data Viz"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+      "example_links": [
+        {
+          "asset_id": "REF-052",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/sankey-diagrams.drawio",
+          "local_path": "official-examples/blog/sankey-diagrams.drawio"
+        }
+      ],
+      "notes": "Flow量/分岐",
+      "reviewed_asset_ids": [
+        "REF-052"
+      ]
+    },
+    {
+      "id": "SRC-037",
+      "title": "Layered Infographics",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/tutorials/infographics-layered-shapes/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Infographic"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "円柱・階段・ピラミッド・同心円・層状半円など同じ層構造の複数表現を横に並べる; 繰返し形状の配置で工程の順番を示す; 二つの人物図形それぞれへ吹き出しの説明を対応づける",
+      "example_links": [
+        {
+          "asset_id": "REF-053",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/infographic-shape-library-layers.drawio",
+          "local_path": "official-examples/blog/infographic-shape-library-layers.drawio"
+        },
+        {
+          "asset_id": "REF-054",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/infographic-project-steps.drawio",
+          "local_path": "official-examples/examples/infographic-project-steps.drawio"
+        },
+        {
+          "asset_id": "REF-055",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/callouts_1.xml",
+          "local_path": "official-examples/templates/other/callouts_1.xml"
+        }
+      ],
+      "notes": "3D Layer/Callout",
+      "reviewed_asset_ids": [
+        "REF-053",
+        "REF-054",
+        "REF-055"
+      ]
+    },
+    {
+      "id": "SRC-038",
+      "title": "Interactive layers",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/tutorials/interactive-diagram-layers/",
+      "source_class": "drawio-official",
+      "domains": [
+        "Advanced"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "重ねる説明要素をレイヤー単位で管理する",
+      "example_links": [
+        {
+          "asset_id": "REF-058",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/layers-how-they-work.drawio",
+          "local_path": "official-examples/blog/layers-how-they-work.drawio"
+        }
+      ],
+      "notes": "Layer/表示切替",
+      "reviewed_asset_ids": [
+        "REF-058"
+      ]
+    },
+    {
+      "id": "SRC-039",
+      "title": "AWS Architecture Center",
+      "provider": "AWS",
+      "url": "https://aws.amazon.com/architecture/",
+      "source_class": "vendor-official",
+      "domains": [
+        "Cloud外部参照"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "実務Architecture",
+      "example_links": [],
+      "notes": "実務Architecture",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-040",
+      "title": "AWS Reference Architecture Diagrams",
+      "provider": "AWS",
+      "url": "https://docs.aws.amazon.com/reference-architecture-diagrams/",
+      "source_class": "vendor-official",
+      "domains": [
+        "Cloud外部参照"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "構成密度・Legend",
+      "example_links": [],
+      "notes": "構成密度・Legend",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-041",
+      "title": "AWS Architecture Icons",
+      "provider": "AWS",
+      "url": "https://aws.amazon.com/architecture/icons/",
+      "source_class": "vendor-official",
+      "domains": [
+        "Cloud外部参照"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "アイコン使用規則",
+      "example_links": [],
+      "notes": "アイコン使用規則",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-042",
+      "title": "Azure Architecture Center",
+      "provider": "Microsoft",
+      "url": "https://learn.microsoft.com/azure/architecture/",
+      "source_class": "vendor-official",
+      "domains": [
+        "Cloud外部参照"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Architecture Pattern",
+      "example_links": [],
+      "notes": "Architecture Pattern",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-043",
+      "title": "Azure Architecture Gallery",
+      "provider": "Microsoft",
+      "url": "https://learn.microsoft.com/azure/architecture/browse/",
+      "source_class": "vendor-official",
+      "domains": [
+        "Cloud外部参照"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited-empty-body",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Architecture gallery is a dynamically rendered entry point; body unavailable in Web extraction.",
+      "example_links": [],
+      "notes": "大規模実例",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-044",
+      "title": "Google Cloud Architecture Center",
+      "provider": "Google Cloud",
+      "url": "https://docs.cloud.google.com/architecture",
+      "source_class": "vendor-official",
+      "domains": [
+        "Cloud外部参照"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "センサーから収集・処理・保存の流れを段階化する; オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない",
+      "example_links": [
+        {
+          "asset_id": "REF-020",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+          "local_path": "official-examples/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml"
+        },
+        {
+          "asset_id": "REF-022",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+          "local_path": "official-examples/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml"
+        }
+      ],
+      "notes": "Cloud構成",
+      "reviewed_asset_ids": [
+        "REF-020",
+        "REF-022"
+      ]
+    },
+    {
+      "id": "SRC-045",
+      "title": "C4 Model official diagrams",
+      "provider": "C4 model",
+      "url": "https://c4model.com/diagrams",
+      "source_class": "vendor-official",
+      "domains": [
+        "Architecture"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-001",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/C4.drawio",
+          "local_path": "official-examples/blog/C4.drawio"
+        }
+      ],
+      "notes": "抽象度設計",
+      "reviewed_asset_ids": [
+        "REF-001"
+      ]
+    },
+    {
+      "id": "SRC-046",
+      "title": "Kubernetes Cluster Architecture",
+      "provider": "Kubernetes",
+      "url": "https://kubernetes.io/docs/concepts/architecture/",
+      "source_class": "vendor-official",
+      "domains": [
+        "Container"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-021",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/dev_test_jenkins_in_k8s.xml",
+          "local_path": "official-examples/templates/gcp/dev_test_jenkins_in_k8s.xml"
+        }
+      ],
+      "notes": "Cluster/Node/Control plane",
+      "reviewed_asset_ids": [
+        "REF-021"
+      ]
+    },
+    {
+      "id": "SRC-047",
+      "title": "NIST Zero Trust Architecture",
+      "provider": "NIST",
+      "url": "https://www.nist.gov/publications/zero-trust-architecture",
+      "source_class": "standard-body",
+      "domains": [
+        "Security"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "Control/Data plane",
+      "example_links": [],
+      "notes": "Control/Data plane",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-048",
+      "title": "NIST ZTA Reference Architecture",
+      "provider": "NIST",
+      "url": "https://pages.nist.gov/zero-trust-architecture/VolumeB/architecture.html",
+      "source_class": "standard-body",
+      "domains": [
+        "Security"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "論理構成＋Supporting Systems",
+      "example_links": [],
+      "notes": "論理構成＋Supporting Systems",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-049",
+      "title": "OWASP Threat Modelling",
+      "provider": "OWASP",
+      "url": "https://wiki.owasp.org/images/b/b1/Slide_Deck_-_Threat_Modelling.pdf",
+      "source_class": "standard-body",
+      "domains": [
+        "Security"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-fetch-failed",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool Internal Error; PDF content not read; keep original seed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "DFD/Trust boundary",
+      "example_links": [],
+      "notes": "DFD/Trust boundary",
+      "alternative_source_refs": [
+        "SRC-057"
+      ],
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-050",
+      "title": "Azure architecture diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/azure-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "cloud"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "サービスと領域を階層化し、通信経路を結ぶ",
+      "example_links": [
+        {
+          "asset_id": "REF-019",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/azure-architecture-example.drawio",
+          "local_path": "official-examples/blog/azure-architecture-example.drawio"
+        }
+      ],
+      "notes": "Azure architecture diagrams",
+      "reviewed_asset_ids": [
+        "REF-019"
+      ]
+    },
+    {
+      "id": "SRC-051",
+      "title": "Circular flowcharts",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/circular-flowcharts/",
+      "source_class": "drawio-official",
+      "domains": [
+        "process"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "中央のFood Chain Cycleを六つの周辺六角形で囲み、隣接する要素間の周回を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-059",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/cycle_1.xml",
+          "local_path": "official-examples/templates/other/cycle_1.xml"
+        }
+      ],
+      "notes": "Circular flowcharts",
+      "reviewed_asset_ids": [
+        "REF-059"
+      ]
+    },
+    {
+      "id": "SRC-052",
+      "title": "Rack diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/rack-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "infrastructure"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "ラックの物理位置を縦方向のスロットで表す",
+      "example_links": [
+        {
+          "asset_id": "REF-023",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/rack-diagram-simple-server.drawio",
+          "local_path": "official-examples/examples/rack-diagram-simple-server.drawio"
+        }
+      ],
+      "notes": "Rack diagrams",
+      "reviewed_asset_ids": [
+        "REF-023"
+      ]
+    },
+    {
+      "id": "SRC-053",
+      "title": "Story mapping",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/story-mapping/",
+      "source_class": "drawio-official",
+      "domains": [
+        "business"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "ユーザー行動の横順序と優先度の縦構造を分ける",
+      "example_links": [
+        {
+          "asset_id": "REF-032",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/story-map.drawio",
+          "local_path": "official-examples/blog/story-map.drawio"
+        }
+      ],
+      "notes": "Story mapping",
+      "reviewed_asset_ids": [
+        "REF-032"
+      ]
+    },
+    {
+      "id": "SRC-054",
+      "title": "Swimlane diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/swimlane-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "process"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "処理順序に担当レーンを重ねる",
+      "example_links": [
+        {
+          "asset_id": "REF-026",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/swimlanes.xml",
+          "local_path": "official-examples/templates/basic/swimlanes.xml"
+        }
+      ],
+      "notes": "Swimlane diagrams",
+      "reviewed_asset_ids": [
+        "REF-026"
+      ]
+    },
+    {
+      "id": "SRC-055",
+      "title": "Venn diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/venn-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "analysis"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "集合領域の重なりで共通部分を示す",
+      "example_links": [
+        {
+          "asset_id": "REF-051",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/VennDiagram.xml",
+          "local_path": "official-examples/examples/VennDiagram.xml"
+        }
+      ],
+      "notes": "Venn diagrams",
+      "reviewed_asset_ids": [
+        "REF-051"
+      ]
+    },
+    {
+      "id": "SRC-056",
+      "title": "Tree diagrams",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/diagram-types/tree-diagrams/",
+      "source_class": "drawio-official",
+      "domains": [
+        "hierarchy"
+      ],
+      "priority": "A",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "成果物や仕事を階層分解する",
+      "example_links": [
+        {
+          "asset_id": "REF-040",
+          "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/charts/work_breakdown_structure.xml",
+          "local_path": "official-examples/templates/charts/work_breakdown_structure.xml"
+        }
+      ],
+      "notes": "Tree diagrams",
+      "reviewed_asset_ids": [
+        "REF-040"
+      ]
+    },
+    {
+      "id": "SRC-057",
+      "title": "OWASP Threat Modeling",
+      "provider": "OWASP",
+      "url": "https://community.owasp.org/Threat_Modeling",
+      "source_class": "standard-body",
+      "domains": [
+        "security"
+      ],
+      "priority": "B",
+      "crawl_policy": "Read public primary-source pages; fetch editable XML/text only after asset-specific license check; do not download remote images.",
+      "verification": {
+        "verified_at": "2026-10-04",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open",
+        "notes": "Web tool returned source content; HTTP code not exposed."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "No asset-specific reproduction permission verified; analyze structure and create independent examples.",
+      "summary": "脅威・対策・検証の四質問",
+      "example_links": [],
+      "notes": "脅威・対策・検証の四質問",
+      "reviewed_asset_ids": []
+    },
+    {
+      "id": "SRC-058",
+      "title": "Draw.io editor configuration",
+      "provider": "draw.io / JGraph",
+      "url": "https://www.drawio.com/docs/reference/configure-diagram-editor/",
+      "source_class": "drawio-official",
+      "domains": [
+        "設定・再利用"
+      ],
+      "priority": "A",
+      "crawl_policy": "Public primary-source documentation; structural analysis only.",
+      "verification": {
+        "verified_at": "2026-10-05",
+        "status": "web-visited",
+        "http_status": null,
+        "method": "web.open and web.find",
+        "notes": "Verified customTemplates object array and defaultCustomLibraries U + URL-encoded URI. No automatic editor installation tested."
+      },
+      "license": null,
+      "license_verified": false,
+      "license_scope": "Analyze configuration; no reproduction license assumed.",
+      "summary": "customTemplatesはテンプレート属性の配列。defaultCustomLibrariesはU付きURLエンコードURI。templateFileは全一覧の置換。",
+      "example_links": []
+    }
+  ]
+}

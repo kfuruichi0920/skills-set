@@ -1,0 +1,131 @@
+{
+  "id": "DV-065",
+  "key": "feature",
+  "title_ja": "機能の全体像と対象を対応付ける",
+  "title_en": "Feature",
+  "domain": [
+    "presentation"
+  ],
+  "purpose": "主要機能は誰の何を支えるか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "core-and-satellites"
+  ],
+  "composition_pattern": "core-and-satellites",
+  "source_refs": [
+    "SRC-035"
+  ],
+  "information_structure": [
+    "association",
+    "attributes",
+    "core-and-satellites"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "core-and-satellites",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T04",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "association"
+  ],
+  "when_to_use": [
+    "主要機能は誰の何を支えるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "association",
+    "attributes",
+    "core-and-satellites",
+    "feature",
+    "presentation",
+    "機能の全体像と対象を対応付ける"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "core",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n2",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n3",
+      "semantic": "rectangle"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:46:32.127839+00:00",
+    "findings": "主対象と四機能の関係を確認。元の機能区画をハブ配置へ独自に適応した例であり、元図が同じ配置だったとは記録しない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-065/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-056",
+        "source_refs": [
+          "SRC-001",
+          "SRC-002"
+        ],
+        "analysis": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+        "visual_observation": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-056.png",
+        "original": "sources/official-examples/blog/diagram-integrations.drawio"
+      }
+    ],
+    "adaptation": "原図は機能カテゴリの区画。本例では機能と主対象の関係へ独自に再配置した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "6bcc38f6316408bbb38fbbd9f69f267aa92ce4b4c967852d8f02380d5cef7642",
+  "preview_hash": "7049bf07e66078c75a2519aaeb66478ac58f8e1603aa50e81985b54ae7e3527b",
+  "pattern": "core-and-satellites",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "DV-021",
+  "key": "aws",
+  "title_ja": "LambdaとRDSの構成例",
+  "title_en": "Aws",
+  "domain": [
+    "infrastructure"
+  ],
+  "purpose": "明示されたAWSサービスはどう連携するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "vendor-service-flow"
+  ],
+  "composition_pattern": "vendor-service-flow",
+  "source_refs": [
+    "SRC-021",
+    "SRC-041"
+  ],
+  "information_structure": [
+    "attributes",
+    "flow",
+    "vendor-service-flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "vendor-service-flow",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "aws4"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T05",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "明示されたAWSサービスはどう連携するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "LambdaとRDSの構成例",
+    "attributes",
+    "aws",
+    "flow",
+    "infrastructure",
+    "vendor-service-flow"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "s0",
+      "semantic": "AWS Lambda"
+    },
+    {
+      "node": "s1",
+      "semantic": "Amazon RDS"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:14:11.389981+00:00",
+    "findings": "実在するLambda・RDSの識別図形、下側のサービス名、SQL要求の接続をPNGで確認。製品識別色のみを例外として保持。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-021/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-018",
+        "source_refs": [
+          "SRC-021",
+          "SRC-002"
+        ],
+        "analysis": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+        "visual_observation": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-018.png",
+        "original": "sources/official-examples/examples/aws-simple-architecture.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "f7e38f16389822a6505b7552464e9b243e3a3c11d555ea95d07057c0bc4edb8e",
+  "preview_hash": "bf15b1978fb237fa1d1112b6691fe708236b68dda2090f69d0f158b2a3c575c5",
+  "pattern": "vendor-service-flow",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

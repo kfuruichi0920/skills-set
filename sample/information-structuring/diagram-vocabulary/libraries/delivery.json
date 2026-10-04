@@ -1,0 +1,5 @@
+{
+  "base_url": "http://127.0.0.1:8765/",
+  "template_library": "http://127.0.0.1:8765/libraries/template-library.xml",
+  "custom_library": "http://127.0.0.1:8765/libraries/diagram-vocabulary.xml"
+}

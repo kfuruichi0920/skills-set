@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-016" name="要求・設計・検証のトレース">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#F8FAFC">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="要求・設計・検証のトレース" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="要求を何で実現し、何で検証するか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="共通IDで導出を追う。対応のない要求や検証は別途一覧化する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="100" y="660" width="1150" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="trace" value="" parent="1" vertex="1" style="shape=table;container=1;collapsible=0;startSize=0;childLayout=tableLayout;fixedHeader=1;">
+          <mxGeometry x="120" y="260" width="1040" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r0" value="" parent="trace" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="0" width="1040" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r0_c0" value="要求" parent="trace_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#1D4ED8;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r0_c1" value="設計" parent="trace_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#1D4ED8;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="320" y="0" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r0_c2" value="検証" parent="trace_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#1D4ED8;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="640" y="0" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r1" value="" parent="trace" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="90" width="1040" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r1_c0" value="REQ-01 空き検索" parent="trace_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r1_c1" value="API-01 検索" parent="trace_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="320" y="0" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r1_c2" value="TEST-01 空き結果" parent="trace_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="640" y="0" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r2" value="" parent="trace" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="180" width="1040" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r2_c0" value="REQ-02 予約受付" parent="trace_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r2_c1" value="API-02 登録" parent="trace_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="320" y="0" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="trace_r2_c2" value="TEST-02 重複を防ぐ" parent="trace_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="640" y="0" width="400" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

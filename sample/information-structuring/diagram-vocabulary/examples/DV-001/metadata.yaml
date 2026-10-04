@@ -1,0 +1,131 @@
+{
+  "id": "DV-001",
+  "key": "context",
+  "title_ja": "システムの利用者と外部境界",
+  "title_en": "Context",
+  "domain": [
+    "software"
+  ],
+  "purpose": "誰が対象システムを利用し、何と連携するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "hub-and-spoke"
+  ],
+  "composition_pattern": "hub-and-spoke",
+  "source_refs": [
+    "SRC-010",
+    "SRC-045"
+  ],
+  "information_structure": [
+    "attributes",
+    "context",
+    "flow",
+    "relation"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "hub-and-spoke",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "誰が対象システムを利用し、何と連携するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "context",
+    "flow",
+    "hub-and-spoke",
+    "relation",
+    "software",
+    "システムの利用者と外部境界"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "system",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "user",
+      "semantic": "umlActor"
+    },
+    {
+      "node": "admin",
+      "semantic": "umlActor"
+    },
+    {
+      "node": "mail",
+      "semantic": "cloud"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:04:12.981138+00:00",
+    "findings": "利用者の名称を図形の下へ移し、外部通知を中央寄せへ修正。三つの経路と主対象を個別PNGで確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-001/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-001",
+        "source_refs": [
+          "SRC-010",
+          "SRC-045",
+          "SRC-002"
+        ],
+        "analysis": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+        "visual_observation": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-001.png",
+        "original": "sources/official-examples/blog/C4.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "e07747f6e055f8af31383fc5f6aabd5892907e6504e3b6ad9d77a568125661e1",
+  "preview_hash": "fbbf88f7bde0bf05e86e216d657587c597fadb241a8f9a34165a4bda446f21ff",
+  "pattern": "hub-and-spoke",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

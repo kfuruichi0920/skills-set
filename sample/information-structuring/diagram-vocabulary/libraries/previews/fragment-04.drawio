@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="fragment-4" name="主系と複製先">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r0" value="地域A：主系" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="0.0" y="0.0" width="510" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" value="地域B：複製先" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="620.0" y="0.0" width="510" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="app0" value="予約API" parent="r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="40" y="100" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="db0" value="予約データ" parent="r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.database;">
+          <mxGeometry x="280" y="100" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="app1" value="予約API" parent="r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="40" y="100" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="db1" value="予約データ" parent="r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.database;">
+          <mxGeometry x="280" y="100" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="app0" target="db0" parent="r0" edge="1" value="SQL" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="app1" target="db1" parent="r1" edge="1" value="SQL" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" source="db0" target="db1" parent="1" edge="1" value="非同期複製" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460.0" y="350.0" />
+              <mxPoint x="920.0" y="350.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

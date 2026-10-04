@@ -1,0 +1,140 @@
+{
+  "id": "DV-048",
+  "key": "wbs",
+  "title_ja": "成果物から作業を分解する",
+  "title_en": "Wbs",
+  "domain": [
+    "project-management"
+  ],
+  "purpose": "完成に必要な成果物と作業は何か",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "work-breakdown"
+  ],
+  "composition_pattern": "work-breakdown",
+  "source_refs": [
+    "SRC-056"
+  ],
+  "information_structure": [
+    "association",
+    "attributes",
+    "work-breakdown"
+  ],
+  "layout": {
+    "primary_axis": "vertical",
+    "grouping": "work-breakdown",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T03",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "association"
+  ],
+  "when_to_use": [
+    "完成に必要な成果物と作業は何かを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "依存関係や実時間の予定をこの木だけで示したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "association",
+    "attributes",
+    "project-management",
+    "wbs",
+    "work-breakdown",
+    "成果物から作業を分解する"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "top",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "b0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "l0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "b1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "l1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "b2",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "l2",
+      "semantic": "rectangle"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:34:40.952748+00:00",
+    "findings": "成果物とそれを作る作業の二段階を確認。WBSの分解観点を成果物と明示し、期間・依存を木の位置から推定しない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-048/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-040",
+        "source_refs": [
+          "SRC-056",
+          "SRC-002"
+        ],
+        "analysis": "成果物や仕事を階層分解する",
+        "visual_observation": "成果物や仕事を階層分解する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-040.png",
+        "original": "sources/official-examples/templates/charts/work_breakdown_structure.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "8575da7795670fce722687bf57306530bb9cc0cb5dd4e99901eb751d70561b4e",
+  "preview_hash": "4a8d23c9d1668cba9c08aa6bb70bc4df3ca310d1a2404f89dfaaa99aa6e92c7d",
+  "pattern": "work-breakdown",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

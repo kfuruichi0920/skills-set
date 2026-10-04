@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="fragment-5" name="三層の依存">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="layer0" value="画面層" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="0.0" y="0.0" width="840" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="layer1" value="業務層" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="0.0" y="180.0" width="840" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="layer2" value="データ層" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="0.0" y="360.0" width="840" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="n0" value="入力・表示" parent="layer0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="55" y="48" width="730" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="空き確認・予約受付" parent="layer1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="55" y="48" width="730" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="予約の永続化" parent="layer2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="55" y="48" width="730" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="n0" target="n1" parent="1" edge="1" value="下位層へ依存" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="n1" target="n2" parent="1" edge="1" value="下位層へ依存" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

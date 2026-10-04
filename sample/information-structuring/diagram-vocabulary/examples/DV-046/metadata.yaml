@@ -1,0 +1,131 @@
+{
+  "id": "DV-046",
+  "key": "kanban",
+  "title_ja": "タスクの状態と仕掛数",
+  "title_en": "Kanban",
+  "domain": [
+    "project-management"
+  ],
+  "purpose": "どのタスクがどの状態にあり、仕掛はいくつか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "status-columns"
+  ],
+  "composition_pattern": "status-columns",
+  "source_refs": [
+    "SRC-025"
+  ],
+  "information_structure": [
+    "containment",
+    "state",
+    "work"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "status-columns",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T03",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "どのタスクがどの状態にあり、仕掛はいくつかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "containment",
+    "kanban",
+    "project-management",
+    "state",
+    "status-columns",
+    "work",
+    "タスクの状態と仕掛数"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "c00",
+      "semantic": "note"
+    },
+    {
+      "node": "c01",
+      "semantic": "note"
+    },
+    {
+      "node": "c10",
+      "semantic": "note"
+    },
+    {
+      "node": "c11",
+      "semantic": "note"
+    },
+    {
+      "node": "c20",
+      "semantic": "note"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:33:24.992544+00:00",
+    "findings": "予定・対応中・完了を列と状態色で区別。対応中二件がWIP上限2以内であること、色だけに依存しない見出しを確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-046/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-038",
+        "source_refs": [
+          "SRC-025",
+          "SRC-002"
+        ],
+        "analysis": "状態列と作業カードで滞留を示す",
+        "visual_observation": "状態列と作業カードで滞留を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-038.png",
+        "original": "sources/official-examples/examples/kanban-examples.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "fd9d516c2b5337e66f47b6a89d9774f24e717dcb64f9a52cc6c276c564bd712b",
+  "preview_hash": "49527e248c41b2d9e96cd53af4d0578601581a044319887ab054d7979deda837",
+  "pattern": "status-columns",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

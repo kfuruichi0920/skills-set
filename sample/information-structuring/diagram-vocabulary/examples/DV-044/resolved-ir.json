@@ -1,0 +1,242 @@
+{
+  "id": "DV-044",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "並行作業の合流と所要日数",
+    "purpose": "並行作業はどこで合流し、どの経路が長いか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "dependency-network",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "並行作業の合流と所要日数",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "並行作業はどこで合流し、どの経路が長いか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "start",
+      "label": "A：準備 2日",
+      "x": 70,
+      "y": 385,
+      "width": 215,
+      "height": 90,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.document",
+      "shape_query": "document",
+      "semantic_type": "document",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.document",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "up",
+      "label": "B：試作 4日",
+      "x": 510,
+      "y": 245,
+      "width": 240,
+      "height": 85,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "down",
+      "label": "C：資料 3日",
+      "x": 510,
+      "y": 525,
+      "width": 240,
+      "height": 85,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "end",
+      "label": "D：確認 1日",
+      "x": 1000,
+      "y": 385,
+      "width": 220,
+      "height": 90,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "calc",
+      "label": "所要日数の例：A→B→D は7日、A→C→D は6日。資源制約を入れない場合の比較。",
+      "x": 80,
+      "y": 735,
+      "width": 1150,
+      "height": 60,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "start",
+      "target": "up",
+      "label": "A完了後",
+      "semantic_type": "dependency",
+      "waypoints": [
+        [
+          360,
+          407.5
+        ],
+        [
+          360,
+          287.5
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=1;exitY=0.25;entryX=0;entryY=0.5;strokeColor=#172B4D;"
+    },
+    {
+      "id": "e1",
+      "source": "start",
+      "target": "down",
+      "label": "A完了後",
+      "semantic_type": "dependency",
+      "waypoints": [
+        [
+          360,
+          452.5
+        ],
+        [
+          360,
+          567.5
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=1;exitY=0.75;entryX=0;entryY=0.5;strokeColor=#172B4D;"
+    },
+    {
+      "id": "e2",
+      "source": "up",
+      "target": "end",
+      "label": "B完了後",
+      "semantic_type": "dependency",
+      "waypoints": [
+        [
+          860,
+          287.5
+        ],
+        [
+          860,
+          407.5
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=1;exitY=0.5;entryX=0;entryY=0.25;strokeColor=#172B4D;"
+    },
+    {
+      "id": "e3",
+      "source": "down",
+      "target": "end",
+      "label": "C完了後",
+      "semantic_type": "dependency",
+      "waypoints": [
+        [
+          860,
+          567.5
+        ],
+        [
+          860,
+          452.5
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=1;exitY=0.5;entryX=0;entryY=0.75;strokeColor=#172B4D;"
+    }
+  ],
+  "tables": []
+}

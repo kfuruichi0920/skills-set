@@ -1,0 +1,18 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Yu Gothic"
+skinparam defaultFontSize 18
+package 予約業務 {
+ [受付]
+ [取消]
+}
+package 共通 {
+ [認証]
+ [設備定義]
+}
+[受付] ..> [認証] : 利用
+[受付] ..> [設備定義] : 参照
+[取消] ..> [認証] : 利用
+@enduml

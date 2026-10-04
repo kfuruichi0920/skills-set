@@ -1,0 +1,138 @@
+{
+  "id": "DV-051",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "内外の要因を四領域で整理する",
+    "purpose": "強み・弱み・機会・脅威をどう区別するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "swot-quadrants",
+    "theme": "T09"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "内外の要因を四領域で整理する",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "強み・弱み・機会・脅威をどう区別するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "t0",
+      "label": "設備情報が揃う",
+      "x": 35,
+      "y": 80,
+      "width": 430,
+      "height": 95,
+      "parent": "q0",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "t1",
+      "label": "予約需要の増加",
+      "x": 35,
+      "y": 80,
+      "width": 430,
+      "height": 95,
+      "parent": "q1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "t2",
+      "label": "受付の属人化",
+      "x": 35,
+      "y": 80,
+      "width": 430,
+      "height": 95,
+      "parent": "q2",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "t3",
+      "label": "競合の増加",
+      "x": 35,
+      "y": 80,
+      "width": 430,
+      "height": 95,
+      "parent": "q3",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [
+    {
+      "id": "q0",
+      "label": "内部・有利：強み",
+      "x": 100,
+      "y": 215,
+      "width": 510,
+      "height": 220,
+      "parent": "1"
+    },
+    {
+      "id": "q1",
+      "label": "外部・有利：機会",
+      "x": 660,
+      "y": 215,
+      "width": 510,
+      "height": 220,
+      "parent": "1"
+    },
+    {
+      "id": "q2",
+      "label": "内部・不利：弱み",
+      "x": 100,
+      "y": 465,
+      "width": 510,
+      "height": 220,
+      "parent": "1"
+    },
+    {
+      "id": "q3",
+      "label": "外部・不利：脅威",
+      "x": 660,
+      "y": 465,
+      "width": 510,
+      "height": 220,
+      "parent": "1"
+    }
+  ],
+  "edges": [],
+  "tables": []
+}

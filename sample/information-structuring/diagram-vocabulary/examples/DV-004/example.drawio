@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-004" name="依存方向を揃えた三層構造">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#F8FAFC">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="layer0" value="画面層" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="220" y="210" width="840" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="layer1" value="業務層" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="220" y="390" width="840" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="layer2" value="データ層" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="220" y="570" width="840" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="heading" value="依存方向を揃えた三層構造" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="画面・業務・データの依存方向はどうなっているか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n0" value="入力・表示" parent="layer0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="55" y="48" width="730" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="空き確認・予約受付" parent="layer1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="55" y="48" width="730" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="予約の永続化" parent="layer2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="55" y="48" width="730" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="n0" target="n1" parent="1" edge="1" value="下位層へ依存" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="n1" target="n2" parent="1" edge="1" value="下位層へ依存" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

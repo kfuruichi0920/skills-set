@@ -1,0 +1,104 @@
+{
+  "id": "DV-039",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "利用者の接点と困りごと",
+    "purpose": "行動の各段階で何に困り、何を改善するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "journey-stage-panels",
+    "theme": "T09"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "利用者の接点と困りごと",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "行動の各段階で何に困り、何を改善するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "scope",
+      "label": "行動の順序を横軸に置く。顧客感情や実測効果は、この架空例から推定しない。",
+      "x": 70,
+      "y": 730,
+      "width": 1160,
+      "height": 60,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [],
+  "edges": [],
+  "tables": [
+    {
+      "id": "journey",
+      "x": 70,
+      "y": 235,
+      "column_widths": [
+        235,
+        305,
+        305,
+        305
+      ],
+      "rows": [
+        [
+          "段階",
+          "探す",
+          "選ぶ",
+          "予約する"
+        ],
+        [
+          "接点",
+          "検索画面",
+          "候補詳細",
+          "受付結果"
+        ],
+        [
+          "困りごと",
+          "候補が多い",
+          "条件が不明",
+          "完了が不明"
+        ],
+        [
+          "改善案",
+          "絞込み",
+          "比較欄",
+          "通知と状態"
+        ]
+      ],
+      "row_height": 100
+    }
+  ]
+}

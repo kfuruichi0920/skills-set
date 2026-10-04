@@ -1,0 +1,140 @@
+[
+  {
+    "node": "n0",
+    "query": "document",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.flowchart.document",
+        "library": "flowchart",
+        "name": "Document",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "document"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.flowchart.multi-document",
+        "library": "flowchart",
+        "name": "Multi-Document",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "document"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.flowchart.document",
+    "reason": "情報の意味に一致する標準図形"
+  },
+  {
+    "node": "n1",
+    "query": "document",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.flowchart.document",
+        "library": "flowchart",
+        "name": "Document",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "document"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.flowchart.multi-document",
+        "library": "flowchart",
+        "name": "Multi-Document",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "document"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.flowchart.document",
+    "reason": "情報の意味に一致する標準図形"
+  },
+  {
+    "node": "n2",
+    "query": "document",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.flowchart.document",
+        "library": "flowchart",
+        "name": "Document",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "document"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.flowchart.multi-document",
+        "library": "flowchart",
+        "name": "Multi-Document",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "document"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.flowchart.document",
+    "reason": "情報の意味に一致する標準図形"
+  }
+]

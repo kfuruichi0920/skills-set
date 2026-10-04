@@ -38,6 +38,9 @@ $information-structuring
 - [既存図・PlantUML・画面キャプチャへの説明追加](.agents/skills/information-structuring/references/visual-annotation.md)
 - [61構造の配置参考](.agents/skills/information-structuring/assets/catalog-gallery.html)
 - [Draw.io出力サンプルと更新手順](sample/information-structuring/README.md)
+- [分野横断の図解75例・検索・再利用ライブラリ](sample/information-structuring/diagram-vocabulary/README.md)
+- [図解の参照URL58件](sample/information-structuring/diagram-vocabulary/sources/urls.md)
+- [図解ボキャブラリーの選択手順](.agents/skills/information-structuring/references/diagram-vocabulary.md)
 
 体系と既存カタログはいずれも閉じた選択肢にしない。新しい軸・整理方法・複合表現を、入力に必要な意味と関係から選べる。専門手法299項目は重複を含む候補索引であり、各手法の正式な分析手順を実装したものではない。
 
@@ -54,6 +57,8 @@ python -X utf8 .agents/skills/information-structuring/scripts/validate_themes.py
 python -X utf8 .agents/skills/information-structuring/scripts/shape_catalog.py validate
 python -X utf8 .agents/skills/information-structuring/scripts/test_shape_catalog.py
 python -X utf8 sample/information-structuring/scripts/check_samples.py
+python -X utf8 sample/information-structuring/diagram-vocabulary/scripts/package_vocabulary.py validate
+python -X utf8 sample/information-structuring/diagram-vocabulary/scripts/check_delivery.py
 ```
 
 初回抽出は89610da、一般化したスライド案出し版はef2ad6dに保存済み。参考ページはsource.mdに由来情報としてのみ記載し、スキルの利用に参照を必要としない。

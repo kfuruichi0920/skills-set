@@ -1,0 +1,188 @@
+{
+  "id": "DV-075",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "障害条件を論理結合で整理する",
+    "purpose": "サービス停止にはどの条件の組合せが関わるか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "fault-tree",
+    "theme": "T09"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "障害条件を論理結合で整理する",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "サービス停止にはどの条件の組合せが関わるか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "top",
+      "label": "予約サービス停止",
+      "x": 460,
+      "y": 215,
+      "width": 360,
+      "height": 90,
+      "parent": "1",
+      "role": "primary",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "or",
+      "label": "OR",
+      "x": 570,
+      "y": 385,
+      "width": 140,
+      "height": 65,
+      "parent": "1",
+      "role": "neutral",
+      "style": "align=center;spacingLeft=0;",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "a",
+      "label": "API障害",
+      "x": 130,
+      "y": 555,
+      "width": 360,
+      "height": 100,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "b",
+      "label": "データへの接続不能",
+      "x": 785,
+      "y": 555,
+      "width": 360,
+      "height": 100,
+      "parent": "1",
+      "role": "neutral",
+      "style": "",
+      "primitive": "rectangle",
+      "fallback_reason": "領域・状態・対象の一般記号。専門記法を主張しない",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "領域・状態・対象の一般記号。専門記法を主張しない"
+      }
+    },
+    {
+      "id": "note",
+      "label": "論理条件の概略。発生確率・独立性・冗長化の成立は追加情報なしに計算しない。",
+      "x": 80,
+      "y": 735,
+      "width": 1150,
+      "height": 60,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "a",
+      "target": "or",
+      "label": "停止条件",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "b",
+      "target": "or",
+      "label": "停止条件",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e2",
+      "source": "or",
+      "target": "top",
+      "label": "いずれかで成立",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    }
+  ],
+  "tables": []
+}

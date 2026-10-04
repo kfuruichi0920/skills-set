@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-013" name="利用者・予約・設備のデータ関係">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="利用者・予約・設備のデータ関係" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="どのデータのキーが別データに対応するか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="PKは主キー、FKは外部キー。利用者と設備の両方を予約が参照する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="90" y="620" width="1120" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="users" value="" parent="1" vertex="1" style="shape=table;container=1;collapsible=0;startSize=0;childLayout=tableLayout;fixedHeader=1;">
+          <mxGeometry x="60" y="270" width="290" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="users_r0" value="" parent="users" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="0" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="users_r0_c0" value="利用者" parent="users_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E8F1FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="users_r1" value="" parent="users" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="64" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="users_r1_c0" value="PK 利用者ID" parent="users_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="users_r2" value="" parent="users" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="128" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="users_r2_c0" value="氏名" parent="users_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking" value="" parent="1" vertex="1" style="shape=table;container=1;collapsible=0;startSize=0;childLayout=tableLayout;fixedHeader=1;">
+          <mxGeometry x="490" y="270" width="300" height="256" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r0" value="" parent="booking" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="0" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r0_c0" value="予約" parent="booking_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E8F1FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r1" value="" parent="booking" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="64" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r1_c0" value="PK 予約ID" parent="booking_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r2" value="" parent="booking" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="128" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r2_c0" value="FK 利用者ID" parent="booking_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r3" value="" parent="booking" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="192" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="booking_r3_c0" value="FK 設備ID" parent="booking_r3" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="resource" value="" parent="1" vertex="1" style="shape=table;container=1;collapsible=0;startSize=0;childLayout=tableLayout;fixedHeader=1;">
+          <mxGeometry x="940" y="270" width="280" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="resource_r0" value="" parent="resource" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="0" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="resource_r0_c0" value="設備" parent="resource_r0" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E8F1FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="resource_r1" value="" parent="resource" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="64" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="resource_r1_c0" value="PK 設備ID" parent="resource_r1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="resource_r2" value="" parent="resource" vertex="1" style="shape=tableRow;container=1;collapsible=0;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;fillColor=none;">
+          <mxGeometry x="0" y="128" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="resource_r2_c0" value="名称" parent="resource_r2" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=partialRectangle;top=1;bottom=1;left=1;right=1;">
+          <mxGeometry x="0" y="0" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="users_r0" target="booking_r0" parent="1" edge="1" value="1 : 0..*" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=none;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="resource_r0" target="booking_r0" parent="1" edge="1" value="1 : 0..*" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=none;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

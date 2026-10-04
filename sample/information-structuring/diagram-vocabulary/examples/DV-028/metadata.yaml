@@ -1,0 +1,131 @@
+{
+  "id": "DV-028",
+  "key": "trust",
+  "title_ja": "信頼境界と検査点",
+  "title_en": "Trust",
+  "domain": [
+    "security"
+  ],
+  "purpose": "どの境界で何を検査するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "trust-boundaries"
+  ],
+  "composition_pattern": "trust-boundaries",
+  "source_refs": [
+    "SRC-033",
+    "SRC-047"
+  ],
+  "information_structure": [
+    "boundary",
+    "containment",
+    "control",
+    "flow",
+    "trust"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "trust-boundaries",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T07",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "どの境界で何を検査するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "boundary",
+    "containment",
+    "control",
+    "flow",
+    "security",
+    "trust",
+    "trust-boundaries",
+    "信頼境界と検査点"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "web",
+      "semantic": "process"
+    },
+    {
+      "node": "api",
+      "semantic": "process"
+    },
+    {
+      "node": "db",
+      "semantic": "database"
+    }
+  ],
+  "variant_of": "DV-002",
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:17:27.069883+00:00",
+    "findings": "未検証要求と検査後処理の境界、認証・許可検査の位置を確認。概略図であり全ての信頼条件を定義したモデルとは扱わない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-028/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-024",
+        "source_refs": [
+          "SRC-033",
+          "SRC-002"
+        ],
+        "analysis": "データ経路と信頼境界を重ねて脅威の位置を示す",
+        "visual_observation": "データ経路と信頼境界を重ねて脅威の位置を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-024.png",
+        "original": "sources/official-examples/blog/threat-modelling.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "933bb634fdb0032b9442a9d54ad3c52cfd170c529e2604ec3ec552ef18ffd594",
+  "preview_hash": "b6c2637e9922eb45d3aab10ff56dfbd62646ec98fec9339d40afb48ecc432781",
+  "pattern": "trust-boundaries",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

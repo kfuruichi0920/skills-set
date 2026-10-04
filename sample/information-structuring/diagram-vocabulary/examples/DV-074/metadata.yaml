@@ -1,0 +1,144 @@
+{
+  "id": "DV-074",
+  "key": "zoom",
+  "title_ja": "全体から部分へ焦点を移す",
+  "title_en": "Zoom",
+  "domain": [
+    "software"
+  ],
+  "purpose": "全体のどの部分を次の詳細図で説明するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "multi-level-zoom"
+  ],
+  "composition_pattern": "multi-level-zoom",
+  "source_refs": [
+    "SRC-010",
+    "SRC-045"
+  ],
+  "information_structure": [
+    "abstraction",
+    "containment",
+    "flow",
+    "hierarchy",
+    "reference",
+    "trace"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "multi-level-zoom",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow",
+    "reference"
+  ],
+  "when_to_use": [
+    "全体のどの部分を次の詳細図で説明するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "abstraction",
+    "containment",
+    "flow",
+    "hierarchy",
+    "multi-level-zoom",
+    "reference",
+    "software",
+    "trace",
+    "zoom",
+    "全体から部分へ焦点を移す"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "web",
+      "semantic": "process"
+    },
+    {
+      "node": "api",
+      "semantic": "process"
+    },
+    {
+      "node": "d0",
+      "semantic": "process"
+    },
+    {
+      "node": "d1",
+      "semantic": "process"
+    },
+    {
+      "node": "d2",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:55:56.511920+00:00",
+    "findings": "全体図のAPIを強調し、詳細の責務へ点線で対応付ける。通信の実線と詳細展開を区別し、左右の枠をまたぐ線とラベルが見える。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-074/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-001",
+        "source_refs": [
+          "SRC-010",
+          "SRC-045",
+          "SRC-002"
+        ],
+        "analysis": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+        "visual_observation": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-001.png",
+        "original": "sources/official-examples/blog/C4.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "ceeaf9f609c1dbe309c38871e4e29bee2b01aa6c1995428c9ce942f0eadc84d4",
+  "preview_hash": "4e18f476400aafe198e173c9cebad1c030be9e7ee2f709613eb7bd53c64c3602",
+  "pattern": "multi-level-zoom",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "DV-055",
+  "key": "comparison",
+  "title_ja": "同じ評価軸で方式を比較する",
+  "title_en": "Comparison",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "方式は同じ条件で何が違うか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "comparison-table"
+  ],
+  "composition_pattern": "comparison-table",
+  "source_refs": [
+    "SRC-031"
+  ],
+  "information_structure": [
+    "attribute",
+    "attributes",
+    "comparison"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "comparison-table",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "方式は同じ条件で何が違うかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "attribute",
+    "attributes",
+    "comparison",
+    "comparison-table",
+    "同じ評価軸で方式を比較する"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:38:14.328431+00:00",
+    "findings": "導入・確認・変更の共通評価軸で二方式を比較。数値重みや優劣を作らず、同じ粒度の記述をPNGで確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-055/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-048",
+        "source_refs": [
+          "SRC-035",
+          "SRC-002"
+        ],
+        "analysis": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+        "visual_observation": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-048.png",
+        "original": "sources/official-examples/templates/education/compare_diagram.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "0e51d5b78b3bae7ee80d61a165729fea0d2094f43e7e795e0194fe76a38dd3a3",
+  "preview_hash": "0e1f6ace5f84743522c2cd751b04891f8dc8d9fcd750ae16a4f3160a962bc4d8",
+  "pattern": "comparison-table",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

@@ -4,6 +4,8 @@
 
 ## パターンの分類
 
+[分野横断の図解ボキャブラリー](diagram-vocabulary/README.md)に、公開例の調査をもとに独自に制作・点検した75例を追加した。従来の144ページとは別のカタログである。[ギャラリー](diagram-vocabulary/gallery.html)、[参照URL58件](diagram-vocabulary/sources/urls.md)、[TSV一覧](diagram-vocabulary/catalog/index.tsv)から検索できる。部分構造10件と図全体75件のDraw.ioライブラリ、出所・採用条件・IR・生成コードも保持する。更新時は同READMEの一件ずつの再生成・点検・同期手順を使う。
+
 | 分類 | 収録内容 | ファイル |
 | --- | --- | --- |
 | 整理目的 | 概念、分類、分解、比較、依存、時間、業務、状態、因果、リスク、要求トレース、判断、責任、数値、戦略、論証の16ページ | [01-organizing-patterns.drawio](01-organizing-patterns.drawio) |

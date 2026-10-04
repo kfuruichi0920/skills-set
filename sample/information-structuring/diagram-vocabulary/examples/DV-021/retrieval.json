@@ -1,0 +1,154 @@
+[
+  {
+    "node": "s0",
+    "query": "lambda",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.aws4.lambda",
+        "library": "aws4",
+        "name": "lambda",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.aws4.lambda_function",
+        "library": "aws4",
+        "name": "lambda function",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.aws4.s3_object_lambda",
+        "library": "aws4",
+        "name": "s3 object lambda",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.aws4.s3_object_lambda_access_points",
+        "library": "aws4",
+        "name": "s3 object lambda access points",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.aws4.lambda",
+    "reason": "明示された図形の意味を照合"
+  },
+  {
+    "node": "s1",
+    "query": "rds",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.aws4.rds",
+        "library": "aws4",
+        "name": "rds",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.aws4.rds_blue_green_deployments",
+        "library": "aws4",
+        "name": "rds blue green deployments",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.aws4.rds_instance",
+        "library": "aws4",
+        "name": "rds instance",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.aws4.rds_instance_alt",
+        "library": "aws4",
+        "name": "rds instance alt",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.aws4.rds",
+    "reason": "明示された図形の意味を照合"
+  }
+]

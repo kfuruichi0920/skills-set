@@ -1,0 +1,122 @@
+{
+  "id": "DV-029",
+  "key": "control-data",
+  "title_ja": "制御判断とデータ通信の分離",
+  "title_en": "Control Data",
+  "domain": [
+    "security"
+  ],
+  "purpose": "許可判断と実データの経路はどう異なるか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "dual-plane"
+  ],
+  "composition_pattern": "dual-plane",
+  "source_refs": [
+    "SRC-047",
+    "SRC-048"
+  ],
+  "information_structure": [
+    "boundary",
+    "containment",
+    "control",
+    "dependency",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "dual-plane",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T07",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow",
+    "dependency"
+  ],
+  "when_to_use": [
+    "許可判断と実データの経路はどう異なるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "boundary",
+    "containment",
+    "control",
+    "control-data",
+    "dependency",
+    "dual-plane",
+    "flow",
+    "security",
+    "制御判断とデータ通信の分離"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "policy",
+      "semantic": "hexagon"
+    },
+    {
+      "node": "n0",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n1",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "n2",
+      "semantic": "rectangle"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:17:42.062099+00:00",
+    "findings": "制御判断とデータ経路を上下の領域で分離。許可・拒否の破線と許可時のみの転送条件が読めることを確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-029/example.drawio",
+  "source_analysis": {
+    "observations": [],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "d23c8f1dca50178cb0015a8650057a6ede1df22c5a2957a20b3bc0bbf99991e7",
+  "preview_hash": "1802719bd9124a5d3a7945075ded231e79a7a1295698d92adf462b494c474cf9",
+  "pattern": "dual-plane",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

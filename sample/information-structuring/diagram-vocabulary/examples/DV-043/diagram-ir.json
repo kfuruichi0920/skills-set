@@ -1,0 +1,109 @@
+{
+  "id": "DV-043",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "作業期間と依存関係",
+    "purpose": "いつどの作業を行い、何の完了を待つか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "task-time-grid",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "作業期間と依存関係",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "いつどの作業を行い、何の完了を待つか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "note",
+      "label": "依存：要求の主要条件が確定してから試作、試作完了後に受入。期間は架空の計画値。",
+      "x": 80,
+      "y": 720,
+      "width": 1120,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [],
+  "edges": [],
+  "tables": [
+    {
+      "id": "schedule",
+      "x": 70,
+      "y": 240,
+      "column_widths": [
+        340,
+        210,
+        210,
+        210,
+        210
+      ],
+      "rows": [
+        [
+          "作業 / 週",
+          "W1",
+          "W2",
+          "W3",
+          "W4"
+        ],
+        [
+          "要求整理",
+          "実施",
+          "実施",
+          "",
+          ""
+        ],
+        [
+          "試作",
+          "",
+          "実施",
+          "実施",
+          ""
+        ],
+        [
+          "受入",
+          "",
+          "",
+          "",
+          "実施"
+        ]
+      ],
+      "row_height": 95
+    }
+  ]
+}

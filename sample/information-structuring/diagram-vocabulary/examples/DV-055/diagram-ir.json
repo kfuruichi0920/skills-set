@@ -1,0 +1,87 @@
+{
+  "id": "DV-055",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "同じ評価軸で方式を比較する",
+    "purpose": "方式は同じ条件で何が違うか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "comparison-table",
+    "theme": "T09"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "同じ評価軸で方式を比較する",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "方式は同じ条件で何が違うか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [],
+  "edges": [],
+  "tables": [
+    {
+      "id": "compare",
+      "x": 90,
+      "y": 235,
+      "column_widths": [
+        320,
+        400,
+        400
+      ],
+      "rows": [
+        [
+          "評価軸",
+          "方式A：手作業",
+          "方式B：受付自動化"
+        ],
+        [
+          "導入",
+          "すぐ始められる",
+          "実装が必要"
+        ],
+        [
+          "確認",
+          "担当者が確認",
+          "条件をルール化"
+        ],
+        [
+          "変更",
+          "手順を直す",
+          "ルールと実装を直す"
+        ]
+      ],
+      "row_height": 105
+    }
+  ]
+}

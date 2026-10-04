@@ -1,0 +1,129 @@
+{
+  "id": "DV-062",
+  "key": "process-steps",
+  "title_ja": "段階ごとの成果を示す",
+  "title_en": "Process Steps",
+  "domain": [
+    "presentation"
+  ],
+  "purpose": "各段階で何を入力し、何を残すか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "step-panels"
+  ],
+  "composition_pattern": "step-panels",
+  "source_refs": [
+    "SRC-037"
+  ],
+  "information_structure": [
+    "attributes",
+    "flow",
+    "step-panels"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "step-panels",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T04",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "各段階で何を入力し、何を残すかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "flow",
+    "presentation",
+    "process-steps",
+    "step-panels",
+    "段階ごとの成果を示す"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "n0",
+      "semantic": "process"
+    },
+    {
+      "node": "n1",
+      "semantic": "process"
+    },
+    {
+      "node": "n2",
+      "semantic": "process"
+    },
+    {
+      "node": "n3",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:43:15.247349+00:00",
+    "findings": "各工程と下側の残す成果物を同じX位置へ修正。四工程の読む順と成果物の対応を再確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-062/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-054",
+        "source_refs": [
+          "SRC-037",
+          "SRC-002"
+        ],
+        "analysis": "繰返し形状の配置で工程の順番を示す",
+        "visual_observation": "繰返し形状の配置で工程の順番を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-054.png",
+        "original": "sources/official-examples/examples/infographic-project-steps.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "d83139694c258c1637f6550556712c59d358134fa91705be5ca74ab00ae1cf22",
+  "preview_hash": "309005cbffae324206fd73c381ee7de9110fe071ed04061f7c8b70c5dac327be",
+  "pattern": "step-panels",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "DV-009",
+  "key": "activity",
+  "title_ja": "受付の処理と条件分岐",
+  "title_en": "Activity",
+  "domain": [
+    "software"
+  ],
+  "purpose": "確認結果によって処理はどう分岐するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "activity-branch"
+  ],
+  "composition_pattern": "activity-branch",
+  "source_refs": [
+    "SRC-011"
+  ],
+  "information_structure": [
+    "attributes",
+    "condition",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "activity-branch",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "locked-source-layer"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "確認結果によって処理はどう分岐するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "activity",
+    "activity-branch",
+    "attributes",
+    "condition",
+    "flow",
+    "software",
+    "受付の処理と条件分岐"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "base",
+      "semantic": "image"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:09:02.838283+00:00",
+    "findings": "条件のはい・いいえ、二経路の合流、結果通知から終端までをPNGで確認。文字切れと線の重なりはない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-009/example.drawio",
+  "external_source": {
+    "path": "source.puml",
+    "render": "source.svg",
+    "sha256": "1e676c2061c5e5eb5acdba251f5ea410d0b3d8927a7d9e04143a08e96d076c2f",
+    "meaning": "PlantUMLが記法の正本。SVGは単一の表示オブジェクト"
+  },
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-005",
+        "source_refs": [
+          "SRC-011",
+          "SRC-002"
+        ],
+        "analysis": "開始・判断・分岐・終了を区別する",
+        "visual_observation": "開始・判断・分岐・終了を区別する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-005.png",
+        "original": "sources/official-examples/examples/uml-activity-example.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "d80aa67f8e01deb84b5f0f8a195ea2da427c3984547576f4252b8a336f0e7b5f",
+  "preview_hash": "e0dc431e707a3a03836548482984cdda3e14849d5fda579d7eef43e847e2c942",
+  "pattern": "activity-branch",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "PlantUML正本を保持。内部SVGは単一オブジェクト。"
+}

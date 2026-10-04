@@ -1,0 +1,123 @@
+{
+  "id": "DV-008",
+  "key": "state",
+  "title_ja": "予約状態とイベント",
+  "title_en": "State",
+  "domain": [
+    "software"
+  ],
+  "purpose": "何を契機に予約の状態が変わるか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "state-transition"
+  ],
+  "composition_pattern": "state-transition",
+  "source_refs": [
+    "SRC-014"
+  ],
+  "information_structure": [
+    "attributes",
+    "condition",
+    "event",
+    "state"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "state-transition",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "locked-source-layer"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "何を契機に予約の状態が変わるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "担当ごとの業務手順だけを説明したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "condition",
+    "event",
+    "software",
+    "state",
+    "state-transition",
+    "予約状態とイベント"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "base",
+      "semantic": "image"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:08:41.768938+00:00",
+    "findings": "状態名と遷移イベント、空きなし時の戻り、初期・終端を確認。戻り曲線は逆向き遷移を分けるための経路。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-008/example.drawio",
+  "external_source": {
+    "path": "source.puml",
+    "render": "source.svg",
+    "sha256": "cf0b564ec16e214e712593e6f69a51e224ec2efa2c5b3b76ab2496b49d0a2345",
+    "meaning": "PlantUMLが記法の正本。SVGは単一の表示オブジェクト"
+  },
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-009",
+        "source_refs": [
+          "SRC-014",
+          "SRC-002"
+        ],
+        "analysis": "状態ノードとイベント・条件付き遷移を結ぶ",
+        "visual_observation": "状態ノードとイベント・条件付き遷移を結ぶ",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-009.png",
+        "original": "sources/official-examples/blog/uml-state-diagram-smart-lock.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "3fa44355cf3cffd24e782d68d9c4fbf0c3d77835ee31a9268595d91fb01ba3c2",
+  "preview_hash": "120446dfbe3069985e22e701bd3d76331c18176a6cb2e0a43748d0bf5a1bc3f9",
+  "pattern": "state-transition",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "PlantUML正本を保持。内部SVGは単一オブジェクト。"
+}

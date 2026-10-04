@@ -1,0 +1,134 @@
+{
+  "id": "DV-034",
+  "key": "bpmn",
+  "title_ja": "承認業務のタスクとゲートウェイ",
+  "title_en": "Bpmn",
+  "domain": [
+    "business"
+  ],
+  "purpose": "承認の条件で業務の経路がどう分かれるか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "bpmn-exclusive-branch"
+  ],
+  "composition_pattern": "bpmn-exclusive-branch",
+  "source_refs": [
+    "SRC-016"
+  ],
+  "information_structure": [
+    "attributes",
+    "bpmn-exclusive-branch",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "bpmn-exclusive-branch",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "bpmn",
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T01",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "承認の条件で業務の経路がどう分かれるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "bpmn",
+    "bpmn-exclusive-branch",
+    "business",
+    "flow",
+    "承認業務のタスクとゲートウェイ"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "start",
+      "semantic": "ellipse"
+    },
+    {
+      "node": "task",
+      "semantic": "process"
+    },
+    {
+      "node": "gate",
+      "semantic": ""
+    },
+    {
+      "node": "yes",
+      "semantic": "process"
+    },
+    {
+      "node": "no",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:27:47.855769+00:00",
+    "findings": "自動経路で承認可・不可の線と文字が重なったため、ゲートウェイ上下へ分岐点を分離。再描画で二経路と条件を確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-034/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-028",
+        "source_refs": [
+          "SRC-016",
+          "SRC-002"
+        ],
+        "analysis": "イベント・タスク・ゲートウェイの専用記法を使う",
+        "visual_observation": "イベント・タスク・ゲートウェイの専用記法を使う",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-028.png",
+        "original": "sources/official-examples/examples/bpmn-example.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "831538b26c410ef8e19cb977605fe86c3b33b962cf8fdd2cd557a66579fc55ea",
+  "preview_hash": "6052fae20e3bc84c6e850f0d436235415fc9386616919e6b327f0913afde8efd",
+  "pattern": "bpmn-exclusive-branch",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

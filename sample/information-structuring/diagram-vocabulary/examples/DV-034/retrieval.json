@@ -1,0 +1,167 @@
+[
+  {
+    "node": "task",
+    "query": "process",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.flowchart.predefined_process",
+        "library": "flowchart",
+        "name": "Predefined Process",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "process"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "name": "Process",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "process"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.flowchart.process",
+    "reason": "情報の意味に一致する標準図形"
+  },
+  {
+    "node": "gate",
+    "query": "Gateway XOR (data)",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.bpmn.gateway_xor_(data)",
+        "library": "bpmn",
+        "name": "Gateway XOR (data)",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "gateway"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.bpmn.gateway_xor_(data)",
+    "reason": "明示された図形の意味を照合"
+  },
+  {
+    "node": "yes",
+    "query": "process",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.flowchart.predefined_process",
+        "library": "flowchart",
+        "name": "Predefined Process",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "process"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "name": "Process",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "process"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.flowchart.process",
+    "reason": "情報の意味に一致する標準図形"
+  },
+  {
+    "node": "no",
+    "query": "process",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.flowchart.predefined_process",
+        "library": "flowchart",
+        "name": "Predefined Process",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "process"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "name": "Process",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "process"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.flowchart.process",
+    "reason": "情報の意味に一致する標準図形"
+  }
+]

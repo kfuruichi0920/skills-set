@@ -1,0 +1,18 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Yu Gothic"
+skinparam defaultFontSize 18
+left to right direction
+actor 利用者
+actor 管理者
+rectangle 予約サービス {
+ usecase "空きを探す" as Find
+ usecase "予約する" as Book
+ usecase "設備を管理する" as Manage
+}
+利用者 --> Find
+利用者 --> Book
+管理者 --> Manage
+@enduml

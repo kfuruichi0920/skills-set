@@ -1,0 +1,109 @@
+[
+  {
+    "node": "s0",
+    "query": "Virtual Machine",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.azure.virtual_machine",
+        "library": "azure",
+        "name": "Virtual Machine",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.azure.virtual_machine_feature",
+        "library": "azure",
+        "name": "Virtual Machine Feature",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.azure.virtual_machine",
+    "reason": "明示された図形の意味を照合"
+  },
+  {
+    "node": "s1",
+    "query": "SQL Database",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.azure.sql_database",
+        "library": "azure",
+        "name": "SQL Database",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "database"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.azure.mysql_database",
+        "library": "azure",
+        "name": "MySQL Database",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "database"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.azure.sql_database_sql_azure",
+        "library": "azure",
+        "name": "SQL Database SQL Azure",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "database"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.azure.sql_database",
+    "reason": "明示された図形の意味を照合"
+  }
+]

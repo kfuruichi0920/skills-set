@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="fragment-10" name="対策の注記">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="control" value="対策：必要条件を入力時に確認する" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F5CD47;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="0.0" y="0.0" width="600" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

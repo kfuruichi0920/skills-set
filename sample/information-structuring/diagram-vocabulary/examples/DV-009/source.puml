@@ -1,0 +1,17 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Yu Gothic"
+skinparam defaultFontSize 18
+start
+:申請を受信;
+:空きを確認;
+if (空きがある?) then (はい)
+ :予約を登録;
+else (いいえ)
+ :再選択を依頼;
+endif
+:結果を通知;
+stop
+@enduml

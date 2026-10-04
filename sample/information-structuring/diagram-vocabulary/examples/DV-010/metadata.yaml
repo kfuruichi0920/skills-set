@@ -1,0 +1,118 @@
+{
+  "id": "DV-010",
+  "key": "package",
+  "title_ja": "機能パッケージの依存",
+  "title_en": "Package",
+  "domain": [
+    "software"
+  ],
+  "purpose": "どの機能群が共通定義に依存するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "package-dependency"
+  ],
+  "composition_pattern": "package-dependency",
+  "source_refs": [
+    "SRC-011"
+  ],
+  "information_structure": [
+    "attributes",
+    "package-dependency"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "package-dependency",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "locked-source-layer"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "どの機能群が共通定義に依存するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "package",
+    "package-dependency",
+    "software",
+    "機能パッケージの依存"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "base",
+      "semantic": "image"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:09:27.205275+00:00",
+    "findings": "業務と共通の二つのパッケージ、受付・取消の依存先と破線を確認。各線の関係名が区別できる。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-010/example.drawio",
+  "external_source": {
+    "path": "source.puml",
+    "render": "source.svg",
+    "sha256": "c3575db023e32d331ad0a0cd74d3f9e78c5df7701953dc08ad6ce6e9819400bd",
+    "meaning": "PlantUMLが記法の正本。SVGは単一の表示オブジェクト"
+  },
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-006",
+        "source_refs": [
+          "SRC-011",
+          "SRC-002"
+        ],
+        "analysis": "パッケージ包含と依存線を区別する",
+        "visual_observation": "パッケージ包含と依存線を区別する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-006.png",
+        "original": "sources/official-examples/examples/uml-package-example.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "b087b542e17eb1fab212137d1ab8a7e48bba9f525d02b8efb1857da8012743b3",
+  "preview_hash": "c0153436aa5281d3a75537192f59e90b19a0887f4e20be637aa5ac8c863a83ff",
+  "pattern": "package-dependency",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "PlantUML正本を保持。内部SVGは単一オブジェクト。"
+}

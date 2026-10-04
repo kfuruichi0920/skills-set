@@ -1,0 +1,155 @@
+{
+  "id": "DV-033",
+  "key": "cross-functional",
+  "title_ja": "工程と担当の交差",
+  "title_en": "Cross Functional",
+  "domain": [
+    "business"
+  ],
+  "purpose": "各工程で誰がどの処理を担当するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "phase-role-grid"
+  ],
+  "composition_pattern": "phase-role-grid",
+  "source_refs": [
+    "SRC-027"
+  ],
+  "information_structure": [
+    "attributes",
+    "flow",
+    "phase",
+    "responsibility"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "phase-role-grid",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table",
+      "container-table"
+    ]
+  },
+  "visual": {
+    "theme": "T03",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "各工程で誰がどの処理を担当するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "business",
+    "cross-functional",
+    "flow",
+    "phase",
+    "phase-role-grid",
+    "responsibility",
+    "工程と担当の交差"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "step11",
+      "semantic": "process"
+    },
+    {
+      "node": "step12",
+      "semantic": "process"
+    },
+    {
+      "node": "step13",
+      "semantic": "process"
+    },
+    {
+      "node": "step21",
+      "semantic": "process"
+    },
+    {
+      "node": "step22",
+      "semantic": "process"
+    },
+    {
+      "node": "step23",
+      "semantic": "process"
+    },
+    {
+      "node": "step31",
+      "semantic": "process"
+    },
+    {
+      "node": "step32",
+      "semantic": "process"
+    },
+    {
+      "node": "step33",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:27:05.164042+00:00",
+    "findings": "セルを処理の親にするネイティブ表。枠線と近すぎた接続をセル内の空間へ移動し、線の意味は図外に明示。再描画で引渡しを確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-033/example.drawio",
+  "cell_container": true,
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-027",
+        "source_refs": [
+          "SRC-027",
+          "SRC-002"
+        ],
+        "analysis": "工程と担当の交差で引継ぎを可視化する",
+        "visual_observation": "工程と担当の交差で引継ぎを可視化する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-027.png",
+        "original": "sources/official-examples/templates/flowcharts/cross_functional_flowchart_1.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "84db4c1fbcd1cc37b7cf0af424179d2ae75d5adb37ed7e6f55cbbaa95cd72bfb",
+  "preview_hash": "fba1ac26c6df1c434f9a5a2c521155c086138859ccd3fae24a914a870b1224ae",
+  "pattern": "phase-role-grid",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

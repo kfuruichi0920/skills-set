@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-058" name="概念と関係名を明示する">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="概念と関係名を明示する" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="概念間にはどの種類の関係があるか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="矢印は関係名の主語から対象へ向かう。処理順を示す図ではない。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="booking" value="予約" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="500" y="355" width="240" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="n0" value="利用者" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F8FAFC;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="70" y="230" width="210" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="設備" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F8FAFC;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="970" y="230" width="210" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="時間帯" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F8FAFC;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=rectangle;">
+          <mxGeometry x="500" y="620" width="210" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="n0" target="booking" parent="1" edge="1" value="登録する" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=none;labelBackgroundColor=#FFFFFF;entryX=0;entryY=0.5;endArrow=open;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="n1" target="booking" parent="1" edge="1" value="対象となる" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=none;labelBackgroundColor=#FFFFFF;entryX=1;entryY=0.5;endArrow=open;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" source="booking" target="n2" parent="1" edge="1" value="指定する" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=none;labelBackgroundColor=#FFFFFF;endArrow=open;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

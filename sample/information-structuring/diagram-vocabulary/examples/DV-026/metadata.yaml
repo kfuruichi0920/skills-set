@@ -1,0 +1,122 @@
+{
+  "id": "DV-026",
+  "key": "multi-region",
+  "title_ja": "二つの地域と複製経路",
+  "title_en": "Multi Region",
+  "domain": [
+    "infrastructure"
+  ],
+  "purpose": "どのデータを別地域へ複製するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "paired-regions"
+  ],
+  "composition_pattern": "paired-regions",
+  "source_refs": [
+    "SRC-039",
+    "SRC-040",
+    "SRC-044"
+  ],
+  "information_structure": [
+    "containment",
+    "dependency",
+    "flow",
+    "paired-regions"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "paired-regions",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T05",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow",
+    "dependency"
+  ],
+  "when_to_use": [
+    "どのデータを別地域へ複製するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "containment",
+    "dependency",
+    "flow",
+    "infrastructure",
+    "multi-region",
+    "paired-regions",
+    "二つの地域と複製経路"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "app0",
+      "semantic": "process"
+    },
+    {
+      "node": "db0",
+      "semantic": "database"
+    },
+    {
+      "node": "app1",
+      "semantic": "process"
+    },
+    {
+      "node": "db1",
+      "semantic": "database"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:16:34.076019+00:00",
+    "findings": "地域間の複製経路を下側へ分離し、短い内部線のラベルをSQLへ簡潔化。原図のHA例をmulti-regionそのものの証拠とは扱わない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-026/example.drawio",
+  "source_analysis": {
+    "observations": [],
+    "adaptation": "複数地域の境界と複製という抽象構造を公式Architecture Centerから再構成。REF-022をmulti-region原図と扱わない。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "1a95d6563890a8484354f20e765b8caabb98d3e39862cdbf45535e5bc610ca0b",
+  "preview_hash": "cdb8c4337ffc13a4805d8ecf60ef42ab80fc0613e15aa816e05a242f37ccb7be",
+  "pattern": "paired-regions",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

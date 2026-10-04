@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-024" name="制御プレーンと実行ノード">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#F8FAFC">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="control" value="制御プレーン" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="60" y="240" width="420" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="workers" value="実行ノード群" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=swimlane;container=1;collapsible=1;startSize=36;horizontal=1;">
+          <mxGeometry x="660" y="240" width="540" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="heading" value="制御プレーンと実行ノード" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="制御対象とアプリケーションの実行場所はどこか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="APIサーバー" parent="control" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="85" y="120" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="node" value="kubelet" parent="workers" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="150" y="115" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pod" value="予約アプリ Pod" parent="workers" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="150" y="290" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="制御の意味だけを示す概略図。全内部コンポーネントを網羅しない。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="70" y="715" width="1150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="api" target="node" parent="1" edge="1" value="状態と指示" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;startArrow=block;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="node" target="pod" parent="workers" edge="1" value="実行を管理" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

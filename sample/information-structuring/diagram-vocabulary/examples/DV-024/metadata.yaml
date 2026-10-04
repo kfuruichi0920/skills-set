@@ -1,0 +1,130 @@
+{
+  "id": "DV-024",
+  "key": "kubernetes",
+  "title_ja": "制御プレーンと実行ノード",
+  "title_en": "Kubernetes",
+  "domain": [
+    "infrastructure"
+  ],
+  "purpose": "制御対象とアプリケーションの実行場所はどこか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "control-and-workers"
+  ],
+  "composition_pattern": "control-and-workers",
+  "source_refs": [
+    "SRC-046"
+  ],
+  "information_structure": [
+    "bidirectional",
+    "containment",
+    "control-and-workers",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "control-and-workers",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T08",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "bidirectional",
+    "flow"
+  ],
+  "when_to_use": [
+    "制御対象とアプリケーションの実行場所はどこかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "bidirectional",
+    "containment",
+    "control-and-workers",
+    "flow",
+    "infrastructure",
+    "kubernetes",
+    "制御プレーンと実行ノード"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "api",
+      "semantic": "process"
+    },
+    {
+      "node": "node",
+      "semantic": "process"
+    },
+    {
+      "node": "pod",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:15:27.227088+00:00",
+    "findings": "kubeletとPodの横並びでは短い線の文字が図形に重なったため縦配置へ変更。再描画で制御・実行の二段階を確認。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-024/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-021",
+        "source_refs": [
+          "SRC-020",
+          "SRC-046",
+          "SRC-002"
+        ],
+        "analysis": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す",
+        "visual_observation": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-021.png",
+        "original": "sources/official-examples/templates/gcp/dev_test_jenkins_in_k8s.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "f8060c4c315ed951137f668dc1b28b193025199d438e9d332b6366a447065504",
+  "preview_hash": "bcdd4a9ba32141b4c614996dc29c2eb0299424ac387ef51d5e7471f96a7be663",
+  "pattern": "control-and-workers",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

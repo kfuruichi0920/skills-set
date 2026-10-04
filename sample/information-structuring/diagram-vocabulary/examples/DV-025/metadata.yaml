@@ -1,0 +1,134 @@
+{
+  "id": "DV-025",
+  "key": "ha",
+  "title_ja": "稼働系と待機系の切替条件",
+  "title_en": "Ha",
+  "domain": [
+    "infrastructure"
+  ],
+  "purpose": "障害時にどの条件で待機系へ切り替わるか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "active-standby"
+  ],
+  "composition_pattern": "active-standby",
+  "source_refs": [
+    "SRC-020"
+  ],
+  "information_structure": [
+    "active-standby",
+    "attributes",
+    "flow",
+    "reference"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "active-standby",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T06",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow",
+    "reference"
+  ],
+  "when_to_use": [
+    "障害時にどの条件で待機系へ切り替わるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "待機系の存在だけで継続を保証したい場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "active-standby",
+    "attributes",
+    "flow",
+    "ha",
+    "infrastructure",
+    "reference",
+    "稼働系と待機系の切替条件"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "entry",
+      "semantic": "document"
+    },
+    {
+      "node": "active",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "standby",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "db",
+      "semantic": "database"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:15:47.924431+00:00",
+    "findings": "通常の実線と切替時のみの点線、稼働・待機の区別、継続条件を確認。条件を省略して常時継続できるとは扱わない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-025/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-022",
+        "source_refs": [
+          "SRC-020",
+          "SRC-044",
+          "SRC-002"
+        ],
+        "analysis": "オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない",
+        "visual_observation": "オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-022.png",
+        "original": "sources/official-examples/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "6fee3a742207ffe2e4b89993b34c67fb681d0bc924e827cf55008042c9f85ccc",
+  "preview_hash": "06ce24a3b975727b82d1f525b5890ab3b3feeacdee4ceacc2e434f1442b38bf9",
+  "pattern": "active-standby",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

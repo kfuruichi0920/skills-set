@@ -1,0 +1,250 @@
+{
+  "id": "DV-033",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "工程と担当の交差",
+    "purpose": "各工程で誰がどの処理を担当するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "phase-role-grid",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "工程と担当の交差",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "各工程で誰がどの処理を担当するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "step11",
+      "label": "要件を整理",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r1_c1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step12",
+      "label": "条件を確認",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r1_c2",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step13",
+      "label": "受入を確認",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r1_c3",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step21",
+      "label": "影響を調査",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r2_c1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step22",
+      "label": "設計・実装",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r2_c2",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step23",
+      "label": "動作を検証",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r2_c3",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step31",
+      "label": "制約を提示",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r3_c1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step32",
+      "label": "監視を設計",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r3_c2",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "step33",
+      "label": "運用を確認",
+      "x": 35,
+      "y": 20,
+      "width": 230,
+      "height": 55,
+      "parent": "grid_r3_c3",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "note",
+      "label": "矢印：業務担当が整理した要件を、開発担当の設計へ引き渡す。",
+      "x": 80,
+      "y": 720,
+      "width": 1130,
+      "height": 60,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "step11",
+      "target": "step22",
+      "label": "",
+      "semantic_type": "flow",
+      "waypoints": [
+        [
+          582,
+          392.5
+        ],
+        [
+          582,
+          487.5
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeColor=#172B4D;"
+    }
+  ],
+  "tables": [
+    {
+      "id": "grid",
+      "x": 80,
+      "y": 250,
+      "column_widths": [
+        220,
+        300,
+        300,
+        300
+      ],
+      "rows": [
+        [
+          "担当 / 工程",
+          "準備",
+          "設計",
+          "検証"
+        ],
+        [
+          "業務担当",
+          "",
+          "",
+          ""
+        ],
+        [
+          "開発担当",
+          "",
+          "",
+          ""
+        ],
+        [
+          "運用担当",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "row_height": 95
+    }
+  ]
+}

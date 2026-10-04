@@ -1,0 +1,180 @@
+{
+  "id": "DV-026",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "二つの地域と複製経路",
+    "purpose": "どのデータを別地域へ複製するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "paired-regions",
+    "theme": "T05"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "二つの地域と複製経路",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "どのデータを別地域へ複製するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "app0",
+      "label": "予約API",
+      "x": 40,
+      "y": 100,
+      "width": 180,
+      "height": 80,
+      "parent": "r0",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "db0",
+      "label": "予約データ",
+      "x": 280,
+      "y": 100,
+      "width": 180,
+      "height": 100,
+      "parent": "r0",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.database",
+      "shape_query": "database",
+      "semantic_type": "database"
+    },
+    {
+      "id": "app1",
+      "label": "予約API",
+      "x": 40,
+      "y": 100,
+      "width": 180,
+      "height": 80,
+      "parent": "r1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "db1",
+      "label": "予約データ",
+      "x": 280,
+      "y": 100,
+      "width": 180,
+      "height": 100,
+      "parent": "r1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.database",
+      "shape_query": "database",
+      "semantic_type": "database"
+    },
+    {
+      "id": "note",
+      "label": "複製先への切替手順と整合性条件は、この概略図だけでは保証しない。",
+      "x": 70,
+      "y": 730,
+      "width": 1130,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [
+    {
+      "id": "r0",
+      "label": "地域A：主系",
+      "x": 70,
+      "y": 230,
+      "width": 510,
+      "height": 460,
+      "parent": "1"
+    },
+    {
+      "id": "r1",
+      "label": "地域B：複製先",
+      "x": 690,
+      "y": 230,
+      "width": 510,
+      "height": 460,
+      "parent": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "app0",
+      "target": "db0",
+      "label": "SQL",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "r0",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "app1",
+      "target": "db1",
+      "label": "SQL",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "r1",
+      "style": ""
+    },
+    {
+      "id": "e2",
+      "source": "db0",
+      "target": "db1",
+      "label": "非同期複製",
+      "semantic_type": "dependency",
+      "waypoints": [
+        [
+          530,
+          580
+        ],
+        [
+          990,
+          580
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=0.5;exitY=1;entryX=0.5;entryY=1;"
+    }
+  ],
+  "tables": []
+}

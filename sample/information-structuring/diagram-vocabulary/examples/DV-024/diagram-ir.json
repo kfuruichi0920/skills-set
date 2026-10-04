@@ -1,0 +1,147 @@
+{
+  "id": "DV-024",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "制御プレーンと実行ノード",
+    "purpose": "制御対象とアプリケーションの実行場所はどこか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "control-and-workers",
+    "theme": "T08"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "制御プレーンと実行ノード",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "制御対象とアプリケーションの実行場所はどこか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "api",
+      "label": "APIサーバー",
+      "x": 85,
+      "y": 120,
+      "width": 250,
+      "height": 90,
+      "parent": "control",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "node",
+      "label": "kubelet",
+      "x": 150,
+      "y": 115,
+      "width": 250,
+      "height": 90,
+      "parent": "workers",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "pod",
+      "label": "予約アプリ Pod",
+      "x": 150,
+      "y": 290,
+      "width": 250,
+      "height": 90,
+      "parent": "workers",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "note",
+      "label": "制御の意味だけを示す概略図。全内部コンポーネントを網羅しない。",
+      "x": 70,
+      "y": 715,
+      "width": 1150,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [
+    {
+      "id": "control",
+      "label": "制御プレーン",
+      "x": 60,
+      "y": 240,
+      "width": 420,
+      "height": 440,
+      "parent": "1"
+    },
+    {
+      "id": "workers",
+      "label": "実行ノード群",
+      "x": 660,
+      "y": 240,
+      "width": 540,
+      "height": 440,
+      "parent": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "api",
+      "target": "node",
+      "label": "状態と指示",
+      "semantic_type": "bidirectional",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "node",
+      "target": "pod",
+      "label": "実行を管理",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "workers",
+      "style": ""
+    }
+  ],
+  "tables": []
+}

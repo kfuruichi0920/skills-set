@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="DV-034" name="承認業務のタスクとゲートウェイ">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="900" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="heading" value="承認業務のタスクとゲートウェイ" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=26;fontStyle=1;whiteSpace=wrap;">
+          <mxGeometry x="40" y="24" width="1200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" value="承認の条件で業務の経路がどう分かれるか。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="92" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=14;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="40" y="820" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="開始" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=ellipse;">
+          <mxGeometry x="80" y="350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="task" value="申請を確認" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="260" y="335" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gate" value="" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.bpmn.gateway_xor_(data);">
+          <mxGeometry x="630" y="350" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yes" value="承認する" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="930" y="240" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="no" value="差戻しを通知" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="930" y="520" width="220" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="排他的分岐の概略。正式なBPMNモデルでは終了・例外・メッセージ意味も定義する。" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;shape=text;fontSize=18;fontStyle=0;whiteSpace=wrap;">
+          <mxGeometry x="80" y="735" width="1140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="start" target="task" parent="1" edge="1" value="" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="task" target="gate" parent="1" edge="1" value="確認結果" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" source="gate" target="yes" parent="1" edge="1" value="承認可" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="282.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" source="gate" target="no" parent="1" edge="1" value="承認不可" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="562.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

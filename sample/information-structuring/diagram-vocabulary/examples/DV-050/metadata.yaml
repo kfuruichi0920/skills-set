@@ -1,0 +1,113 @@
+{
+  "id": "DV-050",
+  "key": "matrix",
+  "title_ja": "効果と工数による位置付け",
+  "title_en": "Matrix",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "各案は同じ二軸でどこに位置するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "two-axis-positioning"
+  ],
+  "composition_pattern": "two-axis-positioning",
+  "source_refs": [
+    "SRC-031"
+  ],
+  "information_structure": [
+    "comparison",
+    "containment",
+    "position",
+    "quantity"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "two-axis-positioning",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "各案は同じ二軸でどこに位置するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "二軸の尺度や比較対象の粒度が揃わない場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "comparison",
+    "containment",
+    "matrix",
+    "position",
+    "quantity",
+    "two-axis-positioning",
+    "効果と工数による位置付け"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:35:39.345112+00:00",
+    "findings": "工数の左右と効果の上下という二軸、四つの案の区分を確認。入力がない尺度・順位・数値は作らない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-050/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-042",
+        "source_refs": [
+          "SRC-031",
+          "SRC-002"
+        ],
+        "analysis": "独立する二軸を四象限に交差させる",
+        "visual_observation": "独立する二軸を四象限に交差させる",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-042.png",
+        "original": "sources/official-examples/templates/business/ansoff_matrix.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "311476e8557459557d72deafedcafbca1461c06af3f50a3d962da993b94b2afa",
+  "preview_hash": "43b9f7903598e0be7a94a523832d06013da7cdb398d3eb59a705946a0ce86e7a",
+  "pattern": "two-axis-positioning",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

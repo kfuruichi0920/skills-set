@@ -1,0 +1,126 @@
+{
+  "id": "DV-003",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "受付APIの責務分割",
+    "purpose": "一つのAPIをどの責務とインターフェースへ分けるか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "component-interface",
+    "theme": "T02"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "受付APIの責務分割",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "一つのAPIをどの責務とインターフェースへ分けるか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "n0",
+      "label": "認証\n本人を確認",
+      "x": 50,
+      "y": 130,
+      "width": 250,
+      "height": 110,
+      "parent": "boundary",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "n1",
+      "label": "空き検索\n設備の空きを確認",
+      "x": 390,
+      "y": 130,
+      "width": 250,
+      "height": 110,
+      "parent": "boundary",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "n2",
+      "label": "登録\n予約を保存",
+      "x": 730,
+      "y": 130,
+      "width": 250,
+      "height": 110,
+      "parent": "boundary",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    }
+  ],
+  "containers": [
+    {
+      "id": "boundary",
+      "label": "予約API",
+      "x": 100,
+      "y": 220,
+      "width": 1080,
+      "height": 480,
+      "parent": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "呼び出す",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "boundary",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "label": "呼び出す",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "boundary",
+      "style": ""
+    }
+  ],
+  "tables": []
+}

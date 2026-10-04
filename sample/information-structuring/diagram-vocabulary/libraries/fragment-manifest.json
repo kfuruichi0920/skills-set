@@ -1,0 +1,91 @@
+[
+  {
+    "title": "利用者と主対象",
+    "source": "DV-001",
+    "selected_cells": [
+      "user",
+      "system"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "クラウドの境界",
+    "source": "DV-020",
+    "selected_cells": [
+      "outer"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "稼働系と待機系",
+    "source": "DV-025",
+    "selected_cells": [
+      "active",
+      "standby"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "主系と複製先",
+    "source": "DV-026",
+    "selected_cells": [
+      "r0",
+      "r1"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "三層の依存",
+    "source": "DV-004",
+    "selected_cells": [
+      "layer0",
+      "layer1",
+      "layer2"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "制御とデータ",
+    "source": "DV-029",
+    "selected_cells": [
+      "cp",
+      "dp"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "意味の凡例",
+    "source": "DV-001",
+    "selected_cells": [
+      "legend"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "外周の説明",
+    "source": "DV-064",
+    "selected_cells": [
+      "system",
+      "c0",
+      "c1",
+      "c2"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "工程とチームの表",
+    "source": "DV-047",
+    "selected_cells": [
+      "grid"
+    ],
+    "kind": "fragment"
+  },
+  {
+    "title": "対策の注記",
+    "source": "DV-049",
+    "selected_cells": [
+      "control"
+    ],
+    "kind": "fragment"
+  }
+]

@@ -1,0 +1,2759 @@
+{
+  "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+  "license_file": "official-examples/LICENSE",
+  "assets": [
+    {
+      "id": "REF-001",
+      "source_refs": [
+        "SRC-010",
+        "SRC-045",
+        "SRC-002"
+      ],
+      "repository_path": "blog/C4.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/C4.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/C4.drawio",
+      "local_path": "official-examples/blog/C4.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "daa6e242e3684351e18ebd083a8fb80f2bb48fbf84f77c2e8a4776ff080e2975",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "C4 Context",
+          "vertices": 17,
+          "edges": 5
+        },
+        {
+          "name": "C4 Container",
+          "vertices": 21,
+          "edges": 8
+        },
+        {
+          "name": "C4 Component",
+          "vertices": 22,
+          "edges": 12
+        },
+        {
+          "name": "C4 Class",
+          "vertices": 20,
+          "edges": 4
+        }
+      ],
+      "patterns": [
+        "system-context",
+        "container",
+        "component",
+        "class"
+      ],
+      "analysis": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "抽象度ごとに複数ページを分離し、対象境界と外部依存を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-001.png"
+    },
+    {
+      "id": "REF-002",
+      "source_refs": [
+        "SRC-012",
+        "SRC-002"
+      ],
+      "repository_path": "examples/uml-class-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-class-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/uml-class-example.drawio",
+      "local_path": "official-examples/examples/uml-class-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "4f3579488ac714425df7a33fddf45e236282fb3c649fc753e166216617d79a35",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "Class diagram template",
+          "vertices": 32,
+          "edges": 4
+        },
+        {
+          "name": "Complex class diagram example",
+          "vertices": 44,
+          "edges": 8
+        },
+        {
+          "name": "Mermaid class diagram",
+          "vertices": 1,
+          "edges": 0
+        },
+        {
+          "name": "Relationships",
+          "vertices": 31,
+          "edges": 8
+        }
+      ],
+      "patterns": [
+        "class"
+      ],
+      "analysis": "クラスの名前・属性・操作を区画で分離し関連で結ぶ",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "クラスの名前・属性・操作を区画で分離し関連で結ぶ"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-002.png"
+    },
+    {
+      "id": "REF-003",
+      "source_refs": [
+        "SRC-013",
+        "SRC-002"
+      ],
+      "repository_path": "examples/uml-component-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-component-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/uml-component-example.drawio",
+      "local_path": "official-examples/examples/uml-component-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "83b2145b5e1565e0e3f4e103aa96e5aff95906d4c2a04c2061508cf4637782dc",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 28,
+          "edges": 12
+        }
+      ],
+      "patterns": [
+        "component"
+      ],
+      "analysis": "部品の提供・要求インターフェースを接続する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "部品の提供・要求インターフェースを接続する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-003.png"
+    },
+    {
+      "id": "REF-004",
+      "source_refs": [
+        "SRC-011",
+        "SRC-002"
+      ],
+      "repository_path": "examples/uml-deployment-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-deployment-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/uml-deployment-example.drawio",
+      "local_path": "official-examples/examples/uml-deployment-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "8a54b4cd9d685318b88867aa14d3113b4f1606bcf63279f65ee524c9228f7690",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 9,
+          "edges": 2
+        }
+      ],
+      "patterns": [
+        "deployment"
+      ],
+      "analysis": "実行環境の境界に配備物を配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "実行環境の境界に配備物を配置する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-004.png"
+    },
+    {
+      "id": "REF-005",
+      "source_refs": [
+        "SRC-011",
+        "SRC-002"
+      ],
+      "repository_path": "examples/uml-activity-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-activity-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/uml-activity-example.drawio",
+      "local_path": "official-examples/examples/uml-activity-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "d3fb849775638c6b6139ef3d3a9cd76f1dcb5c1bec71b3202c9195d9208ef5e8",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "Example",
+          "vertices": 22,
+          "edges": 18
+        },
+        {
+          "name": "Activity diagram shapes",
+          "vertices": 26,
+          "edges": 14
+        }
+      ],
+      "patterns": [
+        "activity"
+      ],
+      "analysis": "開始・判断・分岐・終了を区別する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "開始・判断・分岐・終了を区別する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-005.png"
+    },
+    {
+      "id": "REF-006",
+      "source_refs": [
+        "SRC-011",
+        "SRC-002"
+      ],
+      "repository_path": "examples/uml-package-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-package-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/uml-package-example.drawio",
+      "local_path": "official-examples/examples/uml-package-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "29189868d3cbc14b09fafee8f7b17cbfa3eb1e5203f3e319bfc042a1a3a8493e",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "simple example",
+          "vertices": 13,
+          "edges": 8
+        },
+        {
+          "name": "package diagram example",
+          "vertices": 68,
+          "edges": 21
+        },
+        {
+          "name": "package diagram shapes",
+          "vertices": 11,
+          "edges": 6
+        },
+        {
+          "name": "generated class diagram",
+          "vertices": 35,
+          "edges": 11
+        }
+      ],
+      "patterns": [
+        "package"
+      ],
+      "analysis": "パッケージ包含と依存線を区別する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "パッケージ包含と依存線を区別する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-006.png"
+    },
+    {
+      "id": "REF-007",
+      "source_refs": [
+        "SRC-011",
+        "SRC-002"
+      ],
+      "repository_path": "examples/uml-use-case-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/uml-use-case-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/uml-use-case-example.drawio",
+      "local_path": "official-examples/examples/uml-use-case-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "6a65484060a5fcf61ff762cceb60af2f2ca2b944cc610763e7bbd856361283b3",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 41,
+          "edges": 37
+        }
+      ],
+      "patterns": [
+        "use-case"
+      ],
+      "analysis": "利用者とシステム境界内の機能を関連づける",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "利用者とシステム境界内の機能を関連づける"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-007.png"
+    },
+    {
+      "id": "REF-008",
+      "source_refs": [
+        "SRC-011",
+        "SRC-002"
+      ],
+      "repository_path": "examples/sequence-diagram-examples.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sequence-diagram-examples.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/sequence-diagram-examples.drawio",
+      "local_path": "official-examples/examples/sequence-diagram-examples.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "6b62a3dc9b3044c9ad819906cbc9de00afde631dfd0e0b2e4258c0fd96bde59b",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "Sequence diagram",
+          "vertices": 17,
+          "edges": 8
+        },
+        {
+          "name": "With loop",
+          "vertices": 13,
+          "edges": 7
+        }
+      ],
+      "patterns": [
+        "sequence"
+      ],
+      "analysis": "参加者の横配置とメッセージの縦順序を分離する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "参加者の横配置とメッセージの縦順序を分離する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-008.png"
+    },
+    {
+      "id": "REF-009",
+      "source_refs": [
+        "SRC-014",
+        "SRC-002"
+      ],
+      "repository_path": "blog/uml-state-diagram-smart-lock.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/uml-state-diagram-smart-lock.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/uml-state-diagram-smart-lock.drawio",
+      "local_path": "official-examples/blog/uml-state-diagram-smart-lock.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "95c42f081275c7535545d4126b777e8ede437dde09916d8866ddefa7915c8fb4",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "Smart Lock",
+          "vertices": 25,
+          "edges": 21
+        },
+        {
+          "name": "Monitoring",
+          "vertices": 15,
+          "edges": 10
+        },
+        {
+          "name": "Verifying Access",
+          "vertices": 17,
+          "edges": 10
+        },
+        {
+          "name": "Reconnecting",
+          "vertices": 12,
+          "edges": 8
+        }
+      ],
+      "patterns": [
+        "state-machine"
+      ],
+      "analysis": "状態ノードとイベント・条件付き遷移を結ぶ",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "状態ノードとイベント・条件付き遷移を結ぶ"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-009.png"
+    },
+    {
+      "id": "REF-010",
+      "source_refs": [
+        "SRC-017",
+        "SRC-002"
+      ],
+      "repository_path": "blog/data-flow.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/data-flow.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/data-flow.drawio",
+      "local_path": "official-examples/blog/data-flow.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "19d09077790b48b0b8dc9ef32dcad2d69cfb38f80771ef0e38accfd7f1a9392a",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "detailed DFD",
+          "vertices": 20,
+          "edges": 30
+        },
+        {
+          "name": "context diagram",
+          "vertices": 10,
+          "edges": 6
+        }
+      ],
+      "patterns": [
+        "data-flow"
+      ],
+      "analysis": "外部主体・処理・保存先・データ名を区別する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "外部主体・処理・保存先・データ名を区別する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-010.png"
+    },
+    {
+      "id": "REF-011",
+      "source_refs": [
+        "SRC-018",
+        "SRC-002"
+      ],
+      "repository_path": "blog/er-diagram-library.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/er-diagram-library.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/er-diagram-library.drawio",
+      "local_path": "official-examples/blog/er-diagram-library.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "14f4dc59266c91135d466bf17fe97c0ac3bedbda88743abc5513bfa30ca05686",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 104,
+          "edges": 12
+        }
+      ],
+      "patterns": [
+        "entity-relationship"
+      ],
+      "analysis": "行を持つ実体テーブルを多重度付き関係で結ぶ",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "行を持つ実体テーブルを多重度付き関係で結ぶ"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-011.png"
+    },
+    {
+      "id": "REF-012",
+      "source_refs": [
+        "SRC-019",
+        "SRC-002"
+      ],
+      "repository_path": "blog/requirements-flow.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/requirements-flow.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/requirements-flow.drawio",
+      "local_path": "official-examples/blog/requirements-flow.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "2d642fcb55780ab56c026387c678197c17e3bcbc234e333e730589498cd8aa8d",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 6,
+      "pages": [
+        {
+          "name": "Requirements flow overview",
+          "vertices": 311,
+          "edges": 20
+        },
+        {
+          "name": "Sign-Up / Sign-In",
+          "vertices": 140,
+          "edges": 36
+        },
+        {
+          "name": "Downloads",
+          "vertices": 103,
+          "edges": 10
+        },
+        {
+          "name": "License Rules",
+          "vertices": 44,
+          "edges": 5
+        },
+        {
+          "name": "New Trial",
+          "vertices": 203,
+          "edges": 24
+        },
+        {
+          "name": "Create Team",
+          "vertices": 118,
+          "edges": 10
+        }
+      ],
+      "patterns": [
+        "requirements-flow",
+        "interface"
+      ],
+      "analysis": "要求・画面・データの異種要素を関連で束ねる",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-01.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "要求・画面・データの異種要素を関連で束ねる"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-012.png"
+    },
+    {
+      "id": "REF-013",
+      "source_refs": [
+        "SRC-015",
+        "SRC-002"
+      ],
+      "repository_path": "examples/sysml-requirements-diagram.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sysml-requirements-diagram.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/sysml-requirements-diagram.drawio",
+      "local_path": "official-examples/examples/sysml-requirements-diagram.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "a8d15a0d701f68ce37023a1dc7a4362d0d75172b2ea12b213c89e3cea158ebef",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 13,
+          "edges": 11
+        }
+      ],
+      "patterns": [
+        "requirements"
+      ],
+      "analysis": "要求IDと要求内容を分け、導出・充足関係を識別する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "要求IDと要求内容を分け、導出・充足関係を識別する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-013.png"
+    },
+    {
+      "id": "REF-014",
+      "source_refs": [
+        "SRC-015",
+        "SRC-002"
+      ],
+      "repository_path": "examples/sysml-block-definition-diagram.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/sysml-block-definition-diagram.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/sysml-block-definition-diagram.drawio",
+      "local_path": "official-examples/examples/sysml-block-definition-diagram.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "1042e4bb27f6bf8397c197cd9ebae3b11d76f0057aafddc4a07fbf74359f80bc",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 14,
+          "edges": 5
+        }
+      ],
+      "patterns": [
+        "system-breakdown"
+      ],
+      "analysis": "ブロック構成と型の関係を階層的に表す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "ブロック構成と型の関係を階層的に表す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-014.png"
+    },
+    {
+      "id": "REF-015",
+      "source_refs": [
+        "SRC-020",
+        "SRC-002"
+      ],
+      "repository_path": "templates/network/topology_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/network/topology_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/network/topology_1.xml",
+      "local_path": "official-examples/templates/network/topology_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "2faae382722293b8b80b4909845be1875fb0ad235293930e35dfb57b827aa516",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 32,
+          "edges": 34
+        }
+      ],
+      "patterns": [
+        "network-topology"
+      ],
+      "analysis": "Ring、Star、Fully connected、Common Busを同じページで並べ、接続密度を比較する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "Ring、Star、Fully connected、Common Busを同じページで並べ、接続密度を比較する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-015.png"
+    },
+    {
+      "id": "REF-016",
+      "source_refs": [
+        "SRC-020",
+        "SRC-002"
+      ],
+      "repository_path": "templates/network/lan_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/network/lan_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/network/lan_1.xml",
+      "local_path": "official-examples/templates/network/lan_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "a3c169caa0afb2e1263debbc29b590b307c45336bd9b935c365ae90795a6cb41",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 15,
+          "edges": 14
+        }
+      ],
+      "patterns": [
+        "logical-network"
+      ],
+      "analysis": "LANの領域・機器・接続を分離する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "LANの領域・機器・接続を分離する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-016.png"
+    },
+    {
+      "id": "REF-017",
+      "source_refs": [
+        "SRC-020",
+        "SRC-002"
+      ],
+      "repository_path": "examples/bus-topology-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/bus-topology-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/bus-topology-example.drawio",
+      "local_path": "official-examples/examples/bus-topology-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "a7725f19bb684f8535fbb823fe3634b7c73287e7293fb0715375ab467b6fdc48",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 54,
+          "edges": 17
+        }
+      ],
+      "patterns": [
+        "physical-network"
+      ],
+      "analysis": "共通バスと機器への接続点を表す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "共通バスと機器への接続点を表す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-017.png"
+    },
+    {
+      "id": "REF-018",
+      "source_refs": [
+        "SRC-021",
+        "SRC-002"
+      ],
+      "repository_path": "examples/aws-simple-architecture.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/aws-simple-architecture.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/aws-simple-architecture.drawio",
+      "local_path": "official-examples/examples/aws-simple-architecture.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "e0af709a6390873df50265231f3f075493285152fae55f6b852458a3c1e6298d",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 23,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "aws",
+        "cloud"
+      ],
+      "analysis": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "AWS Cloud→VPC→Availability Zone→Public/Private領域をネストし、主系・副系DBを並列配置する",
+        "full_scale_preview_reviewed": true
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-018.png"
+    },
+    {
+      "id": "REF-019",
+      "source_refs": [
+        "SRC-050",
+        "SRC-002"
+      ],
+      "repository_path": "blog/azure-architecture-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/azure-architecture-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/azure-architecture-example.drawio",
+      "local_path": "official-examples/blog/azure-architecture-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "b410b1d202b88bfea4b7b771b31481c0a211d028667c233d2a375802c60b56b0",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 36,
+          "edges": 16
+        }
+      ],
+      "patterns": [
+        "azure"
+      ],
+      "analysis": "サービスと領域を階層化し、通信経路を結ぶ",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "サービスと領域を階層化し、通信経路を結ぶ"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-019.png"
+    },
+    {
+      "id": "REF-020",
+      "source_refs": [
+        "SRC-020",
+        "SRC-044",
+        "SRC-002"
+      ],
+      "repository_path": "templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+      "local_path": "official-examples/templates/gcp/internet_of_things_sensor_stream_ingest_and_processing.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "6bdbcf9bf16c371e811550e5ab21ca2d11ceea289fe28d82d2f2042a6b1dbd5c",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 50,
+          "edges": 8
+        }
+      ],
+      "patterns": [
+        "gcp"
+      ],
+      "analysis": "センサーから収集・処理・保存の流れを段階化する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "センサーから収集・処理・保存の流れを段階化する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-020.png"
+    },
+    {
+      "id": "REF-021",
+      "source_refs": [
+        "SRC-020",
+        "SRC-046",
+        "SRC-002"
+      ],
+      "repository_path": "templates/gcp/dev_test_jenkins_in_k8s.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/dev_test_jenkins_in_k8s.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/gcp/dev_test_jenkins_in_k8s.xml",
+      "local_path": "official-examples/templates/gcp/dev_test_jenkins_in_k8s.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "2fc9221cfe2cd63bd223cdb18f4f33f59e5eb4898a29b1006036ffa17c399b39",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 53,
+          "edges": 14
+        }
+      ],
+      "patterns": [
+        "kubernetes"
+      ],
+      "analysis": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "開発リポジトリ、Jenkins Namespace、ステージングと本番Namespaceを分離し、番号付きの配備順を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-021.png"
+    },
+    {
+      "id": "REF-022",
+      "source_refs": [
+        "SRC-020",
+        "SRC-044",
+        "SRC-002"
+      ],
+      "repository_path": "templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+      "local_path": "official-examples/templates/gcp/backup_and_archive_disaster_recovery_with_application_replication.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "c84871a4ebb979f86d5b64e1e6abe8dd13abfac7efd6faa0d489bc1597239126",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 30,
+          "edges": 8
+        }
+      ],
+      "patterns": [
+        "ha",
+        "multi-region"
+      ],
+      "analysis": "オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "オンプレミスとCloudを分離し、アプリ・DB複製と待機スナップショットを関連づける。Multi-regionそのものの証明ではない"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-022.png"
+    },
+    {
+      "id": "REF-023",
+      "source_refs": [
+        "SRC-052",
+        "SRC-002"
+      ],
+      "repository_path": "examples/rack-diagram-simple-server.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/rack-diagram-simple-server.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/rack-diagram-simple-server.drawio",
+      "local_path": "official-examples/examples/rack-diagram-simple-server.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "9a9b41fffcf4bc1b86267a7db208467fbb9854fd9b4b63a447f377666554f85d",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 3,
+      "pages": [
+        {
+          "name": "Server rack",
+          "vertices": 5,
+          "edges": 0
+        },
+        {
+          "name": "Arista",
+          "vertices": 27,
+          "edges": 0
+        },
+        {
+          "name": "Electronics",
+          "vertices": 128,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "rack"
+      ],
+      "analysis": "ラックの物理位置を縦方向のスロットで表す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "ラックの物理位置を縦方向のスロットで表す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-023.png"
+    },
+    {
+      "id": "REF-024",
+      "source_refs": [
+        "SRC-033",
+        "SRC-002"
+      ],
+      "repository_path": "blog/threat-modelling.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/threat-modelling.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/threat-modelling.drawio",
+      "local_path": "official-examples/blog/threat-modelling.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "42838d7a2241e272e0347f5d9151f369853dde76dfeea4442da7a7423e5fb7b3",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 3,
+      "pages": [
+        {
+          "name": "DFD",
+          "vertices": 63,
+          "edges": 14
+        },
+        {
+          "name": "PFD",
+          "vertices": 23,
+          "edges": 11
+        },
+        {
+          "name": "Attack Tree",
+          "vertices": 13,
+          "edges": 12
+        }
+      ],
+      "patterns": [
+        "trust-boundary",
+        "threat-model"
+      ],
+      "analysis": "データ経路と信頼境界を重ねて脅威の位置を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-02.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "データ経路と信頼境界を重ねて脅威の位置を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-024.png"
+    },
+    {
+      "id": "REF-025",
+      "source_refs": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "repository_path": "templates/basic/flowchart.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/flowchart.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/basic/flowchart.xml",
+      "local_path": "official-examples/templates/basic/flowchart.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "7a493d28bad81c3bf737aeaac88aebe6a930bb4c86e24a047ae368fdf1c6ad56",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 6,
+          "edges": 5
+        }
+      ],
+      "patterns": [
+        "basic-flow"
+      ],
+      "analysis": "処理矩形と判断菱形の区別で分岐を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "処理矩形と判断菱形の区別で分岐を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-025.png"
+    },
+    {
+      "id": "REF-026",
+      "source_refs": [
+        "SRC-054",
+        "SRC-002"
+      ],
+      "repository_path": "templates/basic/swimlanes.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/swimlanes.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/basic/swimlanes.xml",
+      "local_path": "official-examples/templates/basic/swimlanes.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "ce1566223f84e3547603a32f385aff3ccfaded53cd95abf7313464abe140e5af",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 12,
+          "edges": 8
+        }
+      ],
+      "patterns": [
+        "swimlane"
+      ],
+      "analysis": "処理順序に担当レーンを重ねる",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "処理順序に担当レーンを重ねる"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-026.png"
+    },
+    {
+      "id": "REF-027",
+      "source_refs": [
+        "SRC-027",
+        "SRC-002"
+      ],
+      "repository_path": "templates/flowcharts/cross_functional_flowchart_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/flowcharts/cross_functional_flowchart_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/flowcharts/cross_functional_flowchart_1.xml",
+      "local_path": "official-examples/templates/flowcharts/cross_functional_flowchart_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "f0929b79725f1ed43c625f69cbbba8cae0dc8fd96391305872953a8992e78272",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 21,
+          "edges": 13
+        }
+      ],
+      "patterns": [
+        "cross-functional"
+      ],
+      "analysis": "工程と担当の交差で引継ぎを可視化する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "工程と担当の交差で引継ぎを可視化する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-027.png"
+    },
+    {
+      "id": "REF-028",
+      "source_refs": [
+        "SRC-016",
+        "SRC-002"
+      ],
+      "repository_path": "examples/bpmn-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/bpmn-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/bpmn-example.drawio",
+      "local_path": "official-examples/examples/bpmn-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "9bf9e39dcab3efa5a52f0c9f79404327455290c51d8226e70d2e4b28ce64a957",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 45,
+          "edges": 32
+        },
+        {
+          "name": "Purchase stock",
+          "vertices": 11,
+          "edges": 10
+        }
+      ],
+      "patterns": [
+        "bpmn"
+      ],
+      "analysis": "イベント・タスク・ゲートウェイの専用記法を使う",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "イベント・タスク・ゲートウェイの専用記法を使う",
+        "full_scale_preview_reviewed": true
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-028.png"
+    },
+    {
+      "id": "REF-029",
+      "source_refs": [
+        "SRC-028",
+        "SRC-002"
+      ],
+      "repository_path": "blog/website-roles-products.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/website-roles-products.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/website-roles-products.drawio",
+      "local_path": "official-examples/blog/website-roles-products.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "55bb0f65ce0c9a49d32de3621c043dc5829b91aa88114ec627888c87969382c3",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 27,
+          "edges": 23
+        }
+      ],
+      "patterns": [
+        "roles-responsibility"
+      ],
+      "analysis": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "Public/Registered User/組織内担当者と製品・購読・ライセンスを関連づけ、役割ごとのアクセスを示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-029.png"
+    },
+    {
+      "id": "REF-030",
+      "source_refs": [
+        "SRC-029",
+        "SRC-002"
+      ],
+      "repository_path": "templates/basic/orgchart.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/basic/orgchart.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/basic/orgchart.xml",
+      "local_path": "official-examples/templates/basic/orgchart.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "12ba57846ae252a1a80b8ac6fa1ac25bc451f73b1781f48ec95849dd173d8aaf",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 5,
+          "edges": 3
+        }
+      ],
+      "patterns": [
+        "organisation"
+      ],
+      "analysis": "親子の責任系統を上から下へ分岐する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "親子の責任系統を上から下へ分岐する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-030.png"
+    },
+    {
+      "id": "REF-031",
+      "source_refs": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "repository_path": "examples/business-model-canvas-table.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/business-model-canvas-table.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/business-model-canvas-table.drawio",
+      "local_path": "official-examples/examples/business-model-canvas-table.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "5ceeebc94608540f45b9b29c62af8e614fd7d32f030eb415c91b70016b7638a7",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 41,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "business-model"
+      ],
+      "analysis": "複数の事業観点を区画化したキャンバスに配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "複数の事業観点を区画化したキャンバスに配置する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-031.png"
+    },
+    {
+      "id": "REF-032",
+      "source_refs": [
+        "SRC-053",
+        "SRC-002"
+      ],
+      "repository_path": "blog/story-map.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/story-map.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/story-map.drawio",
+      "local_path": "official-examples/blog/story-map.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "d163c86b60bb37f91f3ed1790bbd177637449d388fc64e857be1e8e3c2833ef7",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "purchase-groceries-online",
+          "vertices": 84,
+          "edges": 10
+        },
+        {
+          "name": "update-account",
+          "vertices": 60,
+          "edges": 1
+        }
+      ],
+      "patterns": [
+        "story-map",
+        "customer-activities"
+      ],
+      "analysis": "ユーザー行動の横順序と優先度の縦構造を分ける",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "ユーザー行動の横順序と優先度の縦構造を分ける",
+        "full_scale_preview_reviewed": true
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-032.png"
+    },
+    {
+      "id": "REF-033",
+      "source_refs": [
+        "SRC-026",
+        "SRC-002"
+      ],
+      "repository_path": "examples/timeline-example.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/timeline-example.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/timeline-example.drawio",
+      "local_path": "official-examples/examples/timeline-example.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "6a9c81d2c89dee0aee34b2d929bdc579697624877bd71590f7f8d477978b949e",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 15,
+          "edges": 5
+        }
+      ],
+      "patterns": [
+        "roadmap",
+        "milestone"
+      ],
+      "analysis": "時間軸上に節目と説明を配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "時間軸上に節目と説明を配置する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-033.png"
+    },
+    {
+      "id": "REF-034",
+      "source_refs": [
+        "SRC-026",
+        "SRC-002"
+      ],
+      "repository_path": "examples/timeline-infographic-shapes-vertical.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/timeline-infographic-shapes-vertical.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/timeline-infographic-shapes-vertical.drawio",
+      "local_path": "official-examples/examples/timeline-infographic-shapes-vertical.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "7b30ea084b0513620cc03d54dd70f25b374a5efa72a6d0f8b413bab00782b435",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "Vertical",
+          "vertices": 50,
+          "edges": 1
+        },
+        {
+          "name": "Horizontal",
+          "vertices": 36,
+          "edges": 0
+        },
+        {
+          "name": "Angled",
+          "vertices": 25,
+          "edges": 0
+        },
+        {
+          "name": "Detailed",
+          "vertices": 20,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "vertical-timeline"
+      ],
+      "analysis": "縦タイムライン、蛇行する連続工程、番号付き横帯、旗付き工程を同ページで比較する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "縦タイムライン、蛇行する連続工程、番号付き横帯、旗付き工程を同ページで比較する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-034.png"
+    },
+    {
+      "id": "REF-035",
+      "source_refs": [
+        "SRC-024",
+        "SRC-002"
+      ],
+      "repository_path": "examples/gantt-table.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/gantt-table.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/gantt-table.drawio",
+      "local_path": "official-examples/examples/gantt-table.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "dc24b21db8fcfef1e9c033a88f07218a5256cb2982b5b9aaf91ea85ed13db4a7",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 105,
+          "edges": 6
+        }
+      ],
+      "patterns": [
+        "gantt"
+      ],
+      "analysis": "タスク行と日程列に期間バーを重ねる",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "タスク行と日程列に期間バーを重ねる"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-035.png"
+    },
+    {
+      "id": "REF-036",
+      "source_refs": [
+        "SRC-023",
+        "SRC-002"
+      ],
+      "repository_path": "templates/business/pert_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/business/pert_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/business/pert_1.xml",
+      "local_path": "official-examples/templates/business/pert_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "78557b5d39724e53b64aaae2c7219959e692251698e3997f1e8e453669683458",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 21,
+          "edges": 27
+        }
+      ],
+      "patterns": [
+        "pert"
+      ],
+      "analysis": "作業の前後関係と分岐・合流をネットワークで示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-03.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "作業の前後関係と分岐・合流をネットワークで示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-036.png"
+    },
+    {
+      "id": "REF-037",
+      "source_refs": [
+        "SRC-023",
+        "SRC-002"
+      ],
+      "repository_path": "examples/gemfile-dependency-graph.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/gemfile-dependency-graph.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/gemfile-dependency-graph.drawio",
+      "local_path": "official-examples/examples/gemfile-dependency-graph.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "502981a5864864a5e58ec5a2bb8447a690bedb3ad38519d416ba050c90a698e3",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 33,
+          "edges": 48
+        }
+      ],
+      "patterns": [
+        "dependency"
+      ],
+      "analysis": "複数の依存先を有向グラフとして配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "複数の依存先を有向グラフとして配置する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-037.png"
+    },
+    {
+      "id": "REF-038",
+      "source_refs": [
+        "SRC-025",
+        "SRC-002"
+      ],
+      "repository_path": "examples/kanban-examples.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/kanban-examples.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/kanban-examples.drawio",
+      "local_path": "official-examples/examples/kanban-examples.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "52e8674f6e12c68375e19bd9a52061494b58e611f3dddfb7e90ad93f9ad9e3cb",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 88,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "kanban"
+      ],
+      "analysis": "状態列と作業カードで滞留を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "状態列と作業カードで滞留を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-038.png"
+    },
+    {
+      "id": "REF-039",
+      "source_refs": [
+        "SRC-026",
+        "SRC-002"
+      ],
+      "repository_path": "blog/project-phase-timeline.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/project-phase-timeline.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/project-phase-timeline.drawio",
+      "local_path": "official-examples/blog/project-phase-timeline.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "30097f0f246e0d92e7fdea811d85c5211ad3c6ef97b2cff05e76a2f0b980fea6",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 21,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "phase-team"
+      ],
+      "analysis": "横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "横の工程軸に参加チームの短い縦線とラベルを配置する。期間幅や担当人数の量は符号化しない",
+        "full_scale_preview_reviewed": true
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-039.png"
+    },
+    {
+      "id": "REF-040",
+      "source_refs": [
+        "SRC-056",
+        "SRC-002"
+      ],
+      "repository_path": "templates/charts/work_breakdown_structure.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/charts/work_breakdown_structure.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/charts/work_breakdown_structure.xml",
+      "local_path": "official-examples/templates/charts/work_breakdown_structure.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "f6335f68f2c04efcfc7d23b6fc61d91209ffd32e64858df411ac77883f6e3247",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 79,
+          "edges": 78
+        }
+      ],
+      "patterns": [
+        "work-breakdown"
+      ],
+      "analysis": "成果物や仕事を階層分解する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "成果物や仕事を階層分解する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-040.png"
+    },
+    {
+      "id": "REF-041",
+      "source_refs": [
+        "SRC-034",
+        "SRC-002"
+      ],
+      "repository_path": "blog/probability-tree.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/probability-tree.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/probability-tree.drawio",
+      "local_path": "official-examples/blog/probability-tree.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "78d5e7a376b85578b314b2b66243a02d138d9487838d63f873807d07b0c8541c",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 36,
+          "edges": 7
+        }
+      ],
+      "patterns": [
+        "risk",
+        "decision-tree"
+      ],
+      "analysis": "コインと骰子の条件付き分岐と経路確率を対応づける。リスクの重大度評価表ではない",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "コインと骰子の条件付き分岐と経路確率を対応づける。リスクの重大度評価表ではない"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-041.png"
+    },
+    {
+      "id": "REF-042",
+      "source_refs": [
+        "SRC-031",
+        "SRC-002"
+      ],
+      "repository_path": "templates/business/ansoff_matrix.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/business/ansoff_matrix.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/business/ansoff_matrix.xml",
+      "local_path": "official-examples/templates/business/ansoff_matrix.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "190f1e647190e6e8b803202dfd223bc5ac2ba706445953a03c069f05f8bc355b",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 8,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "2x2"
+      ],
+      "analysis": "独立する二軸を四象限に交差させる",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "独立する二軸を四象限に交差させる"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-042.png"
+    },
+    {
+      "id": "REF-043",
+      "source_refs": [
+        "SRC-031",
+        "SRC-002"
+      ],
+      "repository_path": "examples/SWOT.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/SWOT.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/SWOT.xml",
+      "local_path": "official-examples/examples/SWOT.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "743c2ee98f177e886033934791da1fd5a8fde8b7d896a72896d6a0a7b2b881e0",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 17,
+          "edges": 1
+        }
+      ],
+      "patterns": [
+        "swot"
+      ],
+      "analysis": "内外と正負の観点を四区画に整理する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "内外と正負の観点を四区画に整理する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-043.png"
+    },
+    {
+      "id": "REF-044",
+      "source_refs": [
+        "SRC-031",
+        "SRC-002"
+      ],
+      "repository_path": "examples/pestel-analysis.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/pestel-analysis.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/pestel-analysis.drawio",
+      "local_path": "official-examples/examples/pestel-analysis.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "9e3d145910e9c383a4ef130e26532824d5e2f24c561259cfa6b45174ba9e92cf",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 71,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "pestel"
+      ],
+      "analysis": "六つの外部環境要因を独立領域として配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "六つの外部環境要因を独立領域として配置する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-044.png"
+    },
+    {
+      "id": "REF-045",
+      "source_refs": [
+        "SRC-031",
+        "SRC-002"
+      ],
+      "repository_path": "examples/5c-marketing-analysis.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/5c-marketing-analysis.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/5c-marketing-analysis.drawio",
+      "local_path": "official-examples/examples/5c-marketing-analysis.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "af718f3cd1c2c5e90f768f1857c80ba90ca0477b91b463df0c2c4978c6d82225",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "5C Situational Analysis",
+          "vertices": 43,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "5c"
+      ],
+      "analysis": "市場の五観点を比較できるまとまりへ配置する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "市場の五観点を比較できるまとまりへ配置する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-045.png"
+    },
+    {
+      "id": "REF-046",
+      "source_refs": [
+        "SRC-030",
+        "SRC-002"
+      ],
+      "repository_path": "examples/ishikawa-fishbone-examples.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/ishikawa-fishbone-examples.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/ishikawa-fishbone-examples.drawio",
+      "local_path": "official-examples/examples/ishikawa-fishbone-examples.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "d9ecf7c98110c6ff923826b05a7377237c6152b6c3edf3eefcea056f5dd3f515",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "Manufacturing",
+          "vertices": 106,
+          "edges": 111
+        },
+        {
+          "name": "Service",
+          "vertices": 66,
+          "edges": 68
+        },
+        {
+          "name": "Product marketing",
+          "vertices": 50,
+          "edges": 0
+        },
+        {
+          "name": "Basic",
+          "vertices": 26,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "fishbone"
+      ],
+      "analysis": "結果へ向かう主軸に原因分類を枝として付加する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "結果へ向かう主軸に原因分類を枝として付加する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-046.png"
+    },
+    {
+      "id": "REF-047",
+      "source_refs": [
+        "SRC-034",
+        "SRC-002"
+      ],
+      "repository_path": "templates/engineering/fault_tree_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/engineering/fault_tree_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/engineering/fault_tree_1.xml",
+      "local_path": "official-examples/templates/engineering/fault_tree_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "fe6c5a64e23c222780d2f0d9f4bb73f542329a2638386e46eb89068d7536cbe7",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 19,
+          "edges": 14
+        }
+      ],
+      "patterns": [
+        "cause-effect",
+        "fault-tree"
+      ],
+      "analysis": "望ましくない事象を論理条件へ分解する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "望ましくない事象を論理条件へ分解する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-047.png"
+    },
+    {
+      "id": "REF-048",
+      "source_refs": [
+        "SRC-035",
+        "SRC-002"
+      ],
+      "repository_path": "templates/education/compare_diagram.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/education/compare_diagram.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/education/compare_diagram.xml",
+      "local_path": "official-examples/templates/education/compare_diagram.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "75cf4f1c95d8df11529ebe47380ab2409d6f02fcbe80460fce3c58c15e15dd71",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 7,
+          "edges": 4
+        }
+      ],
+      "patterns": [
+        "comparison",
+        "before-after"
+      ],
+      "analysis": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-04.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-048.png"
+    },
+    {
+      "id": "REF-049",
+      "source_refs": [
+        "SRC-034",
+        "SRC-002"
+      ],
+      "repository_path": "templates/other/decision_tree_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/decision_tree_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/other/decision_tree_1.xml",
+      "local_path": "official-examples/templates/other/decision_tree_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "fed26778f2763b6eb73a353e04375a4cddce54f239e75fa5e97ca5c8b770a78d",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 52,
+          "edges": 35
+        }
+      ],
+      "patterns": [
+        "decision-tree"
+      ],
+      "analysis": "判断と選択枝を階層化する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "判断と選択枝を階層化する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-049.png"
+    },
+    {
+      "id": "REF-050",
+      "source_refs": [
+        "SRC-032",
+        "SRC-002"
+      ],
+      "repository_path": "blog/concept-maps.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/concept-maps.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/concept-maps.drawio",
+      "local_path": "official-examples/blog/concept-maps.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "8755ab5dbd47b9d25d8a6b2f5a994d0362b824e46da2f7e99df4949cb666f4ab",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 6,
+      "pages": [
+        {
+          "name": "differential diagnosis",
+          "vertices": 35,
+          "edges": 59
+        },
+        {
+          "name": "purchasing factors",
+          "vertices": 22,
+          "edges": 17
+        },
+        {
+          "name": "customer feedback",
+          "vertices": 23,
+          "edges": 30
+        },
+        {
+          "name": "energy fault map",
+          "vertices": 16,
+          "edges": 17
+        },
+        {
+          "name": "smart template concept map",
+          "vertices": 37,
+          "edges": 35
+        },
+        {
+          "name": "mind-body-bridging map",
+          "vertices": 28,
+          "edges": 23
+        }
+      ],
+      "patterns": [
+        "concept-map"
+      ],
+      "analysis": "概念同士を関係ラベル付きで接続する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "概念同士を関係ラベル付きで接続する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-050.png"
+    },
+    {
+      "id": "REF-051",
+      "source_refs": [
+        "SRC-055",
+        "SRC-002"
+      ],
+      "repository_path": "examples/VennDiagram.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/VennDiagram.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/VennDiagram.xml",
+      "local_path": "official-examples/examples/VennDiagram.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "2496eff264707420976b9ee227df041128afc7fba0f8bdfead3f97d1521a24fa",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 24,
+          "edges": 3
+        }
+      ],
+      "patterns": [
+        "venn"
+      ],
+      "analysis": "集合領域の重なりで共通部分を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "集合領域の重なりで共通部分を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-051.png"
+    },
+    {
+      "id": "REF-052",
+      "source_refs": [
+        "SRC-036",
+        "SRC-002"
+      ],
+      "repository_path": "blog/sankey-diagrams.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/sankey-diagrams.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/sankey-diagrams.drawio",
+      "local_path": "official-examples/blog/sankey-diagrams.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "916ca69aa39600d8a9023c25821c50f2cf6eb891cb6753eb8884300a9cd0a07a",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 4,
+      "pages": [
+        {
+          "name": "Sankey with connectors",
+          "vertices": 18,
+          "edges": 31
+        },
+        {
+          "name": "Sankey with shapes",
+          "vertices": 42,
+          "edges": 24
+        },
+        {
+          "name": "Sankey Mermaid",
+          "vertices": 1,
+          "edges": 0
+        },
+        {
+          "name": "Budget Sankey",
+          "vertices": 2,
+          "edges": 8
+        }
+      ],
+      "patterns": [
+        "sankey"
+      ],
+      "analysis": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+        "full_scale_preview_reviewed": true
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-052.png"
+    },
+    {
+      "id": "REF-053",
+      "source_refs": [
+        "SRC-037",
+        "SRC-002"
+      ],
+      "repository_path": "blog/infographic-shape-library-layers.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/infographic-shape-library-layers.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/infographic-shape-library-layers.drawio",
+      "local_path": "official-examples/blog/infographic-shape-library-layers.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "5f3b322f69164cb0e3af7d019dd6016fe87e4104fc641e34032f916e4ecd9d2e",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 55,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "layered-infographic"
+      ],
+      "analysis": "円柱・階段・ピラミッド・同心円・層状半円など同じ層構造の複数表現を横に並べる",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "円柱・階段・ピラミッド・同心円・層状半円など同じ層構造の複数表現を横に並べる"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-053.png"
+    },
+    {
+      "id": "REF-054",
+      "source_refs": [
+        "SRC-037",
+        "SRC-002"
+      ],
+      "repository_path": "examples/infographic-project-steps.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/examples/infographic-project-steps.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/examples/infographic-project-steps.drawio",
+      "local_path": "official-examples/examples/infographic-project-steps.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "ba18249379d9f0241eac6e7be2bdf33acb104151e7d63ed8d790ceeedba2bd11",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 10,
+          "edges": 6
+        }
+      ],
+      "patterns": [
+        "process-steps",
+        "numbered-flow"
+      ],
+      "analysis": "繰返し形状の配置で工程の順番を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "繰返し形状の配置で工程の順番を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-054.png"
+    },
+    {
+      "id": "REF-055",
+      "source_refs": [
+        "SRC-037",
+        "SRC-002"
+      ],
+      "repository_path": "templates/other/callouts_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/callouts_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/other/callouts_1.xml",
+      "local_path": "official-examples/templates/other/callouts_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "52f439552d18c982cb77cd89e29c006f30e6ac98cabaa5b0e5f151507331b21d",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 5,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "callout"
+      ],
+      "analysis": "二つの人物図形それぞれへ吹き出しの説明を対応づける",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "二つの人物図形それぞれへ吹き出しの説明を対応づける"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-055.png"
+    },
+    {
+      "id": "REF-056",
+      "source_refs": [
+        "SRC-001",
+        "SRC-002"
+      ],
+      "repository_path": "blog/diagram-integrations.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/diagram-integrations.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/diagram-integrations.drawio",
+      "local_path": "official-examples/blog/diagram-integrations.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "fdb871bc240a389cfd9f14afca0a8eed50d0b02d73d8b693d16a370609be0dc4",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 39,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "feature-overview"
+      ],
+      "analysis": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "Storage・Integrations・Platforms・Third-partyの区画にIcon+Labelをタイル状に並べる。Hub-and-spokeではない"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-056.png"
+    },
+    {
+      "id": "REF-057",
+      "source_refs": [
+        "SRC-004",
+        "SRC-002"
+      ],
+      "repository_path": "blog/board-visual-tutorial.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/board-visual-tutorial.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/board-visual-tutorial.drawio",
+      "local_path": "official-examples/blog/board-visual-tutorial.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "797befbdedecb36a70e1f2845dc342976d4b8118bd38a2503befb95a685314e6",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 16,
+          "edges": 12
+        }
+      ],
+      "patterns": [
+        "annotated-screenshot"
+      ],
+      "analysis": "画面全体のスクリーンショットではなく、選択ハンドルやメニュー断片に外周の矢印説明を付加したUIチュートリアル",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "画面全体のスクリーンショットではなく、選択ハンドルやメニュー断片に外周の矢印説明を付加したUIチュートリアル",
+        "full_scale_preview_reviewed": true
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-057.png"
+    },
+    {
+      "id": "REF-058",
+      "source_refs": [
+        "SRC-038",
+        "SRC-002"
+      ],
+      "repository_path": "blog/layers-how-they-work.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/layers-how-they-work.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/layers-how-they-work.drawio",
+      "local_path": "official-examples/blog/layers-how-they-work.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "3d6d1e8e6fb89d712de8e73f62aa674530e7357bc2fcfc2e01cfbfdee18dd741",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "how layers work",
+          "vertices": 32,
+          "edges": 14
+        },
+        {
+          "name": "infrastructure layers",
+          "vertices": 81,
+          "edges": 10
+        }
+      ],
+      "patterns": [
+        "interactive-layers"
+      ],
+      "analysis": "重ねる説明要素をレイヤー単位で管理する",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "重ねる説明要素をレイヤー単位で管理する"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-058.png"
+    },
+    {
+      "id": "REF-059",
+      "source_refs": [
+        "SRC-051",
+        "SRC-002"
+      ],
+      "repository_path": "templates/other/cycle_1.xml",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/templates/other/cycle_1.xml",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/templates/other/cycle_1.xml",
+      "local_path": "official-examples/templates/other/cycle_1.xml",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "e4202e4bb6ba561e8e5a39e09f3740036f2d90f24c68a70f5358140566d3322a",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 1,
+      "pages": [
+        {
+          "name": "Page-1",
+          "vertices": 14,
+          "edges": 0
+        }
+      ],
+      "patterns": [
+        "circular-process"
+      ],
+      "analysis": "中央のFood Chain Cycleを六つの周辺六角形で囲み、隣接する要素間の周回を示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "中央のFood Chain Cycleを六つの周辺六角形で囲み、隣接する要素間の周回を示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-059.png"
+    },
+    {
+      "id": "REF-060",
+      "source_refs": [
+        "SRC-022",
+        "SRC-002"
+      ],
+      "repository_path": "blog/gitflow-examples.drawio",
+      "url": "https://raw.githubusercontent.com/jgraph/drawio-diagrams/fab8af896076cecc55deea13bd60ef181fc92292/blog/gitflow-examples.drawio",
+      "original_url": "https://github.com/jgraph/drawio-diagrams/blob/dev/blog/gitflow-examples.drawio",
+      "local_path": "official-examples/blog/gitflow-examples.drawio",
+      "repository_commit": "fab8af896076cecc55deea13bd60ef181fc92292",
+      "sha256": "ba326801426c18d6b2267ef12ae4d696797df0c3e8def6bffd832e03e4cc82f4",
+      "http_status": 200,
+      "verified_at": "2026-10-04",
+      "license": "Apache-2.0",
+      "license_verified": true,
+      "license_scope": "Repository LICENSE at pinned commit; embedded third-party names/icons may carry separate trademark or use conditions.",
+      "page_count": 2,
+      "pages": [
+        {
+          "name": "complex gitflow",
+          "vertices": 37,
+          "edges": 44
+        },
+        {
+          "name": "simple gitflow",
+          "vertices": 7,
+          "edges": 7
+        }
+      ],
+      "patterns": [
+        "gitflow"
+      ],
+      "analysis": "並行する枝と合流を時間順序で示す",
+      "analysis_basis": "official documentation + editable XML; image review separately recorded",
+      "visual_review": {
+        "status": "reviewed-contact-sheet",
+        "page_index": 1,
+        "method": "Draw.io PNG + LLM image inspection",
+        "contact_sheet": "reference-previews/contact-05.png",
+        "checked_at": "2026-10-04",
+        "scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "finding": "並行する枝と合流を時間順序で示す"
+      },
+      "render_status": "ok",
+      "preview_path": "reference-previews/REF-060.png"
+    }
+  ]
+}

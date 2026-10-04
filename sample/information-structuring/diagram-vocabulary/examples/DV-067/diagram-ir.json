@@ -1,0 +1,188 @@
+{
+  "id": "DV-067",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "構成図を保持した設計意図の説明",
+    "purpose": "どの構成要素にどの設計意図が対応するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "annotated-base",
+    "theme": "T02"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "構成図を保持した設計意図の説明",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "どの構成要素にどの設計意図が対応するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "青い線は設計意図の説明先を指す。原図へ通信経路を追加したものではない。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "web",
+      "label": "予約画面",
+      "x": 75,
+      "y": 120,
+      "width": 200,
+      "height": 90,
+      "parent": "left",
+      "role": "primary",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "api",
+      "label": "予約API",
+      "x": 40,
+      "y": 120,
+      "width": 200,
+      "height": 90,
+      "parent": "right",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "db",
+      "label": "予約データ",
+      "x": 345,
+      "y": 120,
+      "width": 200,
+      "height": 100,
+      "parent": "right",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.database",
+      "shape_query": "database",
+      "semantic_type": "database"
+    },
+    {
+      "id": "a1",
+      "label": "① 画面と業務を分離",
+      "x": 100,
+      "y": 710,
+      "width": 400,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=1;whiteSpace=wrap;fontColor=#2563EB;"
+    },
+    {
+      "id": "a2",
+      "label": "② 永続化の責務を分離",
+      "x": 730,
+      "y": 710,
+      "width": 450,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=1;whiteSpace=wrap;fontColor=#2563EB;"
+    }
+  ],
+  "containers": [
+    {
+      "id": "outer",
+      "label": "予約システム",
+      "x": 60,
+      "y": 220,
+      "width": 1160,
+      "height": 470,
+      "parent": "1"
+    },
+    {
+      "id": "left",
+      "label": "画面",
+      "x": 30,
+      "y": 70,
+      "width": 360,
+      "height": 330,
+      "parent": "outer"
+    },
+    {
+      "id": "right",
+      "label": "業務・データ",
+      "x": 520,
+      "y": 70,
+      "width": 590,
+      "height": 330,
+      "parent": "outer"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "web",
+      "target": "api",
+      "label": "HTTPS要求",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "api",
+      "target": "db",
+      "label": "SQL",
+      "semantic_type": "flow",
+      "waypoints": [],
+      "parent": "right",
+      "style": ""
+    },
+    {
+      "id": "e2",
+      "source": "a1",
+      "target": "web",
+      "label": "",
+      "semantic_type": "annotation",
+      "waypoints": [],
+      "parent": "1",
+      "style": "exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#2563EB;"
+    },
+    {
+      "id": "e3",
+      "source": "a2",
+      "target": "db",
+      "label": "",
+      "semantic_type": "annotation",
+      "waypoints": [],
+      "parent": "1",
+      "style": "exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#2563EB;"
+    }
+  ],
+  "tables": []
+}

@@ -1,0 +1,164 @@
+{
+  "id": "DV-061",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "能力を積み重ねて説明する",
+    "purpose": "上位の価値はどの基盤に支えられるか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "layered-explanation",
+    "theme": "T04"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "能力を積み重ねて説明する",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "上位の価値はどの基盤に支えられるか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "d0",
+      "label": "空きと条件を短時間で把握",
+      "x": 50,
+      "y": 55,
+      "width": 690,
+      "height": 65,
+      "parent": "s0",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "d1",
+      "label": "受付・確認・通知",
+      "x": 50,
+      "y": 55,
+      "width": 770,
+      "height": 65,
+      "parent": "s1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "d2",
+      "label": "データ・認証・運用",
+      "x": 50,
+      "y": 55,
+      "width": 850,
+      "height": 65,
+      "parent": "s2",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "principle",
+      "label": "積層は依存する能力の説明。立体装飾や面積で数量を表さない。",
+      "x": 70,
+      "y": 765,
+      "width": 1160,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [
+    {
+      "id": "s0",
+      "label": "利用価値",
+      "x": 230,
+      "y": 205,
+      "width": 790,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "s1",
+      "label": "業務能力",
+      "x": 190,
+      "y": 400,
+      "width": 870,
+      "height": 160,
+      "parent": "1"
+    },
+    {
+      "id": "s2",
+      "label": "基盤",
+      "x": 150,
+      "y": 595,
+      "width": 950,
+      "height": 160,
+      "parent": "1"
+    }
+  ],
+  "edges": [],
+  "tables": []
+}

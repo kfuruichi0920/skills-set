@@ -1,0 +1,88 @@
+[
+  {
+    "node": "s0",
+    "query": "Compute Engine",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.gcp2.compute_engine",
+        "library": "gcp2",
+        "name": "Compute Engine",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.gcp2.compute_engine_2",
+        "library": "gcp2",
+        "name": "compute engine 2",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "verified": true
+      },
+      {
+        "shape_id": "mxgraph.gcp2.compute_engine_icon",
+        "library": "gcp2",
+        "name": "Compute Engine icon",
+        "asset_type": "shape",
+        "semantic_categories": [],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.gcp2.compute_engine",
+    "reason": "明示された図形の意味を照合"
+  },
+  {
+    "node": "s1",
+    "query": "Cloud SQL",
+    "candidates": [
+      {
+        "shape_id": "mxgraph.gcp2.cloud_sql",
+        "library": "gcp2",
+        "name": "Cloud SQL",
+        "asset_type": "shape",
+        "semantic_categories": [
+          "cloud"
+        ],
+        "score": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "verified": true
+      }
+    ],
+    "selected": "mxgraph.gcp2.cloud_sql",
+    "reason": "明示された図形の意味を照合"
+  }
+]

@@ -1,0 +1,22 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Yu Gothic"
+skinparam defaultFontSize 18
+left to right direction
+skinparam nodesep 70
+skinparam ranksep 90
+node "公開領域" {
+ node "Web実行環境" {
+ artifact "予約画面" as Web
+ }
+}
+node "内部領域" {
+ node "API実行環境" {
+ artifact "予約API" as API
+ }
+ database "予約DB" as DB
+}
+Web --> API : HTTPS
+API --> DB : SQL
+@enduml

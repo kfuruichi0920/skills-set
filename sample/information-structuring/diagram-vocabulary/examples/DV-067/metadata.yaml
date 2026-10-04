@@ -1,0 +1,148 @@
+{
+  "id": "DV-067",
+  "key": "annotated-architecture",
+  "title_ja": "構成図を保持した設計意図の説明",
+  "title_en": "Annotated Architecture",
+  "domain": [
+    "presentation"
+  ],
+  "purpose": "どの構成要素にどの設計意図が対応するか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "annotated-base"
+  ],
+  "composition_pattern": "annotated-base",
+  "source_refs": [
+    "SRC-038"
+  ],
+  "information_structure": [
+    "annotated-base",
+    "annotation",
+    "containment",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "annotated-base",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container",
+      "locked-source-layer"
+    ]
+  },
+  "visual": {
+    "theme": "T02",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow",
+    "annotation"
+  ],
+  "when_to_use": [
+    "どの構成要素にどの設計意図が対応するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "annotated-architecture",
+    "annotated-base",
+    "annotation",
+    "containment",
+    "flow",
+    "presentation",
+    "構成図を保持した設計意図の説明"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "web",
+      "semantic": "process"
+    },
+    {
+      "node": "api",
+      "semantic": "process"
+    },
+    {
+      "node": "db",
+      "semantic": "database"
+    }
+  ],
+  "variant_of": "DV-002",
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:52:59.057699+00:00",
+    "findings": "原図の通信線と青い説明線を区別し、注記が画面と永続化先を正しく指す。原図をロックした別層に保持している。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-067/example.drawio",
+  "native_annotation": true,
+  "source_preservation": {
+    "path": "source.drawio",
+    "sha256": "c60da0eead88254ad9ef5f5800dfe94cf6c3de98367c6a62a65f8123171f6ad0",
+    "preserved_ids": [
+      "outer",
+      "left",
+      "right",
+      "heading",
+      "summary",
+      "legend",
+      "web",
+      "api",
+      "db",
+      "e0",
+      "e1"
+    ]
+  },
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-058",
+        "source_refs": [
+          "SRC-038",
+          "SRC-002"
+        ],
+        "analysis": "重ねる説明要素をレイヤー単位で管理する",
+        "visual_observation": "重ねる説明要素をレイヤー単位で管理する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-058.png",
+        "original": "sources/official-examples/blog/layers-how-they-work.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "8c2d8452da06fc30db0d5a02a02509f871488e711f43e6f66b628893173e15ca",
+  "preview_hash": "16653b0a7c6347872e3c222a5fc2c544cf1d5576a28657af16df1a1fad666e35",
+  "pattern": "annotated-base",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

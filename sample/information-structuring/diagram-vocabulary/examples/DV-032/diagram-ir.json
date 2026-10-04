@@ -1,0 +1,162 @@
+{
+  "id": "DV-032",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "担当者ごとの引き渡し",
+    "purpose": "処理がどの担当からどの担当へ渡るか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "role-swimlane",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "担当者ごとの引き渡し",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "処理がどの担当からどの担当へ渡るか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "a0",
+      "label": "依頼を入力",
+      "x": 100,
+      "y": 55,
+      "width": 250,
+      "height": 65,
+      "parent": "l0",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "a1",
+      "label": "内容を確認",
+      "x": 420,
+      "y": 55,
+      "width": 250,
+      "height": 65,
+      "parent": "l1",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    },
+    {
+      "id": "a2",
+      "label": "承認を判断",
+      "x": 740,
+      "y": 55,
+      "width": 250,
+      "height": 65,
+      "parent": "l2",
+      "role": "neutral",
+      "style": "",
+      "shape_id": "mxgraph.flowchart.process",
+      "shape_query": "process",
+      "semantic_type": "process"
+    }
+  ],
+  "containers": [
+    {
+      "id": "l0",
+      "label": "依頼者",
+      "x": 50,
+      "y": 205,
+      "width": 1180,
+      "height": 140,
+      "parent": "1"
+    },
+    {
+      "id": "l1",
+      "label": "受付担当",
+      "x": 50,
+      "y": 385,
+      "width": 1180,
+      "height": 140,
+      "parent": "1"
+    },
+    {
+      "id": "l2",
+      "label": "承認担当",
+      "x": 50,
+      "y": 565,
+      "width": 1180,
+      "height": 140,
+      "parent": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "a0",
+      "target": "a1",
+      "label": "引き渡す",
+      "semantic_type": "flow",
+      "waypoints": [
+        [
+          275,
+          365
+        ],
+        [
+          595,
+          365
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#172B4D;"
+    },
+    {
+      "id": "e1",
+      "source": "a1",
+      "target": "a2",
+      "label": "引き渡す",
+      "semantic_type": "flow",
+      "waypoints": [
+        [
+          595,
+          545
+        ],
+        [
+          915,
+          545
+        ]
+      ],
+      "parent": "1",
+      "style": "exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#172B4D;"
+    }
+  ],
+  "tables": []
+}

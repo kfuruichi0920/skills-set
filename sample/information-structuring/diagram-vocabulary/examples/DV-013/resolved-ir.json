@@ -1,0 +1,170 @@
+{
+  "id": "DV-013",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "利用者・予約・設備のデータ関係",
+    "purpose": "どのデータのキーが別データに対応するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "entity-relations",
+    "theme": "T02"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "利用者・予約・設備のデータ関係",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "どのデータのキーが別データに対応するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "note",
+      "label": "PKは主キー、FKは外部キー。利用者と設備の両方を予約が参照する。",
+      "x": 90,
+      "y": 620,
+      "width": 1120,
+      "height": 75,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "users_r0",
+      "target": "booking_r0",
+      "label": "1 : 0..*",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    },
+    {
+      "id": "e1",
+      "source": "resource_r0",
+      "target": "booking_r0",
+      "label": "1 : 0..*",
+      "semantic_type": "association",
+      "waypoints": [],
+      "parent": "1",
+      "style": ""
+    }
+  ],
+  "tables": [
+    {
+      "id": "users",
+      "x": 60,
+      "y": 270,
+      "column_widths": [
+        290
+      ],
+      "rows": [
+        [
+          "利用者"
+        ],
+        [
+          "PK 利用者ID"
+        ],
+        [
+          "氏名"
+        ]
+      ],
+      "row_height": 64
+    },
+    {
+      "id": "booking",
+      "x": 490,
+      "y": 270,
+      "column_widths": [
+        300
+      ],
+      "rows": [
+        [
+          "予約"
+        ],
+        [
+          "PK 予約ID"
+        ],
+        [
+          "FK 利用者ID"
+        ],
+        [
+          "FK 設備ID"
+        ]
+      ],
+      "row_height": 64
+    },
+    {
+      "id": "resource",
+      "x": 940,
+      "y": 270,
+      "column_widths": [
+        280
+      ],
+      "rows": [
+        [
+          "設備"
+        ],
+        [
+          "PK 設備ID"
+        ],
+        [
+          "名称"
+        ]
+      ],
+      "row_height": 64
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="fragment-8" name="外周の説明">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system" value="予約API" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#0F62FE;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=mxgraph.flowchart.process;">
+          <mxGeometry x="450.0" y="105.0" width="260" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="c0" value="① 入力条件を検査" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="0.0" y="0.0" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="② 空きを確認" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="870.0" y="0.0" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="③ 結果を通知" parent="1" vertex="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;shape=note;">
+          <mxGeometry x="425.0" y="405.0" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" source="c0" target="system" parent="1" edge="1" value="" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;dashed=1;dashPattern=1 4;endArrow=none;labelBackgroundColor=#FFFFFF;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" source="c1" target="system" parent="1" edge="1" value="" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;dashed=1;dashPattern=1 4;endArrow=none;labelBackgroundColor=#FFFFFF;entryX=1;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" source="c2" target="system" parent="1" edge="1" value="" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;dashed=1;dashPattern=1 4;endArrow=none;labelBackgroundColor=#FFFFFF;entryX=0.5;entryY=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

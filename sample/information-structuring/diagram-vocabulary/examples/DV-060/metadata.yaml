@@ -1,0 +1,134 @@
+{
+  "id": "DV-060",
+  "key": "sankey",
+  "title_ja": "数量を保つ流れの分岐",
+  "title_en": "Sankey",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "入力数量はどの出力へどれだけ分かれるか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "quantity-flow"
+  ],
+  "composition_pattern": "quantity-flow",
+  "source_refs": [
+    "SRC-036"
+  ],
+  "information_structure": [
+    "attributes",
+    "flow",
+    "quantity"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "quantity-flow",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape"
+    ]
+  },
+  "visual": {
+    "theme": "T09",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "入力数量はどの出力へどれだけ分かれるかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合",
+    "数量が不明、単位が異なる、流量が保存されない場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "attributes",
+    "flow",
+    "quantity",
+    "quantity-flow",
+    "sankey",
+    "数量を保つ流れの分岐"
+  ],
+  "core": false,
+  "semantic_shape_requirement": [
+    {
+      "node": "in",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "accepted",
+      "semantic": "rectangle"
+    },
+    {
+      "node": "pending",
+      "semantic": "rectangle"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:41:22.624354+00:00",
+    "findings": "20件が12件と8件に分岐し、線幅12px・8pxの比と数値ラベルを確認。参照原図から比例幅精度を推定せず独立に検査する。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-060/example.drawio",
+  "quantity_check": {
+    "input": 20,
+    "outputs": [
+      12,
+      8
+    ],
+    "unit": "件",
+    "width_scale": "1px / 件"
+  },
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-052",
+        "source_refs": [
+          "SRC-036",
+          "SRC-002"
+        ],
+        "analysis": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+        "visual_observation": "第1ページは蒸気系統を細線の束と斜線の装置領域で表現する。数値比例幅の精度をこのプレビューだけで確認しない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-052.png",
+        "original": "sources/official-examples/blog/sankey-diagrams.drawio"
+      }
+    ],
+    "adaptation": "REF-052から流れの分岐を抽出。原図は比例幅の検証根拠ではなく、本例の20=12+8と線幅を独立検査する。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "bbe71db6b81972a2c9d8b25e6489355aa9ecbccfec73b89a76d5037795fc581f",
+  "preview_hash": "f04728fceb234f9bab6015add3869347f1a2b972d977940edb40173021fc01a4",
+  "pattern": "quantity-flow",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

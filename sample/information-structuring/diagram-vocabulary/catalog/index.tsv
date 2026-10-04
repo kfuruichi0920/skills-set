@@ -1,0 +1,76 @@
+﻿ID	名称	分野	説明パターン	テーマ	Core	派生元	出典	ファイル
+DV-001	システムの利用者と外部境界	software	hub-and-spoke	T02	True		SRC-010,SRC-045	sample/information-structuring/diagram-vocabulary/examples/DV-001/example.drawio
+DV-002	アプリケーションと永続データ	software	nested-containers	T02	True		SRC-010	sample/information-structuring/diagram-vocabulary/examples/DV-002/example.drawio
+DV-003	受付APIの責務分割	software	component-interface	T02	False		SRC-010,SRC-013	sample/information-structuring/diagram-vocabulary/examples/DV-003/example.drawio
+DV-004	依存方向を揃えた三層構造	software	layered-stack	T08	True		SRC-011	sample/information-structuring/diagram-vocabulary/examples/DV-004/example.drawio
+DV-005	実行環境と配置対象	software	nested-deployment	T02	False		SRC-011	sample/information-structuring/diagram-vocabulary/examples/DV-005/example.drawio
+DV-006	予約と利用者のクラス関係	software	class-association	T02	False		SRC-012	sample/information-structuring/diagram-vocabulary/examples/DV-006/example.drawio
+DV-007	予約要求のやり取り	software	sequence-lifelines	T02	True		SRC-011	sample/information-structuring/diagram-vocabulary/examples/DV-007/example.drawio
+DV-008	予約状態とイベント	software	state-transition	T02	True		SRC-014	sample/information-structuring/diagram-vocabulary/examples/DV-008/example.drawio
+DV-009	受付の処理と条件分岐	software	activity-branch	T02	False		SRC-011	sample/information-structuring/diagram-vocabulary/examples/DV-009/example.drawio
+DV-010	機能パッケージの依存	software	package-dependency	T02	False		SRC-011	sample/information-structuring/diagram-vocabulary/examples/DV-010/example.drawio
+DV-011	利用者と予約操作	software	actor-usecase	T02	False		SRC-011	sample/information-structuring/diagram-vocabulary/examples/DV-011/example.drawio
+DV-012	予約データの入力と保管	software	data-flow	T01	True		SRC-017	sample/information-structuring/diagram-vocabulary/examples/DV-012/example.drawio
+DV-013	利用者・予約・設備のデータ関係	software	entity-relations	T02	False		SRC-018	sample/information-structuring/diagram-vocabulary/examples/DV-013/example.drawio
+DV-014	要求・画面・データの対応	software	trace-pipeline	T08	True		SRC-019	sample/information-structuring/diagram-vocabulary/examples/DV-014/example.drawio
+DV-015	連携先と接続契約の一覧	software	interface-hub	T02	False		SRC-013	sample/information-structuring/diagram-vocabulary/examples/DV-015/example.drawio
+DV-016	要求・設計・検証のトレース	software	trace-matrix	T08	True		SRC-015	sample/information-structuring/diagram-vocabulary/examples/DV-016/example.drawio
+DV-017	拠点ネットワークの接続	infrastructure	hub-and-spoke	T06	True		SRC-020	sample/information-structuring/diagram-vocabulary/examples/DV-017/example.drawio
+DV-018	論理ネットワークの分離	infrastructure	zone-containment	T06	False	DV-002	SRC-020	sample/information-structuring/diagram-vocabulary/examples/DV-018/example.drawio
+DV-019	物理機器と配線	infrastructure	physical-chain	T06	False		SRC-020	sample/information-structuring/diagram-vocabulary/examples/DV-019/example.drawio
+DV-020	公開領域と非公開領域	infrastructure	nested-zones	T05	False	DV-002	SRC-020	sample/information-structuring/diagram-vocabulary/examples/DV-020/example.drawio
+DV-021	LambdaとRDSの構成例	infrastructure	vendor-service-flow	T05	False		SRC-021,SRC-041	sample/information-structuring/diagram-vocabulary/examples/DV-021/example.drawio
+DV-022	Azure VMとSQLの構成例	infrastructure	vendor-service-flow	T05	False	DV-021	SRC-050,SRC-042	sample/information-structuring/diagram-vocabulary/examples/DV-022/example.drawio
+DV-023	GCPの実行環境とDBの構成例	infrastructure	vendor-service-flow	T05	False	DV-021	SRC-020,SRC-044	sample/information-structuring/diagram-vocabulary/examples/DV-023/example.drawio
+DV-024	制御プレーンと実行ノード	infrastructure	control-and-workers	T08	False		SRC-046	sample/information-structuring/diagram-vocabulary/examples/DV-024/example.drawio
+DV-025	稼働系と待機系の切替条件	infrastructure	active-standby	T06	True		SRC-020	sample/information-structuring/diagram-vocabulary/examples/DV-025/example.drawio
+DV-026	二つの地域と複製経路	infrastructure	paired-regions	T05	False		SRC-039,SRC-040,SRC-044	sample/information-structuring/diagram-vocabulary/examples/DV-026/example.drawio
+DV-027	ラック内の機器配置	infrastructure	rack-stack	T06	False		SRC-052	sample/information-structuring/diagram-vocabulary/examples/DV-027/example.drawio
+DV-028	信頼境界と検査点	security	trust-boundaries	T07	True	DV-002	SRC-033,SRC-047	sample/information-structuring/diagram-vocabulary/examples/DV-028/example.drawio
+DV-029	制御判断とデータ通信の分離	security	dual-plane	T07	True		SRC-047,SRC-048	sample/information-structuring/diagram-vocabulary/examples/DV-029/example.drawio
+DV-030	データフローに脅威を対応付ける	security	threat-overlay	T07	False		SRC-033,SRC-057	sample/information-structuring/diagram-vocabulary/examples/DV-030/example.drawio
+DV-031	受付から回答までの基本フロー	business	left-to-right-pipeline	T01	True		SRC-027	sample/information-structuring/diagram-vocabulary/examples/DV-031/example.drawio
+DV-032	担当者ごとの引き渡し	business	role-swimlane	T03	True		SRC-054	sample/information-structuring/diagram-vocabulary/examples/DV-032/example.drawio
+DV-033	工程と担当の交差	business	phase-role-grid	T03	True		SRC-027	sample/information-structuring/diagram-vocabulary/examples/DV-033/example.drawio
+DV-034	承認業務のタスクとゲートウェイ	business	bpmn-exclusive-branch	T01	False		SRC-016	sample/information-structuring/diagram-vocabulary/examples/DV-034/example.drawio
+DV-035	作業と責任の対応	business	responsibility-matrix	T03	True		SRC-028	sample/information-structuring/diagram-vocabulary/examples/DV-035/example.drawio
+DV-036	組織の所属関係	business	top-down-hierarchy	T01	False		SRC-029	sample/information-structuring/diagram-vocabulary/examples/DV-036/example.drawio
+DV-037	予約サービスの事業構造	business	business-canvas	T04	False		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-037/example.drawio
+DV-038	利用者行動とリリース範囲	business	story-map-grid	T10	False		SRC-053	sample/information-structuring/diagram-vocabulary/examples/DV-038/example.drawio
+DV-039	利用者の接点と困りごと	business	journey-stage-panels	T09	False		SRC-053	sample/information-structuring/diagram-vocabulary/examples/DV-039/example.drawio
+DV-040	成果で区切る開発ロードマップ	project-management	horizon-roadmap	T04	True		SRC-026	sample/information-structuring/diagram-vocabulary/examples/DV-040/example.drawio
+DV-041	出来事を時点へ配置する	project-management	time-axis	T03	False		SRC-026	sample/information-structuring/diagram-vocabulary/examples/DV-041/example.drawio
+DV-042	判断を伴う節目	project-management	milestone-gates	T03	False		SRC-026	sample/information-structuring/diagram-vocabulary/examples/DV-042/example.drawio
+DV-043	作業期間と依存関係	project-management	task-time-grid	T03	True		SRC-024	sample/information-structuring/diagram-vocabulary/examples/DV-043/example.drawio
+DV-044	並行作業の合流と所要日数	project-management	dependency-network	T03	False		SRC-023	sample/information-structuring/diagram-vocabulary/examples/DV-044/example.drawio
+DV-045	成果物同士の依存	project-management	dependency-dag	T02	True		SRC-023	sample/information-structuring/diagram-vocabulary/examples/DV-045/example.drawio
+DV-046	タスクの状態と仕掛数	project-management	status-columns	T03	True		SRC-025	sample/information-structuring/diagram-vocabulary/examples/DV-046/example.drawio
+DV-047	工程ごとのチーム関与	project-management	phase-team-grid	T03	False	DV-033	SRC-026	sample/information-structuring/diagram-vocabulary/examples/DV-047/example.drawio
+DV-048	成果物から作業を分解する	project-management	work-breakdown	T03	True		SRC-056	sample/information-structuring/diagram-vocabulary/examples/DV-048/example.drawio
+DV-049	リスクと対策のつながり	project-management	risk-mitigation	T03	False		SRC-034	sample/information-structuring/diagram-vocabulary/examples/DV-049/example.drawio
+DV-050	効果と工数による位置付け	analysis	two-axis-positioning	T09	True		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-050/example.drawio
+DV-051	内外の要因を四領域で整理する	analysis	swot-quadrants	T09	False		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-051/example.drawio
+DV-052	外部環境の六つの観点	analysis	faceted-environment	T09	False		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-052/example.drawio
+DV-053	問題の原因候補を観点別に分ける	analysis	fishbone	T09	True		SRC-030	sample/information-structuring/diagram-vocabulary/examples/DV-053/example.drawio
+DV-054	仮説と結果の因果関係	analysis	causal-chain	T09	False		SRC-030	sample/information-structuring/diagram-vocabulary/examples/DV-054/example.drawio
+DV-055	同じ評価軸で方式を比較する	analysis	comparison-table	T09	True		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-055/example.drawio
+DV-056	変更前後を同じ配置で比べる	analysis	paired-before-after	T04	True		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-056/example.drawio
+DV-057	条件で選択肢を絞る	analysis	decision-tree	T09	False		SRC-034	sample/information-structuring/diagram-vocabulary/examples/DV-057/example.drawio
+DV-058	概念と関係名を明示する	analysis	labelled-concept-graph	T09	True		SRC-032	sample/information-structuring/diagram-vocabulary/examples/DV-058/example.drawio
+DV-059	集合の共通部分と差分	analysis	overlapping-sets	T09	False		SRC-055	sample/information-structuring/diagram-vocabulary/examples/DV-059/example.drawio
+DV-060	数量を保つ流れの分岐	analysis	quantity-flow	T09	False		SRC-036	sample/information-structuring/diagram-vocabulary/examples/DV-060/example.drawio
+DV-061	能力を積み重ねて説明する	presentation	layered-explanation	T04	False		SRC-037	sample/information-structuring/diagram-vocabulary/examples/DV-061/example.drawio
+DV-062	段階ごとの成果を示す	presentation	step-panels	T04	False		SRC-037	sample/information-structuring/diagram-vocabulary/examples/DV-062/example.drawio
+DV-063	番号で読む順を固定する	presentation	numbered-path	T01	True	DV-031	SRC-037	sample/information-structuring/diagram-vocabulary/examples/DV-063/example.drawio
+DV-064	図の要点を外周で説明する	presentation	callout-cluster	T01	True		SRC-037	sample/information-structuring/diagram-vocabulary/examples/DV-064/example.drawio
+DV-065	機能の全体像と対象を対応付ける	presentation	core-and-satellites	T04	False		SRC-035	sample/information-structuring/diagram-vocabulary/examples/DV-065/example.drawio
+DV-066	原画面を保持した番号付き説明	presentation	annotated-base	T01	False		SRC-038	sample/information-structuring/diagram-vocabulary/examples/DV-066/example.drawio
+DV-067	構成図を保持した設計意図の説明	presentation	annotated-base	T02	False	DV-002	SRC-038	sample/information-structuring/diagram-vocabulary/examples/DV-067/example.drawio
+DV-068	主張と根拠を一図にまとめる	presentation	claim-evidence	T04	False		SRC-035	sample/information-structuring/diagram-vocabulary/examples/DV-068/example.drawio
+DV-069	事業を五つの対象から整理する	analysis	five-factor-context	T09	False		SRC-031	sample/information-structuring/diagram-vocabulary/examples/DV-069/example.drawio
+DV-070	ブランチの分岐と統合	software	branch-merge-timeline	T02	False		SRC-022	sample/information-structuring/diagram-vocabulary/examples/DV-070/example.drawio
+DV-071	対象数を段階ごとに絞る	analysis	funnel	T09	False		SRC-035	sample/information-structuring/diagram-vocabulary/examples/DV-071/example.drawio
+DV-072	反復する改善の工程	business	cycle	T03	False		SRC-051	sample/information-structuring/diagram-vocabulary/examples/DV-072/example.drawio
+DV-073	観測結果を判断へ戻す	software	feedback-loop	T02	True		SRC-017	sample/information-structuring/diagram-vocabulary/examples/DV-073/example.drawio
+DV-074	全体から部分へ焦点を移す	software	multi-level-zoom	T02	True		SRC-010,SRC-045	sample/information-structuring/diagram-vocabulary/examples/DV-074/example.drawio
+DV-075	障害条件を論理結合で整理する	analysis	fault-tree	T09	False		SRC-034	sample/information-structuring/diagram-vocabulary/examples/DV-075/example.drawio

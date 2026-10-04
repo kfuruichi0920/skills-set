@@ -1,0 +1,114 @@
+{
+  "id": "DV-016",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "要求・設計・検証のトレース",
+    "purpose": "要求を何で実現し、何で検証するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "trace-matrix",
+    "theme": "T08"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "要求・設計・検証のトレース",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "要求を何で実現し、何で検証するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    },
+    {
+      "id": "note",
+      "label": "共通IDで導出を追う。対応のない要求や検証は別途一覧化する。",
+      "x": 100,
+      "y": 660,
+      "width": 1150,
+      "height": 65,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明ラベル"
+      }
+    }
+  ],
+  "containers": [],
+  "edges": [],
+  "tables": [
+    {
+      "id": "trace",
+      "x": 120,
+      "y": 260,
+      "column_widths": [
+        320,
+        320,
+        400
+      ],
+      "rows": [
+        [
+          "要求",
+          "設計",
+          "検証"
+        ],
+        [
+          "REQ-01 空き検索",
+          "API-01 検索",
+          "TEST-01 空き結果"
+        ],
+        [
+          "REQ-02 予約受付",
+          "API-02 登録",
+          "TEST-02 重複を防ぐ"
+        ]
+      ],
+      "row_height": 90
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "DV-056",
+  "key": "before-after",
+  "title_ja": "変更前後を同じ配置で比べる",
+  "title_en": "Before After",
+  "domain": [
+    "analysis"
+  ],
+  "purpose": "同じ対象の何が変わり、何が残るか",
+  "audience": [
+    "manager",
+    "analyst"
+  ],
+  "diagram_type": [
+    "paired-before-after"
+  ],
+  "composition_pattern": "paired-before-after",
+  "source_refs": [
+    "SRC-031"
+  ],
+  "information_structure": [
+    "change",
+    "comparison",
+    "containment",
+    "flow"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "paired-before-after",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [
+      "flowchart"
+    ],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "container"
+    ]
+  },
+  "visual": {
+    "theme": "T04",
+    "density": "low",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [
+    "flow"
+  ],
+  "when_to_use": [
+    "同じ対象の何が変わり、何が残るかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "analysis",
+    "before-after",
+    "change",
+    "comparison",
+    "containment",
+    "flow",
+    "paired-before-after",
+    "変更前後を同じ配置で比べる"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [
+    {
+      "node": "input0",
+      "semantic": "document"
+    },
+    {
+      "node": "check0",
+      "semantic": "process"
+    },
+    {
+      "node": "input1",
+      "semantic": "document"
+    },
+    {
+      "node": "check1",
+      "semantic": "process"
+    }
+  ],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:38:35.926525+00:00",
+    "findings": "変更前後の申請と確認を同じ位置へ置き、変わった確認担当だけを強調。構図による誤った差分を作っていない。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-056/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-048",
+        "source_refs": [
+          "SRC-035",
+          "SRC-002"
+        ],
+        "analysis": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+        "visual_observation": "左右の比較対象から共通属性へ合流し、下段で個別の差異へ分ける。Before/After専用図ではない",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-048.png",
+        "original": "sources/official-examples/templates/education/compare_diagram.xml"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "0b2fa8d31d29096991a1a196967bd9da78de8042d311df6b62afbf42659e6b57",
+  "preview_hash": "590632b93f9143b2f763a48a4a18a6ede2304cb1b0375c48575399628af58d66",
+  "pattern": "paired-before-after",
+  "presentation_context": "関係者への説明・案の比較",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

@@ -1,0 +1,1468 @@
+はい。この方針で進めるのが適切です。  
+今回の調査で、**draw.io公式だけでも、ソフトウェア、UML、クラウド、ネットワーク、セキュリティ、業務、PM、インフォグラフィック等を横断する数十種類の編集可能な実例**が公開されており、多くは `.drawio` ファイルとして直接取得できます。公式 `drawio-diagrams` リポジトリは Apache-2.0 です。:chatgpt-content-reference{index="0"}
+
+また、draw.io自身がCustom Libraryに**単一Shapeだけでなく、画像、グループ、Diagram Fragment、図全体のTemplate**を格納でき、`title` と `tags` により検索可能なことを仕様化しています。したがって今回考えている「図解サンプルボキャブラリー」は、draw.ioの仕組みと非常に相性が良いです。:chatgpt-content-reference{index="1"}
+
+
+
+## 1. 調査した参照ソース群
+
+まず、初期Vocabulary構築では以下を参照コーパスとします。**draw.io公式を一次ソース、各技術標準・ベンダー公式を二次ソース**とします。
+
+| ID | 分類 | 参照先 | Vocabularyで学習する内容 |
+|---|---|---|---|
+| SRC-001 | 総合 | [draw.io Example technical diagrams](https://www.drawio.com/docs/diagram-types/?utm_source=chatgpt.com) | 最重要。分野横断の実例と`.drawio` |
+| SRC-002 | Repository | [jgraph/drawio-diagrams](https://github.com/jgraph/drawio-diagrams?utm_source=chatgpt.com) | 編集可能な実例、Template、Fragment |
+| SRC-003 | Template | [draw.io Template diagrams](https://www.drawio.com/docs/manual/templates/?utm_source=chatgpt.com) | Template構造 |
+| SRC-004 | Tutorial | [draw.io Tutorials](https://www.drawio.com/docs/tutorials/?utm_source=chatgpt.com) | 高度機能活用例 |
+| SRC-005 | Custom Library | [Custom shape libraries](https://www.drawio.com/docs/manual/advanced/custom-shape-libraries/?utm_source=chatgpt.com) | 組織Vocabulary格納方式 |
+| SRC-006 | Template Library | [Template Library Format](https://www.drawio.com/docs/reference/format-template-library/?utm_source=chatgpt.com) | 独自Templateカタログ |
+| SRC-007 | Library Format | [Custom Shape Library Format](https://www.drawio.com/docs/reference/format-custom-shape-library/?utm_source=chatgpt.com) | Fragment/Template XML形式 |
+| SRC-008 | Library | [Public Custom Libraries](https://www.drawio.com/docs/manual/shapes/public-custom-libraries/?utm_source=chatgpt.com) | 外部Library利用 |
+| SRC-009 | Libraries | [Supported URL parameters](https://www.drawio.com/docs/reference/supported-url-parameters/?utm_source=chatgpt.com) | 標準Library一覧 |
+| SRC-010 | Software | [C4 modelling](https://www.drawio.com/docs/diagram-types/c4-modelling/?utm_source=chatgpt.com) | Context/Container/Component |
+| SRC-011 | Software | [UML overview](https://www.drawio.com/docs/diagram-types/uml/?utm_source=chatgpt.com) | UML各種 |
+| SRC-012 | Software | [UML Class](https://www.drawio.com/docs/diagram-types/uml/class-diagrams/?utm_source=chatgpt.com) | Class表現 |
+| SRC-013 | Software | [UML Component](https://www.drawio.com/docs/diagram-types/uml/component-diagrams/?utm_source=chatgpt.com) | Component/Interface |
+| SRC-014 | Software | [UML State Machine](https://www.drawio.com/docs/diagram-types/uml/state-diagrams/?utm_source=chatgpt.com) | 状態・遷移 |
+| SRC-015 | MBSE | [SysML vs UML](https://www.drawio.com/docs/diagram-types/sysml-vs-uml/?utm_source=chatgpt.com) | Requirement等 |
+| SRC-016 | Process | [BPMN 2.0](https://www.drawio.com/docs/diagram-types/bpmn-2-0/?utm_source=chatgpt.com) | 業務フロー |
+| SRC-017 | Data | [Data Flow Diagrams](https://www.drawio.com/docs/diagram-types/data-flow-diagrams/?utm_source=chatgpt.com) | データ流 |
+| SRC-018 | Data | [ER diagrams](https://www.drawio.com/docs/diagram-types/entity-relationship-tables/?utm_source=chatgpt.com) | DB・Table・Relation |
+| SRC-019 | Requirements | [Requirements flows](https://www.drawio.com/docs/diagram-types/requirements-flows/?utm_source=chatgpt.com) | 要求＋UI＋Data混在 |
+| SRC-020 | Architecture | [Network diagrams](https://www.drawio.com/docs/diagram-types/network-diagrams/?utm_source=chatgpt.com) | NW・領域・境界 |
+| SRC-021 | Cloud | [AWS diagrams](https://www.drawio.com/docs/diagram-types/aws-diagrams/?utm_source=chatgpt.com) | Vendor icon/container |
+| SRC-022 | Dev | [Gitflow diagrams](https://www.drawio.com/docs/diagram-types/gitflow-diagram/?utm_source=chatgpt.com) | Branch/時系列 |
+| SRC-023 | Dependency | [Dependency graphs](https://www.drawio.com/docs/diagram-types/dependency-graphs/?utm_source=chatgpt.com) | 依存・PERT |
+| SRC-024 | PM | [Gantt charts](https://www.drawio.com/docs/diagram-types/gantt-charts/?utm_source=chatgpt.com) | 日程 |
+| SRC-025 | PM | [Kanban boards](https://www.drawio.com/docs/diagram-types/kanban-boards/?utm_source=chatgpt.com) | 状態・タスク |
+| SRC-026 | PM | [Timelines and roadmaps](https://www.drawio.com/docs/diagram-types/timeline-diagrams/?utm_source=chatgpt.com) | Roadmap/Milestone |
+| SRC-027 | Process | [Cross-functional flowcharts](https://www.drawio.com/docs/diagram-types/cross-functional-flowcharts/?utm_source=chatgpt.com) | Swimlane/Container table |
+| SRC-028 | Management | [Role & Responsibility](https://www.drawio.com/docs/diagram-types/role-responsibility-diagrams/?utm_source=chatgpt.com) | 役割・責任 |
+| SRC-029 | Organisation | [Organisation Charts](https://www.drawio.com/docs/diagram-types/org-charts/?utm_source=chatgpt.com) | Hierarchy |
+| SRC-030 | Analysis | [Ishikawa / Fishbone](https://www.drawio.com/docs/diagram-types/ishikawa-diagrams/?utm_source=chatgpt.com) | 原因分析 |
+| SRC-031 | Analysis | [SWOT / 5C / PEST](https://www.drawio.com/docs/diagram-types/marketing-analysis-diagrams/?utm_source=chatgpt.com) | 2×2/List/分析 |
+| SRC-032 | Analysis | [Concept Maps](https://www.drawio.com/docs/diagram-types/concept-maps/?utm_source=chatgpt.com) | 思考整理 |
+| SRC-033 | Security | [Threat Modelling](https://www.drawio.com/docs/diagram-types/threat-modelling/?utm_source=chatgpt.com) | Trust Boundary/Threat |
+| SRC-034 | Risk | [Probability & Risk](https://www.drawio.com/docs/diagram-types/probability-risk-diagrams/?utm_source=chatgpt.com) | Risk表現 |
+| SRC-035 | Data Viz | [Charts and Graphs](https://www.drawio.com/docs/diagram-types/charts-in-drawio/?utm_source=chatgpt.com) | Presentation chart |
+| SRC-036 | Data Viz | [Sankey diagrams](https://www.drawio.com/docs/diagram-types/sankey-diagrams/?utm_source=chatgpt.com) | Flow量/分岐 |
+| SRC-037 | Infographic | [Layered Infographics](https://www.drawio.com/docs/tutorials/infographics-layered-shapes/?utm_source=chatgpt.com) | 3D Layer/Callout |
+| SRC-038 | Advanced | [Interactive layers](https://www.drawio.com/docs/tutorials/interactive-diagram-layers/?utm_source=chatgpt.com) | Layer/表示切替 |
+| SRC-039 | Cloud外部参照 | [AWS Architecture Center](https://aws.amazon.com/architecture/?utm_source=chatgpt.com) | 実務Architecture |
+| SRC-040 | Cloud外部参照 | [AWS Reference Architecture Diagrams](https://docs.aws.amazon.com/reference-architecture-diagrams/?utm_source=chatgpt.com) | 構成密度・Legend |
+| SRC-041 | Cloud外部参照 | [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/?utm_source=chatgpt.com) | アイコン使用規則 |
+| SRC-042 | Cloud外部参照 | [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/?utm_source=chatgpt.com) | Architecture Pattern |
+| SRC-043 | Cloud外部参照 | [Azure Architecture Gallery](https://learn.microsoft.com/azure/architecture/browse/?utm_source=chatgpt.com) | 大規模実例 |
+| SRC-044 | Cloud外部参照 | [Google Cloud Architecture Center](https://docs.cloud.google.com/architecture?utm_source=chatgpt.com) | Cloud構成 |
+| SRC-045 | Architecture | [C4 Model official diagrams](https://c4model.com/diagrams?utm_source=chatgpt.com) | 抽象度設計 |
+| SRC-046 | Container | [Kubernetes Cluster Architecture](https://kubernetes.io/docs/concepts/architecture/?utm_source=chatgpt.com) | Cluster/Node/Control plane |
+| SRC-047 | Security | [NIST Zero Trust Architecture](https://www.nist.gov/publications/zero-trust-architecture?utm_source=chatgpt.com) | Control/Data plane |
+| SRC-048 | Security | [NIST ZTA Reference Architecture](https://pages.nist.gov/zero-trust-architecture/VolumeB/architecture.html?utm_source=chatgpt.com) | 論理構成＋Supporting Systems |
+| SRC-049 | Security | [OWASP Threat Modelling](https://wiki.owasp.org/images/b/b1/Slide_Deck_-_Threat_Modelling.pdf?utm_source=chatgpt.com) | DFD/Trust boundary |
+
+draw.ioの総合実例ページだけでも、C4、11種類程度のUML、AWS/Azure/GCP、Threat Model、Process Flow、BPMN、Business Model Canvas、SWOT、PERT/Gantt、Timeline、各種Infographicなど、かなり広い実例が直接ダウンロード可能です。ここを**Seed Corpusの中心**とするのが合理的です。:chatgpt-content-reference{index="52"}
+
+---
+
+# 2. 「図解サンプルボキャブラリー」の考え方
+
+Shape Catalogとは別物にします。
+
+```text
+Shape Catalog
+    = 何の部品が存在するか
+
+Diagram Vocabulary
+    = その部品をどう組み合わせれば
+      何を分かりやすく説明できるか
+```
+
+つまりVocabularyの単位は**Shapeではなく「説明パターン」**です。
+
+例えば、
+
+```text
+AWSアイコン
+```
+
+ではなく、
+
+```text
+「外部利用者 → Internet Gateway → Public Zone
+ → Private Zone → DB」を
+境界Containerのネストで示すArchitecture Pattern
+```
+
+を1 Vocabulary Entryとします。
+
+これは今回のSkillにとって非常に重要な区別です。
+
+---
+
+# 3. 最新版：SkillCreator / Coding Agentへの統合指示文
+
+以下を、これまでの **Draw.io Native + Shape Catalog仕様の後続指示**としてそのまま渡してください。
+
+---
+
+## LLM図解Skill拡張 — Diagram Example Vocabulary構築仕様
+
+### 0. 目的
+
+既存の図解Skillに、
+
+```text
+Shape Catalog
++
+Diagram Example Vocabulary
+```
+
+の2種類の知識基盤を導入する。
+
+Shape Catalogは、
+
+> 実在するdraw.io Shapeを検索・検証するための辞書
+
+である。
+
+今回追加するDiagram Example Vocabularyは、
+
+> **どのような情報を、どの図式・構造・レイアウト・Shape・Connector・Themeで表現すると分かりやすいかを検索するための実例知識ベース**
+
+である。
+
+今後の図生成を、
+
+```text
+情報
+ ↓
+図式をLLMが毎回ゼロから考える
+```
+
+方式から、
+
+```text
+情報
+ ↓
+類似するDiagram Vocabularyを検索
+ ↓
+適切なPatternを選択
+ ↓
+内容に適応
+ ↓
+Shape Catalogで実在Shapeを解決
+ ↓
+draw.io生成
+```
+
+方式へ変更する。
+
+---
+
+## 1. 基本アーキテクチャ
+
+以下の3階層を構成する。
+
+```text
+┌────────────────────────────┐
+│ Semantic Knowledge         │
+│                            │
+│ 情報整理手法               │
+│ Diagram Type               │
+│ 説明目的                   │
+└─────────────┬──────────────┘
+              ↓
+┌────────────────────────────┐
+│ Diagram Vocabulary         │
+│                            │
+│ 実例                       │
+│ Pattern                    │
+│ Layout                     │
+│ Visual Hierarchy           │
+│ Composition                │
+└─────────────┬──────────────┘
+              ↓
+┌────────────────────────────┐
+│ Shape Catalog              │
+│                            │
+│ 実在Library                │
+│ 実在Shape ID               │
+└────────────────────────────┘
+```
+
+責務を混同しないこと。
+
+---
+
+## 2. Reference Corpusを構築する
+
+前掲 `SRC-001`〜`SRC-049` を初期Reference Corpusとする。
+
+優先順位は以下。
+
+```text
+Tier A
+draw.io公式
++
+drawio-diagrams repository
+
+Tier B
+技術標準・Vendor公式Architecture
+
+Tier C
+その他の公開された高品質図解
+```
+
+初期実装ではTier Aを優先して十分なVocabularyを作成する。
+
+その後Tier Bを追加する。
+
+---
+
+## 3. 著作権・ライセンス方針
+
+Reference Sourceから無条件に図をコピーしてはならない。
+
+### Tier A: drawio-diagrams
+
+Apache-2.0等、対象資産のライセンスを確認した上で、
+
+```text
+reuse
+modify
+derive
+```
+
+を行う。
+
+必要なライセンス情報・出典情報を保持する。
+
+### Tier B/C
+
+ライセンス上の再利用許諾が明示されていない場合、
+
+```text
+図そのものを複製する
+```
+
+のではなく、
+
+```text
+information structure
+layout idea
+grouping strategy
+notation
+visual hierarchy
+connector strategy
+```
+
+を分析し、
+
+**独自のサンプル内容で再構成する。**
+
+文章、固有データ、図全体の具体的配置を忠実コピーしない。
+
+Vendor公式Iconは、そのVendorの利用条件を遵守する。
+
+---
+
+## 4. Source Registryを作成する
+
+以下に相当するファイルを作成する。
+
+```text
+diagram-vocabulary/
+└─ sources/
+   └─ source-registry.yaml
+```
+
+Entry:
+
+```yaml
+id: SRC-001
+
+title:
+provider:
+
+url:
+
+source_class:
+  drawio-official
+  drawio-repository
+  vendor-official
+  standard-body
+  community
+
+domains:
+  - software
+  - architecture
+
+license:
+license_verified:
+
+priority:
+
+crawl_policy:
+
+notes:
+```
+
+URLをコード・Skill本文へ分散して埋め込まずRegistryを正本とする。
+
+---
+
+## 5. Reference Sourceを1件ずつ分析する
+
+SkillCreatorは各Sourceについて、単にページを保存するのではなく、
+
+```text
+Source
+ ↓
+Visual Inspection
+ ↓
+Information Structure Analysis
+ ↓
+Diagram Pattern Extraction
+ ↓
+Original Example Creation
+```
+
+を実施する。
+
+---
+
+## 6. 1 Vocabulary = 1実例
+
+原則として、
+
+```text
+1 Vocabulary Entry
+=
+1つの明確な説明パターン
++
+1つの実際に開けるdraw.io example
+```
+
+とする。
+
+単なる文章定義だけのVocabularyは禁止する。
+
+---
+
+## 7. 各Vocabularyで実際のdraw.ioサンプルを作成する
+
+各Reference Patternについて、
+
+**架空だが現実的な内容**
+
+を使ってdraw.ioサンプルを作る。
+
+例:
+
+```text
+Software architecture
+→ 架空の注文管理システム
+
+Project roadmap
+→ 架空の次世代サービス開発
+
+Network architecture
+→ 架空の企業拠点NW
+
+Requirements flow
+→ 架空の予約サービス
+
+Failure analysis
+→ 架空の通信装置
+```
+
+特定企業の実データをコピーしない。
+
+---
+
+## 8. Sampleは「見本」として高品質に作る
+
+Vocabulary生成を目的としているため、
+
+```text
+最低限描けている
+```
+
+では不十分。
+
+既存Skillで定義した、
+
+```text
+Draw.io Native Level 3 — Designed
+```
+
+相当を目標とする。
+
+必ず、
+
+```text
+Native Shape
+Container
+Connector
+Theme
+Spacing
+Visual Hierarchy
+```
+
+を意識する。
+
+---
+
+## 9. Vocabulary Metadata
+
+各サンプルについてMetadataを作成する。
+
+```yaml
+id: DV-ARCH-001
+
+title_ja:
+title_en:
+
+source_refs:
+  - SRC-...
+
+domain:
+  - software_architecture
+
+diagram_type:
+  - architecture
+
+pattern:
+  layered_architecture
+
+purpose:
+  system_overview
+
+audience:
+  - manager
+  - architect
+  - developer
+
+information_structure:
+  - hierarchy
+  - containment
+  - flow
+
+layout:
+  primary_axis: horizontal
+  grouping: nested-container
+  reading_direction: left-to-right
+
+drawio:
+  libraries:
+    - general
+    - network
+
+  native_features:
+    - container
+    - connector
+
+visual:
+  theme:
+  density:
+  hierarchy:
+  emphasis:
+
+relationships:
+  - flow
+  - containment
+
+when_to_use:
+  - ...
+
+when_not_to_use:
+  - ...
+
+strengths:
+  - ...
+
+limitations:
+  - ...
+
+tags:
+  - architecture
+  - overview
+  - hierarchy
+```
+
+---
+
+## 10. Vocabularyが保持する成果物
+
+各Vocabulary Entryについて最低限、
+
+```text
+example.drawio
+preview.svg
+preview.png
+metadata.yaml
+README.md
+```
+
+を生成する。
+
+推奨構成:
+
+```text
+diagram-vocabulary/
+├─ sources/
+│
+├─ examples/
+│  ├─ software/
+│  ├─ architecture/
+│  ├─ infrastructure/
+│  ├─ security/
+│  ├─ business/
+│  ├─ project-management/
+│  ├─ analysis/
+│  └─ infographic/
+│
+├─ catalog/
+│  ├─ vocabulary.json
+│  └─ vocabulary.schema.json
+│
+├─ libraries/
+│
+└─ previews/
+```
+
+---
+
+## 11. 初期Coverage
+
+少なくとも以下を対象とする。
+
+### Software / System Design
+
+```text
+System Context
+C4 Container
+C4 Component
+Layered Architecture
+Component Diagram
+Deployment Diagram
+Class Diagram
+Sequence Diagram
+State Machine
+Activity Diagram
+Package Diagram
+Use Case
+Data Flow
+ER Model
+Requirements Flow
+Interface Overview
+```
+
+### Infrastructure
+
+```text
+Network Topology
+Logical Network
+Physical Network
+Cloud Architecture
+AWS Architecture
+Azure Architecture
+GCP Architecture
+Kubernetes Cluster
+HA / Active-Standby
+Multi-region
+Rack
+Trust Boundary
+```
+
+### Business / Process
+
+```text
+Basic Flow
+Swimlane
+Cross-functional Flow
+BPMN
+Role & Responsibility
+Organisation Chart
+Business Model
+Story Map
+Customer Journey
+```
+
+### Project Management
+
+```text
+Roadmap
+Timeline
+Milestone
+Gantt
+PERT
+Dependency Graph
+Kanban
+Phase × Team
+Work Breakdown
+Risk Overview
+```
+
+### Analysis
+
+```text
+2×2 Matrix
+SWOT
+PESTEL
+5C
+Fishbone
+Cause → Effect
+Comparison
+Before / After
+Decision Tree
+Concept Map
+Venn
+Sankey
+```
+
+### Presentation / Explanation
+
+```text
+Layered Infographic
+Process Steps
+Numbered Flow
+Callout Diagram
+Feature Overview
+Annotated Screenshot
+Annotated Architecture Diagram
+Executive Summary Diagram
+```
+
+初期Vocabularyは**最低40、目標60以上**とする。
+
+---
+
+## 12. 同じ意味でも複数表現を保持してよい
+
+例えば「5ステップ」を、
+
+```text
+horizontal chevron
+vertical timeline
+circular process
+stair-step
+layered stack
+```
+
+で表せる。
+
+これらは別Vocabularyとして保持する。
+
+重要なのは、
+
+```text
+diagram_type
+```
+
+だけではなく、
+
+```text
+visual composition pattern
+```
+
+も学習対象にすることである。
+
+---
+
+## 13. Vocabularyを「図の種類」だけにしない
+
+以下も独立Patternとして抽出する。
+
+```text
+nested containers
+left-to-right pipeline
+hub-and-spoke
+central core + satellites
+before-after
+top-down hierarchy
+matrix
+timeline
+swimlane
+layered stack
+funnel
+cycle
+feedback loop
+tree
+network
+multi-level zoom
+annotated base diagram
+```
+
+これを、
+
+```text
+composition_pattern
+```
+
+としてMetadata化する。
+
+---
+
+## 14. Visual Patternも抽出する
+
+例えばReference Sampleから、
+
+```text
+背景Containerを薄色にする
+主要経路だけAccent Color
+補助線はGray
+番号＋Callout
+タイトル＋短い説明
+Icon + Label
+境界を色で区別
+Legendを右下
+```
+
+等を抽出する。
+
+これをThemeとは別に、
+
+```text
+visual_pattern
+```
+
+として保持する。
+
+---
+
+## 15. ThemeとPatternを分離する
+
+同じDiagram Patternに、
+
+```text
+Corporate
+Technical
+Minimal
+Dark
+Blueprint
+Presentation
+```
+
+等のThemeを適用できる。
+
+したがって、
+
+```text
+Diagram Vocabulary
+×
+Visual Theme
+```
+
+という組み合わせで生成できるようにする。
+
+---
+
+## 16. Reusable Fragmentを抽出する
+
+実例から、
+
+```text
+User + Channel
+Cloud Boundary
+HA Pair
+Primary/Secondary DB
+Three-tier stack
+Control/Data Plane
+Legend
+Callout cluster
+Phase header
+Risk marker
+```
+
+等、再利用価値の高い部分構造を抽出する。
+
+これを、
+
+```text
+Diagram Fragment Vocabulary
+```
+
+としてCustom Libraryへ追加可能にする。
+
+---
+
+## 17. TemplateとFragmentを区別する
+
+```text
+Template
+=
+図全体の構成
+
+Fragment
+=
+図の一部分として再利用する構成
+```
+
+両者を混同しない。
+
+---
+
+## 18. draw.io Custom Libraryを生成する
+
+再利用価値のあるFragmentについて、
+
+```text
+diagram-vocabulary.xml
+```
+
+等のCustom Libraryを生成する。
+
+各Entryには、
+
+```text
+title
+tags
+```
+
+を付与する。
+
+draw.ioサイドバーから検索して利用できるようにする。
+
+---
+
+## 19. Custom Template Libraryも生成する
+
+完成した代表サンプルについて、
+
+```text
+template-library.xml
+```
+
+を生成可能にする。
+
+カテゴリ例:
+
+```text
+Architecture
+Software
+Infrastructure
+Security
+Business
+Project Management
+Analysis
+Presentation
+```
+
+Templateには、
+
+```text
+title
+description
+preview
+tags
+libs
+clibs
+```
+
+を設定する。
+
+---
+
+## 20. Vocabulary Search
+
+図生成時に以下を検索条件とする。
+
+```text
+purpose
+domain
+audience
+information structure
+diagram type
+composition pattern
+relationship type
+desired density
+presentation context
+```
+
+例えば入力:
+
+```text
+複数チームにまたがる開発工程を
+管理職向けに1枚で説明したい
+```
+
+なら、
+
+```text
+domain:
+ project-management
+
+purpose:
+ executive-overview
+
+information_structure:
+ phase
+ responsibility
+
+candidate:
+ Phase × Team
+ Cross-functional Flow
+ Roadmap
+```
+
+等を検索する。
+
+---
+
+## 21. Retrieval Pipeline
+
+生成フローを以下へ変更する。
+
+```text
+User Information
+       ↓
+Information Analysis
+       ↓
+Diagram Requirement
+       ↓
+Vocabulary Search
+       ↓
+Top-K Examples
+       ↓
+Pattern Selection
+       ↓
+Content Adaptation
+       ↓
+Shape Catalog Resolution
+       ↓
+Diagram IR
+       ↓
+draw.io
+```
+
+---
+
+## 22. Top-KをLLMへ提示する
+
+Vocabulary全部をPromptへ投入しない。
+
+例えば、
+
+```yaml
+candidates:
+
+- DV-PM-004
+  pattern: cross-functional-flow
+  suitability: 0.91
+
+- DV-PM-012
+  pattern: phase-team-roadmap
+  suitability: 0.84
+
+- DV-PM-007
+  pattern: timeline
+  suitability: 0.70
+```
+
+のように候補だけをLLMへ提示する。
+
+---
+
+## 23. サンプルをそのままコピーしない
+
+Vocabularyは、
+
+```text
+Copy Template
+```
+
+ではなく、
+
+```text
+Pattern Retrieval
++
+Adaptation
+```
+
+に利用する。
+
+サンプル内容をユーザー情報に置換し、
+
+```text
+node count
+grouping
+layout
+density
+labels
+```
+
+を再計算する。
+
+---
+
+## 24. Source Traceability
+
+生成したVocabularyには必ず、
+
+```text
+source_refs
+```
+
+を残す。
+
+ただし最終ユーザー向け図へ自動表示する必要はない。
+
+内部で、
+
+```text
+このPatternをどこから学習したか
+```
+
+追跡可能にする。
+
+---
+
+## 25. Vocabulary生成作業そのものを自動化する
+
+以下に相当するツールを作る。
+
+```text
+build-diagram-vocabulary
+```
+
+処理:
+
+```text
+Source Registry
+      ↓
+Fetch Source
+      ↓
+Extract Candidate Diagrams
+      ↓
+Analyse Pattern
+      ↓
+Generate Sample Specification
+      ↓
+Create draw.io
+      ↓
+Render
+      ↓
+Visual Review
+      ↓
+Metadata
+      ↓
+Catalog
+```
+
+---
+
+## 26. Sample生成は1件ずつ完結させる
+
+大量生成して最後に検証する方式は避ける。
+
+```text
+Reference #1
+ ↓
+Analyse
+ ↓
+Create
+ ↓
+Render
+ ↓
+Review
+ ↓
+Accept
+ ↓
+Reference #2
+```
+
+とする。
+
+これにより低品質なパターンが大量増殖することを防ぐ。
+
+---
+
+## 27. Visual Review必須
+
+各Vocabularyについて実際にRenderingし、
+
+```text
+Shape overlap
+Text overflow
+Edge crossing
+Spacing
+Visual hierarchy
+Theme consistency
+Container correctness
+Information density
+```
+
+を確認する。
+
+---
+
+## 28. Pattern Review
+
+見た目だけでなく、
+
+```text
+何を説明するためのPatternか
+なぜこの配置なのか
+どんな情報に向くか
+何には向かないか
+```
+
+を説明できることをAcceptance条件とする。
+
+---
+
+## 29. 重複Vocabularyを排除する
+
+新規Entry作成前に、
+
+```text
+existing vocabulary search
+```
+
+を行う。
+
+ほぼ同一なら、
+
+```text
+variant
+```
+
+として既存Entryへ紐付ける。
+
+---
+
+## 30. Variantモデル
+
+例:
+
+```text
+DV-FLOW-001
+  Basic Flow
+
+variants:
+  - horizontal
+  - vertical
+  - icon-enhanced
+  - executive
+```
+
+完全に別Patternでなければ無駄にEntryを増やさない。
+
+---
+
+## 31. Vocabularyの品質評価
+
+各EntryにQuality Scoreを付与可能にする。
+
+```text
+semantic clarity
+visual clarity
+native draw.io usage
+reuse potential
+editability
+density
+source quality
+```
+
+---
+
+## 32. Core Vocabulary
+
+高品質かつ汎用性が高いEntryには、
+
+```text
+core: true
+```
+
+を付ける。
+
+SkillはまずCoreから検索する。
+
+---
+
+## 33. 将来的な組織Vocabulary
+
+現時点では外部ReferenceからVocabularyを構築する。
+
+将来的には、
+
+```text
+External Best Practice
+       +
+Organisation-created diagrams
+       +
+Project-approved diagrams
+       +
+User feedback
+```
+
+へ拡張する。
+
+---
+
+## 34. 成熟度モデル
+
+```text
+Stage 1
+External examples
+
+Stage 2
+Curated internal examples
+
+Stage 3
+Organisation standard vocabulary
+
+Stage 4
+Project-specific vocabulary
+
+Stage 5
+Usage feedbackによる自動改善
+```
+
+とする。
+
+---
+
+## 35. Shape Catalogとの連携
+
+VocabularyのMetadataでShape IDを直接固定しすぎない。
+
+原則、
+
+```text
+semantic_shape_requirement
+```
+
+を保持し、
+
+実際のShapeはShape Catalogで解決する。
+
+これによりdraw.io Library更新へ追従する。
+
+---
+
+## 36. ただしFragmentはShapeを保持してよい
+
+再利用Fragmentでは、
+
+```text
+layout
+shape
+connector
+style
+```
+
+そのものに価値があるため、実Cell構造を保存してよい。
+
+---
+
+## 37. 初期成果物
+
+今回の実装で最低限以下を作成する。
+
+```text
+source-registry.yaml
+
+diagram-vocabulary.schema.json
+
+diagram-vocabulary.json
+
+40+ example.drawio
+
+40+ preview.svg/png
+
+40+ metadata.yaml
+
+diagram-vocabulary.xml
+    # reusable fragments
+
+template-library.xml
+    # representative templates
+```
+
+可能なら60以上を目標とする。
+
+---
+
+## 38. 重要Acceptance Criteria
+
+### AC-V01
+Reference Source Registryを持つ。
+
+### AC-V02
+Source URLとライセンスを追跡できる。
+
+### AC-V03
+1 Vocabularyに実draw.ioサンプルが存在する。
+
+### AC-V04
+Sampleのpreviewが存在する。
+
+### AC-V05
+Purpose / Domain / PatternをMetadata化する。
+
+### AC-V06
+Composition Patternを検索できる。
+
+### AC-V07
+Visual Patternを検索できる。
+
+### AC-V08
+When-to-use / When-not-to-useを保持する。
+
+### AC-V09
+類似Vocabularyを検索できる。
+
+### AC-V10
+図生成時にTop-K Exampleを取得できる。
+
+### AC-V11
+Shape Catalogと組み合わせて図を生成できる。
+
+### AC-V12
+Custom LibraryとしてFragmentを利用できる。
+
+### AC-V13
+Custom Template Libraryとして代表例を利用できる。
+
+### AC-V14
+外部図を著作権上不適切にコピーしない。
+
+### AC-V15
+draw.io公式資産はライセンスを追跡する。
+
+### AC-V16
+サンプルは実際にdraw.ioで開ける。
+
+### AC-V17
+全SampleをRendering Reviewする。
+
+### AC-V18
+初期40以上、目標60以上のVocabularyを構築する。
+
+---
+
+## 39. 最終的な図生成アーキテクチャ
+
+```text
+                    ┌─────────────────────┐
+                    │ User Information    │
+                    └──────────┬──────────┘
+                               ↓
+                    ┌─────────────────────┐
+                    │ Information Skill   │
+                    │ 情報整理・構造化     │
+                    └──────────┬──────────┘
+                               ↓
+                    ┌─────────────────────┐
+                    │ Diagram Intent      │
+                    └──────────┬──────────┘
+                               ↓
+              ┌────────────────────────────────┐
+              │ Diagram Example Vocabulary     │
+              │                                │
+              │ 「どう表現するか」の実例知識    │
+              └───────────────┬────────────────┘
+                              ↓
+                     Top-K Patterns
+                              ↓
+                    ┌─────────────────────┐
+                    │ Diagram Planner     │
+                    └──────────┬──────────┘
+                               ↓
+              ┌────────────────────────────────┐
+              │ Shape Catalog                  │
+              │                                │
+              │ 「何のShapeが存在するか」       │
+              └───────────────┬────────────────┘
+                              ↓
+                    ┌─────────────────────┐
+                    │ Diagram IR          │
+                    └──────────┬──────────┘
+                               ↓
+                    ┌─────────────────────┐
+                    │ Draw.io Renderer    │
+                    └──────────┬──────────┘
+                               ↓
+                    ┌─────────────────────┐
+                    │ Visual Review       │
+                    │ Semantic Review     │
+                    └─────────────────────┘
+```
+
+---
+
+## 40. 最終原則
+
+今回構築するものを、
+
+> **「draw.ioのサンプル置き場」**
+
+にしてはならない。
+
+構築すべきものは、
+
+> **「どういう情報を、どういう視覚構造で説明すれば理解しやすいか」という実例付きの図解知識ベース**
+
+である。
+
+したがってReference Diagramから、
+
+```text
+Shape
+Color
+```
+
+だけを見るのではなく、
+
+```text
+Information structure
+Abstraction level
+Grouping
+Hierarchy
+Flow
+Layout
+Composition
+Emphasis
+Annotation
+Density
+Audience
+Purpose
+```
+
+を抽出すること。
+
+最終的に、
+
+```text
+情報整理Skill
+        +
+Diagram Example Vocabulary
+        +
+Draw.io Shape Catalog
+        +
+Theme Catalog
+        +
+Draw.io Native Renderer
+```
+
+を統合し、
+
+> **入力された情報に対し、「どの情報整理法を使い、どの図解Patternを使い、どのdraw.io Native機能・Shapeを使えば最も正確かつ理解しやすいか」を選択できるSkill**
+
+を実現すること。
+
+---
+
+今回の設計で特に重要なのは、**Custom LibraryとTemplate Libraryを両方生成すること**です。draw.ioのTemplate Libraryは `section / subsection / title / preview / libs / clibs / tags` を持てるため、今回のVocabularyをdraw.io自身のTemplate検索UIへ接続できます。:chatgpt-content-reference{index="53"}
+
+つまり最終的には、LLMだけが使う知識ベースではなく、人間もdraw.io上で
+
+**「Architecture → HA構成」  
+「PM → Phase × Team」  
+「Analysis → Before/After」  
+「Presentation → Annotated Diagram」**
+
+のように検索して直接利用できる、**LLMと人間の共通図解ボキャブラリー**にできます。これは組織標準へ発展させるうえで非常に有効です。

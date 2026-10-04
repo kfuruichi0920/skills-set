@@ -1,0 +1,21 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Yu Gothic"
+skinparam defaultFontSize 18
+actor 利用者
+participant 画面
+participant 予約API
+database DB
+利用者 -> 画面 : 予約入力
+画面 -> 予約API : 予約要求
+予約API -> DB : 空きを確認
+DB --> 予約API : 確認結果
+alt 空きあり
+予約API -> DB : 予約を登録
+予約API --> 画面 : 受付完了
+else 空きなし
+予約API --> 画面 : 再選択を依頼
+end
+@enduml

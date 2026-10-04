@@ -1,0 +1,112 @@
+{
+  "id": "DV-016",
+  "key": "traceability",
+  "title_ja": "要求・設計・検証のトレース",
+  "title_en": "Traceability",
+  "domain": [
+    "software"
+  ],
+  "purpose": "要求を何で実現し、何で検証するか",
+  "audience": [
+    "developer",
+    "architect"
+  ],
+  "diagram_type": [
+    "trace-matrix"
+  ],
+  "composition_pattern": "trace-matrix",
+  "source_refs": [
+    "SRC-015"
+  ],
+  "information_structure": [
+    "attributes",
+    "requirement",
+    "trace",
+    "verification"
+  ],
+  "layout": {
+    "primary_axis": "horizontal",
+    "grouping": "trace-matrix",
+    "reading_direction": "左から右、上から下"
+  },
+  "drawio": {
+    "libraries": [],
+    "native_features": [
+      "connector",
+      "semantic-shape",
+      "table"
+    ]
+  },
+  "visual": {
+    "theme": "T08",
+    "density": "medium",
+    "hierarchy": "図の目的 → まとまり → 個別要素",
+    "emphasis": "主対象と主要経路"
+  },
+  "visual_pattern": [
+    "title-and-short-explanation",
+    "neutral-boundaries",
+    "semantic-accent",
+    "labelled-relations"
+  ],
+  "relationships": [],
+  "when_to_use": [
+    "要求を何で実現し、何で検証するかを説明したい場合"
+  ],
+  "when_not_to_use": [
+    "入力に示されていない条件・順序・数量を補う場合"
+  ],
+  "strengths": [
+    "関係の種類と粒度を揃えて読める"
+  ],
+  "limitations": [
+    "例示の対象数と配置は案件に応じて再計算する"
+  ],
+  "tags": [
+    "attributes",
+    "requirement",
+    "software",
+    "trace",
+    "trace-matrix",
+    "traceability",
+    "verification",
+    "要求・設計・検証のトレース"
+  ],
+  "core": true,
+  "semantic_shape_requirement": [],
+  "variant_of": null,
+  "quality": {
+    "status": "accepted",
+    "reviewed_at": "2026-10-04T11:12:27.385655+00:00",
+    "findings": "要求・設計・検証の三軸と同一行の対応を確認。少数行の概略図であり、全量の大きいマトリクスはTSVへ分離する。",
+    "scores": null,
+    "review_scope": "個別PNGの表示で、文字・線・配置・意味を確認。規格全体の準拠を保証する検査ではない"
+  },
+  "example_content": "架空の予約サービス・企業・開発計画。実案件のデータではない。",
+  "artifact": "sample/information-structuring/diagram-vocabulary/examples/DV-016/example.drawio",
+  "source_analysis": {
+    "observations": [
+      {
+        "asset": "REF-013",
+        "source_refs": [
+          "SRC-015",
+          "SRC-002"
+        ],
+        "analysis": "要求IDと要求内容を分け、導出・充足関係を識別する",
+        "visual_observation": "要求IDと要求内容を分け、導出・充足関係を識別する",
+        "review_scope": "First page composition, grouping, hierarchy, connector strategy; not all small labels or all pages",
+        "preview": "sources/reference-previews/REF-013.png",
+        "original": "sources/official-examples/examples/sysml-requirements-diagram.drawio"
+      }
+    ],
+    "adaptation": "関係の種類と粒度を抽出し、固有データと具体的配置をコピーせず架空の予約サービスへ適応した。",
+    "layout_reason": "所属は境界、順序は方向、比較は共通位置で読む。説明対象以外の位置や色に意味を作らない。",
+    "tradeoff": "対象数が増えたらOverviewとDetailへ分け、入力に合わせて間隔・折返し・接続点を再計算する。"
+  },
+  "artifact_hash": "9fcfd3f024ff90be2aba1789d878e37689734cfc82ded841e0bafaf83a0f6118",
+  "preview_hash": "7a6723928008b3d8eed83f519fadde4bf457f9eced7b10ae3d44bf51e7f4ce60",
+  "pattern": "trace-matrix",
+  "presentation_context": "設計レビュー",
+  "notation_scope": "概略の説明パターン。正式な専門記法・分析の完全性を保証しない。",
+  "editability": "図形・表・所属・接続・ラベルをDraw.ioで編集できる。"
+}

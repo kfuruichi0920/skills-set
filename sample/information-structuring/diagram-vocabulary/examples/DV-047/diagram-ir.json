@@ -1,0 +1,104 @@
+{
+  "id": "DV-047",
+  "width": 1280,
+  "height": 900,
+  "metadata": {
+    "title": "工程ごとのチーム関与",
+    "purpose": "どのチームがどの工程へ関与するか",
+    "audience": "技術者・説明対象者",
+    "diagram_type": "phase-team-grid",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "工程ごとのチーム関与",
+      "x": 40,
+      "y": 24,
+      "width": 1200,
+      "height": 55,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=26;fontStyle=1;whiteSpace=wrap;"
+    },
+    {
+      "id": "summary",
+      "label": "どのチームがどの工程へ関与するか。",
+      "x": 40,
+      "y": 92,
+      "width": 1200,
+      "height": 70,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。線の意味はラベルで示す。色は主対象・状態・注意を補助する。",
+      "x": 40,
+      "y": 820,
+      "width": 1200,
+      "height": 50,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=14;fontStyle=0;whiteSpace=wrap;"
+    },
+    {
+      "id": "note",
+      "label": "工程の順序と担当の分類を分ける。必要な引き渡しだけを関係線で補う。",
+      "x": 80,
+      "y": 720,
+      "width": 1130,
+      "height": 60,
+      "parent": "1",
+      "primitive": "text",
+      "fallback_reason": "説明ラベル",
+      "style": "fontSize=18;fontStyle=0;whiteSpace=wrap;"
+    }
+  ],
+  "containers": [],
+  "edges": [],
+  "tables": [
+    {
+      "id": "grid",
+      "x": 80,
+      "y": 250,
+      "column_widths": [
+        220,
+        300,
+        300,
+        300
+      ],
+      "rows": [
+        [
+          "担当 / 工程",
+          "準備",
+          "設計",
+          "検証"
+        ],
+        [
+          "業務担当",
+          "要件を整理",
+          "条件を確認",
+          "受入を確認"
+        ],
+        [
+          "開発担当",
+          "影響を調査",
+          "設計・実装",
+          "動作を検証"
+        ],
+        [
+          "運用担当",
+          "制約を提示",
+          "監視を設計",
+          "運用を確認"
+        ]
+      ],
+      "row_height": 95
+    }
+  ]
+}

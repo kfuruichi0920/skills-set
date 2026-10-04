@@ -17,9 +17,17 @@
 | カタログの別テーマ | サマリ、分解、変更前後、判断、期間、層、論証、フロー、関係者の9構造に各2テーマ、計18ケース | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
 | 注釈の別テーマ | 画面説明・PlantUML・既存Draw.ioに各2テーマ、計6ケース。原図は維持 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
 
-計137ページ・17ファイル（原図の別ファイルを除く）。元の93ページを維持し、別テーマの44ケースを追加した。[index.md](index.md)は全ページの名称・ID・テーマ・ファイルへの対応、[manifest.json](manifest.json)は検査用の対応データを持つ。
+計144ページ・18ファイル（原図の別ファイルを除く）。元の93ページを維持し、別テーマ44ケースとネイティブ機能7ケースを追加した。[index.md](index.md)は全ページの名称・ID・テーマ・ファイルへの対応、[manifest.json](manifest.json)は検査用の対応データを持つ。
 
 [サンプル別のテーマ比較](theme-cases.md)では、元テーマと追加テーマの実表示画像、Draw.ioファイル、利用場面を確認できる。同じサンプルの情報・意味役割・図形・関係・配置は維持し、配色だけを変更する。対象や条件をテーマの変更で追加しない。テーマごとの目的・読者は、同じ情報を異なる場面で使うための例として記録する。
+
+## ネイティブ機能の追加例
+
+[実表示の比較一覧](native-capabilities.md)で7ページの画像と入力・解決済みIRを確認できる。
+
+[10-native-capabilities.drawio](10-native-capabilities.drawio)は7ページ。フローチャートの意味図形、親子コンテナー、ネイティブTable、明示されたAWS Lambda／RDS、EIP、再利用Fragment、Templateを収録する。図形は実カタログ検索から選び、検索結果と採否は[sources/native-retrieval.json](sources/native-retrieval.json)、入力・解決済みIRは[sources/](sources/)、再生成コードは[scripts/build_native_samples.py](scripts/build_native_samples.py)に保存する。
+
+サンプル用の[カタログ抜粋](references/drawio/shape-catalog.json)は、利用図形の出所・ID・版を保持する。全資産の正本はスキル側のカタログである。更新時はスキルのgenerate → validate → build_samples.py → check_samples.py → Draw.io書出し → 表示・意味点検の順で更新する。新しい図を実資産で検証した後に抜粋も再作成する。
 
 ## 読み方と範囲
 
@@ -49,3 +57,5 @@ python -X utf8 sample/information-structuring/scripts/check_samples.py --render 
 ```
 
 カタログ・整理目的・テーマのIDの網羅、XMLと接続先、ネイティブ原図の保持、画像ハッシュ、補助ツールの同期を検査する。表示検査はDraw.ioから書き出した`previews/`の全ページを確認し、接続先・ラベル・余白を点検する。機械検査や一覧画像だけを、全ラベルの通常倍率での確認と同一視しない。表示の確認状況は[visual-qa.md](visual-qa.md)に記録する。
+
+ネイティブカタログ検査にはスキルの`requirements-native.txt`に記載したjsonschemaを使用する。同梱shape_catalog.pyと設定・IRを保持し、抜粋カタログでもID検査とXMLの再生成ができる。

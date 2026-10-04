@@ -1,0 +1,95 @@
+{
+  "id": "native-table",
+  "metadata": {
+    "title": "ネイティブTable：少量の責任一覧",
+    "purpose": "表・行・セルの親子構造で編集できる。大きなマトリクスの本体はTSVへ分ける。",
+    "audience": "技術者",
+    "diagram_type": "native",
+    "theme": "T03"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "ネイティブTable：少量の責任一覧",
+      "x": 40,
+      "y": 25,
+      "width": 1180,
+      "height": 50,
+      "primitive": "text",
+      "fallback_reason": "ページ見出し",
+      "style": "fontSize=26;fontStyle=1;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "ページ見出し"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "表・行・セルの親子構造で編集できる。大きなマトリクスの本体はTSVへ分ける。",
+      "x": 40,
+      "y": 92,
+      "width": 1180,
+      "height": 70,
+      "primitive": "text",
+      "fallback_reason": "説明文",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明文"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。入力に示された意味だけを図形・所属・線で表現する。",
+      "x": 40,
+      "y": 720,
+      "width": 1180,
+      "height": 55,
+      "primitive": "text",
+      "fallback_reason": "凡例",
+      "style": "fontSize=14;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "凡例"
+      }
+    }
+  ],
+  "edges": [],
+  "containers": [],
+  "tables": [
+    {
+      "id": "responsibility",
+      "x": 110,
+      "y": 260,
+      "column_widths": [
+        280,
+        250,
+        250
+      ],
+      "rows": [
+        [
+          "作業",
+          "担当",
+          "確認者"
+        ],
+        [
+          "入力の整理",
+          "分析担当",
+          "依頼者"
+        ],
+        [
+          "図解の確認",
+          "図解担当",
+          "レビュー担当"
+        ],
+        [
+          "承認",
+          "依頼者",
+          "責任者"
+        ]
+      ]
+    }
+  ]
+}

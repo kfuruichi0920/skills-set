@@ -1,0 +1,112 @@
+{
+  "id": "native-aws",
+  "metadata": {
+    "title": "Vendor図形：明示されたAWSサービスを選ぶ",
+    "purpose": "この例の入力は「AWS LambdaがAmazon RDSを利用する」。一般的なDBをRDSと推定しない。",
+    "audience": "技術者",
+    "diagram_type": "native",
+    "theme": "T05"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "Vendor図形：明示されたAWSサービスを選ぶ",
+      "x": 40,
+      "y": 25,
+      "width": 1180,
+      "height": 50,
+      "primitive": "text",
+      "fallback_reason": "ページ見出し",
+      "style": "fontSize=26;fontStyle=1;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "ページ見出し"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "この例の入力は「AWS LambdaがAmazon RDSを利用する」。一般的なDBをRDSと推定しない。",
+      "x": 40,
+      "y": 92,
+      "width": 1180,
+      "height": 70,
+      "primitive": "text",
+      "fallback_reason": "説明文",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明文"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。入力に示された意味だけを図形・所属・線で表現する。",
+      "x": 40,
+      "y": 720,
+      "width": 1180,
+      "height": 55,
+      "primitive": "text",
+      "fallback_reason": "凡例",
+      "style": "fontSize=14;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "凡例"
+      }
+    },
+    {
+      "id": "lambda",
+      "label": "AWS Lambda",
+      "x": 180,
+      "y": 300,
+      "width": 160,
+      "height": 100,
+      "shape_query": "lambda",
+      "shape_id": "mxgraph.aws4.lambda",
+      "semantic_type": "lambda",
+      "library": "aws4",
+      "vendor": "aws",
+      "vendor_style_reason": "AWSサービスの識別色を保持する",
+      "style": "verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#ED7100;strokeColor=none;",
+      "resolved": {
+        "shape_id": "mxgraph.aws4.lambda",
+        "library": "aws4",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "rds",
+      "label": "Amazon RDS",
+      "x": 750,
+      "y": 300,
+      "width": 160,
+      "height": 100,
+      "shape_query": "rds",
+      "shape_id": "mxgraph.aws4.rds",
+      "semantic_type": "rds",
+      "library": "aws4",
+      "vendor": "aws",
+      "vendor_style_reason": "AWSサービスの識別色を保持する",
+      "style": "verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#C925D1;strokeColor=none;",
+      "resolved": {
+        "shape_id": "mxgraph.aws4.rds",
+        "library": "aws4",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge0",
+      "source": "lambda",
+      "target": "rds",
+      "label": "SQL要求",
+      "semantic_type": "flow"
+    }
+  ],
+  "containers": [],
+  "tables": []
+}

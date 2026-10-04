@@ -22,3 +22,7 @@ ASCII図は、同じtechnical-writingの`references/ascii-diagrams.md`から、�
 提供文中の引用プレースホルダーには参照先がなく、規格の版・採択時期に関する記述も今回の整理では確認していない。これらを検証済みの出典や運用上の前提として採用しない。正式記法や規格への適合を求められる実案件では、対象版と一次資料を確認する。
 
 PlantUMLシーケンス図の例は[公式の構文説明](https://plantuml.com/sequence-diagram)で参加者・別名・メッセージの記法を確認した。使用する例と運用規則はvisualization.md・production.mdに収録している。
+
+## Draw.ioネイティブ機能の統合（2026-10-04）
+
+ユーザー添付「LLM図解Skill — Draw.io Native機能活用・Shape Catalog統合仕様」に基づき、実Stencilの抽出・検索・解決済みIR・XML検証・ネイティブ機能選択・再利用資産を追加した。資産版はDraw.io Desktop 31.5.2。登録規則とTable／TableRowの設定は同版のapp.min.jsを照合した。生成カタログの出所とハッシュはreferences/drawioのrawへ保存する。サンプルと検査記録はsample/information-structuringを参照する。

@@ -1,0 +1,2333 @@
+[
+  {
+    "id": "alibaba_cloud",
+    "namespace": "mxgraph.alibaba_cloud",
+    "source_type": "builtin_stencil",
+    "display_name": "alibaba_cloud",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/alibaba_cloud.xml"
+    ],
+    "shape_count": 310
+  },
+  {
+    "id": "android",
+    "namespace": "mxgraph.android",
+    "source_type": "builtin_stencil",
+    "display_name": "android",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/android/android.xml"
+    ],
+    "shape_count": 49
+  },
+  {
+    "id": "arrows",
+    "namespace": "mxgraph.arrows",
+    "source_type": "builtin_stencil",
+    "display_name": "arrows",
+    "domain": [
+      "general"
+    ],
+    "source_files": [
+      "app.asar:stencils/arrows.xml"
+    ],
+    "shape_count": 34
+  },
+  {
+    "id": "atlassian",
+    "namespace": "mxgraph.atlassian",
+    "source_type": "builtin_stencil",
+    "display_name": "atlassian",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/atlassian.xml"
+    ],
+    "shape_count": 26
+  },
+  {
+    "id": "atlassian2",
+    "namespace": "mxgraph.atlassian2",
+    "source_type": "builtin_stencil",
+    "display_name": "atlassian2",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/atlassian2.xml"
+    ],
+    "shape_count": 109
+  },
+  {
+    "id": "aws.compute",
+    "namespace": "mxgraph.aws.compute",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.compute",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/compute.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "aws.content_delivery",
+    "namespace": "mxgraph.aws.content_delivery",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.content_delivery",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/content_delivery.xml"
+    ],
+    "shape_count": 4
+  },
+  {
+    "id": "aws.database",
+    "namespace": "mxgraph.aws.database",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.database",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/database.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "aws.deployment_management",
+    "namespace": "mxgraph.aws.deployment_management",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.deployment_management",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/deployment_management.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "aws.groups",
+    "namespace": "mxgraph.aws.groups",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.groups",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/groups.xml"
+    ],
+    "shape_count": 18
+  },
+  {
+    "id": "aws.messaging",
+    "namespace": "mxgraph.aws.messaging",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.messaging",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/messaging.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "aws.misc",
+    "namespace": "mxgraph.aws.misc",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.misc",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/misc.xml"
+    ],
+    "shape_count": 3
+  },
+  {
+    "id": "aws.networking",
+    "namespace": "mxgraph.aws.networking",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.networking",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/networking.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "aws.non_service_specific",
+    "namespace": "mxgraph.aws.non_service_specific",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.non_service_specific",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/non_service_specific.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "aws.on_demand_workforce",
+    "namespace": "mxgraph.aws.on_demand_workforce",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.on_demand_workforce",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/on_demand_workforce.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "aws.storage",
+    "namespace": "mxgraph.aws.storage",
+    "source_type": "builtin_stencil",
+    "display_name": "aws.storage",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws/storage.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "aws2.administration_and_security",
+    "namespace": "mxgraph.aws2.administration_and_security",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.administration_and_security",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/administration_and_security.xml"
+    ],
+    "shape_count": 3
+  },
+  {
+    "id": "aws2.analytics",
+    "namespace": "mxgraph.aws2.analytics",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.analytics",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/analytics.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "aws2.app_services",
+    "namespace": "mxgraph.aws2.app_services",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.app_services",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/app_services.xml"
+    ],
+    "shape_count": 17
+  },
+  {
+    "id": "aws2.compute_and_networking",
+    "namespace": "mxgraph.aws2.compute_and_networking",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.compute_and_networking",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/compute_and_networking.xml"
+    ],
+    "shape_count": 39
+  },
+  {
+    "id": "aws2.database",
+    "namespace": "mxgraph.aws2.database",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.database",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/database.xml"
+    ],
+    "shape_count": 34
+  },
+  {
+    "id": "aws2.deployment_and_management",
+    "namespace": "mxgraph.aws2.deployment_and_management",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.deployment_and_management",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/deployment_and_management.xml"
+    ],
+    "shape_count": 31
+  },
+  {
+    "id": "aws2.developer_tools",
+    "namespace": "mxgraph.aws2.developer_tools",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.developer_tools",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/developer_tools.xml"
+    ],
+    "shape_count": 2
+  },
+  {
+    "id": "aws2.enterprise_applications",
+    "namespace": "mxgraph.aws2.enterprise_applications",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.enterprise_applications",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/enterprise_applications.xml"
+    ],
+    "shape_count": 3
+  },
+  {
+    "id": "aws2.game_development",
+    "namespace": "mxgraph.aws2.game_development",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.game_development",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/game_development.xml"
+    ],
+    "shape_count": 1
+  },
+  {
+    "id": "aws2.internet_of_things",
+    "namespace": "mxgraph.aws2.internet_of_things",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.internet_of_things",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/internet_of_things.xml"
+    ],
+    "shape_count": 34
+  },
+  {
+    "id": "aws2.management_tools",
+    "namespace": "mxgraph.aws2.management_tools",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.management_tools",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/management_tools.xml"
+    ],
+    "shape_count": 1
+  },
+  {
+    "id": "aws2.mobile_services",
+    "namespace": "mxgraph.aws2.mobile_services",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.mobile_services",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/mobile_services.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "aws2.networking",
+    "namespace": "mxgraph.aws2.networking",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.networking",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/networking.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "aws2.non-service_specific",
+    "namespace": "mxgraph.aws2.non-service_specific",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.non-service_specific",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/non-service_specific.xml"
+    ],
+    "shape_count": 15
+  },
+  {
+    "id": "aws2.on-demand_workforce",
+    "namespace": "mxgraph.aws2.on-demand_workforce",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.on-demand_workforce",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/on-demand_workforce.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "aws2.sdks",
+    "namespace": "mxgraph.aws2.sdks",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.sdks",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/sdks.xml"
+    ],
+    "shape_count": 14
+  },
+  {
+    "id": "aws2.security_and_identity",
+    "namespace": "mxgraph.aws2.security_and_identity",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.security_and_identity",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/security_and_identity.xml"
+    ],
+    "shape_count": 7
+  },
+  {
+    "id": "aws2.storage_and_content_delivery",
+    "namespace": "mxgraph.aws2.storage_and_content_delivery",
+    "source_type": "builtin_stencil",
+    "display_name": "aws2.storage_and_content_delivery",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws2/storage_and_content_delivery.xml"
+    ],
+    "shape_count": 21
+  },
+  {
+    "id": "aws3",
+    "namespace": "mxgraph.aws3",
+    "source_type": "builtin_stencil",
+    "display_name": "aws3",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws3.xml"
+    ],
+    "shape_count": 293
+  },
+  {
+    "id": "aws3d",
+    "namespace": "mxgraph.aws3d",
+    "source_type": "builtin_stencil",
+    "display_name": "aws3d",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/aws3d.xml"
+    ],
+    "shape_count": 16
+  },
+  {
+    "id": "aws4",
+    "namespace": "mxgraph.aws4",
+    "source_type": "builtin_stencil",
+    "display_name": "aws4",
+    "domain": [
+      "cloud_aws"
+    ],
+    "source_files": [
+      "app.asar:stencils/aws4.xml"
+    ],
+    "shape_count": 1050
+  },
+  {
+    "id": "azure",
+    "namespace": "mxgraph.azure",
+    "source_type": "builtin_stencil",
+    "display_name": "azure",
+    "domain": [
+      "cloud_azure"
+    ],
+    "source_files": [
+      "app.asar:stencils/azure.xml"
+    ],
+    "shape_count": 90
+  },
+  {
+    "id": "basic",
+    "namespace": "mxgraph.basic",
+    "source_type": "builtin_stencil",
+    "display_name": "basic",
+    "domain": [
+      "general"
+    ],
+    "source_files": [
+      "app.asar:stencils/basic.xml"
+    ],
+    "shape_count": 30
+  },
+  {
+    "id": "bootstrap",
+    "namespace": "mxgraph.bootstrap",
+    "source_type": "builtin_stencil",
+    "display_name": "bootstrap",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/bootstrap.xml"
+    ],
+    "shape_count": 4
+  },
+  {
+    "id": "bpmn",
+    "namespace": "mxgraph.bpmn",
+    "source_type": "builtin_stencil",
+    "display_name": "bpmn",
+    "domain": [
+      "business_process"
+    ],
+    "source_files": [
+      "app.asar:stencils/bpmn.xml"
+    ],
+    "shape_count": 39
+  },
+  {
+    "id": "cabinets",
+    "namespace": "mxgraph.cabinets",
+    "source_type": "builtin_stencil",
+    "display_name": "cabinets",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cabinets.xml"
+    ],
+    "shape_count": 53
+  },
+  {
+    "id": "cisco.buildings",
+    "namespace": "mxgraph.cisco.buildings",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.buildings",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/buildings.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "cisco.computers_and_peripherals",
+    "namespace": "mxgraph.cisco.computers_and_peripherals",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.computers_and_peripherals",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/computers_and_peripherals.xml"
+    ],
+    "shape_count": 20
+  },
+  {
+    "id": "cisco.controllers_and_modules",
+    "namespace": "mxgraph.cisco.controllers_and_modules",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.controllers_and_modules",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/controllers_and_modules.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "cisco.directors",
+    "namespace": "mxgraph.cisco.directors",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.directors",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/directors.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "cisco.hubs_and_gateways",
+    "namespace": "mxgraph.cisco.hubs_and_gateways",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.hubs_and_gateways",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/hubs_and_gateways.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "cisco.misc",
+    "namespace": "mxgraph.cisco.misc",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.misc",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/misc.xml"
+    ],
+    "shape_count": 129
+  },
+  {
+    "id": "cisco.modems_and_phones",
+    "namespace": "mxgraph.cisco.modems_and_phones",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.modems_and_phones",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/modems_and_phones.xml"
+    ],
+    "shape_count": 12
+  },
+  {
+    "id": "cisco.people",
+    "namespace": "mxgraph.cisco.people",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.people",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/people.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "cisco.routers",
+    "namespace": "mxgraph.cisco.routers",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.routers",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/routers.xml"
+    ],
+    "shape_count": 23
+  },
+  {
+    "id": "cisco.security",
+    "namespace": "mxgraph.cisco.security",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.security",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/security.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "cisco.servers",
+    "namespace": "mxgraph.cisco.servers",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.servers",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/servers.xml"
+    ],
+    "shape_count": 17
+  },
+  {
+    "id": "cisco.storage",
+    "namespace": "mxgraph.cisco.storage",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.storage",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/storage.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "cisco.switches",
+    "namespace": "mxgraph.cisco.switches",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.switches",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/switches.xml"
+    ],
+    "shape_count": 24
+  },
+  {
+    "id": "cisco.wireless",
+    "namespace": "mxgraph.cisco.wireless",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco.wireless",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco/wireless.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "cisco19",
+    "namespace": "mxgraph.cisco19",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco19",
+    "domain": [
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/cisco19.xml"
+    ],
+    "shape_count": 232
+  },
+  {
+    "id": "cisco_safe.architecture",
+    "namespace": "mxgraph.cisco_safe.architecture",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.architecture",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/architecture.xml"
+    ],
+    "shape_count": 64
+  },
+  {
+    "id": "cisco_safe.business_icons",
+    "namespace": "mxgraph.cisco_safe.business_icons",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.business_icons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/business_icons.xml"
+    ],
+    "shape_count": 30
+  },
+  {
+    "id": "cisco_safe.capability",
+    "namespace": "mxgraph.cisco_safe.capability",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.capability",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/capability.xml"
+    ],
+    "shape_count": 76
+  },
+  {
+    "id": "cisco_safe.design",
+    "namespace": "mxgraph.cisco_safe.design",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.design",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/design.xml"
+    ],
+    "shape_count": 115
+  },
+  {
+    "id": "cisco_safe.iot_things_icons",
+    "namespace": "mxgraph.cisco_safe.iot_things_icons",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.iot_things_icons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/iot_things_icons.xml"
+    ],
+    "shape_count": 48
+  },
+  {
+    "id": "cisco_safe.people_places_things_icons",
+    "namespace": "mxgraph.cisco_safe.people_places_things_icons",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.people_places_things_icons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/people_places_things_icons.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "cisco_safe.security_icons",
+    "namespace": "mxgraph.cisco_safe.security_icons",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.security_icons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/security_icons.xml"
+    ],
+    "shape_count": 72
+  },
+  {
+    "id": "cisco_safe.technology_icons",
+    "namespace": "mxgraph.cisco_safe.technology_icons",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.technology_icons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/technology_icons.xml"
+    ],
+    "shape_count": 29
+  },
+  {
+    "id": "cisco_safe.threat",
+    "namespace": "mxgraph.cisco_safe.threat",
+    "source_type": "builtin_stencil",
+    "display_name": "cisco_safe.threat",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/cisco_safe/threat.xml"
+    ],
+    "shape_count": 40
+  },
+  {
+    "id": "citrix",
+    "namespace": "mxgraph.citrix",
+    "source_type": "builtin_stencil",
+    "display_name": "citrix",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/citrix.xml"
+    ],
+    "shape_count": 97
+  },
+  {
+    "id": "citrix2",
+    "namespace": "mxgraph.citrix2",
+    "source_type": "builtin_stencil",
+    "display_name": "citrix2",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/citrix2.xml"
+    ],
+    "shape_count": 126
+  },
+  {
+    "id": "custom:libraries:reusable",
+    "namespace": "custom:libraries:reusable",
+    "display_name": "custom:libraries:reusable",
+    "source_type": "custom_library",
+    "domain": [],
+    "source_files": [
+      "libraries:reusable.xml"
+    ],
+    "shape_count": 2
+  },
+  {
+    "id": "eip",
+    "namespace": "mxgraph.eip",
+    "source_type": "builtin_stencil",
+    "display_name": "eip",
+    "domain": [
+      "integration"
+    ],
+    "source_files": [
+      "app.asar:stencils/eip.xml"
+    ],
+    "shape_count": 36
+  },
+  {
+    "id": "electrical.abstract",
+    "namespace": "mxgraph.electrical.abstract",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.abstract",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/abstract.xml"
+    ],
+    "shape_count": 21
+  },
+  {
+    "id": "electrical.capacitors",
+    "namespace": "mxgraph.electrical.capacitors",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.capacitors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/capacitors.xml"
+    ],
+    "shape_count": 16
+  },
+  {
+    "id": "electrical.diodes",
+    "namespace": "mxgraph.electrical.diodes",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.diodes",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/diodes.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "electrical.electro-mechanical",
+    "namespace": "mxgraph.electrical.electro-mechanical",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.electro-mechanical",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/electro-mechanical.xml"
+    ],
+    "shape_count": 68
+  },
+  {
+    "id": "electrical.iec417",
+    "namespace": "mxgraph.electrical.iec417",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.iec417",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/iec417.xml"
+    ],
+    "shape_count": 45
+  },
+  {
+    "id": "electrical.iec_logic_gates",
+    "namespace": "mxgraph.electrical.iec_logic_gates",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.iec_logic_gates",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/iec_logic_gates.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "electrical.inductors",
+    "namespace": "mxgraph.electrical.inductors",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.inductors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/inductors.xml"
+    ],
+    "shape_count": 39
+  },
+  {
+    "id": "electrical.instruments",
+    "namespace": "mxgraph.electrical.instruments",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.instruments",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/instruments.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "electrical.logic_gates",
+    "namespace": "mxgraph.electrical.logic_gates",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.logic_gates",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/logic_gates.xml"
+    ],
+    "shape_count": 25
+  },
+  {
+    "id": "electrical.miscellaneous",
+    "namespace": "mxgraph.electrical.miscellaneous",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.miscellaneous",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/miscellaneous.xml"
+    ],
+    "shape_count": 67
+  },
+  {
+    "id": "electrical.mosfets1",
+    "namespace": "mxgraph.electrical.mosfets1",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.mosfets1",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/mosfets1.xml"
+    ],
+    "shape_count": 21
+  },
+  {
+    "id": "electrical.mosfets2",
+    "namespace": "mxgraph.electrical.mosfets2",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.mosfets2",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/mosfets2.xml"
+    ],
+    "shape_count": 15
+  },
+  {
+    "id": "electrical.op_amps",
+    "namespace": "mxgraph.electrical.op_amps",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.op_amps",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/op_amps.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "electrical.opto_electronics",
+    "namespace": "mxgraph.electrical.opto_electronics",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.opto_electronics",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/opto_electronics.xml"
+    ],
+    "shape_count": 15
+  },
+  {
+    "id": "electrical.plc_ladder",
+    "namespace": "mxgraph.electrical.plc_ladder",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.plc_ladder",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/plc_ladder.xml"
+    ],
+    "shape_count": 6
+  },
+  {
+    "id": "electrical.power_semiconductors",
+    "namespace": "mxgraph.electrical.power_semiconductors",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.power_semiconductors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/power_semiconductors.xml"
+    ],
+    "shape_count": 21
+  },
+  {
+    "id": "electrical.radio",
+    "namespace": "mxgraph.electrical.radio",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.radio",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/radio.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "electrical.resistors",
+    "namespace": "mxgraph.electrical.resistors",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.resistors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/resistors.xml"
+    ],
+    "shape_count": 23
+  },
+  {
+    "id": "electrical.rot_mech",
+    "namespace": "mxgraph.electrical.rot_mech",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.rot_mech",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/rot_mech.xml"
+    ],
+    "shape_count": 15
+  },
+  {
+    "id": "electrical.signal_sources",
+    "namespace": "mxgraph.electrical.signal_sources",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.signal_sources",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/signal_sources.xml"
+    ],
+    "shape_count": 18
+  },
+  {
+    "id": "electrical.thermionic_devices",
+    "namespace": "mxgraph.electrical.thermionic_devices",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.thermionic_devices",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/thermionic_devices.xml"
+    ],
+    "shape_count": 7
+  },
+  {
+    "id": "electrical.transistors",
+    "namespace": "mxgraph.electrical.transistors",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.transistors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/transistors.xml"
+    ],
+    "shape_count": 23
+  },
+  {
+    "id": "electrical.transmission",
+    "namespace": "mxgraph.electrical.transmission",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.transmission",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/transmission.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "electrical.waveforms",
+    "namespace": "mxgraph.electrical.waveforms",
+    "source_type": "builtin_stencil",
+    "display_name": "electrical.waveforms",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/electrical/waveforms.xml"
+    ],
+    "shape_count": 23
+  },
+  {
+    "id": "floorplan",
+    "namespace": "mxgraph.floorplan",
+    "source_type": "builtin_stencil",
+    "display_name": "floorplan",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/floorplan.xml"
+    ],
+    "shape_count": 46
+  },
+  {
+    "id": "flowchart",
+    "namespace": "mxgraph.flowchart",
+    "source_type": "builtin_stencil",
+    "display_name": "flowchart",
+    "domain": [
+      "general",
+      "business_process",
+      "project_management"
+    ],
+    "source_files": [
+      "app.asar:stencils/flowchart.xml"
+    ],
+    "shape_count": 36
+  },
+  {
+    "id": "fluid_power",
+    "namespace": "mxgraph.fluid_power",
+    "source_type": "builtin_stencil",
+    "display_name": "fluid_power",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/fluid_power.xml"
+    ],
+    "shape_count": 246
+  },
+  {
+    "id": "gcp.big_data",
+    "namespace": "mxgraph.gcp.big_data",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.big_data",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/big_data.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "gcp.compute",
+    "namespace": "mxgraph.gcp.compute",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.compute",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/compute.xml"
+    ],
+    "shape_count": 7
+  },
+  {
+    "id": "gcp.developer_tools",
+    "namespace": "mxgraph.gcp.developer_tools",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.developer_tools",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/developer_tools.xml"
+    ],
+    "shape_count": 3
+  },
+  {
+    "id": "gcp.extras",
+    "namespace": "mxgraph.gcp.extras",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.extras",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/extras.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "gcp.identity_and_security",
+    "namespace": "mxgraph.gcp.identity_and_security",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.identity_and_security",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/identity_and_security.xml"
+    ],
+    "shape_count": 6
+  },
+  {
+    "id": "gcp.machine_learning",
+    "namespace": "mxgraph.gcp.machine_learning",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.machine_learning",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/machine_learning.xml"
+    ],
+    "shape_count": 7
+  },
+  {
+    "id": "gcp.management_tools",
+    "namespace": "mxgraph.gcp.management_tools",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.management_tools",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/management_tools.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "gcp.networking",
+    "namespace": "mxgraph.gcp.networking",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.networking",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/networking.xml"
+    ],
+    "shape_count": 12
+  },
+  {
+    "id": "gcp.product_cards",
+    "namespace": "mxgraph.gcp.product_cards",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.product_cards",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/product_cards.xml"
+    ],
+    "shape_count": 3
+  },
+  {
+    "id": "gcp.storage_databases",
+    "namespace": "mxgraph.gcp.storage_databases",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp.storage_databases",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp/storage_databases.xml"
+    ],
+    "shape_count": 6
+  },
+  {
+    "id": "gcp2",
+    "namespace": "mxgraph.gcp2",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp2",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp2.xml"
+    ],
+    "shape_count": 297
+  },
+  {
+    "id": "gcp3",
+    "namespace": "mxgraph.gcp3",
+    "source_type": "builtin_stencil",
+    "display_name": "gcp3",
+    "domain": [
+      "google_cloud"
+    ],
+    "source_files": [
+      "app.asar:stencils/gcp3.xml"
+    ],
+    "shape_count": 45
+  },
+  {
+    "id": "gmdl",
+    "namespace": "mxgraph.gmdl",
+    "source_type": "builtin_stencil",
+    "display_name": "gmdl",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/gmdl.xml"
+    ],
+    "shape_count": 104
+  },
+  {
+    "id": "ibm",
+    "namespace": "mxgraph.ibm",
+    "source_type": "builtin_stencil",
+    "display_name": "ibm",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/ibm.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "ibm_cloud",
+    "namespace": "mxgraph.ibm_cloud",
+    "source_type": "builtin_stencil",
+    "display_name": "ibm_cloud",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/ibm_cloud.xml"
+    ],
+    "shape_count": 110
+  },
+  {
+    "id": "ios7.icons",
+    "namespace": "mxgraph.ios7.icons",
+    "source_type": "builtin_stencil",
+    "display_name": "ios7.icons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/ios7/icons.xml"
+    ],
+    "shape_count": 115
+  },
+  {
+    "id": "ios7.misc",
+    "namespace": "mxgraph.ios7.misc",
+    "source_type": "builtin_stencil",
+    "display_name": "ios7.misc",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/ios7/misc.xml"
+    ],
+    "shape_count": 53
+  },
+  {
+    "id": "kubernetes",
+    "namespace": "mxgraph.kubernetes",
+    "source_type": "builtin_stencil",
+    "display_name": "kubernetes",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/kubernetes.xml"
+    ],
+    "shape_count": 40
+  },
+  {
+    "id": "kubernetes2",
+    "namespace": "mxgraph.kubernetes2",
+    "source_type": "builtin_stencil",
+    "display_name": "kubernetes2",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/kubernetes2.xml"
+    ],
+    "shape_count": 39
+  },
+  {
+    "id": "lean_mapping",
+    "namespace": "mxgraph.lean_mapping",
+    "source_type": "builtin_stencil",
+    "display_name": "lean_mapping",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/lean_mapping.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "mockup.advertising",
+    "namespace": "mxgraph.mockup.advertising",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.advertising",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/advertising.xml"
+    ],
+    "shape_count": 17
+  },
+  {
+    "id": "mockup.calendars",
+    "namespace": "mxgraph.mockup.calendars",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.calendars",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/calendars.xml"
+    ],
+    "shape_count": 4
+  },
+  {
+    "id": "mockup.carousel",
+    "namespace": "mxgraph.mockup.carousel",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.carousel",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/carousel.xml"
+    ],
+    "shape_count": 12
+  },
+  {
+    "id": "mockup.charts_and_tables",
+    "namespace": "mxgraph.mockup.charts_and_tables",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.charts_and_tables",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/charts_and_tables.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "mockup.controls",
+    "namespace": "mxgraph.mockup.controls",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.controls",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/controls.xml"
+    ],
+    "shape_count": 12
+  },
+  {
+    "id": "mockup.form_elements",
+    "namespace": "mxgraph.mockup.form_elements",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.form_elements",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/form_elements.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "mockup.menus_and_buttons",
+    "namespace": "mxgraph.mockup.menus_and_buttons",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.menus_and_buttons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/menus_and_buttons.xml"
+    ],
+    "shape_count": 15
+  },
+  {
+    "id": "mockup.misc",
+    "namespace": "mxgraph.mockup.misc",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.misc",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/misc.xml"
+    ],
+    "shape_count": 22
+  },
+  {
+    "id": "mockup.tabs",
+    "namespace": "mxgraph.mockup.tabs",
+    "source_type": "builtin_stencil",
+    "display_name": "mockup.tabs",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mockup/tabs.xml"
+    ],
+    "shape_count": 6
+  },
+  {
+    "id": "mscae.cloud",
+    "namespace": "mxgraph.mscae.cloud",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.cloud",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/cloud.xml"
+    ],
+    "shape_count": 126
+  },
+  {
+    "id": "mscae.deprecated",
+    "namespace": "mxgraph.mscae.deprecated",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.deprecated",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/deprecated.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "mscae.enterprise",
+    "namespace": "mxgraph.mscae.enterprise",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.enterprise",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/enterprise.xml"
+    ],
+    "shape_count": 74
+  },
+  {
+    "id": "mscae.general",
+    "namespace": "mxgraph.mscae.general",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.general",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/general.xml"
+    ],
+    "shape_count": 21
+  },
+  {
+    "id": "mscae.general_symbols",
+    "namespace": "mxgraph.mscae.general_symbols",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.general_symbols",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/general_symbols.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "mscae.intune",
+    "namespace": "mxgraph.mscae.intune",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.intune",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/intune.xml"
+    ],
+    "shape_count": 44
+  },
+  {
+    "id": "mscae.oms",
+    "namespace": "mxgraph.mscae.oms",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.oms",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/oms.xml"
+    ],
+    "shape_count": 20
+  },
+  {
+    "id": "mscae.opsmanager",
+    "namespace": "mxgraph.mscae.opsmanager",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.opsmanager",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/opsmanager.xml"
+    ],
+    "shape_count": 18
+  },
+  {
+    "id": "mscae.other",
+    "namespace": "mxgraph.mscae.other",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.other",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/other.xml"
+    ],
+    "shape_count": 16
+  },
+  {
+    "id": "mscae.system_center",
+    "namespace": "mxgraph.mscae.system_center",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.system_center",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/system_center.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "mscae.vm",
+    "namespace": "mxgraph.mscae.vm",
+    "source_type": "builtin_stencil",
+    "display_name": "mscae.vm",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/mscae/vm.xml"
+    ],
+    "shape_count": 17
+  },
+  {
+    "id": "networks",
+    "namespace": "mxgraph.networks",
+    "source_type": "builtin_stencil",
+    "display_name": "networks",
+    "domain": [
+      "software_architecture",
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/networks.xml"
+    ],
+    "shape_count": 57
+  },
+  {
+    "id": "networks2",
+    "namespace": "mxgraph.networks2",
+    "source_type": "builtin_stencil",
+    "display_name": "networks2",
+    "domain": [
+      "software_architecture",
+      "network"
+    ],
+    "source_files": [
+      "app.asar:stencils/networks2.xml"
+    ],
+    "shape_count": 114
+  },
+  {
+    "id": "office.clouds",
+    "namespace": "mxgraph.office.clouds",
+    "source_type": "builtin_stencil",
+    "display_name": "office.clouds",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/clouds.xml"
+    ],
+    "shape_count": 12
+  },
+  {
+    "id": "office.communications",
+    "namespace": "mxgraph.office.communications",
+    "source_type": "builtin_stencil",
+    "display_name": "office.communications",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/communications.xml"
+    ],
+    "shape_count": 70
+  },
+  {
+    "id": "office.concepts",
+    "namespace": "mxgraph.office.concepts",
+    "source_type": "builtin_stencil",
+    "display_name": "office.concepts",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/concepts.xml"
+    ],
+    "shape_count": 105
+  },
+  {
+    "id": "office.databases",
+    "namespace": "mxgraph.office.databases",
+    "source_type": "builtin_stencil",
+    "display_name": "office.databases",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/databases.xml"
+    ],
+    "shape_count": 24
+  },
+  {
+    "id": "office.devices",
+    "namespace": "mxgraph.office.devices",
+    "source_type": "builtin_stencil",
+    "display_name": "office.devices",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/devices.xml"
+    ],
+    "shape_count": 48
+  },
+  {
+    "id": "office.security",
+    "namespace": "mxgraph.office.security",
+    "source_type": "builtin_stencil",
+    "display_name": "office.security",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/security.xml"
+    ],
+    "shape_count": 33
+  },
+  {
+    "id": "office.servers",
+    "namespace": "mxgraph.office.servers",
+    "source_type": "builtin_stencil",
+    "display_name": "office.servers",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/servers.xml"
+    ],
+    "shape_count": 83
+  },
+  {
+    "id": "office.services",
+    "namespace": "mxgraph.office.services",
+    "source_type": "builtin_stencil",
+    "display_name": "office.services",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/services.xml"
+    ],
+    "shape_count": 26
+  },
+  {
+    "id": "office.sites",
+    "namespace": "mxgraph.office.sites",
+    "source_type": "builtin_stencil",
+    "display_name": "office.sites",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/sites.xml"
+    ],
+    "shape_count": 17
+  },
+  {
+    "id": "office.users",
+    "namespace": "mxgraph.office.users",
+    "source_type": "builtin_stencil",
+    "display_name": "office.users",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/office/users.xml"
+    ],
+    "shape_count": 31
+  },
+  {
+    "id": "openstack",
+    "namespace": "mxgraph.openstack",
+    "source_type": "builtin_stencil",
+    "display_name": "openstack",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/openstack.xml"
+    ],
+    "shape_count": 18
+  },
+  {
+    "id": "pid.agitators",
+    "namespace": "mxgraph.pid.agitators",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.agitators",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/agitators.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "pid.apparatus_elements",
+    "namespace": "mxgraph.pid.apparatus_elements",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.apparatus_elements",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/apparatus_elements.xml"
+    ],
+    "shape_count": 6
+  },
+  {
+    "id": "pid.centrifuges",
+    "namespace": "mxgraph.pid.centrifuges",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.centrifuges",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/centrifuges.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "pid.compressors",
+    "namespace": "mxgraph.pid.compressors",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.compressors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/compressors.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "pid.compressors_-_iso",
+    "namespace": "mxgraph.pid.compressors_-_iso",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.compressors_-_iso",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/compressors_iso.xml"
+    ],
+    "shape_count": 11
+  },
+  {
+    "id": "pid.crushers_grinding",
+    "namespace": "mxgraph.pid.crushers_grinding",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.crushers_grinding",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/crushers_grinding.xml"
+    ],
+    "shape_count": 13
+  },
+  {
+    "id": "pid.driers",
+    "namespace": "mxgraph.pid.driers",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.driers",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/driers.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "pid.engines",
+    "namespace": "mxgraph.pid.engines",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.engines",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/engines.xml"
+    ],
+    "shape_count": 8
+  },
+  {
+    "id": "pid.feeders",
+    "namespace": "mxgraph.pid.feeders",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.feeders",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/feeders.xml"
+    ],
+    "shape_count": 5
+  },
+  {
+    "id": "pid.filters",
+    "namespace": "mxgraph.pid.filters",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.filters",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/filters.xml"
+    ],
+    "shape_count": 16
+  },
+  {
+    "id": "pid.fittings",
+    "namespace": "mxgraph.pid.fittings",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.fittings",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/fittings.xml"
+    ],
+    "shape_count": 35
+  },
+  {
+    "id": "pid.flow_sensors",
+    "namespace": "mxgraph.pid.flow_sensors",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.flow_sensors",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/flow_sensors.xml"
+    ],
+    "shape_count": 16
+  },
+  {
+    "id": "pid.heat_exchangers",
+    "namespace": "mxgraph.pid.heat_exchangers",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.heat_exchangers",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/heat_exchangers.xml"
+    ],
+    "shape_count": 23
+  },
+  {
+    "id": "pid.instruments",
+    "namespace": "mxgraph.pid.instruments",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.instruments",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/instruments.xml"
+    ],
+    "shape_count": 24
+  },
+  {
+    "id": "pid.misc",
+    "namespace": "mxgraph.pid.misc",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.misc",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/misc.xml"
+    ],
+    "shape_count": 82
+  },
+  {
+    "id": "pid.mixers",
+    "namespace": "mxgraph.pid.mixers",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.mixers",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/mixers.xml"
+    ],
+    "shape_count": 4
+  },
+  {
+    "id": "pid.piping",
+    "namespace": "mxgraph.pid.piping",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.piping",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/piping.xml"
+    ],
+    "shape_count": 43
+  },
+  {
+    "id": "pid.pumps",
+    "namespace": "mxgraph.pid.pumps",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.pumps",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/pumps.xml"
+    ],
+    "shape_count": 18
+  },
+  {
+    "id": "pid.pumps_-_din",
+    "namespace": "mxgraph.pid.pumps_-_din",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.pumps_-_din",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/pumps_din.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "pid.pumps_-_iso",
+    "namespace": "mxgraph.pid.pumps_-_iso",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.pumps_-_iso",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/pumps_iso.xml"
+    ],
+    "shape_count": 9
+  },
+  {
+    "id": "pid.separators",
+    "namespace": "mxgraph.pid.separators",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.separators",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/separators.xml"
+    ],
+    "shape_count": 18
+  },
+  {
+    "id": "pid.shaping_machines",
+    "namespace": "mxgraph.pid.shaping_machines",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.shaping_machines",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/shaping_machines.xml"
+    ],
+    "shape_count": 7
+  },
+  {
+    "id": "pid.valves",
+    "namespace": "mxgraph.pid.valves",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.valves",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/valves.xml"
+    ],
+    "shape_count": 32
+  },
+  {
+    "id": "pid.vessels",
+    "namespace": "mxgraph.pid.vessels",
+    "source_type": "builtin_stencil",
+    "display_name": "pid.vessels",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/pid/vessels.xml"
+    ],
+    "shape_count": 63
+  },
+  {
+    "id": "rack.apc",
+    "namespace": "mxgraph.rack.apc",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.apc",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/apc.xml"
+    ],
+    "shape_count": 3
+  },
+  {
+    "id": "rack.cisco",
+    "namespace": "mxgraph.rack.cisco",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.cisco",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/cisco.xml"
+    ],
+    "shape_count": 101
+  },
+  {
+    "id": "rack.dell",
+    "namespace": "mxgraph.rack.dell",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.dell",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/dell.xml"
+    ],
+    "shape_count": 33
+  },
+  {
+    "id": "rack.f5",
+    "namespace": "mxgraph.rack.f5",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.f5",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/f5.xml"
+    ],
+    "shape_count": 25
+  },
+  {
+    "id": "rack.general",
+    "namespace": "mxgraph.rack.general",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.general",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/general.xml"
+    ],
+    "shape_count": 26
+  },
+  {
+    "id": "rack.hp",
+    "namespace": "mxgraph.rack.hp",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.hp",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/hp.xml"
+    ],
+    "shape_count": 19
+  },
+  {
+    "id": "rack.hpe_aruba.gateways_controllers",
+    "namespace": "mxgraph.rack.hpe_aruba.gateways_controllers",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.hpe_aruba.gateways_controllers",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/hpe_aruba/gateways_controllers.xml"
+    ],
+    "shape_count": 28
+  },
+  {
+    "id": "rack.hpe_aruba.security",
+    "namespace": "mxgraph.rack.hpe_aruba.security",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.hpe_aruba.security",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/hpe_aruba/security.xml"
+    ],
+    "shape_count": 7
+  },
+  {
+    "id": "rack.hpe_aruba.switches",
+    "namespace": "mxgraph.rack.hpe_aruba.switches",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.hpe_aruba.switches",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/hpe_aruba/switches.xml"
+    ],
+    "shape_count": 187
+  },
+  {
+    "id": "rack.ibm",
+    "namespace": "mxgraph.rack.ibm",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.ibm",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/ibm.xml"
+    ],
+    "shape_count": 21
+  },
+  {
+    "id": "rack.oracle",
+    "namespace": "mxgraph.rack.oracle",
+    "source_type": "builtin_stencil",
+    "display_name": "rack.oracle",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/rack/oracle.xml"
+    ],
+    "shape_count": 37
+  },
+  {
+    "id": "salesforce",
+    "namespace": "mxgraph.salesforce",
+    "source_type": "builtin_stencil",
+    "display_name": "salesforce",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/salesforce.xml"
+    ],
+    "shape_count": 96
+  },
+  {
+    "id": "signs.animals",
+    "namespace": "mxgraph.signs.animals",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.animals",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/animals.xml"
+    ],
+    "shape_count": 15
+  },
+  {
+    "id": "signs.food",
+    "namespace": "mxgraph.signs.food",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.food",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/food.xml"
+    ],
+    "shape_count": 10
+  },
+  {
+    "id": "signs.healthcare",
+    "namespace": "mxgraph.signs.healthcare",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.healthcare",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/healthcare.xml"
+    ],
+    "shape_count": 50
+  },
+  {
+    "id": "signs.nature",
+    "namespace": "mxgraph.signs.nature",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.nature",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/nature.xml"
+    ],
+    "shape_count": 17
+  },
+  {
+    "id": "signs.people",
+    "namespace": "mxgraph.signs.people",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.people",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/people.xml"
+    ],
+    "shape_count": 19
+  },
+  {
+    "id": "signs.safety",
+    "namespace": "mxgraph.signs.safety",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.safety",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/safety.xml"
+    ],
+    "shape_count": 20
+  },
+  {
+    "id": "signs.science",
+    "namespace": "mxgraph.signs.science",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.science",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/science.xml"
+    ],
+    "shape_count": 6
+  },
+  {
+    "id": "signs.sports",
+    "namespace": "mxgraph.signs.sports",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.sports",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/sports.xml"
+    ],
+    "shape_count": 80
+  },
+  {
+    "id": "signs.tech",
+    "namespace": "mxgraph.signs.tech",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.tech",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/tech.xml"
+    ],
+    "shape_count": 28
+  },
+  {
+    "id": "signs.transportation",
+    "namespace": "mxgraph.signs.transportation",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.transportation",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/transportation.xml"
+    ],
+    "shape_count": 75
+  },
+  {
+    "id": "signs.travel",
+    "namespace": "mxgraph.signs.travel",
+    "source_type": "builtin_stencil",
+    "display_name": "signs.travel",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/signs/travel.xml"
+    ],
+    "shape_count": 49
+  },
+  {
+    "id": "sitemap",
+    "namespace": "mxgraph.sitemap",
+    "source_type": "builtin_stencil",
+    "display_name": "sitemap",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/sitemap.xml"
+    ],
+    "shape_count": 50
+  },
+  {
+    "id": "veeam",
+    "namespace": "mxgraph.veeam",
+    "source_type": "builtin_stencil",
+    "display_name": "veeam",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/veeam/veeam.xml"
+    ],
+    "shape_count": 131
+  },
+  {
+    "id": "veeam.2d",
+    "namespace": "mxgraph.veeam.2d",
+    "source_type": "builtin_stencil",
+    "display_name": "veeam.2d",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/veeam/2d.xml"
+    ],
+    "shape_count": 135
+  },
+  {
+    "id": "veeam.3d",
+    "namespace": "mxgraph.veeam.3d",
+    "source_type": "builtin_stencil",
+    "display_name": "veeam.3d",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/veeam/3d.xml"
+    ],
+    "shape_count": 67
+  },
+  {
+    "id": "veeam2",
+    "namespace": "mxgraph.veeam2",
+    "source_type": "builtin_stencil",
+    "display_name": "veeam2",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/veeam/veeam2.xml"
+    ],
+    "shape_count": 247
+  },
+  {
+    "id": "vvd",
+    "namespace": "mxgraph.vvd",
+    "source_type": "builtin_stencil",
+    "display_name": "vvd",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/vvd.xml"
+    ],
+    "shape_count": 94
+  },
+  {
+    "id": "webicons",
+    "namespace": "mxgraph.webicons",
+    "source_type": "builtin_stencil",
+    "display_name": "webicons",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/webicons.xml"
+    ],
+    "shape_count": 176
+  },
+  {
+    "id": "weblogos",
+    "namespace": "mxgraph.weblogos",
+    "source_type": "builtin_stencil",
+    "display_name": "weblogos",
+    "domain": [],
+    "source_files": [
+      "app.asar:stencils/weblogos.xml"
+    ],
+    "shape_count": 178
+  }
+]

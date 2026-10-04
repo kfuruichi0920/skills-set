@@ -22,6 +22,10 @@ def validate():
         actual=[s['id'] for s in manifest if s['category']==category]
         assert set(actual)==expected and len(actual)==len(expected),category
     annotation_ids={s['id'] for s in manifest if s['category']=='annotation'}
+    sys.path.insert(0,str(SKILL/'scripts'))
+    import shape_catalog
+    shape_catalog.validate_xml(ET.parse(BASE/'10-native-capabilities.drawio').getroot(),shape_catalog.read(BASE/'references/drawio/shape-catalog.json'))
+    assert (BASE/'scripts/shape_catalog.py').read_bytes()==(SKILL/'scripts/shape_catalog.py').read_bytes()
     assert annotation_ids=={'screen-orientation','screen-function','screen-workflow','native-annotation','plantuml-svg','plantuml-png'}
     assert {s['form'] for s in manifest if 'form' in s}=={f['id'] for f in framework['forms']},'Basic representation coverage'
     for name in ['diagrams.py','theme_styles.py','build_annotation.py']:

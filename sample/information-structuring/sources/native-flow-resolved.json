@@ -1,0 +1,179 @@
+{
+  "id": "native-flow",
+  "metadata": {
+    "title": "フローチャート：処理・判定・文書・DBを区別",
+    "purpose": "受付から記録までを標準の意味図形で表す。判定の条件は線に残す。",
+    "audience": "技術者",
+    "diagram_type": "native",
+    "theme": "T01"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "フローチャート：処理・判定・文書・DBを区別",
+      "x": 40,
+      "y": 25,
+      "width": 1180,
+      "height": 50,
+      "primitive": "text",
+      "fallback_reason": "ページ見出し",
+      "style": "fontSize=26;fontStyle=1;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "ページ見出し"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "受付から記録までを標準の意味図形で表す。判定の条件は線に残す。",
+      "x": 40,
+      "y": 92,
+      "width": 1180,
+      "height": 70,
+      "primitive": "text",
+      "fallback_reason": "説明文",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明文"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。入力に示された意味だけを図形・所属・線で表現する。",
+      "x": 40,
+      "y": 720,
+      "width": 1180,
+      "height": 55,
+      "primitive": "text",
+      "fallback_reason": "凡例",
+      "style": "fontSize=14;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "凡例"
+      }
+    },
+    {
+      "id": "request",
+      "label": "申請書",
+      "x": 70,
+      "y": 310,
+      "width": 160,
+      "height": 100,
+      "shape_query": "document",
+      "shape_id": "mxgraph.flowchart.document",
+      "semantic_type": "document",
+      "library": "flowchart",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.document",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "check",
+      "label": "内容確認",
+      "x": 330,
+      "y": 310,
+      "width": 160,
+      "height": 100,
+      "shape_query": "process",
+      "shape_id": "mxgraph.flowchart.process",
+      "semantic_type": "process",
+      "library": "flowchart",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.process",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "decision",
+      "label": "条件を満たす",
+      "x": 590,
+      "y": 310,
+      "width": 160,
+      "height": 100,
+      "shape_query": "decision",
+      "shape_id": "mxgraph.flowchart.decision",
+      "semantic_type": "decision",
+      "library": "flowchart",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.decision",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "db",
+      "label": "受付記録",
+      "x": 870,
+      "y": 310,
+      "width": 160,
+      "height": 100,
+      "shape_query": "database",
+      "shape_id": "mxgraph.flowchart.database",
+      "semantic_type": "database",
+      "library": "flowchart",
+      "resolved": {
+        "shape_id": "mxgraph.flowchart.database",
+        "library": "flowchart",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "return",
+      "label": "修正依頼",
+      "x": 590,
+      "y": 540,
+      "width": 160,
+      "height": 70,
+      "primitive": "rectangle",
+      "fallback_reason": "組織固有の連絡先を表す通常要素",
+      "resolved": {
+        "primitive": "rectangle",
+        "verified": true,
+        "reason": "組織固有の連絡先を表す通常要素"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge0",
+      "source": "request",
+      "target": "check",
+      "label": "確認対象",
+      "semantic_type": "flow"
+    },
+    {
+      "id": "edge1",
+      "source": "check",
+      "target": "decision",
+      "label": "判定",
+      "semantic_type": "flow"
+    },
+    {
+      "id": "edge2",
+      "source": "decision",
+      "target": "db",
+      "label": "はい",
+      "semantic_type": "flow"
+    },
+    {
+      "id": "edge3",
+      "source": "decision",
+      "target": "return",
+      "label": "いいえ",
+      "semantic_type": "flow",
+      "style": "exitX=0.5;exitY=1;entryX=0.5;entryY=0;"
+    }
+  ],
+  "containers": [],
+  "tables": []
+}

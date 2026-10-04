@@ -1,0 +1,108 @@
+{
+  "id": "native-eip",
+  "metadata": {
+    "title": "EIP：内容に応じた振り分けと集約",
+    "purpose": "メッセージ内容による振り分けと、関連メッセージの集約をEIP図形で区別する。",
+    "audience": "技術者",
+    "diagram_type": "native",
+    "theme": "T02"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "EIP：内容に応じた振り分けと集約",
+      "x": 40,
+      "y": 25,
+      "width": 1180,
+      "height": 50,
+      "primitive": "text",
+      "fallback_reason": "ページ見出し",
+      "style": "fontSize=26;fontStyle=1;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "ページ見出し"
+      }
+    },
+    {
+      "id": "summary",
+      "label": "メッセージ内容による振り分けと、関連メッセージの集約をEIP図形で区別する。",
+      "x": 40,
+      "y": 92,
+      "width": 1180,
+      "height": 70,
+      "primitive": "text",
+      "fallback_reason": "説明文",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "説明文"
+      }
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。入力に示された意味だけを図形・所属・線で表現する。",
+      "x": 40,
+      "y": 720,
+      "width": 1180,
+      "height": 55,
+      "primitive": "text",
+      "fallback_reason": "凡例",
+      "style": "fontSize=14;",
+      "resolved": {
+        "primitive": "text",
+        "verified": true,
+        "reason": "凡例"
+      }
+    },
+    {
+      "id": "router",
+      "label": "内容による振り分け",
+      "x": 200,
+      "y": 310,
+      "width": 160,
+      "height": 100,
+      "shape_query": "content_based_router",
+      "shape_id": "mxgraph.eip.content_based_router",
+      "semantic_type": "content_based_router",
+      "library": "eip",
+      "style": "verticalLabelPosition=bottom;verticalAlign=top;align=center;labelWidth=240;",
+      "resolved": {
+        "shape_id": "mxgraph.eip.content_based_router",
+        "library": "eip",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    },
+    {
+      "id": "aggregate",
+      "label": "関連メッセージの集約",
+      "x": 810,
+      "y": 310,
+      "width": 160,
+      "height": 100,
+      "shape_query": "aggregator",
+      "shape_id": "mxgraph.eip.aggregator",
+      "semantic_type": "aggregator",
+      "library": "eip",
+      "style": "verticalLabelPosition=bottom;verticalAlign=top;align=center;labelWidth=260;",
+      "resolved": {
+        "shape_id": "mxgraph.eip.aggregator",
+        "library": "eip",
+        "verified": true,
+        "reason": "Explicit catalog candidate"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge0",
+      "source": "router",
+      "target": "aggregate",
+      "label": "関連メッセージ",
+      "semantic_type": "flow"
+    }
+  ],
+  "containers": [],
+  "tables": []
+}

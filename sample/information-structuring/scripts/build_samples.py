@@ -457,6 +457,8 @@ def main():
     shutil.copy2(SKILL/'references/diagram-themes.json', BASE/'references/diagram-themes.json')
     purposes(); catalogs(); themes(); annotations(); sequence()
     theme_cases()
+    from build_native_samples import build as native_samples
+    MANIFEST.extend(dict(file='10-native-capabilities.drawio', **entry) for entry in native_samples())
     (BASE/'manifest.json').write_text(json.dumps({'schema_version':1,'samples':MANIFEST},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     lines=['# サンプルの対応一覧','','build_samples.pyでmanifest.jsonと同時に生成する。全て架空のデータまたは配置参考。','','| ID | 名称 | 区分 | テーマ | ファイル |','| --- | --- | --- | --- | --- |']
     for item in MANIFEST:

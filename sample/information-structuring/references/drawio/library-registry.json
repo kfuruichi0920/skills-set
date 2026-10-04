@@ -1,0 +1,48 @@
+{
+  "general": [
+    "basic",
+    "arrows",
+    "arrows2",
+    "flowchart"
+  ],
+  "business_process": [
+    "bpmn",
+    "flowchart"
+  ],
+  "software_architecture": [
+    "networks",
+    "networks2"
+  ],
+  "requirements_mbse": [
+    "sysml",
+    "uml"
+  ],
+  "enterprise_architecture": [
+    "archimate*"
+  ],
+  "cloud_aws": [
+    "aws4"
+  ],
+  "cloud_azure": [
+    "azure"
+  ],
+  "google_cloud": [
+    "gcp*"
+  ],
+  "network": [
+    "networks",
+    "networks2",
+    "cisco.*",
+    "cisco19"
+  ],
+  "data_model": [
+    "er"
+  ],
+  "integration": [
+    "eip"
+  ],
+  "project_management": [
+    "infographic",
+    "flowchart"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "native-fragment",
+  "metadata": {
+    "title": "再利用Fragment：受付と記録",
+    "purpose": "Custom Libraryから取得した構造・配置を再利用する。元セルのIDはインスタンスごとに再採番する。",
+    "audience": "技術者",
+    "diagram_type": "native",
+    "theme": "T01"
+  },
+  "nodes": [
+    {
+      "id": "heading",
+      "label": "再利用Fragment：受付と記録",
+      "x": 40,
+      "y": 25,
+      "width": 1180,
+      "height": 50,
+      "primitive": "text",
+      "fallback_reason": "ページ見出し",
+      "style": "fontSize=26;fontStyle=1;"
+    },
+    {
+      "id": "summary",
+      "label": "Custom Libraryから取得した構造・配置を再利用する。元セルのIDはインスタンスごとに再採番する。",
+      "x": 40,
+      "y": 92,
+      "width": 1180,
+      "height": 70,
+      "primitive": "text",
+      "fallback_reason": "説明文"
+    },
+    {
+      "id": "legend",
+      "label": "架空の例。入力に示された意味だけを図形・所属・線で表現する。",
+      "x": 40,
+      "y": 720,
+      "width": 1180,
+      "height": 55,
+      "primitive": "text",
+      "fallback_reason": "凡例",
+      "style": "fontSize=14;"
+    },
+    {
+      "id": "reuse",
+      "label": "",
+      "x": 100,
+      "y": 240,
+      "width": 660.0,
+      "height": 150.0,
+      "shape_id": "custom:libraries:reusable:0"
+    }
+  ],
+  "edges": [],
+  "containers": [],
+  "tables": []
+}

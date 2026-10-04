@@ -1,0 +1,871 @@
+{
+  "catalog_version": "1",
+  "generated_at": "2026-10-04T10:33:29.707681+00:00",
+  "drawio_source_version": "31.5.2",
+  "source_fingerprints": {
+    "app.asar:stencils/alibaba_cloud.xml": "6b61ad2b9f50ade888c05a7b4684b8afb35a0065887345114f0a173144a8dcb8",
+    "app.asar:stencils/android/android.xml": "cb9f8c282258c5366f51ba3f6af50d325aba9b0d9ef8455d1fcbfb44cf0aa539",
+    "app.asar:stencils/arrows.xml": "f946b037bd58809b9dcfb154e83d8a67d8714d678c9f7860436267593ea9cc35",
+    "app.asar:stencils/atlassian.xml": "a0656b25e461e07c1a7016cb9d8a99a5448e6d4c43f1c64791a071ee39249e91",
+    "app.asar:stencils/atlassian2.xml": "f464c25c4c84685019e1a753f5762fb15f4a9a85b9df4fcea16c72832bb4025e",
+    "app.asar:stencils/aws/compute.xml": "65e7741a23a812dba5cf93fe3644a8dc480569d03b11fc8ec575f6ed2e53457c",
+    "app.asar:stencils/aws/content_delivery.xml": "ae5604004bb0a046ba9ac3de348809f3b68c4d3d74c5f8b4d4da5aa8f2204b0f",
+    "app.asar:stencils/aws/database.xml": "83a134d29c1b3decd8d0148f098fa77dfa87a34ce86c2dd1100fd690f7f75423",
+    "app.asar:stencils/aws/deployment_management.xml": "e27605ea8028c1b497daa0639c7104255862afd39b9540c4c14fb94473021d12",
+    "app.asar:stencils/aws/groups.xml": "a2b6de4fab128a5536aeff392ce03b1d5e4f44ff423bc12cd1974804bedcfac3",
+    "app.asar:stencils/aws/messaging.xml": "ed2f887d9dc4a25a1657ba425a067709f137bb996691f9a6f78487b066350007",
+    "app.asar:stencils/aws/misc.xml": "3f849030f2754a1bd14ed23a8943f7a706a8283c5cdfe8875a1c517fb77c78b8",
+    "app.asar:stencils/aws/networking.xml": "d796098ab86b5260df10d5f91bcbdf940e9e8fe02cb7fbd73950715f21735b45",
+    "app.asar:stencils/aws/non_service_specific.xml": "2df446f995c29ae1f8f7a7a37062d010f9969e416a245a4d71001ed1b6228b8c",
+    "app.asar:stencils/aws/on_demand_workforce.xml": "de2a869905b5440c231278e58c5a950b4234c6a4f472495f72f4056c15df8b81",
+    "app.asar:stencils/aws/storage.xml": "7d67c691a83e163771a7ea385da1410b0cb54154fb30270611b61d7750321617",
+    "app.asar:stencils/aws2/administration_and_security.xml": "b61c157fb176b94950c8bf9f59aa31228c3ce8ccc704bdd053ea2ddf0e1fd368",
+    "app.asar:stencils/aws2/analytics.xml": "1c9a98f294bfb1831e111bad12490fb85b35e70afbc2da2a5a817c8378dcefa3",
+    "app.asar:stencils/aws2/app_services.xml": "e6f135ca04a6c782b44d5a1894e8a790687a6e7bfea442fc82811542085e53d7",
+    "app.asar:stencils/aws2/compute_and_networking.xml": "0e1f61ff1769c25dfb70b4c69c4b6c96ec5db5657ea4a05157ee4ddd961bed44",
+    "app.asar:stencils/aws2/database.xml": "953d87aeb6ace391f1914962672aec435559cf7e09eaf5682b524738c6813802",
+    "app.asar:stencils/aws2/deployment_and_management.xml": "78927f813c6ada8f6c90d646bd55b63ef0b7fc8e48fc409354f33cd3165cc5d9",
+    "app.asar:stencils/aws2/developer_tools.xml": "7ef7a33f9fc9d232dd5721a0218f7948ef1d528927b6cae1bf4b17f6ed1597a2",
+    "app.asar:stencils/aws2/enterprise_applications.xml": "f7b3ca8d9ec663942b38596a5eeb9dc9d531f612c1d7af21cdf703d052409019",
+    "app.asar:stencils/aws2/game_development.xml": "f076fbd520409831a5bb197f3dd4e9daa17feba4e05cf772a592df96db93d38b",
+    "app.asar:stencils/aws2/internet_of_things.xml": "f1f121f2fab34b3ff6fe870fcce07d4d07edb1089733a5cc7b295c19d78fbe4a",
+    "app.asar:stencils/aws2/management_tools.xml": "40b3cbd20c7444c68095a550c9b01e6a18c6687b57ea9d5aeaefcde74b55a6d5",
+    "app.asar:stencils/aws2/mobile_services.xml": "eab19c2803dbd0ff8db7655dff423f5b248f4ae8853f03edff4d06551fc81bce",
+    "app.asar:stencils/aws2/networking.xml": "a1f6bb882f243c6a9a2753affc653dec3ff76c11f41b8919cd1555e9f51b274b",
+    "app.asar:stencils/aws2/non-service_specific.xml": "9f57a450881db1db557432e43c9cabd52d6bc85d8676d2cf5c11830bed3c6c57",
+    "app.asar:stencils/aws2/on-demand_workforce.xml": "8f178140c760b92a8b16cd508664263ca65a29d1b27d5d50da15860624e4ba58",
+    "app.asar:stencils/aws2/sdks.xml": "718d4b455ae48e99a52d9b59b6f2404c6133f270ed4ffb1675a117a03123f24d",
+    "app.asar:stencils/aws2/security_and_identity.xml": "41c1785beaa5ff2394aadb46d6ac0ee87c5daa6f4d2a7fb0c4466618bc5750df",
+    "app.asar:stencils/aws2/storage_and_content_delivery.xml": "0f33305e596741b68600499494405fb7d747766959fb6a1720e3e14d382ce7b3",
+    "app.asar:stencils/aws3.xml": "dc3942b91c3f835d4b090b3d04218777c5481e5b81f3bd0b8c6cc9aae109286c",
+    "app.asar:stencils/aws3d.xml": "7bf4f85b0654266df5ded4dc8a5f7d6dbd50d1421074b34955209518752674e6",
+    "app.asar:stencils/aws4.xml": "d577382093fdff61d555efa6abe87136dd78746b7deb0bbb8d90876692010428",
+    "app.asar:stencils/azure.xml": "664988a2ced3535855e6189eb3e0b7a782f1e72090441520945c24b9fb60840f",
+    "app.asar:stencils/basic.xml": "5ef5d8a72540f0f2dd5b7cc94841b7d1f597f3d6859fd7e86d518ff5ba95aeab",
+    "app.asar:stencils/bootstrap.xml": "ee0f49e5ec4b5f8cdcfe385c0f8b3a1f4b612c4c9ed64650a7af1c3786361f49",
+    "app.asar:stencils/bpmn.xml": "cb2f6af5f87d74248f838ed9214278897d53a616be6be807b957a258b054525a",
+    "app.asar:stencils/cabinets.xml": "570bd561a1023ead5f0e28ce869b83bfbb59587234fa1db67d1609b543383883",
+    "app.asar:stencils/cisco/buildings.xml": "2840852c93ca360143e664616da4c2e9be05e15ed8dc3456511d635f412c9b45",
+    "app.asar:stencils/cisco/computers_and_peripherals.xml": "56157eab7904b4831f6cfadb3c6ba62678a8e87620ed019c74896dda53843886",
+    "app.asar:stencils/cisco/controllers_and_modules.xml": "3e01e1f807c7c731c1d45bd7092042937eb0995ecc112e5d615d9fe666f60369",
+    "app.asar:stencils/cisco/directors.xml": "e882e6b70c093d239ff3bba6b6c17cdcd624b1e2e010d6f3fe86fcbe42c4111a",
+    "app.asar:stencils/cisco/hubs_and_gateways.xml": "894e9588789da97a914c9a088d797e13d9e665f20017b49fe9363929ff9f04aa",
+    "app.asar:stencils/cisco/misc.xml": "c6d98078d8aca320a7799b8c03e7e97093cfaa555645c84618e3f77fbc3f2f62",
+    "app.asar:stencils/cisco/modems_and_phones.xml": "39a7c3586e35ca367a58f9e0440eb66564bd669efb875bf773fa0d4cfe1a189c",
+    "app.asar:stencils/cisco/people.xml": "2a9168c92d3dcf4a040178c6ecf8168e682679134e9ecec6f19cb00cc82340e4",
+    "app.asar:stencils/cisco/routers.xml": "88f494d8fa2eac680b7f1619c55af910b3ae95bdc0c322d9aa5bb8129707787f",
+    "app.asar:stencils/cisco/security.xml": "538b6acc9af1c3bbd95d4bf00756383310022000e83108beba61526f8bb5f60d",
+    "app.asar:stencils/cisco/servers.xml": "f783a91936faa010213e6b16b80bd7dbe7f551d14e56226219a4b955824ddf7b",
+    "app.asar:stencils/cisco/storage.xml": "d98386bc96dfdd70c1babfacabac5b9bdf094e49e182bc8b99bf91007ec5f478",
+    "app.asar:stencils/cisco/switches.xml": "a2e802b4c4398eec4eb493a54fabb0a03158860637964f8dcc7549d98912880d",
+    "app.asar:stencils/cisco/wireless.xml": "b51e992e0cb388afb8d2539804767d083ae7751d20576cdfb0ea9abc34c2a9ce",
+    "app.asar:stencils/cisco19.xml": "46cf8b86c5ad29880aa83d0c0388db90ee2794930e1d20bd5b8a6b157ad6d4a4",
+    "app.asar:stencils/cisco_safe/architecture.xml": "8adc4a67b8dd54bfcc58915d563bb8543775dfddb6dfe11c3df98b0ee7e26d00",
+    "app.asar:stencils/cisco_safe/business_icons.xml": "534d6556b701ac544cbcb3826702ef853d116efdd9cb7e41f5379a300448823f",
+    "app.asar:stencils/cisco_safe/capability.xml": "840be38f6f1245ae4e3f90fb04512ce24a56cfd68d4ecd7d4a320a5ab4a149a8",
+    "app.asar:stencils/cisco_safe/design.xml": "614ac293263c3978ff0a7b097f0597a0cf411616803097ed2165fad161e912c8",
+    "app.asar:stencils/cisco_safe/iot_things_icons.xml": "2b24479eb24f6be541398c8b26cde98b56b07181bcc21aa38d42701b5933aafc",
+    "app.asar:stencils/cisco_safe/people_places_things_icons.xml": "ff68c8a637f18772d199fa42585ac3a7272624d07f68af04416f649e3fb6fceb",
+    "app.asar:stencils/cisco_safe/security_icons.xml": "fc4a85760c19819ee0534bb40ff8c2653a4dd41e50cd1781dfd5352cdafc2243",
+    "app.asar:stencils/cisco_safe/technology_icons.xml": "15b846d5ec142ba90802dd466bddb83604f8722f22da71371c636104c5fb9882",
+    "app.asar:stencils/cisco_safe/threat.xml": "fb0e126b27dff8e6aa9a6707ba42674a9c60528b1a742d4b69f28eb20cf4465d",
+    "app.asar:stencils/citrix.xml": "50499fbc84b5626342144d7a9200b7d18c2dd5df3c4a2d7e11232542de1539a8",
+    "app.asar:stencils/citrix2.xml": "c8dfac39343a581a3aab76641d86c22b9233808bbe9d5f994889cc220b920726",
+    "app.asar:stencils/eip.xml": "46c715bebc5837a19097e0bfbd7706ecb05bf92dcfa9df7594dc4cfae0f77ff2",
+    "app.asar:stencils/electrical/abstract.xml": "035eea087b2f339e791e0ca80f7b5f0b59edfc9f1d863588e788165fe8e110fd",
+    "app.asar:stencils/electrical/capacitors.xml": "b9ce0dcf660e1ac58dd0ec984e3d396fe7b0770f5b86e47839580ca3f54836dc",
+    "app.asar:stencils/electrical/diodes.xml": "bdc79a9c97461e6923407521a680117029c2bedf5e1f4c17b4474f332cdc9cde",
+    "app.asar:stencils/electrical/electro-mechanical.xml": "50635ba184bb1c0e9d565a333a183d4c979de0518fb53bb17fbee1a33ba8829d",
+    "app.asar:stencils/electrical/iec417.xml": "bf1af400c568e20accd73d5e08f29917380870804d869c06638d4f1231078eb6",
+    "app.asar:stencils/electrical/iec_logic_gates.xml": "acca5609b92159ad4107e32a1065acfd8c09be9ac7d83543a1e2d2015682dd4b",
+    "app.asar:stencils/electrical/inductors.xml": "b8ec48195103fc0ab4172afed205a2876081da95d7b95220f3d91a785d0e5b56",
+    "app.asar:stencils/electrical/instruments.xml": "0975594d35ebc6d43ee99b1133a6e2543ea4f27afba450aa47ac115925df53ae",
+    "app.asar:stencils/electrical/logic_gates.xml": "7c9a822a2213a792bdf6495292862779f8270c68d0759a25319973b4681421b8",
+    "app.asar:stencils/electrical/miscellaneous.xml": "6a6b38612d90b07c5bca3d6f818d9ee161328fbfb193e73c68c1310cf01b0b12",
+    "app.asar:stencils/electrical/mosfets1.xml": "f41c2c553ea3e4c08db3113cf968e1b3cf93ae3c0c156898dced82dc236fca35",
+    "app.asar:stencils/electrical/mosfets2.xml": "059ab272d667a3e20974fdd538164f34bf92f992a3db1684c5a59c520e13ee81",
+    "app.asar:stencils/electrical/op_amps.xml": "b7232c9d2a26bcab21960a5438de6819e8e6e19abd9abf7d73475082903751b0",
+    "app.asar:stencils/electrical/opto_electronics.xml": "b2e239e57e86e5a4fb1352da87fa9c3e29c9223951b5320925c05b4e0d876563",
+    "app.asar:stencils/electrical/plc_ladder.xml": "4a8c1146f4e4d984f23193783de4fa1f54a968cd36a012bfba787c7c09b95ede",
+    "app.asar:stencils/electrical/power_semiconductors.xml": "6018bdf025acc136cd9381263811b7bfffeb1687ef2f13523c53d45a2225a6df",
+    "app.asar:stencils/electrical/radio.xml": "9faa9739e9f2b210b9a8d50a081ca10a63a603a749b0d6a83fc1234e1e1d30d9",
+    "app.asar:stencils/electrical/resistors.xml": "fee043bbe5e4d6047591227dcbdc37c69d5f2a828a96500dd357bd4e4e7c99fc",
+    "app.asar:stencils/electrical/rot_mech.xml": "fd2ee7e00c398b6fb11b478bc5b1a094cbb338732c76e9a0984844db8b3ad2a4",
+    "app.asar:stencils/electrical/signal_sources.xml": "42a71ff4cf0125d6e4403ad36bbcb6282bca82ba91f57e454a296804b49c88b1",
+    "app.asar:stencils/electrical/thermionic_devices.xml": "e93c529127cf53bbcc8681a1c125fcaa71bb1709249c4def41a07582d4102f4d",
+    "app.asar:stencils/electrical/transistors.xml": "13c7713fec3031a3aeb4bec57ced2d46a843f7001e21a5869b13a2cb84475de8",
+    "app.asar:stencils/electrical/transmission.xml": "7c54cd3bd7b0cc6ce8147e668887f061854883d3120f3a76504560c1ea85de26",
+    "app.asar:stencils/electrical/waveforms.xml": "a4a582325b6d1b78dd62dfee5e865e95cac1cbc723103854b204749181f6129b",
+    "app.asar:stencils/floorplan.xml": "190a98d1df87c8e80268241b4a327d88082c8964c531b4e97759758a867e6ca1",
+    "app.asar:stencils/flowchart.xml": "cb2580bfbaf920d3fe44417a36bae20c660f34920ed4a933f7243f6369f7646f",
+    "app.asar:stencils/fluid_power.xml": "e2a12342ae26e33f2824b3e249edc9086438dda3c1aa17f92130aa52a88db42a",
+    "app.asar:stencils/gcp/big_data.xml": "c454285b87514a8fa5e0e020b5f7386724f20553ce9ca2b22a773f8b491b0235",
+    "app.asar:stencils/gcp/compute.xml": "4d985faf630e560f018c9f2360d6049765dc27dbca1c047c0410f81182c772c3",
+    "app.asar:stencils/gcp/developer_tools.xml": "d1e6a1941219baf79cac0f7287d8b2bff00676959a0ab36836bf0c42a519dfda",
+    "app.asar:stencils/gcp/extras.xml": "f3063f7dcaf9a4ce5730b3ff12f3c1f2f4a1a61ec7ae93ab2addec2b8fb7301c",
+    "app.asar:stencils/gcp/identity_and_security.xml": "74dcf02cc73aba864f4feeaf4ecde26f655aff0fe1c940784a783da07f9acfad",
+    "app.asar:stencils/gcp/machine_learning.xml": "7820c060e92fd0529c46b6ef75b4dcd18069ca09a2c9b5a4becfea42fa1744d8",
+    "app.asar:stencils/gcp/management_tools.xml": "2dc33093186fa64da6b6fd3e6e64ae0d288baff0863c632bf3ce346dd68ab0a6",
+    "app.asar:stencils/gcp/networking.xml": "8669cb25f91782d578c23f49b47a42b37b478c5a35eab66a8044b8bb697be99a",
+    "app.asar:stencils/gcp/product_cards.xml": "729d653ef0c376fa3babca22c7d668e5d7d344a549f58a0768e310b4ffbff357",
+    "app.asar:stencils/gcp/storage_databases.xml": "643a5f91fff200f919abab71c541a4aed301905d74fd30675175db31b12b4c5d",
+    "app.asar:stencils/gcp2.xml": "e3442951c7406a5407dd132e9fdc08addd1c8fa28a887b48e68cea7e776806f5",
+    "app.asar:stencils/gcp3.xml": "8b02857c2ff494f6851d96c5a23cd59e0901206caf9556820041b587abe7b569",
+    "app.asar:stencils/gmdl.xml": "99f4263eef5dd96603591fe482c1781293f8b99dba365d6ded2ff6317d458ceb",
+    "app.asar:stencils/ibm.xml": "25952eaed95893a94f94f1136ba6e4ed005f917b59eb0ee8cbf243b158f176b7",
+    "app.asar:stencils/ibm_cloud.xml": "7a629dafe963632ea420bf4cde50f17998ad73624067e6e37b72b88e2c6b4c7b",
+    "app.asar:stencils/ios7/icons.xml": "6c85a51fc33c35d2eb744457e130db63740ea7bc017e0e8ba3e2ea8bfd704d8f",
+    "app.asar:stencils/ios7/misc.xml": "7a5f96c4dac0d2beed6497d764d0290ddcf69a5a5befad2c81a297d82b81cfa3",
+    "app.asar:stencils/kubernetes.xml": "1ce2e3ddc402b3fc27c6d43d9319b05b0d16ea03e68da9742b1be2b6b059177c",
+    "app.asar:stencils/kubernetes2.xml": "4d950784f9844390174aacf839927b0aab0705b2aabf29648fe02a908608554d",
+    "app.asar:stencils/lean_mapping.xml": "32648239594e8e166cd1d9ba9b98967941e6c50701d3b71117c81fecb0869943",
+    "app.asar:stencils/mockup/advertising.xml": "6fbf577dad1dc7d4469ba4c38074cd7f7dee5080b8bf17d46e47e9a90b717ffe",
+    "app.asar:stencils/mockup/calendars.xml": "4ae5ca90be3d309149003a721af770036c13dc5d113e08d3cb8e5336829eadcd",
+    "app.asar:stencils/mockup/carousel.xml": "5de5c0e9ed7ba75988f9ae073562c4ad67d633172ea41ee7429cf289ba8139c1",
+    "app.asar:stencils/mockup/charts_and_tables.xml": "c4f87dc206e5a2cad0cbd705c62df20a090c7e63353230a8066326ae1862b64f",
+    "app.asar:stencils/mockup/controls.xml": "5c2116ad5b439007d88e9aff81a4ac73d81afd6e4b13deb6c4339accd8bcfd71",
+    "app.asar:stencils/mockup/form_elements.xml": "8d6f7692de77fd18bc48905387f7e156a7252410683a74e1061f977a0b384ecd",
+    "app.asar:stencils/mockup/menus_and_buttons.xml": "9b079c98fc2aa236a55e95ff9401f5d624d74c7715365fbaf76f36815d8a3e78",
+    "app.asar:stencils/mockup/misc.xml": "8f0dfc035ab0563bbba9e5385a135f6063a19e481de12c6bd71712d7054fc6f9",
+    "app.asar:stencils/mockup/tabs.xml": "8f67e46a3d6a361117f4020ff095775c20998060c4323c2265eb46900fd89bf0",
+    "app.asar:stencils/mscae/cloud.xml": "57bd5e8e4966ebfc042bd2db2c88ae654a53465a62ecae586ed6fe3e5bf67691",
+    "app.asar:stencils/mscae/deprecated.xml": "7905dbc2c5900056b9edf5f3841b229559d9294ae3b6de02fe4a364b651ba630",
+    "app.asar:stencils/mscae/enterprise.xml": "e920771b4783b85de3924524f96829a82751276b198b68f605748e39c8d47d5b",
+    "app.asar:stencils/mscae/general.xml": "f6904aadf1e7c723221a8b4055b5b21fe4744bfa20064bf677903180244e9881",
+    "app.asar:stencils/mscae/general_symbols.xml": "2ee99f2c3e7fafcabcf852e7cb3feb04fd0209d389aca9f7ba8777dd7c7ff966",
+    "app.asar:stencils/mscae/intune.xml": "4ecf3e21aeccf95b79f5446e0a3a26a5f431b87ece34f9f476ec51c6df14420b",
+    "app.asar:stencils/mscae/oms.xml": "2baa6904cf61c8aa4affa707704020ec962b919f96bcc3780a2dabf3d93131c6",
+    "app.asar:stencils/mscae/opsmanager.xml": "8a699a43e1e73f2e681901f6696bd11abdddce651ff81764532b29db72e28314",
+    "app.asar:stencils/mscae/other.xml": "28a16df2fa9283a7b71c36fdc55bf646fba8875b184ff4eb6fdd0da59d0a1d96",
+    "app.asar:stencils/mscae/system_center.xml": "af69c7496959792d68a7ccf636047cb93bea53b1e26b5306c0b07ca6a98734f6",
+    "app.asar:stencils/mscae/vm.xml": "90b1cd1e9ea9b86c152e42fb53b8c45c06f169bc16325ee9d9424efeb1466bec",
+    "app.asar:stencils/networks.xml": "9e64b35d4b6ec037f75082bcf8cb447d9e9d1c193a333d4f159814b12c81c5ed",
+    "app.asar:stencils/networks2.xml": "886de833472d9f0d5f4eaf1e8800e669e0705c3c35ba095c1ec83d92e02dc633",
+    "app.asar:stencils/office/clouds.xml": "254c21bc02e85e21094f8fc69973b725dde8cef4cfe0ee255af57ffaa18ff682",
+    "app.asar:stencils/office/communications.xml": "b396b267cb1857e50af7152719811de7de4826660f6822d9c3b0251aaaff14cb",
+    "app.asar:stencils/office/concepts.xml": "a3a34a30cfdf93289511cc6a49fb2fa6d6a4932a70874734b8580e17c5723951",
+    "app.asar:stencils/office/databases.xml": "88e80f3a10c54ad8602e52855b487aaadc11337bedf48926253ed716524d70b1",
+    "app.asar:stencils/office/devices.xml": "ebd32b53cdea4da460998f7fbcd016b5cc6fba1b59459c86c40ae9558fc0ab91",
+    "app.asar:stencils/office/security.xml": "e4f5e365cb86d3a98027164cd54374e731a4dd15ffce3aaae70f04abfa225e74",
+    "app.asar:stencils/office/servers.xml": "5c63822f09e70b18119023be52504c3da1ad557cc25da27de07f75eb2c857a88",
+    "app.asar:stencils/office/services.xml": "451a396a1bb7ee5f76b98c5f7d423c8c83b49ee54d87726d001f473f6b928da6",
+    "app.asar:stencils/office/sites.xml": "773e89a7c7ecee0720bfeeaf6f56beabcb8e9ebfe181ceaa453175f1d476c140",
+    "app.asar:stencils/office/users.xml": "8a08074a6ee0fd760c2e8f9941c5848f07c3f52be8cd619cc4abbc58182abf33",
+    "app.asar:stencils/openstack.xml": "6fa0422cc1b2df65470bd5329a43fa74fbd2e3859f3d2b8d2a0097b782a7c568",
+    "app.asar:stencils/pid/agitators.xml": "2edf5bcce56b9ff3b8e2383dc9a4331f7e8ff581b98a24ba1a895d698dc21cd3",
+    "app.asar:stencils/pid/apparatus_elements.xml": "05fc2204c631895ff90e1e23fe6e2a5b451be483423550a40574e112126ef117",
+    "app.asar:stencils/pid/centrifuges.xml": "2c8f5133c6ea27e03375e67cb9f6943cb260091e92aeeab32fa8735023ebbf45",
+    "app.asar:stencils/pid/compressors.xml": "8d1f257b34f86951a60c8b5193eea912d9a4ee0e5cc369a37ee83ebf44b17556",
+    "app.asar:stencils/pid/compressors_iso.xml": "a0df9192c4c8672b6451279ff07182d96cf317e8e82a419a15a542a490cfb67e",
+    "app.asar:stencils/pid/crushers_grinding.xml": "7bbaff7ea7233a5ebb507d27c07c1689042365f9b3dc23ad26d082e8298e7ee5",
+    "app.asar:stencils/pid/driers.xml": "058743ba8b9bf2e5e9e450b70b0289a92543652c829141ccb89d431fb1803574",
+    "app.asar:stencils/pid/engines.xml": "89176654f426b4ac78ab891f2e6b107c9ee009d138993274d3b560f8d50d42f8",
+    "app.asar:stencils/pid/feeders.xml": "bac1fde4f0fe1394bc42055d091ab1caba978eba7fce5924f36ea13a6a2fe673",
+    "app.asar:stencils/pid/filters.xml": "f876d28253b6effea59ceece43f7b48506b54158ffc4e06acb1009d671eebd86",
+    "app.asar:stencils/pid/fittings.xml": "9ba1dbe4df8e5335a2b615319d4fa438d9beecf87bb775226d312c22f7000bd8",
+    "app.asar:stencils/pid/flow_sensors.xml": "ce7abd444080def6b4cea1306d8ae56b5cda583abc6561261b1a3e0560bf8418",
+    "app.asar:stencils/pid/heat_exchangers.xml": "4b2636887ba6d52b1eacfbb6f8dccb7b6db3a4d858c70ab33bba6ef05bd2514f",
+    "app.asar:stencils/pid/instruments.xml": "97d4fa6e15bc9fa8cf803bcd77d851e2bf0caec87726374241b21c1c71b7bf08",
+    "app.asar:stencils/pid/misc.xml": "0773d56542c74dde257049406908bc8af6bc6782edfb0f6334743148f13da3e4",
+    "app.asar:stencils/pid/mixers.xml": "4d9d7dc72f542d849f86988b2a88c38f37ae69a180ad7bbc4117792826194829",
+    "app.asar:stencils/pid/piping.xml": "843985a6f21d985bf2f82682baa51b65f1d3981c8908078cca819c60a44e7446",
+    "app.asar:stencils/pid/pumps.xml": "3413a05f0d59711863688109000d045a2bdc51e6ffe069888199e713ad64f849",
+    "app.asar:stencils/pid/pumps_din.xml": "dd465065f7315e93dcc5718c66b2754c49763455b2d097fa0229c28d4621d962",
+    "app.asar:stencils/pid/pumps_iso.xml": "04fe06a9af7926cd7b8a7b5ff518fc867a0d19360d6da1efd48aa997830d480f",
+    "app.asar:stencils/pid/separators.xml": "65a078c0638a2f1766bdde79a244565110f42c4546abe81f958b4ede782bbbb6",
+    "app.asar:stencils/pid/shaping_machines.xml": "980574ec01022a37ee8d5932e54c5746c315cc63d7f9931c4e78566e5f1fc7e4",
+    "app.asar:stencils/pid/valves.xml": "aa40afbb633f25ac2d7a9f3afe8ebc8ca7250cc1a4199a0309c7ab3765e3d64a",
+    "app.asar:stencils/pid/vessels.xml": "c2c486131bc88fcc3efbcd73abe542c1f921708b6c3324a947fd76c95f57cb43",
+    "app.asar:stencils/rack/apc.xml": "77788f1784a26c782953b594807f32466adf92cc1ec543493160595e34e9f454",
+    "app.asar:stencils/rack/cisco.xml": "71de37676c1a8ceee791ff3eb61b18e1345a15b829865c53c0c51a1ad586c421",
+    "app.asar:stencils/rack/dell.xml": "6ff7ad6e50f9b0ae992c986b35bcbaf7a173eed52863b5763e6c06e1c242b660",
+    "app.asar:stencils/rack/f5.xml": "3e8fe08933196a9f5d5f0a41b37bc43f41c9358e62a20658d4e8ad682a419016",
+    "app.asar:stencils/rack/general.xml": "f5a67addbfea7e68f129bfcdfd8eb281188c196d25d5f8dc27700e12fe255bbe",
+    "app.asar:stencils/rack/hp.xml": "7ced3686e1d5956a57fa17f3a789a445f1c9ebbac4bdd75ffcdf0936a967a515",
+    "app.asar:stencils/rack/hpe_aruba/gateways_controllers.xml": "c1ff1ff7a5b251be9853ad27cd2b79645e902b2fa081557b022ddddb07714f80",
+    "app.asar:stencils/rack/hpe_aruba/security.xml": "06c9a3e2f8b9f05eac2ea7773d4b7f70881879c16f09ada0d980781d958aca0c",
+    "app.asar:stencils/rack/hpe_aruba/switches.xml": "ddea24f88a80f19dc9f4ed2f230c5da59b9f45f79db2c9c2d5cbd1aadcec140d",
+    "app.asar:stencils/rack/ibm.xml": "cbea85a9acb20cd04351294210ec5d71a2b5f464773b2ae2f3bcf46b89aad52c",
+    "app.asar:stencils/rack/oracle.xml": "64636610ba77926c1d7aa4c7854a31dbc1711482a767659d2892afa4f38900f5",
+    "app.asar:stencils/salesforce.xml": "7063b7d6ec296795da79f2a095f002224026c45b2f945ff783c4ce64896df750",
+    "app.asar:stencils/signs/animals.xml": "71674beb239c03fe41b630bbf98a7fabe0470fd5d9bf11b37128c5ea2c5cb19a",
+    "app.asar:stencils/signs/food.xml": "f0f8e81767222f5f59b19e2af487dfb2a2dc115acf45e58e674a8d255a00bbd8",
+    "app.asar:stencils/signs/healthcare.xml": "92e98bd364c9f396c1509d42eaf7a0084406536a89336a17219cb3ef018cec36",
+    "app.asar:stencils/signs/nature.xml": "fcf6f80aa8e9d5c050c5542c4f3af3fdde376164020f6aa81fc5084bc2be3ff5",
+    "app.asar:stencils/signs/people.xml": "099d8ddfdeba5f0fc82d80ce1694874123cecc98e1ccba8d6aa7dc571a8a5fbb",
+    "app.asar:stencils/signs/safety.xml": "771232bcdf50481c2ec01f2ecce78fb7cad4cfb6ed6d538faf7e133e81575a5a",
+    "app.asar:stencils/signs/science.xml": "f22cac00be32d7f6e4489578536b48d310e7b27948b0a32db81f75faaef59fda",
+    "app.asar:stencils/signs/sports.xml": "01c0a473a77ed04343dcfb68b03d610ab0015dcca64faf0b69e8182333a16e55",
+    "app.asar:stencils/signs/tech.xml": "aa567189e21da5a2a3d7a0891eb6bd29e76e284739a8c509e2fbdf9ab90041a8",
+    "app.asar:stencils/signs/transportation.xml": "18becf3d3fc9faa102da00953276fc8a0cd796cddb1d2dc7ba1285c1bf5a749a",
+    "app.asar:stencils/signs/travel.xml": "a54bc1551ea811f15cf3a94c42dfbdb705353f2e4238bc7145db9505e42c1bb4",
+    "app.asar:stencils/sitemap.xml": "51f73ccd1f62fcecfd3ee31d378519beff1009c68d7c0edda53dc52c63d06fc0",
+    "app.asar:stencils/veeam/2d.xml": "1bb2519cc68ef9ca2bb4ec424e8c295c68690ce2321d3609c7e3beb321ddbf24",
+    "app.asar:stencils/veeam/3d.xml": "3f326975570cc3ddb6f7c61780e44cab7d15230df50ce4369ed7a880627b7940",
+    "app.asar:stencils/veeam/veeam.xml": "54ea5633a2479d9b079006e4be3ed116e2c0e9944a50e8941a0101b0aa981aa3",
+    "app.asar:stencils/veeam/veeam2.xml": "00ea4981fde9a74158fd03318f601a9ce452edeef54b497821da4cb8ab2457e9",
+    "app.asar:stencils/vvd.xml": "4f91b1ce6a84717633c143e2e5e38b77fc1a7c4e824438f34a6923abc45063a3",
+    "app.asar:stencils/webicons.xml": "7867563c77ec04899818c7487d9eae2f457d357589b460eaa53d8afb209d8cad",
+    "app.asar:stencils/weblogos.xml": "f09e278047b99684045fd6400a9c247d50305e54a53e6d8e51748aa0bd1f6ac0",
+    "libraries:reusable.xml": "e4748593dac1e40fa491ebba1b701ebfbc231d26b7276a42af20ff5fe289b1b4"
+  },
+  "libraries": [
+    {
+      "id": "aws4",
+      "namespace": "mxgraph.aws4",
+      "source_type": "builtin_stencil",
+      "display_name": "aws4",
+      "domain": [
+        "cloud_aws"
+      ],
+      "source_files": [
+        "app.asar:stencils/aws4.xml"
+      ],
+      "shape_count": 2
+    },
+    {
+      "id": "custom:libraries:reusable",
+      "namespace": "custom:libraries:reusable",
+      "display_name": "custom:libraries:reusable",
+      "source_type": "custom_library",
+      "domain": [],
+      "source_files": [
+        "libraries:reusable.xml"
+      ],
+      "shape_count": 2
+    },
+    {
+      "id": "eip",
+      "namespace": "mxgraph.eip",
+      "source_type": "builtin_stencil",
+      "display_name": "eip",
+      "domain": [
+        "integration"
+      ],
+      "source_files": [
+        "app.asar:stencils/eip.xml"
+      ],
+      "shape_count": 2
+    },
+    {
+      "id": "flowchart",
+      "namespace": "mxgraph.flowchart",
+      "source_type": "builtin_stencil",
+      "display_name": "flowchart",
+      "domain": [
+        "general",
+        "business_process",
+        "project_management"
+      ],
+      "source_files": [
+        "app.asar:stencils/flowchart.xml"
+      ],
+      "shape_count": 4
+    }
+  ],
+  "shapes": [
+    {
+      "id": "custom:libraries:reusable:0",
+      "library": "custom:libraries:reusable",
+      "namespace": "custom:libraries:reusable",
+      "shape_name": "受付と記録",
+      "canonical_name": "0",
+      "source_type": "custom_library",
+      "source_file": "libraries:reusable.xml",
+      "source_sha256": "e4748593dac1e40fa491ebba1b701ebfbc231d26b7276a42af20ff5fe289b1b4",
+      "width": 660.0,
+      "height": 150.0,
+      "aspect": "variable",
+      "connection_points": [],
+      "tags": [],
+      "aliases": [
+        "受付部品",
+        "受付と記録"
+      ],
+      "semantic_categories": [
+        "intake"
+      ],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "fragment",
+      "payload": {
+        "title": "受付と記録",
+        "w": 660,
+        "h": 150,
+        "xml": "<mxGraphModel><root><mxCell id=\"0\" /><mxCell id=\"1\" parent=\"0\" /><mxCell id=\"entry\" value=\"受付\" parent=\"1\" vertex=\"1\" style=\"shape=rectangle;rounded=1;fontSize=18;fontColor=#161616;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#666666;\"><mxGeometry as=\"geometry\" x=\"0\" y=\"30\" width=\"180\" height=\"90\" /></mxCell><mxCell id=\"data\" value=\"記録\" parent=\"1\" vertex=\"1\" style=\"shape=cylinder;fontSize=18;fontColor=#161616;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#666666;\"><mxGeometry as=\"geometry\" x=\"480\" y=\"30\" width=\"180\" height=\"90\" /></mxCell><mxCell id=\"flow\" value=\"保存\" edge=\"1\" source=\"entry\" target=\"data\" parent=\"1\" style=\"edgeStyle=orthogonalEdgeStyle;endArrow=block;fontSize=16;\"><mxGeometry as=\"geometry\" relative=\"1\" /></mxCell></root></mxGraphModel>"
+      }
+    },
+    {
+      "id": "custom:libraries:reusable:1",
+      "library": "custom:libraries:reusable",
+      "namespace": "custom:libraries:reusable",
+      "shape_name": "全体と詳細",
+      "canonical_name": "1",
+      "source_type": "custom_library",
+      "source_file": "libraries:reusable.xml",
+      "source_sha256": "e4748593dac1e40fa491ebba1b701ebfbc231d26b7276a42af20ff5fe289b1b4",
+      "width": 860.0,
+      "height": 350.0,
+      "aspect": "variable",
+      "connection_points": [],
+      "tags": [],
+      "aliases": [
+        "全体と詳細",
+        "概要詳細テンプレート"
+      ],
+      "semantic_categories": [
+        "overview_detail"
+      ],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "template",
+      "payload": {
+        "title": "全体と詳細",
+        "w": 860,
+        "h": 350,
+        "xml": "<mxGraphModel><root><mxCell id=\"0\" /><mxCell id=\"1\" parent=\"0\" /><mxCell id=\"overview\" value=\"全体：対象・境界・主要関係\" parent=\"1\" vertex=\"1\" style=\"shape=swimlane;container=1;startSize=36;fontSize=18;fontColor=#161616;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#666666;\"><mxGeometry as=\"geometry\" x=\"0\" y=\"0\" width=\"860\" height=\"110\" /></mxCell><mxCell id=\"detail\" value=\"詳細：条件・例外・根拠\" parent=\"1\" vertex=\"1\" style=\"shape=swimlane;container=1;startSize=36;fontSize=18;fontColor=#161616;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#666666;\"><mxGeometry as=\"geometry\" x=\"0\" y=\"170\" width=\"860\" height=\"180\" /></mxCell></root></mxGraphModel>"
+      }
+    },
+    {
+      "id": "mxgraph.aws4.lambda",
+      "library": "aws4",
+      "namespace": "mxgraph.aws4",
+      "shape_name": "lambda",
+      "canonical_name": "lambda",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/aws4.xml",
+      "source_sha256": "d577382093fdff61d555efa6abe87136dd78746b7deb0bbb8d90876692010428",
+      "width": 54.05,
+      "height": 56.0,
+      "aspect": "fixed",
+      "connection_points": [],
+      "tags": [
+        "lambda"
+      ],
+      "aliases": [],
+      "semantic_categories": [],
+      "vendor": "aws",
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.aws4.rds",
+      "library": "aws4",
+      "namespace": "mxgraph.aws4",
+      "shape_name": "rds",
+      "canonical_name": "rds",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/aws4.xml",
+      "source_sha256": "d577382093fdff61d555efa6abe87136dd78746b7deb0bbb8d90876692010428",
+      "width": 56.0,
+      "height": 56.0,
+      "aspect": "fixed",
+      "connection_points": [],
+      "tags": [
+        "rds"
+      ],
+      "aliases": [],
+      "semantic_categories": [],
+      "vendor": "aws",
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.eip.aggregator",
+      "library": "eip",
+      "namespace": "mxgraph.eip",
+      "shape_name": "Aggregator",
+      "canonical_name": "aggregator",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/eip.xml",
+      "source_sha256": "46c715bebc5837a19097e0bfbd7706ecb05bf92dcfa9df7594dc4cfae0f77ff2",
+      "width": 150.0,
+      "height": 90.0,
+      "aspect": "variable",
+      "connection_points": [
+        {
+          "name": "N1",
+          "perimeter": "0",
+          "x": "0.25",
+          "y": "0"
+        },
+        {
+          "name": "N2",
+          "perimeter": "0",
+          "x": "0.5",
+          "y": "0"
+        },
+        {
+          "name": "N3",
+          "perimeter": "0",
+          "x": "0.75",
+          "y": "0"
+        },
+        {
+          "name": "S1",
+          "perimeter": "0",
+          "x": "0.25",
+          "y": "1"
+        },
+        {
+          "name": "S2",
+          "perimeter": "0",
+          "x": "0.5",
+          "y": "1"
+        },
+        {
+          "name": "S3",
+          "perimeter": "0",
+          "x": "0.75",
+          "y": "1"
+        },
+        {
+          "name": "W1",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0.25"
+        },
+        {
+          "name": "W2",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0.5"
+        },
+        {
+          "name": "W3",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0.75"
+        },
+        {
+          "name": "E1",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0.25"
+        },
+        {
+          "name": "E2",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0.5"
+        },
+        {
+          "name": "E3",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0.75"
+        },
+        {
+          "name": "NW",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0"
+        },
+        {
+          "name": "SW",
+          "perimeter": "0",
+          "x": "0",
+          "y": "1"
+        },
+        {
+          "name": "NE",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0"
+        },
+        {
+          "name": "SE",
+          "perimeter": "0",
+          "x": "1",
+          "y": "1"
+        }
+      ],
+      "tags": [
+        "aggregator"
+      ],
+      "aliases": [],
+      "semantic_categories": [],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.eip.content_based_router",
+      "library": "eip",
+      "namespace": "mxgraph.eip",
+      "shape_name": "Content Based Router",
+      "canonical_name": "content_based_router",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/eip.xml",
+      "source_sha256": "46c715bebc5837a19097e0bfbd7706ecb05bf92dcfa9df7594dc4cfae0f77ff2",
+      "width": 150.0,
+      "height": 90.0,
+      "aspect": "variable",
+      "connection_points": [
+        {
+          "name": "N1",
+          "perimeter": "0",
+          "x": "0.25",
+          "y": "0"
+        },
+        {
+          "name": "N2",
+          "perimeter": "0",
+          "x": "0.5",
+          "y": "0"
+        },
+        {
+          "name": "N3",
+          "perimeter": "0",
+          "x": "0.75",
+          "y": "0"
+        },
+        {
+          "name": "S1",
+          "perimeter": "0",
+          "x": "0.25",
+          "y": "1"
+        },
+        {
+          "name": "S2",
+          "perimeter": "0",
+          "x": "0.5",
+          "y": "1"
+        },
+        {
+          "name": "S3",
+          "perimeter": "0",
+          "x": "0.75",
+          "y": "1"
+        },
+        {
+          "name": "W1",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0.25"
+        },
+        {
+          "name": "W2",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0.5"
+        },
+        {
+          "name": "W3",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0.75"
+        },
+        {
+          "name": "E1",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0.25"
+        },
+        {
+          "name": "E2",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0.5"
+        },
+        {
+          "name": "E3",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0.75"
+        },
+        {
+          "name": "NW",
+          "perimeter": "0",
+          "x": "0",
+          "y": "0"
+        },
+        {
+          "name": "SW",
+          "perimeter": "0",
+          "x": "0",
+          "y": "1"
+        },
+        {
+          "name": "NE",
+          "perimeter": "0",
+          "x": "1",
+          "y": "0"
+        },
+        {
+          "name": "SE",
+          "perimeter": "0",
+          "x": "1",
+          "y": "1"
+        }
+      ],
+      "tags": [
+        "based",
+        "content",
+        "router"
+      ],
+      "aliases": [
+        "ルータ",
+        "ルーター"
+      ],
+      "semantic_categories": [
+        "router"
+      ],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.flowchart.database",
+      "library": "flowchart",
+      "namespace": "mxgraph.flowchart",
+      "shape_name": "Database",
+      "canonical_name": "database",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/flowchart.xml",
+      "source_sha256": "cb2580bfbaf920d3fe44417a36bae20c660f34920ed4a933f7243f6369f7646f",
+      "width": 60.0,
+      "height": 60.0,
+      "aspect": "variable",
+      "connection_points": [
+        {
+          "x": "0.5",
+          "y": "0",
+          "perimeter": "0",
+          "name": "N"
+        },
+        {
+          "x": "0.5",
+          "y": "1",
+          "perimeter": "0",
+          "name": "S"
+        },
+        {
+          "x": "0",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "W"
+        },
+        {
+          "x": "1",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "E"
+        },
+        {
+          "x": "0",
+          "y": "0.15",
+          "perimeter": "0",
+          "name": "NW"
+        },
+        {
+          "x": "0",
+          "y": "0.85",
+          "perimeter": "0",
+          "name": "SW"
+        },
+        {
+          "x": "1",
+          "y": "0.15",
+          "perimeter": "0",
+          "name": "NE"
+        },
+        {
+          "x": "1",
+          "y": "0.85",
+          "perimeter": "0",
+          "name": "SE"
+        }
+      ],
+      "tags": [
+        "database"
+      ],
+      "aliases": [
+        "DB",
+        "データストア",
+        "データベース"
+      ],
+      "semantic_categories": [
+        "database"
+      ],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.flowchart.decision",
+      "library": "flowchart",
+      "namespace": "mxgraph.flowchart",
+      "shape_name": "Decision",
+      "canonical_name": "decision",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/flowchart.xml",
+      "source_sha256": "cb2580bfbaf920d3fe44417a36bae20c660f34920ed4a933f7243f6369f7646f",
+      "width": 80.0,
+      "height": 80.0,
+      "aspect": "variable",
+      "connection_points": [
+        {
+          "x": "0.5",
+          "y": "0",
+          "perimeter": "0",
+          "name": "N"
+        },
+        {
+          "x": "0.5",
+          "y": "1",
+          "perimeter": "0",
+          "name": "S"
+        },
+        {
+          "x": "0",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "W"
+        },
+        {
+          "x": "1",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "E"
+        }
+      ],
+      "tags": [
+        "decision"
+      ],
+      "aliases": [],
+      "semantic_categories": [],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.flowchart.document",
+      "library": "flowchart",
+      "namespace": "mxgraph.flowchart",
+      "shape_name": "Document",
+      "canonical_name": "document",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/flowchart.xml",
+      "source_sha256": "cb2580bfbaf920d3fe44417a36bae20c660f34920ed4a933f7243f6369f7646f",
+      "width": 98.0,
+      "height": 60.9,
+      "aspect": "variable",
+      "connection_points": [
+        {
+          "x": "0.5",
+          "y": "0",
+          "perimeter": "0",
+          "name": "N"
+        },
+        {
+          "x": "0.5",
+          "y": "0.9",
+          "perimeter": "0",
+          "name": "S"
+        },
+        {
+          "x": "0",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "W"
+        },
+        {
+          "x": "1",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "E"
+        },
+        {
+          "x": "0.02",
+          "y": "0.015",
+          "perimeter": "0",
+          "name": "NW"
+        },
+        {
+          "x": "0",
+          "y": "0.9",
+          "perimeter": "0",
+          "name": "SW"
+        },
+        {
+          "x": "0.98",
+          "y": "0.015",
+          "perimeter": "0",
+          "name": "NE"
+        },
+        {
+          "x": "1",
+          "y": "0.9",
+          "perimeter": "0",
+          "name": "SE"
+        }
+      ],
+      "tags": [
+        "document"
+      ],
+      "aliases": [
+        "ドキュメント",
+        "文書"
+      ],
+      "semantic_categories": [
+        "document"
+      ],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "shape"
+    },
+    {
+      "id": "mxgraph.flowchart.process",
+      "library": "flowchart",
+      "namespace": "mxgraph.flowchart",
+      "shape_name": "Process",
+      "canonical_name": "process",
+      "source_type": "builtin_stencil",
+      "source_file": "app.asar:stencils/flowchart.xml",
+      "source_sha256": "cb2580bfbaf920d3fe44417a36bae20c660f34920ed4a933f7243f6369f7646f",
+      "width": 80.0,
+      "height": 80.0,
+      "aspect": "variable",
+      "connection_points": [
+        {
+          "x": "0.5",
+          "y": "0",
+          "perimeter": "0",
+          "name": "N"
+        },
+        {
+          "x": "0.5",
+          "y": "1",
+          "perimeter": "0",
+          "name": "S"
+        },
+        {
+          "x": "0",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "W"
+        },
+        {
+          "x": "1",
+          "y": "0.5",
+          "perimeter": "0",
+          "name": "E"
+        }
+      ],
+      "tags": [
+        "process"
+      ],
+      "aliases": [
+        "プロセス",
+        "処理"
+      ],
+      "semantic_categories": [
+        "process"
+      ],
+      "vendor": null,
+      "verified": true,
+      "asset_type": "shape"
+    }
+  ]
+}

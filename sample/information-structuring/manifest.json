@@ -1504,6 +1504,55 @@
       "base_theme": "T02",
       "base_category": "annotation",
       "reason": "既存図の責務を分析する用途"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-flow",
+      "name": "フローチャート：処理・判定・文書・DBを区別",
+      "category": "native",
+      "theme": "T01"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-membership",
+      "name": "コンテナー：所属を親子関係として保持",
+      "category": "native",
+      "theme": "T02"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-table",
+      "name": "ネイティブTable：少量の責任一覧",
+      "category": "native",
+      "theme": "T03"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-aws",
+      "name": "Vendor図形：明示されたAWSサービスを選ぶ",
+      "category": "native",
+      "theme": "T05"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-eip",
+      "name": "EIP：内容に応じた振り分けと集約",
+      "category": "native",
+      "theme": "T02"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-fragment",
+      "name": "再利用Fragment：受付と記録",
+      "category": "native",
+      "theme": "T01"
+    },
+    {
+      "file": "10-native-capabilities.drawio",
+      "id": "native-template",
+      "name": "再利用Template：全体と詳細の配置",
+      "category": "native",
+      "theme": "T01"
     }
   ]
 }

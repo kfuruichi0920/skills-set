@@ -1,0 +1,135 @@
+{
+  "rules": [
+    {
+      "pattern": "(database|data_store|datastore|db_server)",
+      "semantic_categories": [
+        "database"
+      ],
+      "aliases": [
+        "データベース",
+        "DB",
+        "データストア"
+      ]
+    },
+    {
+      "pattern": "router",
+      "semantic_categories": [
+        "router"
+      ],
+      "aliases": [
+        "ルーター",
+        "ルータ"
+      ]
+    },
+    {
+      "pattern": "(^|\\.)server",
+      "semantic_categories": [
+        "server"
+      ],
+      "aliases": [
+        "サーバー",
+        "サーバ"
+      ]
+    },
+    {
+      "pattern": "document",
+      "semantic_categories": [
+        "document"
+      ],
+      "aliases": [
+        "文書",
+        "ドキュメント"
+      ]
+    },
+    {
+      "pattern": "(^|\\.)actor",
+      "semantic_categories": [
+        "actor"
+      ],
+      "aliases": [
+        "利用者",
+        "アクター"
+      ]
+    },
+    {
+      "pattern": "cloud",
+      "semantic_categories": [
+        "cloud"
+      ],
+      "aliases": [
+        "クラウド"
+      ]
+    },
+    {
+      "pattern": "process",
+      "semantic_categories": [
+        "process"
+      ],
+      "aliases": [
+        "処理",
+        "プロセス"
+      ]
+    },
+    {
+      "pattern": "gateway",
+      "semantic_categories": [
+        "gateway"
+      ],
+      "aliases": [
+        "ゲートウェイ"
+      ]
+    },
+    {
+      "pattern": "storage",
+      "semantic_categories": [
+        "storage"
+      ],
+      "aliases": [
+        "ストレージ"
+      ]
+    },
+    {
+      "pattern": "^mxgraph\\.aws",
+      "vendor": "aws"
+    },
+    {
+      "pattern": "^mxgraph\\.azure",
+      "vendor": "azure"
+    },
+    {
+      "pattern": "^mxgraph\\.gcp",
+      "vendor": "gcp"
+    },
+    {
+      "pattern": "^mxgraph\\.(cisco|rack\\.cisco)",
+      "vendor": "cisco"
+    },
+    {
+      "pattern": "^mxgraph\\.alibaba_cloud",
+      "vendor": "alibaba"
+    }
+  ],
+  "shapes": {
+    "custom:libraries:reusable:0": {
+      "aliases": [
+        "受付部品",
+        "受付と記録"
+      ],
+      "semantic_categories": [
+        "intake"
+      ],
+      "asset_type": "fragment"
+    },
+    "custom:libraries:reusable:1": {
+      "aliases": [
+        "全体と詳細",
+        "概要詳細テンプレート"
+      ],
+      "semantic_categories": [
+        "overview_detail"
+      ],
+      "asset_type": "template"
+    }
+  },
+  "note": "検索用の編集メタデータ。正確なサービス意味は図生成時に候補名と入力を照合する。"
+}

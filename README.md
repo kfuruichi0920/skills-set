@@ -34,6 +34,7 @@ $information-structuring
 - [可視化の選び方とASCII図の型](.agents/skills/information-structuring/references/visualization.md)
 - [カタログ照合から図制作までの選択手順](.agents/skills/information-structuring/references/catalog-selection.md)
 - [Draw.ioの10テーマ・意味記号・配置規則](.agents/skills/information-structuring/references/diagram-themes.md)
+- [Draw.ioネイティブ機能・図形カタログ・検索とID検証](.agents/skills/information-structuring/references/drawio-native.md)
 - [既存図・PlantUML・画面キャプチャへの説明追加](.agents/skills/information-structuring/references/visual-annotation.md)
 - [61構造の配置参考](.agents/skills/information-structuring/assets/catalog-gallery.html)
 - [Draw.io出力サンプルと更新手順](sample/information-structuring/README.md)
@@ -42,7 +43,7 @@ $information-structuring
 
 ## 検証
 
-Python標準ライブラリで体系・カタログを生成し、網羅性と整合性を検査する。
+Python標準ライブラリで整理体系・構造カタログを生成し、網羅性と整合性を検査する。Draw.ioの図形カタログSchema検証には`requirements-native.txt`のjsonschemaを使用する。
 
 ```powershell
 python -X utf8 .agents/skills/information-structuring/scripts/build_framework.py
@@ -50,6 +51,8 @@ python -X utf8 .agents/skills/information-structuring/scripts/validate_framework
 python -X utf8 .agents/skills/information-structuring/scripts/build_catalog.py
 python -X utf8 .agents/skills/information-structuring/scripts/validate_catalog.py
 python -X utf8 .agents/skills/information-structuring/scripts/validate_themes.py
+python -X utf8 .agents/skills/information-structuring/scripts/shape_catalog.py validate
+python -X utf8 .agents/skills/information-structuring/scripts/test_shape_catalog.py
 python -X utf8 sample/information-structuring/scripts/check_samples.py
 ```
 

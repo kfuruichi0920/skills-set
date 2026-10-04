@@ -141,3 +141,10 @@ build_samples.pyでmanifest.jsonと同時に生成する。全て架空のデー
 | plantuml-svg--T04 | PlantUML原図への注釈 / T04 | theme_case | T04 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
 | native-annotation--T01 | 編集可能な原図の保持 / T01 | theme_case | T01 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
 | native-annotation--T09 | 編集可能な原図の保持 / T09 | theme_case | T09 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
+| native-flow | フローチャート：処理・判定・文書・DBを区別 | native | T01 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |
+| native-membership | コンテナー：所属を親子関係として保持 | native | T02 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |
+| native-table | ネイティブTable：少量の責任一覧 | native | T03 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |
+| native-aws | Vendor図形：明示されたAWSサービスを選ぶ | native | T05 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |
+| native-eip | EIP：内容に応じた振り分けと集約 | native | T02 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |
+| native-fragment | 再利用Fragment：受付と記録 | native | T01 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |
+| native-template | 再利用Template：全体と詳細の配置 | native | T01 | [10-native-capabilities.drawio](10-native-capabilities.drawio) |

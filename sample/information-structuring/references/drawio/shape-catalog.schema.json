@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "catalog_version",
+    "generated_at",
+    "drawio_source_version",
+    "source_fingerprints",
+    "libraries",
+    "shapes"
+  ],
+  "properties": {
+    "catalog_version": {
+      "const": "1"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "drawio_source_version": {
+      "type": "string"
+    },
+    "source_fingerprints": {
+      "type": "object"
+    },
+    "libraries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "namespace",
+          "source_type",
+          "display_name",
+          "domain",
+          "source_files",
+          "shape_count"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "source_type": {
+            "enum": [
+              "builtin_stencil",
+              "custom_library"
+            ]
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_files": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "shape_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "shapes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "library",
+          "namespace",
+          "shape_name",
+          "canonical_name",
+          "source_type",
+          "source_file",
+          "source_sha256",
+          "width",
+          "height",
+          "aspect",
+          "connection_points",
+          "tags",
+          "aliases",
+          "semantic_categories",
+          "vendor",
+          "verified",
+          "asset_type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "library": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "shape_name": {
+            "type": "string"
+          },
+          "canonical_name": {
+            "type": "string"
+          },
+          "source_file": {
+            "type": "string"
+          },
+          "source_sha256": {
+            "type": "string"
+          },
+          "aspect": {
+            "type": "string"
+          },
+          "source_type": {
+            "enum": [
+              "builtin_stencil",
+              "custom_library"
+            ]
+          },
+          "width": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "height": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "verified": {
+            "const": true
+          },
+          "vendor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "asset_type": {
+            "enum": [
+              "shape",
+              "image",
+              "group",
+              "fragment",
+              "template"
+            ]
+          },
+          "connection_points": {
+            "type": "array"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "semantic_categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

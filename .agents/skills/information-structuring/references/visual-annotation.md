@@ -6,7 +6,7 @@
 
 対応入力はDraw.io／XML、PlantUML、Mermaid、構造付きSVG、SVG・PNG・JPEG、画面キャプチャ、構成図・設計図・文書中の図。構造化ソースと表示画像の組合せを優先する。構造化ソースがなければ画像から進め、必要な情報だけを確認する。
 
-意味は構造化ソースから、位置はレンダリング画像から読む。ソースと画像が不一致なら、どの版を説明するか確認する。入力がoutput内にある場合はproduction.mdの参照制限に従い、参照を明示された対象だけを扱う。
+意味は構造化ソースから、位置はレンダリング画像から読む。ソースと画像が不一致なら、どの版を説明するか確認する。既存の入力がoutput内にある場合はproduction.mdに従い、参照を明示された対象だけを扱う。今回作成した原図・レンダリング画像・IRは、作成時に記録したパスで参照してよい。
 
 | モード | 採用条件 | 原図の扱い |
 | --- | --- | --- |
@@ -69,13 +69,13 @@ diagram-themes.mdのテーマを注釈へ適用し、原図を再配色・再配
 
 ## 制作・検査・提出
 
-制作はoutput外の一時作業場所で行う。SVG／PNG／JPEGを原図として置く場合は[scripts/build_annotation.py](../scripts/build_annotation.py)で、IRからレイヤー付きDraw.ioを作れる。補助スクリプトは画像の意味理解、OCR、対象検出、Nativeソースの変換、経路の最適化を実行しない。対象認識と配置計画はエージェントが行う。
+制作・表示・検査は新しいoutput実行フォルダ内で行ってよい。SVG／PNG／JPEGを原図として置く場合は[scripts/build_annotation.py](../scripts/build_annotation.py)で、IRからレイヤー付きDraw.ioを作れる。補助スクリプトは画像の意味理解、OCR、対象検出、Nativeソースの変換、経路の最適化を実行しない。対象認識と配置計画はエージェントが行う。
 
 ```powershell
-python -X utf8 scripts/build_annotation.py staging/annotation-ir.json staging/annotated.drawio
+python -X utf8 scripts/build_annotation.py output/<今回の実行フォルダ>/annotation-ir.json output/<今回の実行フォルダ>/annotated.drawio --current-artifact output/<今回の実行フォルダ>/annotation-ir.json --current-artifact output/<今回の実行フォルダ>/source.svg
 ```
 
-スクリプトのパスはスキルフォルダを基準とする。原図パスはIRファイルの位置を基準に解決する。画像寸法は原図を表示して確認した値を指定する。生成結果のSHA-256をIRと根拠資料へ反映する。スクリプトは既存の成果物を上書きせず、output内のIR／原図の読込みは既定で拒否する。`--allow-output-source`はユーザーが対象の参照を明示した場合だけ使う。生成先はoutput外とし、最終保存は検査後に行う。
+スクリプトのパスはスキルフォルダを基準とする。原図パスはIRファイルの位置を基準に解決する。画像寸法は原図を表示して確認した値を指定する。生成結果のSHA-256をIRと根拠資料へ反映する。スクリプトは新規ファイルをoutput内に生成でき、既存の成果物は上書きしない。output内のIR／原図は、今回作成したファイルだけを`--current-artifact`で個別に指定する。ディレクトリや既存ファイルを今回の成果物として指定しない。`--allow-output-source`はユーザーが対象の参照を明示した場合だけ使う。生成後に表示・検査し、修正版は別名へ生成する。production.mdに従い、使用した生成スクリプトと依存ファイル・再実行手順も同じ実行フォルダへ保存する。
 
 生成したDraw.ioからプレビューをレンダリングし、エージェントが表示を確認する。対象への指示、原図の文字・線の遮蔽、誤った矢印、文字切れ、番号重複、説明順、引出線の交差、原図の維持を点検する。drawio-layout-check.mdの検査も適用し、IRまたは配置を修正して再表示する。レンダラーがない場合は未実施範囲を記す。
 

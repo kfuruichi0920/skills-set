@@ -17,6 +17,13 @@ def output_path(path):
     return any(part.lower() == 'output' for part in Path(path).resolve().parts)
 
 
+def check_source_access(path, allow_output_source=False, current_artifacts=()):
+    """Permit only known files created in this task, or explicitly authorized sources."""
+    current = {Path(item).resolve() for item in current_artifacts}
+    if output_path(path) and Path(path).resolve() not in current and not allow_output_source:
+        raise ValueError('Reading existing output requires explicit authorization')
+
+
 def number(value):
     if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
         raise ValueError('Coordinates must be finite numbers')
@@ -86,11 +93,8 @@ def validate(data):
             markers.add(marker)
 
 
-def build(data, source_path, destination, allow_output_source=False):
-    if output_path(destination):
-        raise ValueError('Build outside output before visual QA')
-    if output_path(source_path) and not allow_output_source:
-        raise ValueError('Reading output source requires explicit authorization')
+def build(data, source_path, destination, allow_output_source=False, current_artifacts=()):
+    check_source_access(source_path, allow_output_source, current_artifacts)
     validate(data)
     payload = Path(source_path).read_bytes()
     mime = MIMES[Path(source_path).suffix.lower()]
@@ -167,14 +171,10 @@ if __name__ == '__main__':
     parser.add_argument('ir', type=Path)
     parser.add_argument('destination', type=Path)
     parser.add_argument('--allow-output-source', action='store_true', help='Use only with explicit user authorization to read the specified output source')
+    parser.add_argument('--current-artifact', action='append', type=Path, default=[], help='Exact path of a file created in this task; repeat for IR and source, never designate pre-existing files')
     args = parser.parse_args()
-    if output_path(args.destination):
-        raise ValueError('Build in staging outside output, validate, then save final artifacts')
-    if output_path(args.ir) and not args.allow_output_source:
-        raise ValueError('Reading output IR requires explicit authorization')
+    check_source_access(args.ir, args.allow_output_source, args.current_artifact)
     data = json.loads(args.ir.read_text(encoding='utf-8'))
     source_path = (args.ir.parent / data['source']['path']).resolve()
-    if output_path(source_path) and not args.allow_output_source:
-        raise ValueError('Reading output source requires explicit authorization')
-    result = build(data, source_path, args.destination, args.allow_output_source)
+    result = build(data, source_path, args.destination, args.allow_output_source, args.current_artifact)
     print(json.dumps({'source_sha256': result['source']['sha256'], 'annotations': len(result['annotations']), 'visual_qa': 'pending'}, ensure_ascii=False))

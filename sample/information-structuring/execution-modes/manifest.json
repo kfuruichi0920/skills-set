@@ -1,0 +1,35 @@
+{
+  "source": "input.json",
+  "same_meaning": true,
+  "git_operations": false,
+  "samples": [
+    {
+      "mode": "fast",
+      "file": "fast.drawio",
+      "checks": [
+        "input-meaning",
+        "xml",
+        "shape-ids",
+        "parent-and-edge-references"
+      ],
+      "visual_review": "not_performed",
+      "preview": null
+    },
+    {
+      "mode": "precise",
+      "file": "precise.drawio",
+      "checks": [
+        "input-meaning",
+        "xml",
+        "shape-ids",
+        "parent-and-edge-references"
+      ],
+      "visual_review": "accepted",
+      "preview": "precise.png",
+      "visual_findings": "受付・確認・回答を左から右へ追え、二本の矢印と次へラベルが図形間で見える。文字切れ・線の重なりがなく、凡例は下段に分離。"
+    }
+  ],
+  "sha256": "1cabd392d94630c02b25ffb8f7da2c9fb9193a06540cd774b2f428acbaff1c87",
+  "maintenance_note": "版管理サンプルの改修検査と通常利用の高速モードを区別する",
+  "preview_sha256": "476458bff91affec6b0b850ea5f7166ccdd22ef26bceeb6419d9836995b69084"
+}

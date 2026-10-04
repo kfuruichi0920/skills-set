@@ -5,11 +5,11 @@
 ## 選択手順
 
 1. 説明目的、読み手、入力にある対象・関係・条件、最初に理解すべき点を整理する。
-2. [検索ツール](../scripts/diagram_vocabulary.py)でCoreのTop-K候補を取得する。目的、分野、読者、意味構造、図の型、構成、視覚パターン、関係、密度、説明場面を検索に使える。全件をプロンプトへ投入しない。
-3. 候補の`when_to_use`と`when_not_to_use`を入力と照合する。採用候補のmetadataと実表示プレビューを読み、境界、階層、方向、共通位置、分割が何を説明しているか確認する。用途が合わなければCore指定を外して検索する。一覧外・複合構成も候補に含める。
+2. [検索ツール](../scripts/diagram_vocabulary.py)でCoreの候補を取得する。高速は原則Top-3、精密はTop-5。目的、分野、読者、意味構造、図の型、構成、視覚パターン、関係、密度、説明場面を検索に使える。全件をプロンプトへ投入しない。
+3. 候補の`when_to_use`と`when_not_to_use`を入力と照合する。採用候補のmetadataを読み、構成が不明な場合に実表示プレビューを確認する。高速では用途が合う候補を確定し、不要な候補の展開を続けない。合わなければCore指定を外す。一覧外・複合構成も候補に含める。
 4. 主案と代替案の理由を記録する。`variant_of`がある例は派生元と比べ、共通構造と追加条件を分ける。得点は語彙一致の順位であり、適合の確率や品質評価ではない。各検索項目は順位付けの補助であり、厳密なフィルターではない。
 5. 入力の情報IDを領域・ノード・関係・注釈へ割り当てる。サンプルの固有データを転用せず、対象数・粒度・所属・条件・文字量・密度から配置を再計算する。線が表す意味を決めてから接続点と経路を設計する。
-6. [ネイティブ機能](drawio-native.md)で実在する図形を選び、テーマを意味役割へ適用する。IRから制作し、意味検査と[画像の配置検査](drawio-layout-check.md)を行う。
+6. [ネイティブ機能](drawio-native.md)で実在する図形を選び、テーマを意味役割へ適用する。IRから制作し、[実行モード](execution-modes.md)の範囲で検査する。
 
 採用ID、Top-K候補と一致した項目、派生元、見送り理由、変更した構成、入力IDと出力要素、図ファイル・ページを整理根拠へ残す。参照URLの確認状況や原図の観測と、独自に再構成した部分を区別する。
 
@@ -18,8 +18,8 @@
 リポジトリルートで実行する。
 
 ```powershell
-python -X utf8 .agents/skills/information-structuring/scripts/diagram_vocabulary.py "工程と担当" --core-only --limit 5
-python -X utf8 .agents/skills/information-structuring/scripts/diagram_vocabulary.py "複数チームの工程と担当" --domain project-management --composition-pattern phase-team-grid --limit 5
+python -X utf8 .agents/skills/information-structuring/scripts/diagram_vocabulary.py "工程と担当" --mode fast --core-only
+python -X utf8 .agents/skills/information-structuring/scripts/diagram_vocabulary.py "複数チームの工程と担当" --mode precise --domain project-management --composition-pattern phase-team-grid
 python -X utf8 .agents/skills/information-structuring/scripts/diagram_vocabulary.py "要求と応答の順序" --diagram-type sequence-lifelines --limit 3
 ```
 

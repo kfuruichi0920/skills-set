@@ -65,10 +65,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('query', nargs='?', default='')
     parser.add_argument('--catalog', type=Path, default=DEFAULT)
-    parser.add_argument('--limit', type=int, default=5)
+    parser.add_argument('--mode', choices=['fast','precise'], default='fast', help='Default Top-K: fast=3, precise=5')
+    parser.add_argument('--limit', type=int, default=None)
     parser.add_argument('--core-only', action='store_true', help='Search core first; expand if its patterns do not fit')
     for name in FIELDS: parser.add_argument('--'+name.replace('_','-'), default='')
     args = parser.parse_args()
+    if args.limit is None: args.limit = 3 if args.mode == 'fast' else 5
     if not 1 <= args.limit <= 20: parser.error('limit must be 1..20')
     data = json.loads(args.catalog.read_text(encoding='utf-8'))
     candidates = search(data['entries'],args.query,args.limit,args.core_only,**{k:getattr(args,k) for k in FIELDS})

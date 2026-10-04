@@ -1,216 +1,203 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "expected_counts": {
     "base": 48,
     "variant": 11,
     "principle": 2,
     "total": 61
   },
-  "sources": {
-    "workflow": "assets/source/workflow.webp",
-    "front": "assets/source/catalog-front.webp",
-    "back": "assets/source/catalog-back.webp"
-  },
   "samples": [
     {
       "id": "type-01-1",
       "type_number": 1,
       "kind": "base",
-      "name": "目次",
-      "group": "決めさせる",
+      "name": "全体テーマ・目次",
+      "group": "要点・全体像を示す",
       "use": "資料の入口と全体テーマを示す",
-      "layout": "青い全面背景に左寄せの大きな題名、短い補足、下部に発行情報",
-      "encoding": "白文字と主役色の地で情報の階層を作る",
-      "caution": "見本名は目次だが画像は表紙様式。目次項目が必要なら追加する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 1,
-        "column": 1,
-        "crop": [
-          108,
-          431,
-          533,
-          719
-        ]
+      "layout": "全体テーマまたは章題を上位に置き、下に項目・問い・要点をまとめる",
+      "encoding": "文字と背景の区別で全体テーマと補足の階層を示す",
+      "caution": "全体テーマの提示か項目一覧かを目的に合わせて選ぶ",
+      "preview": "assets/examples/type-01-1.svg",
+      "diagram_key": "type-01-1",
+      "axes": {
+        "horizontal": "章・項目",
+        "vertical": "情報の階層",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-01-1.png"
+      "required_information": [
+        "章・項目",
+        "情報の階層",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-01-2",
       "type_number": 1,
       "kind": "variant",
-      "name": "目次（中扉）",
-      "group": "決めさせる",
+      "name": "章の導入",
+      "group": "要点・全体像を示す",
       "use": "章の切り替えと章内の問いを示す",
-      "layout": "青地に章番号と章タイトル、下部に白い論点パネルを並べる",
-      "encoding": "大きく淡い章番号、論点の番号を対応させる",
-      "caution": "中扉と本編の論点番号を一致させる",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 1,
-        "column": 2,
-        "crop": [
-          548,
-          431,
-          973,
-          719
-        ]
+      "layout": "全体テーマまたは章題を上位に置き、下に項目・問い・要点をまとめる",
+      "encoding": "章の位置と章内の問いを対応させる",
+      "caution": "章の導入と本編の内容を対応させる",
+      "preview": "assets/examples/type-01-2.svg",
+      "diagram_key": "type-01-2",
+      "axes": {
+        "horizontal": "章・項目",
+        "vertical": "情報の階層",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-01-2.png"
+      "required_information": [
+        "章・項目",
+        "情報の階層",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-02-1",
       "type_number": 2,
       "kind": "base",
-      "name": "エグゼクティブサマリ",
-      "group": "決めさせる",
-      "use": "全体の結論と承認論点を一覧にする",
-      "layout": "番号付き論点を縦の行、判断・根拠・参照先を横の列に置く",
-      "encoding": "主役色の番号、細い横罫、短い文章",
-      "caution": "末尾の決定ページと論点を同じ番号で対応させる",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 1,
-        "column": 3,
-        "crop": [
-          986,
-          431,
-          1411,
-          719
-        ]
+      "name": "要点サマリ",
+      "group": "要点・全体像を示す",
+      "use": "全体の要点・問い・根拠を一覧にする",
+      "layout": "要点や問いを行、根拠・補足・詳細の参照を列に置く",
+      "encoding": "要点と根拠を行ごとに対応させ、参照先を示す",
+      "caution": "要点の根拠と詳細ページを対応させ、問いへの回答が未確定なら明記する",
+      "preview": "assets/examples/type-02-1.svg",
+      "diagram_key": "type-02-1",
+      "axes": {
+        "horizontal": "要点と補足",
+        "vertical": "論点・問い",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-02-1.png"
+      "required_information": [
+        "要点と補足",
+        "論点・問い",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-02-2",
       "type_number": 2,
       "kind": "variant",
-      "name": "エグゼクティブサマリ（問い立て型）",
-      "group": "決めさせる",
-      "use": "判断する問いと答えを対で示す",
+      "name": "問いと答えのサマリ",
+      "group": "要点・全体像を示す",
+      "use": "全体の要点・問い・根拠を一覧にする",
       "layout": "左のQ番号と問いから小矢印を介し右の答えへ、複数行で反復する",
-      "encoding": "淡色の問い領域、青いQと矢印",
-      "caution": "問いと答えを一対一にし、同じ切り口に揃える",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 1,
-        "column": 4,
-        "crop": [
-          1425,
-          431,
-          1850,
-          719
-        ]
+      "encoding": "淡色の問い領域、強調したQと矢印",
+      "caution": "要点の根拠と詳細ページを対応させ、問いへの回答が未確定なら明記する",
+      "preview": "assets/examples/type-02-2.svg",
+      "diagram_key": "type-02-2",
+      "axes": {
+        "horizontal": "要点と補足",
+        "vertical": "論点・問い",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-02-2.png"
+      "required_information": [
+        "要点と補足",
+        "論点・問い",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-03-1",
       "type_number": 3,
       "kind": "base",
-      "name": "クロージング決定",
-      "group": "決めさせる",
-      "use": "承認事項と実行条件を確定する",
-      "layout": "上段に決定事項の表、下段左に直近日程、右に判断指標のパネル",
-      "encoding": "番号付き決定行、工程矢印、大きな判断数値",
-      "caution": "担当・期限・基準が未知ならxxと明示し、決定を捏造しない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 1,
-        "column": 5,
-        "crop": [
-          1865,
-          431,
-          2290,
-          719
-        ]
+      "name": "まとめ・次の行動",
+      "group": "要点・全体像を示す",
+      "use": "資料の要点と次に扱う事項をまとめる",
+      "layout": "上段に要点の表、下段に次の行動や追加で確かめる条件を置く",
+      "encoding": "要点と次の行動を対応させ、必要なら時期や判断条件を示す",
+      "caution": "未確定の行動・担当・時期は要確認とし、判断を求めない資料では次に確かめることを示す",
+      "preview": "assets/examples/type-03-1.svg",
+      "diagram_key": "type-03-1",
+      "axes": {
+        "horizontal": "まとめと次の行動",
+        "vertical": "項目",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-03-1.png"
+      "required_information": [
+        "まとめと次の行動",
+        "項目",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-04-1",
       "type_number": 4,
       "kind": "base",
       "name": "個票カタログ",
-      "group": "決めさせる",
+      "group": "要点・全体像を示す",
       "use": "同種対象の違いを同じ観点で比較する",
       "layout": "同一寸法の個票を2×2に置き、指標・小グラフ・注記を同位置に配置",
       "encoding": "同じスケールの棒、同じ順序の数値",
       "caution": "対象ごとに項目や尺度を変えない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 2,
-        "column": 1,
-        "crop": [
-          108,
-          736,
-          533,
-          1021
-        ]
+      "preview": "assets/examples/type-04-1.svg",
+      "diagram_key": "type-04-1",
+      "axes": {
+        "horizontal": "共通属性",
+        "vertical": "対象",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-04-1.png"
+      "required_information": [
+        "共通属性",
+        "対象",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-05-1",
       "type_number": 5,
       "kind": "base",
       "name": "KPIレーン付き時系列",
-      "group": "決めさせる",
+      "group": "要点・全体像を示す",
       "use": "主要推移と管理指標を同時に読む",
       "layout": "上に棒と折れ線の時系列、下に同じ年列でKPI表を置く",
       "encoding": "実績の塗りと予測の線種、縦に通る年列",
       "caution": "上下の時間軸を合わせ、異なる単位を明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 2,
-        "column": 2,
-        "crop": [
-          548,
-          736,
-          973,
-          1021
-        ]
+      "preview": "assets/examples/type-05-1.svg",
+      "diagram_key": "type-05-1",
+      "axes": {
+        "horizontal": "時間",
+        "vertical": "主要指標と補助指標",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-05-1.png"
+      "required_information": [
+        "時間",
+        "主要指標と補助指標",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-06-1",
       "type_number": 6,
       "kind": "base",
-      "name": "バブル優先度マップ",
-      "group": "決めさせる",
-      "use": "効果・所要時間・実行可能性から優先施策を選ぶ",
+      "name": "バブル比較マップ",
+      "group": "要点・全体像を示す",
+      "use": "二つの比較軸と規模から対象の特徴を把握する",
       "layout": "左にバブル散布、右に番号対応の施策解説パネル",
-      "encoding": "横は効果実現までの時間、縦は自社で進める割合、面積は効果、塗りと白抜きで外部前提を区別",
-      "caution": "面積と値を比例させ、外部前提を自社で確定できる値に見せない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 2,
-        "column": 3,
-        "crop": [
-          986,
-          736,
-          1411,
-          1021
-        ]
+      "encoding": "横と縦は入力から選ぶ比較軸、円面積は量。塗り分けはカテゴリや状態",
+      "caution": "軸や円面積の意味を入力から定める。数量がない場合は分類図を選ぶ",
+      "preview": "assets/examples/type-06-1.svg",
+      "diagram_key": "type-06-1",
+      "axes": {
+        "horizontal": "比較軸A",
+        "vertical": "比較軸B",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-06-1.png"
+      "required_information": [
+        "比較軸A",
+        "比較軸B",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-07-1",
@@ -222,20 +209,19 @@
       "layout": "左に起点から終点までの階段状の棒、右に要因と打ち手の表",
       "encoding": "合計は濃色、要因は階調、受け渡しは補助線",
       "caution": "起終点の合計と寄与を照合する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 3,
-        "column": 1,
-        "crop": [
-          108,
-          1115,
-          533,
-          1401
-        ]
+      "preview": "assets/examples/type-07-1.svg",
+      "diagram_key": "type-07-1",
+      "axes": {
+        "horizontal": "寄与要因",
+        "vertical": "同単位の量",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-07-1.png"
+      "required_information": [
+        "寄与要因",
+        "同単位の量",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-07-2",
@@ -247,20 +233,19 @@
       "layout": "滝図を上下に置き、要因列の位置を合わせる",
       "encoding": "同じ色の役割と要因順序、各図に合計ラベル",
       "caution": "異なる総額を比較する場合は尺度差を明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 3,
-        "column": 2,
-        "crop": [
-          548,
-          1115,
-          973,
-          1401
-        ]
+      "preview": "assets/examples/type-07-2.svg",
+      "diagram_key": "type-07-2",
+      "axes": {
+        "horizontal": "寄与要因",
+        "vertical": "同単位の量",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-07-2.png"
+      "required_information": [
+        "寄与要因",
+        "同単位の量",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-08-1",
@@ -271,21 +256,20 @@
       "use": "工程ごとの歩留まりと最大離脱を示す",
       "layout": "工程を左から右へ並べ、段の大きさを件数に対応させ、離脱地点に注記を引く",
       "encoding": "段の件数と段間の歩留まり、細くなる連結",
-      "caution": "本見本は横型。面積を任意にして減少率を誇張しない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 3,
-        "column": 3,
-        "crop": [
-          986,
-          1115,
-          1411,
-          1401
-        ]
+      "caution": "この構造は横型。面積を任意にして減少率を誇張しない",
+      "preview": "assets/examples/type-08-1.svg",
+      "diagram_key": "type-08-1",
+      "axes": {
+        "horizontal": "段階",
+        "vertical": "件数・量",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-08-1.png"
+      "required_information": [
+        "段階",
+        "件数・量",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-09-1",
@@ -295,22 +279,21 @@
       "group": "分解する",
       "use": "工程別の売上・費用・利益の偏りを示す",
       "layout": "上に工程矢羽根、下に同じ工程位置の収益図を並べる",
-      "encoding": "基準線の上下に正負の量、主役工程を青で強調",
+      "encoding": "基準線の上下に正負の量、主役工程を強調で強調",
       "caution": "工程と数値の横位置を対応させ、単位を揃える",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 3,
-        "column": 4,
-        "crop": [
-          1425,
-          1115,
-          1850,
-          1401
-        ]
+      "preview": "assets/examples/type-09-1.svg",
+      "diagram_key": "type-09-1",
+      "axes": {
+        "horizontal": "工程",
+        "vertical": "量と効率",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-09-1.png"
+      "required_information": [
+        "工程",
+        "量と効率",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-09-2",
@@ -322,20 +305,19 @@
       "layout": "上段に工程、中央に増減・金額図、下段に利益率などの折れ線",
       "encoding": "三段を同じ工程列で貫通させる",
       "caution": "率と金額の軸を分け、三層を独立した図として説明する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 3,
-        "column": 5,
-        "crop": [
-          1865,
-          1115,
-          2290,
-          1401
-        ]
+      "preview": "assets/examples/type-09-2.svg",
+      "diagram_key": "type-09-2",
+      "axes": {
+        "horizontal": "工程",
+        "vertical": "量と効率",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-09-2.png"
+      "required_information": [
+        "工程",
+        "量と効率",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-10-1",
@@ -343,24 +325,23 @@
       "kind": "base",
       "name": "分配カスケード",
       "group": "分解する",
-      "use": "取引段階の取り分と自社余地を示す",
+      "use": "取引段階の取り分と中心対象余地を示す",
       "layout": "左に関係者・段階の行、中央に段階間の分配形、右に共通スケールの収支棒",
-      "encoding": "自社の取り分は濃色、他者は淡色",
+      "encoding": "中心対象の取り分は濃色、他者は淡色",
       "caution": "受取・支払・利益の定義を揃え、二重計上を避ける",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 4,
-        "column": 1,
-        "crop": [
-          108,
-          1418,
-          533,
-          1705
-        ]
+      "preview": "assets/examples/type-10-1.svg",
+      "diagram_key": "type-10-1",
+      "axes": {
+        "horizontal": "取引・流れ",
+        "vertical": "関係者",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-10-1.png"
+      "required_information": [
+        "取引・流れ",
+        "関係者",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-11-1",
@@ -372,20 +353,19 @@
       "layout": "左の総指標から右へ枝分かれし、末端の施策の右に効果と期間の列",
       "encoding": "枝の四則演算、枠、同じ行の評価欄",
       "caution": "加算・乗算の関係を明示し、末端の重複を確認する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 4,
-        "column": 2,
-        "crop": [
-          548,
-          1418,
-          973,
-          1705
-        ]
+      "preview": "assets/examples/type-11-1.svg",
+      "diagram_key": "type-11-1",
+      "axes": {
+        "horizontal": "要因の分解",
+        "vertical": "計算上の階層",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-11-1.png"
+      "required_information": [
+        "要因の分解",
+        "計算上の階層",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-12-1",
@@ -397,20 +377,19 @@
       "layout": "対象を列、式の要素を行に置き、下段に全体の評価をまとめる",
       "encoding": "演算記号、要素ごとの状態と含意、主役列の強調",
       "caution": "定性的な影響を未根拠の定量値に置き換えない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 4,
-        "column": 3,
-        "crop": [
-          986,
-          1418,
-          1411,
-          1705
-        ]
+      "preview": "assets/examples/type-12-1.svg",
+      "diagram_key": "type-12-1",
+      "axes": {
+        "horizontal": "対象",
+        "vertical": "式の要素",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-12-1.png"
+      "required_information": [
+        "対象",
+        "式の要素",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-13-1",
@@ -420,22 +399,21 @@
       "group": "分解する",
       "use": "総時間を実働と待ちに分ける",
       "layout": "共通時間軸に工程別の帯を階段状に置き、下部に実働と待ちの合計帯",
-      "encoding": "実働は青、待ちは淡色、全て同じ時間単位",
+      "encoding": "実働と待ちを異なる記号で区別、全て同じ時間単位",
       "caution": "経過時間と工数を混ぜず、並行工程の重複を考慮する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 4,
-        "column": 4,
-        "crop": [
-          1425,
-          1418,
-          1850,
-          1705
-        ]
+      "preview": "assets/examples/type-13-1.svg",
+      "diagram_key": "type-13-1",
+      "axes": {
+        "horizontal": "経過時間",
+        "vertical": "工程・状態",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-13-1.png"
+      "required_information": [
+        "経過時間",
+        "工程・状態",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-46-1",
@@ -445,22 +423,21 @@
       "group": "分解する",
       "use": "問いから原因・仮説を下へ分解する",
       "layout": "頂点の問いから下向きに分岐し、右側に検証の観点を置く",
-      "encoding": "重要経路を濃色や太線、葉に具体的な要因",
+      "encoding": "注目する経路を強調し、葉に具体的な要因を置く",
       "caution": "問いと原因を同じ階層で混在させず、重要経路の理由を示す",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 4,
-        "column": 5,
-        "crop": [
-          1865,
-          1418,
-          2290,
-          1705
-        ]
+      "preview": "assets/examples/type-46-1.svg",
+      "diagram_key": "type-46-1",
+      "axes": {
+        "horizontal": "問いの分解",
+        "vertical": "階層",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-46-1.png"
+      "required_information": [
+        "問いの分解",
+        "階層",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-14-1",
@@ -472,20 +449,19 @@
       "layout": "同じ軸を持つ小さな棒グラフを横並びに置く",
       "encoding": "軸の最小・最大・目盛を共通化、同じ年を同じ階調",
       "caution": "対象ごとに自動スケールを変えない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 5,
-        "column": 1,
-        "crop": [
-          108,
-          1799,
-          533,
-          2086
-        ]
+      "preview": "assets/examples/type-14-1.svg",
+      "diagram_key": "type-14-1",
+      "axes": {
+        "horizontal": "対象と時点",
+        "vertical": "共通指標",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-14-1.png"
+      "required_information": [
+        "対象と時点",
+        "共通指標",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-15-1",
@@ -497,20 +473,19 @@
       "layout": "上に共通工程を一度だけ置き、対象を行にし工程列ごとに指標を配置",
       "encoding": "共通矢羽根と対応する横棒・数値",
       "caution": "工程順と指標の分母を揃える",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 5,
-        "column": 2,
-        "crop": [
-          548,
-          1799,
-          973,
-          2086
-        ]
+      "preview": "assets/examples/type-15-1.svg",
+      "diagram_key": "type-15-1",
+      "axes": {
+        "horizontal": "共通工程",
+        "vertical": "対象",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-15-1.png"
+      "required_information": [
+        "共通工程",
+        "対象",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-16-1",
@@ -522,20 +497,19 @@
       "layout": "対象を横に並べ、共通の縦目盛上に階層の箱を配置",
       "encoding": "箱の高さと位置で水準、色で注目範囲",
       "caution": "箱の位置が実数目盛か序列かを明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 5,
-        "column": 3,
-        "crop": [
-          986,
-          1799,
-          1411,
-          2086
-        ]
+      "preview": "assets/examples/type-16-1.svg",
+      "diagram_key": "type-16-1",
+      "axes": {
+        "horizontal": "対象",
+        "vertical": "共通の水準",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-16-1.png"
+      "required_information": [
+        "対象",
+        "共通の水準",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-17-1",
@@ -547,20 +521,19 @@
       "layout": "左右に同型の関係者箱と流れ、下に対応する評価帯",
       "encoding": "モノは実線、金は破線、対応する箱は同位置",
       "caution": "左右で流れの定義と向きを揃える",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 5,
-        "column": 4,
-        "crop": [
-          1425,
-          1799,
-          1850,
-          2086
-        ]
+      "preview": "assets/examples/type-17-1.svg",
+      "diagram_key": "type-17-1",
+      "axes": {
+        "horizontal": "比較対象",
+        "vertical": "対応する流れ",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-17-1.png"
+      "required_information": [
+        "比較対象",
+        "対応する流れ",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-18-1",
@@ -570,22 +543,21 @@
       "group": "比べる",
       "use": "組織の規模と働きかけ範囲を比較する",
       "layout": "左右に組織ツリーを置き、関与範囲を同じ役割位置で強調する",
-      "encoding": "青の組織箱、淡い文脈箱、下に人数の要約",
+      "encoding": "注目する組織箱と文脈の箱を区別、下に人数の要約",
       "caution": "人数と箱の個数が異なる場合は明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 5,
-        "column": 5,
-        "crop": [
-          1865,
-          1799,
-          2290,
-          2086
-        ]
+      "preview": "assets/examples/type-18-1.svg",
+      "diagram_key": "type-18-1",
+      "axes": {
+        "horizontal": "比較対象",
+        "vertical": "組織・役割の階層",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-18-1.png"
+      "required_information": [
+        "比較対象",
+        "組織・役割の階層",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-19-1",
@@ -597,20 +569,19 @@
       "layout": "左右に共通カテゴリの格子を置き、セルの構成比を塗り分ける",
       "encoding": "同じ分類軸、濃淡、セル内の割合",
       "caution": "カテゴリと分母を揃え、図の形と量の関係を明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 6,
-        "column": 1,
-        "crop": [
-          108,
-          2105,
-          533,
-          2391
-        ]
+      "preview": "assets/examples/type-19-1.svg",
+      "diagram_key": "type-19-1",
+      "axes": {
+        "horizontal": "共通分類軸A",
+        "vertical": "共通分類軸B",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-19-1.png"
+      "required_information": [
+        "共通分類軸A",
+        "共通分類軸B",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-19-2",
@@ -620,22 +591,21 @@
       "group": "比べる",
       "use": "リスク分布と対応方針を対応させる",
       "layout": "左に影響度×発生可能性のマップ、右に番号対応の方針リスト",
-      "encoding": "番号バッジ、ゾーン境界、強調した重点リスク",
+      "encoding": "カテゴリの印、区分境界、注目する対象の強調",
       "caution": "評価尺度と順位の根拠を示し、確率を推測で補わない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 6,
-        "column": 2,
-        "crop": [
-          548,
-          2105,
-          973,
-          2391
-        ]
+      "preview": "assets/examples/type-19-2.svg",
+      "diagram_key": "type-19-2",
+      "axes": {
+        "horizontal": "共通分類軸A",
+        "vertical": "共通分類軸B",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-19-2.png"
+      "required_information": [
+        "共通分類軸A",
+        "共通分類軸B",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-45-1",
@@ -647,20 +617,19 @@
       "layout": "対象を列、論点を行に置き、セルに事実と含意を記す",
       "encoding": "事実を■、含意・打ち手を矢印で区別する",
       "caution": "意見を事実扱いせず、主張と証拠を対応させる",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 6,
-        "column": 3,
-        "crop": [
-          986,
-          2105,
-          1411,
-          2391
-        ]
+      "preview": "assets/examples/type-45-1.svg",
+      "diagram_key": "type-45-1",
+      "axes": {
+        "horizontal": "対象・時期・条件",
+        "vertical": "論点と根拠",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-45-1.png"
+      "required_information": [
+        "対象・時期・条件",
+        "論点と根拠",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-45-2",
@@ -672,20 +641,19 @@
       "layout": "時間を列、論点や領域を行に置く表",
       "encoding": "列上のフェーズ矢羽根、各セルの事実と含意",
       "caution": "時期境界と依存関係を明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 6,
-        "column": 4,
-        "crop": [
-          1425,
-          2105,
-          1850,
-          2391
-        ]
+      "preview": "assets/examples/type-45-2.svg",
+      "diagram_key": "type-45-2",
+      "axes": {
+        "horizontal": "対象・時期・条件",
+        "vertical": "論点と根拠",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-45-2.png"
+      "required_information": [
+        "対象・時期・条件",
+        "論点と根拠",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-45-3",
@@ -695,22 +663,21 @@
       "group": "比べる",
       "use": "選択肢を共通論点で比較する",
       "layout": "選択肢を列、判断観点を行にし、推奨列を枠で囲む",
-      "encoding": "共通のセル構造、主役列の青い枠",
+      "encoding": "共通のセル構造、主役列の強調した枠",
       "caution": "推奨に不利な根拠も同じ基準で載せる",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 6,
-        "column": 5,
-        "crop": [
-          1865,
-          2105,
-          2290,
-          2391
-        ]
+      "preview": "assets/examples/type-45-3.svg",
+      "diagram_key": "type-45-3",
+      "axes": {
+        "horizontal": "対象・時期・条件",
+        "vertical": "論点と根拠",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-45-3.png"
+      "required_information": [
+        "対象・時期・条件",
+        "論点と根拠",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-45-4",
@@ -720,22 +687,21 @@
       "group": "比べる",
       "use": "仮説が条件によって変わる様子を示す",
       "layout": "テーマ、現在の主張、根拠、成立・反証条件、示唆を列で対応させる",
-      "encoding": "検証結果や変わる結論を青で強調する",
-      "caution": "右列の意味は再利用用の解釈。見本の微小な全セル文言の逐語転記ではない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-front.webp",
-        "page": "front",
-        "row": 7,
-        "column": 1,
-        "crop": [
-          108,
-          2413,
-          533,
-          2699
-        ]
+      "encoding": "検証結果や変わる結論を強調で強調する",
+      "caution": "仮説・根拠・成立条件・反証条件を区別して並べる",
+      "preview": "assets/examples/type-45-4.svg",
+      "diagram_key": "type-45-4",
+      "axes": {
+        "horizontal": "対象・時期・条件",
+        "vertical": "論点と根拠",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-45-4.png"
+      "required_information": [
+        "対象・時期・条件",
+        "論点と根拠",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-20-1",
@@ -747,20 +713,19 @@
       "layout": "変更前後の同じ工程列を上下に置き、下部に総時間の比較帯",
       "encoding": "削除箇所を同位置に残して破線、短縮分を棒で示す",
       "caution": "削除後に箱を詰めて対応関係を崩さない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 1,
-        "column": 1,
-        "crop": [
-          108,
-          431,
-          461,
-          677
-        ]
+      "preview": "assets/examples/type-20-1.svg",
+      "diagram_key": "type-20-1",
+      "axes": {
+        "horizontal": "対応する要素",
+        "vertical": "前後の状態",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-20-1.png"
+      "required_information": [
+        "対応する要素",
+        "前後の状態",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-21-1",
@@ -770,22 +735,21 @@
       "group": "変化を見せる",
       "use": "全体の規模と構成の転換を示す",
       "layout": "左右に同じ基準の面積図を置き、中央に変換矢印を置く",
-      "encoding": "幅と高さで二量、その積で総量、同じ対象は同じ色",
+      "encoding": "幅と高さで二量、その積で総量、同じ対象は同じ記号",
       "caution": "前後で縮尺を変えず、面積と実数の関係を明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 1,
-        "column": 2,
-        "crop": [
-          475,
-          431,
-          828,
-          677
-        ]
+      "preview": "assets/examples/type-21-1.svg",
+      "diagram_key": "type-21-1",
+      "axes": {
+        "horizontal": "構成要素・時点",
+        "vertical": "量・質",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-21-1.png"
+      "required_information": [
+        "構成要素・時点",
+        "量・質",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-21-2",
@@ -797,20 +761,19 @@
       "layout": "三時点の面積図を横並びに置き、直前時点の輪郭を重ねる",
       "encoding": "点線の残像、時点間の矢印、増分注記",
       "caution": "輪郭の比較は同じ尺度・基準位置で行う",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 1,
-        "column": 3,
-        "crop": [
-          841,
-          431,
-          1194,
-          677
-        ]
+      "preview": "assets/examples/type-21-2.svg",
+      "diagram_key": "type-21-2",
+      "axes": {
+        "horizontal": "構成要素・時点",
+        "vertical": "量・質",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-21-2.png"
+      "required_information": [
+        "構成要素・時点",
+        "量・質",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-22-1",
@@ -820,22 +783,21 @@
       "group": "変化を見せる",
       "use": "従来の考え方から新方針への転換を示す",
       "layout": "観点を行にし、左の従来と右の今後を矢印で結ぶ",
-      "encoding": "従来は淡色・破線、今後は主役色・実線",
+      "encoding": "前後の列と対応矢印。状態の違いはラベルまたは凡例で区別する",
       "caution": "同じ観点の言葉を対にし、実績と方針を区別する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 1,
-        "column": 4,
-        "crop": [
-          1208,
-          431,
-          1561,
-          677
-        ]
+      "preview": "assets/examples/type-22-1.svg",
+      "diagram_key": "type-22-1",
+      "axes": {
+        "horizontal": "前後の方針",
+        "vertical": "共通観点",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-22-1.png"
+      "required_information": [
+        "前後の方針",
+        "共通観点",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-23-1",
@@ -847,20 +809,19 @@
       "layout": "対象ごとに幅と高さの異なる矩形を共通基準線から並べる",
       "encoding": "幅は構成比、高さは効率、面積は成果、全体平均の水平線",
       "caution": "幅の和と構成比の分母を確認する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 2,
-        "column": 1,
-        "crop": [
-          108,
-          771,
-          461,
-          1017
-        ]
+      "preview": "assets/examples/type-23-1.svg",
+      "diagram_key": "type-23-1",
+      "axes": {
+        "horizontal": "量・構成比",
+        "vertical": "効率・質",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-23-1.png"
+      "required_information": [
+        "量・構成比",
+        "効率・質",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-24-1",
@@ -872,20 +833,19 @@
       "layout": "共通底辺に幅・高さの異なる矩形を並べ、右に対象の説明を置く",
       "encoding": "両軸は実数、矩形の面積は積の値",
       "caution": "幅だけで順位を読ませず、軸と単位を明示する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 2,
-        "column": 2,
-        "crop": [
-          475,
-          771,
-          828,
-          1017
-        ]
+      "preview": "assets/examples/type-24-1.svg",
+      "diagram_key": "type-24-1",
+      "axes": {
+        "horizontal": "実数量A",
+        "vertical": "実数量B",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-24-1.png"
+      "required_information": [
+        "実数量A",
+        "実数量B",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-24-2",
@@ -897,20 +857,19 @@
       "layout": "左右に実数面積図を置き、差が出る幅と高さを補助線で示す",
       "encoding": "二図の共通尺度、差分寸法と数値",
       "caution": "独立に正規化して面積差を失わない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 2,
-        "column": 3,
-        "crop": [
-          841,
-          771,
-          1194,
-          1017
-        ]
+      "preview": "assets/examples/type-24-2.svg",
+      "diagram_key": "type-24-2",
+      "axes": {
+        "horizontal": "実数量A",
+        "vertical": "実数量B",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-24-2.png"
+      "required_information": [
+        "実数量A",
+        "実数量B",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-25-1",
@@ -922,20 +881,19 @@
       "layout": "散布図の年次点を順に結び、局面の近くに注記を置く",
       "encoding": "年ラベル、軌跡線、局面の囲み",
       "caution": "点の順序を明示し、軌跡を因果の証明と扱わない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 2,
-        "column": 4,
-        "crop": [
-          1208,
-          771,
-          1561,
-          1017
-        ]
+      "preview": "assets/examples/type-25-1.svg",
+      "diagram_key": "type-25-1",
+      "axes": {
+        "horizontal": "指標A",
+        "vertical": "指標Bと時点",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-25-1.png"
+      "required_information": [
+        "指標A",
+        "指標Bと時点",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-25-2",
@@ -947,20 +905,19 @@
       "layout": "年次点の軌跡に初期の基準傾向を補助線で重ねる",
       "encoding": "後期の軌跡と基準線の乖離、局面への注記",
       "caution": "外挿線の式・対象期間と推定前提を示す",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 2,
-        "column": 5,
-        "crop": [
-          1575,
-          771,
-          1928,
-          1017
-        ]
+      "preview": "assets/examples/type-25-2.svg",
+      "diagram_key": "type-25-2",
+      "axes": {
+        "horizontal": "指標A",
+        "vertical": "指標Bと時点",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-25-2.png"
+      "required_information": [
+        "指標A",
+        "指標Bと時点",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-26-1",
@@ -972,20 +929,19 @@
       "layout": "散布上の状態点を閉じた経路で結び、点の近くに説明を置く",
       "encoding": "矢印の方向、始点と状態名",
       "caution": "循環の順序に根拠がある場合に使い、単なる相関と混同しない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 2,
-        "column": 6,
-        "crop": [
-          1942,
-          771,
-          2295,
-          1017
-        ]
+      "preview": "assets/examples/type-26-1.svg",
+      "diagram_key": "type-26-1",
+      "axes": {
+        "horizontal": "指標A",
+        "vertical": "指標Bと順序",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-26-1.png"
+      "required_information": [
+        "指標A",
+        "指標Bと順序",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-27-1",
@@ -997,20 +953,19 @@
       "layout": "左に散布と等成果の曲線、右に重点施策の解説",
       "encoding": "基準曲線と重点点の主役色、直接ラベル",
       "caution": "曲線は指標の数式から計算する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 3,
-        "column": 1,
-        "crop": [
-          108,
-          1034,
-          461,
-          1279
-        ]
+      "preview": "assets/examples/type-27-1.svg",
+      "diagram_key": "type-27-1",
+      "axes": {
+        "horizontal": "指標A",
+        "vertical": "指標Bと基準条件",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-27-1.png"
+      "required_information": [
+        "指標A",
+        "指標Bと基準条件",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-28-1",
@@ -1022,20 +977,19 @@
       "layout": "上に共通軸の小散布を並べ、下に同じ列で数値表を置く",
       "encoding": "散布の軸統一、列位置の一致、重点列の強調",
       "caution": "小図ごとの目盛差で形を変えない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 3,
-        "column": 2,
-        "crop": [
-          475,
-          1034,
-          828,
-          1279
-        ]
+      "preview": "assets/examples/type-28-1.svg",
+      "diagram_key": "type-28-1",
+      "axes": {
+        "horizontal": "対象",
+        "vertical": "共通指標の分布",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-28-1.png"
+      "required_information": [
+        "対象",
+        "共通指標の分布",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-29-1",
@@ -1046,21 +1000,20 @@
       "use": "開始・終了と継続期間を対象別に示す",
       "layout": "横に共通時系列、縦に対象を置き、期間を水平線分で示す",
       "encoding": "開始と終了のマーク、現在線、継続の線の延長",
-      "caution": "本見本は期間を示す線分。現在線と予定終了を区別する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 3,
-        "column": 3,
-        "crop": [
-          841,
-          1034,
-          1194,
-          1279
-        ]
+      "caution": "この構造は期間を示す線分。現在線と予定終了を区別する",
+      "preview": "assets/examples/type-29-1.svg",
+      "diagram_key": "type-29-1",
+      "axes": {
+        "horizontal": "時間",
+        "vertical": "対象",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-29-1.png"
+      "required_information": [
+        "時間",
+        "対象",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-30-1",
@@ -1072,20 +1025,19 @@
       "layout": "中央に重なる円と人数、右にキーナンバー、下に補足小図",
       "encoding": "交差部の数、中心の集約値、淡色の円",
       "caution": "面積が近似なら明示し、集合の合計を二重計上しない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 3,
-        "column": 4,
-        "crop": [
-          1208,
-          1034,
-          1561,
-          1279
-        ]
+      "preview": "assets/examples/type-30-1.svg",
+      "diagram_key": "type-30-1",
+      "axes": {
+        "horizontal": "集合",
+        "vertical": "重複関係",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-30-1.png"
+      "required_information": [
+        "集合",
+        "重複関係",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-31-1",
@@ -1097,20 +1049,19 @@
       "layout": "時系列に沿って系列を積み上げ、右端に系列名を直接書く",
       "encoding": "階調の層、実績と予測の境界、合計ラベル",
       "caution": "系列順を固定し、下層の変化で上層が誤読されないようにする",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 3,
-        "column": 5,
-        "crop": [
-          1575,
-          1034,
-          1928,
-          1279
-        ]
+      "preview": "assets/examples/type-31-1.svg",
+      "diagram_key": "type-31-1",
+      "axes": {
+        "horizontal": "時間",
+        "vertical": "量と内訳",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-31-1.png"
+      "required_information": [
+        "時間",
+        "量と内訳",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-32-1",
@@ -1122,20 +1073,19 @@
       "layout": "左に2×2の散布マトリクス、右に方針の説明を置く",
       "encoding": "重点象限の枠、象限から方針への対応線",
       "caution": "判断に効く軸を選び、閾値の根拠を示す",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 3,
-        "column": 6,
-        "crop": [
-          1942,
-          1034,
-          2295,
-          1279
-        ]
+      "preview": "assets/examples/type-32-1.svg",
+      "diagram_key": "type-32-1",
+      "axes": {
+        "horizontal": "分類軸A",
+        "vertical": "分類軸B",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-32-1.png"
+      "required_information": [
+        "分類軸A",
+        "分類軸B",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-33-1",
@@ -1147,20 +1097,19 @@
       "layout": "上に段階カーブ、下に同じ段階列で方針表を置く",
       "encoding": "現在地の垂線、主役段階の強調",
       "caution": "概念曲線を実測値と扱わず、段階判定の根拠を示す",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 4,
-        "column": 1,
-        "crop": [
-          108,
-          1298,
-          461,
-          1546
-        ]
+      "preview": "assets/examples/type-33-1.svg",
+      "diagram_key": "type-33-1",
+      "axes": {
+        "horizontal": "段階",
+        "vertical": "状態と対応方針",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-33-1.png"
+      "required_information": [
+        "段階",
+        "状態と対応方針",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-34-1",
@@ -1172,20 +1121,19 @@
       "layout": "二者を列、強みと課題を行にする2×2を置く",
       "encoding": "対角に結ぶ交差矢印、中央に補完の効果",
       "caution": "一方向の依存と相互補完を区別する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 4,
-        "column": 2,
-        "crop": [
-          475,
-          1298,
-          828,
-          1546
-        ]
+      "preview": "assets/examples/type-34-1.svg",
+      "diagram_key": "type-34-1",
+      "axes": {
+        "horizontal": "対象",
+        "vertical": "強みと不足",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-34-1.png"
+      "required_information": [
+        "対象",
+        "強みと不足",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-35-1",
@@ -1197,20 +1145,19 @@
       "layout": "短期・中期・長期を縦レーン、横を共通時間軸にする",
       "encoding": "期間バー、レーン見出しの効果合計、現在線",
       "caution": "期間の重なりと依存を示し、単純に効果を重複加算しない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 5,
-        "column": 1,
-        "crop": [
-          108,
-          1629,
-          461,
-          1896
-        ]
+      "preview": "assets/examples/type-35-1.svg",
+      "diagram_key": "type-35-1",
+      "axes": {
+        "horizontal": "時間",
+        "vertical": "効果時期・区分",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-35-1.png"
+      "required_information": [
+        "時間",
+        "効果時期・区分",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-36-1",
@@ -1222,20 +1169,19 @@
       "layout": "領域別レーンと時間軸の上に連結するモジュールを置く",
       "encoding": "ブロック内の担当・効果、期間に比例する横幅",
       "caution": "ブロックの隙間を任意にして日程を誤読させない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 5,
-        "column": 2,
-        "crop": [
-          475,
-          1629,
-          828,
-          1896
-        ]
+      "preview": "assets/examples/type-36-1.svg",
+      "diagram_key": "type-36-1",
+      "axes": {
+        "horizontal": "時間",
+        "vertical": "領域・担当",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-36-1.png"
+      "required_information": [
+        "時間",
+        "領域・担当",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-37-1",
@@ -1247,20 +1193,19 @@
       "layout": "フェーズを行、時間を列にし、工程を階段状に配置する",
       "encoding": "完了は塗り、計画は枠、現在線と依存線",
       "caution": "時制と担当の色の意味を混在させない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 5,
-        "column": 3,
-        "crop": [
-          841,
-          1629,
-          1194,
-          1896
-        ]
+      "preview": "assets/examples/type-37-1.svg",
+      "diagram_key": "type-37-1",
+      "axes": {
+        "horizontal": "時間",
+        "vertical": "段階",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-37-1.png"
+      "required_information": [
+        "時間",
+        "段階",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-38-1",
@@ -1272,20 +1217,19 @@
       "layout": "上段にストリーム連携、下段に対応するガントを置く",
       "encoding": "上下の共通時間軸、工程名の対応、接続線",
       "caution": "上段と下段の期間が矛盾しないようにする",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 5,
-        "column": 4,
-        "crop": [
-          1208,
-          1629,
-          1561,
-          1896
-        ]
+      "preview": "assets/examples/type-38-1.svg",
+      "diagram_key": "type-38-1",
+      "axes": {
+        "horizontal": "共通時間",
+        "vertical": "連携と詳細工程",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-38-1.png"
+      "required_information": [
+        "共通時間",
+        "連携と詳細工程",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-39-1",
@@ -1297,20 +1241,19 @@
       "layout": "会議体を縦レーン、審議段階を横にし、会議箱を接続する",
       "encoding": "矢印に渡す文書、戻りの線と所要週数",
       "caution": "会議の開催頻度と日程上の依存を確認する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 5,
-        "column": 5,
-        "crop": [
-          1575,
-          1629,
-          1928,
-          1896
-        ]
+      "preview": "assets/examples/type-39-1.svg",
+      "diagram_key": "type-39-1",
+      "axes": {
+        "horizontal": "審議・受渡し段階",
+        "vertical": "役割・会議体",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-39-1.png"
+      "required_information": [
+        "審議・受渡し段階",
+        "役割・会議体",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-40-1",
@@ -1322,20 +1265,19 @@
       "layout": "上にモノの流れ、下に金額・支払条件を同じ工程列で置く",
       "encoding": "モノの実線、金の破線、取引金額と支払サイト",
       "caution": "モノの移動と所有権・支払時点を区別する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 5,
-        "column": 6,
-        "crop": [
-          1942,
-          1629,
-          2295,
-          1896
-        ]
+      "preview": "assets/examples/type-40-1.svg",
+      "diagram_key": "type-40-1",
+      "axes": {
+        "horizontal": "工程・取引",
+        "vertical": "異なる流れ",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-40-1.png"
+      "required_information": [
+        "工程・取引",
+        "異なる流れ",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-47-1",
@@ -1347,20 +1289,19 @@
       "layout": "役割レーン内に処理箱、ひし形、ループを配置する",
       "encoding": "通常フローと例外の点線、発生率と追加日数",
       "caution": "分岐条件と戻り先を明示し、未知の率を補わない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 6,
-        "column": 1,
-        "crop": [
-          108,
-          1895,
-          461,
-          2161
-        ]
+      "preview": "assets/examples/type-47-1.svg",
+      "diagram_key": "type-47-1",
+      "axes": {
+        "horizontal": "工程・判断",
+        "vertical": "役割",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-47-1.png"
+      "required_information": [
+        "工程・判断",
+        "役割",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-41-1",
@@ -1370,22 +1311,21 @@
       "group": "構造を地図化する",
       "use": "層と系列の被覆と空白を見る",
       "layout": "縦に層、横に系列の格子を作り、プレイヤーの箱を配置する",
-      "encoding": "自社の被覆を濃色、範囲をブラケットや集約帯",
+      "encoding": "中心対象の被覆を濃色、範囲をブラケットや集約帯",
       "caution": "層ごとに異なる分類軸を混ぜない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 7,
-        "column": 1,
-        "crop": [
-          108,
-          2232,
-          461,
-          2498
-        ]
+      "preview": "assets/examples/type-41-1.svg",
+      "diagram_key": "type-41-1",
+      "axes": {
+        "horizontal": "系列",
+        "vertical": "層",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-41-1.png"
+      "required_information": [
+        "系列",
+        "層",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-42-1",
@@ -1397,20 +1337,19 @@
       "layout": "上に工程、中に成功要因、下にプレイヤーの範囲帯を置く",
       "encoding": "同じ工程列、被覆帯、空白領域",
       "caution": "空白が不足を意味するか対象外かを確認する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 7,
-        "column": 2,
-        "crop": [
-          475,
-          2232,
-          828,
-          2498
-        ]
+      "preview": "assets/examples/type-42-1.svg",
+      "diagram_key": "type-42-1",
+      "axes": {
+        "horizontal": "工程",
+        "vertical": "要因と担当範囲",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-42-1.png"
+      "required_information": [
+        "工程",
+        "要因と担当範囲",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-43-1",
@@ -1422,20 +1361,19 @@
       "layout": "上に組織ツリーと番号、右に類型凡例、下に比較表を置く",
       "encoding": "番号バッジと類型、表の対応列",
       "caution": "組織の上下関係と類型の関係を区別する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 7,
-        "column": 3,
-        "crop": [
-          841,
-          2232,
-          1194,
-          2498
-        ]
+      "preview": "assets/examples/type-43-1.svg",
+      "diagram_key": "type-43-1",
+      "axes": {
+        "horizontal": "組織・類型",
+        "vertical": "階層と比較観点",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-43-1.png"
+      "required_information": [
+        "組織・類型",
+        "階層と比較観点",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-44-1",
@@ -1447,20 +1385,19 @@
       "layout": "左に全体の内訳、右に選んだ部分の拡大図を置く",
       "encoding": "選択領域の強調、拡大先への引き出し、別スケール",
       "caution": "右の拡大尺度を明示し、同尺度に見せない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 7,
-        "column": 4,
-        "crop": [
-          1208,
-          2232,
-          1561,
-          2498
-        ]
+      "preview": "assets/examples/type-44-1.svg",
+      "diagram_key": "type-44-1",
+      "axes": {
+        "horizontal": "全体と選択部分",
+        "vertical": "対応する内訳",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-44-1.png"
+      "required_information": [
+        "全体と選択部分",
+        "対応する内訳",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "type-48-1",
@@ -1472,20 +1409,19 @@
       "layout": "中央に主役、周囲に関係者を置き、関係を放射状に接続する",
       "encoding": "モノは実線、金は破線、データは点線、矢印に内容",
       "caution": "線の交差を整理し、矢印の方向と関係の意味を確認する",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 7,
-        "column": 5,
-        "crop": [
-          1575,
-          2232,
-          1928,
-          2498
-        ]
+      "preview": "assets/examples/type-48-1.svg",
+      "diagram_key": "type-48-1",
+      "axes": {
+        "horizontal": "関係者の配置",
+        "vertical": "交換・依存関係",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/type-48-1.png"
+      "required_information": [
+        "関係者の配置",
+        "交換・依存関係",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "principle-1",
@@ -1497,20 +1433,19 @@
       "layout": "選択肢を列、評価観点を行にし、共通する行を横断セルにまとめる",
       "encoding": "差分だけを各列に残し、共通事項を一度だけ書く",
       "caution": "共通化しても例外や条件差を失わない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 8,
-        "column": 1,
-        "crop": [
-          108,
-          2571,
-          461,
-          2838
-        ]
+      "preview": "assets/examples/principle-1.svg",
+      "diagram_key": "principle-1",
+      "axes": {
+        "horizontal": "対象と条件",
+        "vertical": "共通事項と差分",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/principle-1.png"
+      "required_information": [
+        "対象と条件",
+        "共通事項と差分",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     },
     {
       "id": "principle-2",
@@ -1522,20 +1457,21 @@
       "layout": "レーン内の重なったブロックを同じ方向と角度でずらす",
       "encoding": "統一したずらし、接続と箱の前後関係",
       "caution": "位置を崩す場合も時間軸と対応は保ち、恣意的な角度を混ぜない",
-      "observation_basis": "名称と大まかな配置・図形は添付画像から読取。用途・記号の意味・注意点は工程図と配置を基にした再利用のための解釈を含む。微小な本文・実数の逐語転記ではない。",
-      "source": {
-        "image": "assets/source/catalog-back.webp",
-        "page": "back",
-        "row": 8,
-        "column": 2,
-        "crop": [
-          475,
-          2571,
-          828,
-          2838
-        ]
+      "preview": "assets/examples/principle-2.svg",
+      "diagram_key": "principle-2",
+      "axes": {
+        "horizontal": "対象と条件",
+        "vertical": "共通事項と差分",
+        "note": "論理上の整理軸。全てを数量軸として描くものではない。"
       },
-      "preview": "assets/examples/principle-2.png"
+      "required_information": [
+        "対象と条件",
+        "共通事項と差分",
+        "元情報との対応"
+      ],
+      "skeleton": "入力を軸に割り当て、役割ごとの領域を配置し、主要な関係を線・位置・表で表す"
     }
-  ]
+  ],
+  "purpose": "任意の入力情報から軸と関係を抽出し、表現案を比較するための汎用構造",
+  "diagram_semantics": "構成図は役割と配置の模式図。形・寸法・配色は実データや出力デザインの規定ではない。"
 }

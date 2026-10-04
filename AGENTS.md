@@ -2,4 +2,4 @@
 
 思考はEnglish、応答は日本語とする。
 
-スライドの新規作成や大幅な再構成では、`.agents/skills/decision-slides/SKILL.md`を読み、資料の目的と根拠を整理してから制作する。
+情報の可視化・スライド案の作成では、`.agents/skills/decision-slides/SKILL.md`を読み、入力の重要な軸と関係を整理してから表現を選ぶ。

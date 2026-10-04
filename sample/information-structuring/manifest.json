@@ -1,0 +1,981 @@
+{
+  "schema_version": 1,
+  "samples": [
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "meaning",
+      "category": "purpose",
+      "name": "意味・概念整理",
+      "theme": "T01",
+      "form": "graph",
+      "axes": [
+        "identity",
+        "category",
+        "hierarchy",
+        "relation"
+      ],
+      "reason": "概念と呼称を分け、同義語を共通の概念へ対応付ける。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "grouping",
+      "category": "purpose",
+      "name": "分類・グルーピング",
+      "theme": "T10",
+      "form": "matrix",
+      "axes": [
+        "category",
+        "identity",
+        "confidence"
+      ],
+      "reason": "問い合わせを対象と状況の独立した軸で整理する。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "decomposition",
+      "category": "purpose",
+      "name": "分解・階層化",
+      "theme": "T08",
+      "form": "tree",
+      "axes": [
+        "hierarchy",
+        "part_whole",
+        "purpose"
+      ],
+      "reason": "物理構成で分解する。機能の階層とは混ぜない。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "comparison",
+      "category": "purpose",
+      "name": "比較・位置付け",
+      "theme": "T04",
+      "form": "matrix",
+      "axes": [
+        "category",
+        "quantity",
+        "location"
+      ],
+      "reason": "方式A・Bを同じ評価軸で比較する。結論は条件による。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "relationships",
+      "category": "purpose",
+      "name": "関係・依存整理",
+      "theme": "T02",
+      "form": "graph",
+      "axes": [
+        "relation",
+        "dependency",
+        "trace"
+      ],
+      "reason": "多対多の利用関係と外部境界を示す。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "timing",
+      "category": "purpose",
+      "name": "時間・順序整理",
+      "theme": "T03",
+      "form": "timeline",
+      "axes": [
+        "time",
+        "sequence",
+        "dependency",
+        "event"
+      ],
+      "reason": "予定の時期と担当を揃える。論理順序だけの図とは区別する。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "process",
+      "category": "purpose",
+      "name": "プロセス整理",
+      "theme": "T01",
+      "form": "flow",
+      "axes": [
+        "sequence",
+        "relation",
+        "responsibility",
+        "event"
+      ],
+      "reason": "申請の担当・分岐条件・受渡しを示す。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "state_events",
+      "category": "purpose",
+      "name": "状態・イベント整理",
+      "theme": "T08",
+      "form": "state_model",
+      "axes": [
+        "state",
+        "event",
+        "sequence"
+      ],
+      "reason": "状態・イベント・条件を分け、申請の状態変化を示す。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "causal_analysis",
+      "category": "purpose",
+      "name": "因果・問題分析",
+      "theme": "T09",
+      "form": "tree",
+      "axes": [
+        "cause",
+        "event",
+        "dependency",
+        "evidence",
+        "confidence"
+      ],
+      "reason": "障害の観測事実と原因の仮説を分離する。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "risk_failure",
+      "category": "purpose",
+      "name": "リスク・障害整理",
+      "theme": "T07",
+      "form": "graph",
+      "axes": [
+        "risk",
+        "cause",
+        "state",
+        "dependency",
+        "evidence"
+      ],
+      "reason": "脅威・影響・予防策を分ける。点数や発生確率は仮定しない。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "requirements_trace",
+      "category": "purpose",
+      "name": "要求・トレース整理",
+      "theme": "T02",
+      "form": "graph",
+      "axes": [
+        "purpose",
+        "trace",
+        "relation",
+        "evidence"
+      ],
+      "reason": "要求から設計・検証への対応を共有IDで追う。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "decision",
+      "category": "purpose",
+      "name": "意思決定整理",
+      "theme": "T04",
+      "form": "argument",
+      "axes": [
+        "purpose",
+        "quantity",
+        "risk",
+        "evidence",
+        "confidence"
+      ],
+      "reason": "選択肢・評価条件・決定を区別し、選定条件を残す。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "responsibility",
+      "category": "purpose",
+      "name": "責任・組織整理",
+      "theme": "T03",
+      "form": "flow",
+      "axes": [
+        "responsibility",
+        "hierarchy",
+        "relation"
+      ],
+      "reason": "役割ごとに仕事を置き、受渡しの責任を示す。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "quantitative",
+      "category": "purpose",
+      "name": "定量・管理整理",
+      "theme": "T01",
+      "form": "quantitative_chart",
+      "axes": [
+        "quantity",
+        "time",
+        "purpose",
+        "confidence"
+      ],
+      "reason": "実績・目標・差異を同じ単位で比較する。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "strategy",
+      "category": "purpose",
+      "name": "戦略・目的整理",
+      "theme": "T04",
+      "form": "tree",
+      "axes": [
+        "purpose",
+        "hierarchy",
+        "dependency",
+        "trace"
+      ],
+      "reason": "目的から成果・施策を展開し、成果を観測する指標を添える。"
+    },
+    {
+      "file": "01-organizing-patterns.drawio",
+      "id": "explanation",
+      "category": "purpose",
+      "name": "説明・論証整理",
+      "theme": "T09",
+      "form": "argument",
+      "axes": [
+        "evidence",
+        "confidence",
+        "purpose",
+        "trace"
+      ],
+      "reason": "主張・根拠・留保を区別し、採用する条件を示す。"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-01-1",
+      "category": "catalog",
+      "name": "全体テーマ・目次",
+      "theme": "T04",
+      "kind": "base",
+      "form": "list",
+      "reason": "資料の入口と全体テーマを示す"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-01-2",
+      "category": "catalog",
+      "name": "章の導入",
+      "theme": "T04",
+      "kind": "variant",
+      "form": "list",
+      "reason": "章の切り替えと章内の問いを示す"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-02-1",
+      "category": "catalog",
+      "name": "要点サマリ",
+      "theme": "T04",
+      "kind": "base",
+      "form": "table",
+      "reason": "全体の要点・問い・根拠を一覧にする"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-02-2",
+      "category": "catalog",
+      "name": "問いと答えのサマリ",
+      "theme": "T04",
+      "kind": "variant",
+      "form": "table",
+      "reason": "全体の要点・問い・根拠を一覧にする"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-03-1",
+      "category": "catalog",
+      "name": "まとめ・次の行動",
+      "theme": "T04",
+      "kind": "base",
+      "form": "table",
+      "reason": "資料の要点と次に扱う事項をまとめる"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-04-1",
+      "category": "catalog",
+      "name": "個票カタログ",
+      "theme": "T01",
+      "kind": "base",
+      "form": "table",
+      "reason": "同種対象の違いを同じ観点で比較する"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-05-1",
+      "category": "catalog",
+      "name": "KPIレーン付き時系列",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "主要推移と管理指標を同時に読む"
+    },
+    {
+      "file": "catalog/01.drawio",
+      "id": "type-06-1",
+      "category": "catalog",
+      "name": "バブル比較マップ",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "二つの比較軸と規模から対象の特徴を把握する"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-07-1",
+      "category": "catalog",
+      "name": "滝分解",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "合計の増減を要因に分ける"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-07-2",
+      "category": "catalog",
+      "name": "滝分解（上下並列）",
+      "theme": "T01",
+      "kind": "variant",
+      "form": "quantitative_chart",
+      "reason": "二つの増減構造を同じ形式で対比する"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-08-1",
+      "category": "catalog",
+      "name": "ファネル",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "工程ごとの歩留まりと最大離脱を示す"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-09-1",
+      "category": "catalog",
+      "name": "バリューチェーン収益図",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "工程別の売上・費用・利益の偏りを示す"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-09-2",
+      "category": "catalog",
+      "name": "バリューチェーン収益図（三層版）",
+      "theme": "T01",
+      "kind": "variant",
+      "form": "quantitative_chart",
+      "reason": "工程と金額と効率を一度に対応させる"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-10-1",
+      "category": "catalog",
+      "name": "分配カスケード",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "取引段階の取り分と中心対象余地を示す"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-11-1",
+      "category": "catalog",
+      "name": "ロジックツリー",
+      "theme": "T01",
+      "kind": "base",
+      "form": "tree",
+      "reason": "成果を計算可能な要因と施策へ分ける"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-12-1",
+      "category": "catalog",
+      "name": "数式分解",
+      "theme": "T01",
+      "kind": "base",
+      "form": "table",
+      "reason": "同じ指標に効く数式要素を対象別に比較する"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-13-1",
+      "category": "catalog",
+      "name": "同単位の滞留分解",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "総時間を実働と待ちに分ける"
+    },
+    {
+      "file": "catalog/02.drawio",
+      "id": "type-46-1",
+      "category": "catalog",
+      "name": "縦型イシューツリー",
+      "theme": "T01",
+      "kind": "base",
+      "form": "tree",
+      "reason": "問いから原因・仮説を下へ分解する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-14-1",
+      "category": "catalog",
+      "name": "軸統一並列",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "対象間の水準と推移を公平に比較する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-15-1",
+      "category": "catalog",
+      "name": "共通軸プロセス並列",
+      "theme": "T01",
+      "kind": "base",
+      "form": "matrix",
+      "reason": "複数対象の同工程の差を見る"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-16-1",
+      "category": "catalog",
+      "name": "共通目盛の構造比較",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "等級や報酬の階層を比較する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-17-1",
+      "category": "catalog",
+      "name": "同型フロー対比",
+      "theme": "T01",
+      "kind": "base",
+      "form": "flow",
+      "reason": "二つの事業・制度の流れを比較する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-18-1",
+      "category": "catalog",
+      "name": "同型組織対比",
+      "theme": "T01",
+      "kind": "base",
+      "form": "tree",
+      "reason": "組織の規模と働きかけ範囲を比較する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-19-1",
+      "category": "catalog",
+      "name": "フォルム対比",
+      "theme": "T01",
+      "kind": "base",
+      "form": "matrix",
+      "reason": "二者の被覆や構成の形を比較する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-19-2",
+      "category": "catalog",
+      "name": "フォルム対比（リスク評価マップ）",
+      "theme": "T01",
+      "kind": "variant",
+      "form": "matrix",
+      "reason": "リスク分布と対応方針を対応させる"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-45-1",
+      "category": "catalog",
+      "name": "論証テーブル",
+      "theme": "T04",
+      "kind": "base",
+      "form": "table",
+      "reason": "対象別の事実から含意を導く"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-45-2",
+      "category": "catalog",
+      "name": "論証テーブル（時間展開形）",
+      "theme": "T04",
+      "kind": "variant",
+      "form": "table",
+      "reason": "時期別の施策と根拠を示す"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-45-3",
+      "category": "catalog",
+      "name": "論証テーブル（横並び形）",
+      "theme": "T04",
+      "kind": "variant",
+      "form": "table",
+      "reason": "選択肢を共通論点で比較する"
+    },
+    {
+      "file": "catalog/03.drawio",
+      "id": "type-45-4",
+      "category": "catalog",
+      "name": "論証テーブル（仮説検証形）",
+      "theme": "T04",
+      "kind": "variant",
+      "form": "table",
+      "reason": "仮説が条件によって変わる様子を示す"
+    },
+    {
+      "file": "catalog/04.drawio",
+      "id": "type-20-1",
+      "category": "catalog",
+      "name": "同位置Before/After",
+      "theme": "T04",
+      "kind": "base",
+      "form": "map",
+      "reason": "変更後に消える工程と残る工程を示す"
+    },
+    {
+      "file": "catalog/04.drawio",
+      "id": "type-21-1",
+      "category": "catalog",
+      "name": "面積の組み替え",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "全体の規模と構成の転換を示す"
+    },
+    {
+      "file": "catalog/04.drawio",
+      "id": "type-21-2",
+      "category": "catalog",
+      "name": "面積の組み替え（残像版）",
+      "theme": "T01",
+      "kind": "variant",
+      "form": "quantitative_chart",
+      "reason": "段階的な拡大と前時点との差を示す"
+    },
+    {
+      "file": "catalog/04.drawio",
+      "id": "type-22-1",
+      "category": "catalog",
+      "name": "前提の書き換え表",
+      "theme": "T04",
+      "kind": "base",
+      "form": "table",
+      "reason": "従来の考え方から新方針への転換を示す"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-23-1",
+      "category": "catalog",
+      "name": "面積図・構成比×効率",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "規模と効率から重点領域を選ぶ"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-24-1",
+      "category": "catalog",
+      "name": "実数面積図",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "多くの対象の量と質を一度に比較する"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-24-2",
+      "category": "catalog",
+      "name": "実数面積図（2枚並置）",
+      "theme": "T01",
+      "kind": "variant",
+      "form": "quantitative_chart",
+      "reason": "二対象の量と質の違いを比較する"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-25-1",
+      "category": "catalog",
+      "name": "軌跡散布",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "二指標の時系列変化を追う"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-25-2",
+      "category": "catalog",
+      "name": "軌跡散布（頭打ち）",
+      "theme": "T01",
+      "kind": "variant",
+      "form": "quantitative_chart",
+      "reason": "投資などの増加に対する成果の鈍化を示す"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-26-1",
+      "category": "catalog",
+      "name": "循環散布",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "順に関連する複数状態の循環を示す"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-27-1",
+      "category": "catalog",
+      "name": "基準線で意味づける散布",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "同じ成果の境界に対して対象を評価する"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-28-1",
+      "category": "catalog",
+      "name": "小マルチプル散布＋表",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "分布の形と数値を対象別に比較する"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-29-1",
+      "category": "catalog",
+      "name": "期間線分散布",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "開始・終了と継続期間を対象別に示す"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-30-1",
+      "category": "catalog",
+      "name": "重なりのベン図",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "集合の重複と統合機会を示す"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-31-1",
+      "category": "catalog",
+      "name": "積み上げエリア",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "総量と内訳の時間変化を示す"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-32-1",
+      "category": "catalog",
+      "name": "2×2と判断ロジック",
+      "theme": "T04",
+      "kind": "base",
+      "form": "matrix",
+      "reason": "二軸で対象を分け対応方針を説明する"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-33-1",
+      "category": "catalog",
+      "name": "ライフサイクル対応",
+      "theme": "T01",
+      "kind": "base",
+      "form": "quantitative_chart",
+      "reason": "成熟度に応じて施策を切り替える"
+    },
+    {
+      "file": "catalog/05.drawio",
+      "id": "type-34-1",
+      "category": "catalog",
+      "name": "襷がけ補完",
+      "theme": "T01",
+      "kind": "base",
+      "form": "matrix",
+      "reason": "二者の強みで相手の課題を補う"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-35-1",
+      "category": "catalog",
+      "name": "期別スイムレーン",
+      "theme": "T03",
+      "kind": "base",
+      "form": "timeline",
+      "reason": "効果の出る時期ごとに施策を並べる"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-36-1",
+      "category": "catalog",
+      "name": "モジュール工程",
+      "theme": "T03",
+      "kind": "base",
+      "form": "timeline",
+      "reason": "担当・効果を持つ実行ブロックを配置する"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-37-1",
+      "category": "catalog",
+      "name": "フェーズガント",
+      "theme": "T03",
+      "kind": "base",
+      "form": "timeline",
+      "reason": "段階的な実行と依存関係を示す"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-38-1",
+      "category": "catalog",
+      "name": "二段工程",
+      "theme": "T03",
+      "kind": "base",
+      "form": "timeline",
+      "reason": "連携構造と詳細日程を同時に読む"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-39-1",
+      "category": "catalog",
+      "name": "会議体連携",
+      "theme": "T03",
+      "kind": "base",
+      "form": "flow",
+      "reason": "審議・承認の受け渡しと手戻りを示す"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-40-1",
+      "category": "catalog",
+      "name": "金モノ交差",
+      "theme": "T03",
+      "kind": "base",
+      "form": "flow",
+      "reason": "取引の物流と資金のタイミングを示す"
+    },
+    {
+      "file": "catalog/06.drawio",
+      "id": "type-47-1",
+      "category": "catalog",
+      "name": "業務フロー図",
+      "theme": "T03",
+      "kind": "base",
+      "form": "flow",
+      "reason": "役割別の処理・判断・例外を可視化する"
+    },
+    {
+      "file": "catalog/07.drawio",
+      "id": "type-41-1",
+      "category": "catalog",
+      "name": "レイヤーマップ",
+      "theme": "T01",
+      "kind": "base",
+      "form": "map",
+      "reason": "層と系列の被覆と空白を見る"
+    },
+    {
+      "file": "catalog/07.drawio",
+      "id": "type-42-1",
+      "category": "catalog",
+      "name": "バリューチェーン地図",
+      "theme": "T01",
+      "kind": "base",
+      "form": "map",
+      "reason": "工程に対する成功要因と担当の被覆を示す"
+    },
+    {
+      "file": "catalog/07.drawio",
+      "id": "type-43-1",
+      "category": "catalog",
+      "name": "組織マッピング",
+      "theme": "T01",
+      "kind": "base",
+      "form": "tree",
+      "reason": "組織を類型に対応させて選択を考える"
+    },
+    {
+      "file": "catalog/07.drawio",
+      "id": "type-44-1",
+      "category": "catalog",
+      "name": "全体と拡大",
+      "theme": "T01",
+      "kind": "base",
+      "form": "map",
+      "reason": "全体に対する重点部分の内訳を示す"
+    },
+    {
+      "file": "catalog/07.drawio",
+      "id": "type-48-1",
+      "category": "catalog",
+      "name": "関係者相関マップ",
+      "theme": "T01",
+      "kind": "base",
+      "form": "map",
+      "reason": "主役と関係者の交換関係を俯瞰する"
+    },
+    {
+      "file": "catalog/08.drawio",
+      "id": "principle-1",
+      "category": "catalog",
+      "name": "共通項のくくり出し",
+      "theme": "T01",
+      "kind": "principle",
+      "form": "table",
+      "reason": "共通条件をまとめ選択肢の差を見せる"
+    },
+    {
+      "file": "catalog/08.drawio",
+      "id": "principle-2",
+      "category": "catalog",
+      "name": "重なりの作法",
+      "theme": "T01",
+      "kind": "principle",
+      "form": "map",
+      "reason": "期間ブロックの重なりを読みやすくする"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T01",
+      "category": "theme",
+      "name": "Enterprise Technical",
+      "theme": "T01",
+      "reason": "技術説明・システム概要・業務構造・設計レビュー"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T02",
+      "category": "theme",
+      "name": "Engineering / C4",
+      "theme": "T02",
+      "reason": "ソフトウェア構成・コンポーネント・依存・要求トレース"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T03",
+      "category": "theme",
+      "name": "Project Management",
+      "theme": "T03",
+      "reason": "工程・日程・WBS・リスク・Issue・Agile・判断"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T04",
+      "category": "theme",
+      "name": "Executive / Consulting",
+      "theme": "T04",
+      "reason": "経営層・方針・戦略・投資判断・企画"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T05",
+      "category": "theme",
+      "name": "Cloud Architecture",
+      "theme": "T05",
+      "reason": "クラウド事業者の構成・SaaS・Hybrid Cloud"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T06",
+      "category": "theme",
+      "name": "Network / Infrastructure",
+      "theme": "T06",
+      "reason": "ネットワーク・通信・IP・VLAN・Routing・冗長構成"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T07",
+      "category": "theme",
+      "name": "Cybersecurity / Zero Trust",
+      "theme": "T07",
+      "reason": "セキュリティ・IAM・信頼境界・脅威・多層防御"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T08",
+      "category": "theme",
+      "name": "Blueprint / System Design",
+      "theme": "T08",
+      "reason": "MBSE・装置・詳細設計・論理／物理構成・インターフェース"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T09",
+      "category": "theme",
+      "name": "Research / Analysis",
+      "theme": "T09",
+      "reason": "技術調査・比較分析・原因分析・仮説・証拠・論文"
+    },
+    {
+      "file": "02-theme-comparison.drawio",
+      "id": "T10",
+      "category": "theme",
+      "name": "Whiteboard / Workshop",
+      "theme": "T10",
+      "reason": "発想・初期構想・問題発見・Affinity・Workshop"
+    },
+    {
+      "file": "03-screen-annotations.drawio",
+      "id": "screen-orientation",
+      "category": "annotation",
+      "name": "画面の主要領域",
+      "theme": "T01",
+      "reason": "原図保持・別レイヤー・番号と図外説明"
+    },
+    {
+      "file": "03-screen-annotations.drawio",
+      "id": "screen-function",
+      "category": "annotation",
+      "name": "画面要素の役割",
+      "theme": "T01",
+      "reason": "原図保持・別レイヤー・番号と図外説明"
+    },
+    {
+      "file": "03-screen-annotations.drawio",
+      "id": "screen-workflow",
+      "category": "annotation",
+      "name": "操作説明（仮定を明示）",
+      "theme": "T01",
+      "reason": "原図保持・別レイヤー・番号と図外説明"
+    },
+    {
+      "file": "04-native-annotation.drawio",
+      "id": "native-annotation",
+      "category": "annotation",
+      "name": "編集可能な原図の保持",
+      "theme": "T02",
+      "reason": "原図のID・文字・位置・関係を保持してレイヤーを追加"
+    },
+    {
+      "file": "05-plantuml-annotation.drawio",
+      "id": "plantuml-svg",
+      "category": "annotation",
+      "name": "PlantUML原図への注釈",
+      "theme": "T02",
+      "form": "sequence",
+      "reason": "PlantUMLソースと実レンダリングを保持し、注釈のみ編集する"
+    },
+    {
+      "file": "06-plantuml-png-annotation.drawio",
+      "id": "plantuml-png",
+      "category": "annotation",
+      "name": "PNG原図への注釈",
+      "theme": "T02",
+      "reason": "SVGを扱えない場合のPNG代替。原画像を保持する"
+    }
+  ]
+}

@@ -45,6 +45,10 @@ canvas_y = image_y + normalized_y × displayed_image_height
 
 図外の説明位置はlabel_positionの値を0〜1の外に置ける。targetとanchorは原図内に置く。座標だけで対象を識別せず、target_label・target_text・安定IDを併せて照合する。トリミングや回転が必要な場合は変換を明示し、注釈位置を再計算する。通常は原図を切り抜かず表示する。
 
+番号が原図の文字・線を隠す場合、補助スクリプトでは任意の`marker_position`（正規化座標）で番号だけを余白へ移せる。対象を指す`anchor`と分け、番号もキャンバス内に収める。引出線の終点は対象内の空白を選び、原図の表示文字を隠さない。
+
+自動の引出線が原図の文字・接続線を横切る場合は、`leader_points`に正規化座標の折返し点を始点から終点の順で指定し、外周の余白から対象へ入る経路にする。原図の外側の点もキャンバス内に収める。再レンダリングで経路を確認する。
+
 ## レイヤーと注釈
 
 下から`00_Source`、`10_Highlight`、`20_Annotation`、`30_Explanation`を置き、必要なら非表示の`90_Guide`を使う。Sourceはロックし、通常の編集対象はHighlight・Annotation・Explanationとする。原図の画像は元バイトを埋め込むか、同梱したソースから表示する。元のファイルを上書きしない。

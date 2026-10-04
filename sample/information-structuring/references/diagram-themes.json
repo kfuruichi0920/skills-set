@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "default_theme": "T01",
+  "selection_order": [
+    "T04",
+    "T03",
+    "T05",
+    "T06",
+    "T07",
+    "T02",
+    "T08",
+    "T09",
+    "T10",
+    "T01"
+  ],
+  "themes": [
+    {
+      "id": "T01",
+      "name": "Enterprise Technical",
+      "use": "技術説明・システム概要・業務構造・設計レビュー",
+      "character": "Neutral Gray中心、Blueのみ主対象のアクセント。高密度の技術文書向け。",
+      "palette": {
+        "canvas": "#FFFFFF",
+        "surface": "#F4F4F4",
+        "surface-2": "#E8E8E8",
+        "border": "#8D8D8D",
+        "text": "#161616",
+        "text-secondary": "#525252",
+        "primary": "#0F62FE",
+        "primary-light": "#EDF5FF",
+        "success": "#24A148",
+        "warning": "#F1C21B",
+        "error": "#DA1E28"
+      }
+    },
+    {
+      "id": "T02",
+      "name": "Engineering / C4",
+      "use": "ソフトウェア構成・コンポーネント・依存・要求トレース",
+      "character": "境界・形・関係を優先。対象は薄青、内部は白、外部は薄灰。論理境界は破線。",
+      "palette": {
+        "canvas": "#FFFFFF",
+        "internal": "#FFFFFF",
+        "target": "#E8F1FF",
+        "external": "#F2F2F2",
+        "border": "#666666",
+        "text": "#222222",
+        "primary": "#2563EB",
+        "failure": "#DC2626"
+      }
+    },
+    {
+      "id": "T03",
+      "name": "Project Management",
+      "use": "工程・日程・WBS・リスク・Issue・Agile・判断",
+      "character": "予定=灰、進行=青、完了=緑、注意=黄、リスク=橙、問題=赤、判断=紫。状態が不明なら中立。",
+      "palette": {
+        "neutral": "#F7F8F9",
+        "border": "#B3B9C4",
+        "text": "#172B4D",
+        "planned": "#DCDFE4",
+        "progress": "#579DFF",
+        "done": "#4BCE97",
+        "attention": "#F5CD47",
+        "risk": "#FCA700",
+        "problem": "#F87168",
+        "decision": "#9F8FEF"
+      }
+    },
+    {
+      "id": "T04",
+      "name": "Executive / Consulting",
+      "use": "経営層・方針・戦略・投資判断・企画",
+      "character": "白・濃紺・灰とアクセント1色。1図1主メッセージ。主張・根拠・結論の確定度を保つ。",
+      "palette": {
+        "canvas": "#FFFFFF",
+        "navy": "#172B4D",
+        "gray": "#6B7280",
+        "light-gray": "#F3F4F6",
+        "accent": "#2563EB",
+        "warning": "#D97706"
+      }
+    },
+    {
+      "id": "T05",
+      "name": "Cloud Architecture",
+      "use": "クラウド事業者の構成・SaaS・Hybrid Cloud",
+      "character": "白背景、薄灰の境界、Region/VPCを破線または薄塗りのコンテナ。サービスは可能なら公式アイコンを使い、固有色は識別に限定。",
+      "palette": {
+        "canvas": "#FFFFFF",
+        "boundary": "#F2F2F2",
+        "border": "#666666",
+        "text": "#222222",
+        "primary": "#2563EB"
+      }
+    },
+    {
+      "id": "T06",
+      "name": "Network / Infrastructure",
+      "use": "ネットワーク・通信・IP・VLAN・Routing・冗長構成",
+      "character": "機器は標準アイコン、ネットワークはCloud、ZoneはContainer。物理=実線、論理=破線、制御=紫、データ=青、障害=赤。",
+      "palette": {
+        "network": "#2563EB",
+        "server": "#FFFFFF",
+        "device": "#F3F4F6",
+        "external": "#D1D5DB",
+        "control": "#7C3AED",
+        "failure": "#DC2626"
+      }
+    },
+    {
+      "id": "T07",
+      "name": "Cybersecurity / Zero Trust",
+      "use": "セキュリティ・IAM・信頼境界・脅威・多層防御",
+      "character": "色は製品種別ではなく信頼・リスク・制御状態。Identity=Person/ID、Policy=Hexagon、Control=Shield、Asset=Rectangle、Trust Zone=Container。",
+      "palette": {
+        "trusted": "#DCFCE7",
+        "controlled": "#DBEAFE",
+        "unknown": "#F3F4F6",
+        "warning": "#FEF3C7",
+        "threat": "#FEE2E2",
+        "critical": "#DC2626"
+      }
+    },
+    {
+      "id": "T08",
+      "name": "Blueprint / System Design",
+      "use": "MBSE・装置・詳細設計・論理／物理構成・インターフェース",
+      "character": "極薄の青灰背景、濃い青灰線。階層・境界・接続・ID・型・関係を優先。装飾的な青背景は使わない。",
+      "palette": {
+        "canvas": "#F8FAFC",
+        "line": "#334155",
+        "primary": "#1D4ED8",
+        "secondary": "#64748B",
+        "highlight": "#DBEAFE"
+      }
+    },
+    {
+      "id": "T09",
+      "name": "Research / Analysis",
+      "use": "技術調査・比較分析・原因分析・仮説・証拠・論文",
+      "character": "原資料=灰、分析=青、仮説=紫、根拠支持=緑、不確実=黄、反証=赤。支持・反証は入力の根拠で判定。",
+      "palette": {
+        "neutral": "#F8FAFC",
+        "source": "#E2E8F0",
+        "analysis": "#DBEAFE",
+        "hypothesis": "#EDE9FE",
+        "evidence": "#DCFCE7",
+        "uncertain": "#FEF3C7",
+        "rejected": "#FEE2E2"
+      }
+    },
+    {
+      "id": "T10",
+      "name": "Whiteboard / Workshop",
+      "use": "発想・初期構想・問題発見・Affinity・Workshop",
+      "character": "付箋を許可し、まとまりと読む順を保つ。色は問い・仮説・支持・注意など凡例の意味に対応。確定要素は意味に合う技術図形へ移す。",
+      "palette": {
+        "canvas": "#FAFAFA",
+        "note-yellow": "#FFF3BF",
+        "note-blue": "#D0EBFF",
+        "note-green": "#D3F9D8",
+        "note-red": "#FFE3E3",
+        "note-purple": "#E5DBFF",
+        "text": "#343A40"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor white
+actor "利用者" as User
+participant "受付" as Reception
+participant "審査担当" as Reviewer
+User -> Reception: 申請を送る
+Reception -> Reviewer: 審査を依頼する
+Reviewer --> Reception: 結果を返す
+note over User, Reviewer: 架空の手順。時間間隔は実時間を示さない。
+@enduml

@@ -120,7 +120,8 @@ def style(theme_id, shape=None, semantic='neutral', connector=None, logical_boun
         elif semantic in {'control', 'data', 'network'}:
             color = palette_value(palette, ALIASES[semantic], '#7C3AED' if semantic == 'control' else primary)
         values.update({'edgeStyle': 'orthogonalEdgeStyle', 'rounded': '0',
-                       'curved': '0', 'strokeColor': color, 'align': 'center', 'fontSize': '12'})
+                       'curved': '0', 'strokeColor': color, 'align': 'center', 'fontSize': '12',
+                       'whiteSpace': 'nowrap'})
         values.update(CONNECTORS[connector])
     return ';'.join(f'{key}={value}' for key, value in values.items()) + ';'
 

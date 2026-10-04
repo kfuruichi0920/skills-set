@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="native-annotation" name="既存Draw.ioへの説明追加">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" style="locked=1;" value="00_Source" />
+        <mxCell id="n1" value="受付" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E8F1FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;">
+          <mxGeometry x="170" y="280" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="審査" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;">
+          <mxGeometry x="820" y="280" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="審査を依頼" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n1" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="10_Highlight" parent="0" />
+        <mxCell id="20" value="20_Annotation" parent="0" />
+        <mxCell id="30" value="30_Explanation" parent="0" />
+        <mxCell id="n4" value="注1 受付の責務&#10;要求を受け付け、審査へ渡す。" vertex="1" parent="30" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="150" y="520" width="400" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="注釈" edge="1" parent="20" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;dashed=1;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n4" target="n1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

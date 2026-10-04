@@ -85,6 +85,17 @@ def validate(data):
         label_height = number(annotation.get('label_height', 90))
         if label_width <= 0 or label_height <= 0 or label_x < 0 or label_y < 0 or label_x + label_width > canvas['width'] or label_y + label_height > canvas['height']:
             raise ValueError('Explanation label does not fit canvas')
+        if annotation.get('marker_position'):
+            marker = annotation['marker_position']
+            mx = display['x'] + number(marker['x']) * display['width']
+            my = display['y'] + number(marker['y']) * display['height']
+            if not (14 <= mx <= canvas['width'] - 14 and 14 <= my <= canvas['height'] - 14):
+                raise ValueError('Marker does not fit canvas')
+        for point in annotation.get('leader_points', []):
+            px = display['x'] + number(point['x']) * display['width']
+            py = display['y'] + number(point['y']) * display['height']
+            if not (0 <= px <= canvas['width'] and 0 <= py <= canvas['height']):
+                raise ValueError('Leader waypoint does not fit canvas')
         marker = annotation.get('number')
         if marker is not None:
             marker = str(marker)
@@ -148,7 +159,8 @@ def build(data, source_path, destination, allow_output_source=False, current_art
         if annotation['type'] in {'highlight', 'region'}:
             highlight = style(selected, shape='boundary', semantic=shape_semantic, logical_boundary=True) + f'strokeColor={annotation_color};'
             vertex(prefix + '-region', annotation['title'] if annotation['type'] == 'region' else '', '10', highlight, x, y, target['width'] * display['width'], target['height'] * display['height'])
-        vertex(prefix + '-marker', marker, '20', style(selected, shape='event', semantic=shape_semantic) + f'align=center;aspect=fixed;strokeColor={annotation_color};', ax - 14, ay - 14, 28, 28)
+        mx, my = transform(annotation.get('marker_position', annotation['anchor']))
+        vertex(prefix + '-marker', marker, '20', style(selected, shape='event', semantic=shape_semantic) + f'align=center;whiteSpace=nowrap;fontSize=12;spacing=0;spacingLeft=0;spacingRight=0;aspect=fixed;strokeColor={annotation_color};', mx - 14, my - 14, 28, 28)
         caution = '（推定・要確認）' if annotation['confidence'] == 'low' else ''
         text = marker + ' ' + annotation['title'] + caution + '\n' + annotation.get('description', '')
         label_id = prefix + '-explanation'
@@ -156,6 +168,11 @@ def build(data, source_path, destination, allow_output_source=False, current_art
         edge = ET.SubElement(root, 'mxCell', {'id': prefix + '-leader', 'value': '注釈', 'parent': '20', 'edge': '1', 'source': label_id, 'style': style(selected, connector='dependency') + f'strokeColor={annotation_color};' + ('endArrow=block;' if annotation['type'] in {'arrow', 'step'} else 'endArrow=none;')})
         geometry = ET.SubElement(edge, 'mxGeometry', {'relative': '1', 'as': 'geometry'})
         ET.SubElement(geometry, 'mxPoint', {'x': str(ax), 'y': str(ay), 'as': 'targetPoint'})
+        if annotation.get('leader_points'):
+            points = ET.SubElement(geometry, 'Array', {'as': 'points'})
+            for point in annotation['leader_points']:
+                px, py = transform(point)
+                ET.SubElement(points, 'mxPoint', {'x': str(px), 'y': str(py)})
     for index, block in enumerate(data.get('explanation_blocks', []) + data.get('legend', [])):
         vertex(f'explanation-{index}', block['text'], '30', style(selected, shape='label'), block['x'], block['y'], block['width'], block['height'])
     ET.indent(mxfile, space='  ')

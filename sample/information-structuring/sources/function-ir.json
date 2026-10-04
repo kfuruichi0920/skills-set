@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "view_id": "screen-function",
+  "purpose": "画面要素の役割",
+  "audience": "初めて利用する人",
+  "theme": "T01",
+  "source": {
+    "path": "screen.svg",
+    "kind": "svg",
+    "width": 800,
+    "height": 480,
+    "version": "架空の画面v1",
+    "sha256": "59e57c4e1babb89488b57b37a6e2af24a33eb060158655f8ec6b0b6af53acb79",
+    "structured_source": null
+  },
+  "display": {
+    "x": 60,
+    "y": 80,
+    "width": 800,
+    "height": 480
+  },
+  "canvas": {
+    "width": 1280,
+    "height": 850
+  },
+  "annotations": [
+    {
+      "id": "ANN-001",
+      "number": "注1",
+      "type": "region",
+      "title": "ナビゲーション",
+      "description": "画像上に「申請一覧」と表示された領域。表示文字を根拠に説明する。",
+      "target": {
+        "label": "ナビゲーション",
+        "text": "申請一覧",
+        "x": 0.025,
+        "y": 0.22,
+        "width": 0.2125,
+        "height": 0.73
+      },
+      "anchor": {
+        "x": 0.2175,
+        "y": 0.9299999999999999
+      },
+      "label_position": {
+        "x": 1.075,
+        "y": 0.04
+      },
+      "label_width": 310,
+      "label_height": 115,
+      "confidence": "high",
+      "evidence": [
+        {
+          "basis": "架空画像上の文字",
+          "observed_text": "申請一覧"
+        }
+      ],
+      "marker_position": {
+        "x": 0.04,
+        "y": 0.19
+      }
+    },
+    {
+      "id": "ANN-002",
+      "number": "注2",
+      "type": "highlight",
+      "title": "入力欄",
+      "description": "画像上に「入力」と表示された領域。表示文字を根拠に説明する。",
+      "target": {
+        "label": "入力欄",
+        "text": "入力",
+        "x": 0.30625,
+        "y": 0.3958,
+        "width": 0.6125,
+        "height": 0.125
+      },
+      "anchor": {
+        "x": 0.89875,
+        "y": 0.5007999999999999
+      },
+      "label_position": {
+        "x": 1.075,
+        "y": 0.36
+      },
+      "label_width": 310,
+      "label_height": 115,
+      "confidence": "high",
+      "evidence": [
+        {
+          "basis": "架空画像上の文字",
+          "observed_text": "入力"
+        }
+      ],
+      "marker_position": {
+        "x": 0.32125000000000004,
+        "y": 0.3658
+      }
+    },
+    {
+      "id": "ANN-003",
+      "number": "注3",
+      "type": "callout",
+      "title": "保存ボタン",
+      "description": "画像上に「保存」と表示された領域。表示文字を根拠に説明する。",
+      "target": {
+        "label": "保存ボタン",
+        "text": "保存",
+        "x": 0.71875,
+        "y": 0.6875,
+        "width": 0.2,
+        "height": 0.1146
+      },
+      "anchor": {
+        "x": 0.8987499999999999,
+        "y": 0.7821
+      },
+      "label_position": {
+        "x": 1.075,
+        "y": 0.68
+      },
+      "label_width": 310,
+      "label_height": 115,
+      "confidence": "high",
+      "evidence": [
+        {
+          "basis": "架空画像上の文字",
+          "observed_text": "保存"
+        }
+      ],
+      "marker_position": {
+        "x": 0.73375,
+        "y": 0.6575
+      }
+    }
+  ],
+  "explanation_blocks": [
+    {
+      "text": "画面要素の役割\n注番号は説明との対応。処理順ではない。操作後の結果は画像だけから断定しない。",
+      "x": 60,
+      "y": 620,
+      "width": 1140,
+      "height": 80
+    }
+  ],
+  "legend": [
+    {
+      "text": "青: 説明対象。破線: 注釈の対応（元図のデータフローではない）。原図はロックし、注釈を別レイヤーで編集する。",
+      "x": 60,
+      "y": 725,
+      "width": 1140,
+      "height": 70
+    }
+  ]
+}

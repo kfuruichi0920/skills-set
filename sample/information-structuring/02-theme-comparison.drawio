@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="T01" name="T01 Enterprise Technical">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T01 Enterprise Technical" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="技術説明・システム概要・業務構造・設計レビュー" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E8E8E8;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#0F62FE;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F4F4F4;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#8D8D8D;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F1C21B;strokeColor=#8D8D8D;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T02" name="T02 Engineering / C4">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T02 Engineering / C4" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="ソフトウェア構成・コンポーネント・依存・要求トレース" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E8F1FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FEF3C7;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T03" name="T03 Project Management">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T03 Project Management" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="工程・日程・WBS・リスク・Issue・Agile・判断" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#579DFF;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F7F8F9;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#B3B9C4;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#B3B9C4;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F5CD47;strokeColor=#B3B9C4;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T04" name="T04 Executive / Consulting">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T04 Executive / Consulting" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="経営層・方針・戦略・投資判断・企画" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#6B7280;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#6B7280;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F3F4F6;strokeColor=#6B7280;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#6B7280;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#172B4D;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#6B7280;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#161616;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D97706;strokeColor=#6B7280;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T05" name="T05 Cloud Architecture">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T05 Cloud Architecture" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="クラウド事業者の構成・SaaS・Hybrid Cloud" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FEF3C7;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T06" name="T06 Network / Infrastructure">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T06 Network / Infrastructure" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="ネットワーク・通信・IP・VLAN・Routing・冗長構成" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D1D5DB;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#EDF5FF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FEF3C7;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T07" name="T07 Cybersecurity / Zero Trust">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T07 Cybersecurity / Zero Trust" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="セキュリティ・IAM・信頼境界・脅威・多層防御" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F3F4F6;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FEF3C7;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T08" name="T08 Blueprint / System Design">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#F8FAFC">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T08 Blueprint / System Design" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="MBSE・装置・詳細設計・論理／物理構成・インターフェース" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#1D4ED8;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#334155;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#334155;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FEF3C7;strokeColor=#334155;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T09" name="T09 Research / Analysis">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T09 Research / Analysis" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="技術調査・比較分析・原因分析・仮説・証拠・論文" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#E2E8F0;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#DBEAFE;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F8FAFC;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#222222;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FEF3C7;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="T10" name="T10 Whiteboard / Workshop">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="820" background="#FAFAFA">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n1" value="T10 Whiteboard / Workshop" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=24;fontStyle=1;">
+          <mxGeometry x="40" y="25" width="1200" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="発想・初期構想・問題発見・Affinity・Workshop" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;">
+          <mxGeometry x="40" y="82" width="1200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="架空の例示データ。案件の事実ではない。&#10;同じ関係構造を各テーマで表示。色は主対象・外部・警告の意味を表す。T05は公式クラウド製品図ではなく意味記号の比較例。" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacingLeft=8;shape=text;fontSize=14;">
+          <mxGeometry x="40" y="710" width="1200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="対象システム（論理境界）" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=none;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=0;dashed=1;verticalAlign=top;spacingTop=10;">
+          <mxGeometry x="440" y="180" width="780" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="外部利用者" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#F2F2F2;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=umlActor;">
+          <mxGeometry x="65" y="330" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="要求を処理する&#10;主対象" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#D0EBFF;strokeColor=#2563EB;align=left;verticalAlign=middle;spacingLeft=8;shape=rectangle;rounded=1;arcSize=8;">
+          <mxGeometry x="530" y="320" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="履歴データ" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFFFFF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=cylinder;">
+          <mxGeometry x="950" y="310" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="要求" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n5" target="n6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="保存" edge="1" parent="1" style="whiteSpace=nowrap;html=0;fontFamily=sans-serif;fontSize=12;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;strokeColor=#666666;align=center;endArrow=block;labelBackgroundColor=#FFFFFF;" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="注意: 権限の条件を確認" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=sans-serif;fontSize=16;fontColor=#343A40;shadow=0;glass=0;gradientColor=none;strokeWidth=1.5;fillColor=#FFF3BF;strokeColor=#666666;align=left;verticalAlign=middle;spacingLeft=8;shape=note;">
+          <mxGeometry x="550" y="500" width="560" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

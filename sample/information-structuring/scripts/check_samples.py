@@ -1,0 +1,106 @@
+"""Validate manifest coverage and references, optionally render every Draw.io page."""
+import argparse
+import concurrent.futures
+import hashlib
+import json
+import shutil
+import subprocess
+import sys
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+BASE=Path(__file__).resolve().parents[1]
+SKILL=BASE.parents[1]/'.agents/skills/information-structuring'
+
+
+def validate():
+    manifest=json.loads((BASE/'manifest.json').read_text(encoding='utf-8'))['samples']
+    catalog=json.loads((SKILL/'references/catalog.json').read_text(encoding='utf-8'))['samples']
+    framework=json.loads((SKILL/'references/framework.json').read_text(encoding='utf-8'))
+    themes=json.loads((SKILL/'references/diagram-themes.json').read_text(encoding='utf-8'))['themes']
+    for category,expected in [('catalog',{s['id'] for s in catalog}),('purpose',{s['id'] for s in framework['purposes']}),('theme',{s['id'] for s in themes})]:
+        actual=[s['id'] for s in manifest if s['category']==category]
+        assert set(actual)==expected and len(actual)==len(expected),category
+    annotation_ids={s['id'] for s in manifest if s['category']=='annotation'}
+    assert annotation_ids=={'screen-orientation','screen-function','screen-workflow','native-annotation','plantuml-svg','plantuml-png'}
+    assert {s['form'] for s in manifest if 'form' in s}=={f['id'] for f in framework['forms']},'Basic representation coverage'
+    for name in ['diagrams.py','theme_styles.py','build_annotation.py']:
+        assert (BASE/'scripts'/name).read_bytes()==(SKILL/'scripts'/name).read_bytes(),f'Stale helper: {name}'
+    assert (BASE/'references/diagram-themes.json').read_bytes()==(SKILL/'references/diagram-themes.json').read_bytes()
+    tasks=[]
+    for filename in sorted({s['file'] for s in manifest}):
+        document=ET.parse(BASE/filename).getroot(); pages=document.findall('diagram')
+        expected={s['id'] for s in manifest if s['file']==filename}
+        assert {p.get('id') for p in pages}==expected,filename
+        for index,page in enumerate(pages,1):
+            cells=page.findall('./mxGraphModel/root/mxCell'); ids=[c.get('id') for c in cells]
+            assert len(ids)==len(set(ids)),page.get('id')
+            for cell in cells:
+                for attr in ['parent','source','target']:
+                    if cell.get(attr): assert cell.get(attr) in ids,(filename,cell.get('id'),attr)
+                if cell.get('vertex')=='1':
+                    geometry=cell.find('mxGeometry'); assert geometry is not None
+                    assert all(float(geometry.get(k,'0'))>=0 for k in ['x','y','width','height']), (filename,cell.get('id'))
+            if filename.startswith('catalog/'):
+                assert all('shape=image' not in c.get('style','') for c in cells),filename
+            tasks.append((filename,index,page.get('id')))
+    original=ET.parse(BASE/'sources/native-source.drawio').getroot().findall('./diagram/mxGraphModel/root/mxCell')
+    annotated=ET.parse(BASE/'04-native-annotation.drawio').getroot().findall('./diagram/mxGraphModel/root/mxCell')
+    by_id={c.get('id'):c for c in annotated}
+    def canonical(cell):
+        return (cell.tag, cell.attrib, (cell.text or '').strip(), [canonical(child) for child in cell])
+    for cell in original:
+        if cell.get('vertex') or cell.get('edge'):
+            assert canonical(cell)==canonical(by_id[cell.get('id')]),'Native source modified'
+    for irpath in [BASE/'sources'/f'{mode}-ir.json' for mode in ['orientation','function','workflow','sequence','sequence-png']]:
+        ir=json.loads(irpath.read_text(encoding='utf-8'))
+        assert hashlib.sha256((irpath.parent/ir['source']['path']).read_bytes()).hexdigest()==ir['source']['sha256']
+    sys.path.insert(0,str(BASE/'scripts'))
+    from build_annotation import validate as validate_ir
+    bad=json.loads((BASE/'sources/orientation-ir.json').read_text(encoding='utf-8'))
+    bad['annotations'][0]['marker_position']={'x':-100,'y':0}
+    try: validate_ir(bad)
+    except ValueError as error: assert 'Marker does not fit canvas' in str(error)
+    else: raise AssertionError('Out-of-canvas marker accepted')
+    bad=json.loads((BASE/'sources/sequence-ir.json').read_text(encoding='utf-8'))
+    bad['annotations'][0]['leader_points']=[{'x':999,'y':0}]
+    try: validate_ir(bad)
+    except ValueError as error: assert 'Leader waypoint does not fit canvas' in str(error)
+    else: raise AssertionError('Out-of-canvas leader accepted')
+    return tasks
+
+
+def render(tasks, executable, page_ids=()):
+    destination=BASE/'previews'; destination.mkdir(exist_ok=True)
+    def one(task):
+        filename,index,identifier=task
+        target=destination/(identifier+'.png')
+        result=subprocess.run([executable,'--export','--format','png','--page-index',str(index),'--output',str(target),str(BASE/filename)],capture_output=True,timeout=90)
+        if result.returncode!=0 or not target.is_file():
+            raise RuntimeError(f'{identifier}: {result.stderr.decode("utf-8",errors="replace")}')
+        return identifier
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        selected=[task for task in tasks if not page_ids or task[2] in page_ids]
+        assert not page_ids or set(page_ids)=={task[2] for task in selected},'Unknown page ID'
+        done=list(pool.map(one,selected))
+    # Contact sheets are derived from actual Draw.io exports, never substitute diagrams.
+    from PIL import Image, ImageDraw, ImageFont
+    font=ImageFont.truetype('C:/Windows/Fonts/YuGothM.ttc',16)
+    for start in range(0,len(tasks),16):
+        batch=tasks[start:start+16]; sheet=Image.new('RGB',(1920,4*390),'#e8e8e8'); draw=ImageDraw.Draw(sheet)
+        for i,(_,_,identifier) in enumerate(batch):
+            preview=Image.open(destination/(identifier+'.png')).convert('RGB'); preview.thumbnail((470,350))
+            x=(i%4)*480; y=(i//4)*390
+            sheet.paste(preview,(x,y+32)); draw.text((x+8,y+6),identifier,fill='#111',font=font)
+        sheet.save(destination/f'contact-{start//16+1:02}.png')
+    return done
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--render',action='store_true')
+    parser.add_argument('--drawio',default='C:/Program Files/draw.io/draw.io.exe')
+    parser.add_argument('--page',action='append',default=[],help='Render only the specified changed page ID; repeat as needed')
+    args=parser.parse_args(); tasks=validate()
+    print(f'PASS: {len(tasks)} pages, coverage, retained tools, XML references, native source preservation and source hashes',flush=True)
+    if args.render: print(f'Rendered {len(render(tasks,args.drawio,args.page))} Draw.io pages',flush=True)

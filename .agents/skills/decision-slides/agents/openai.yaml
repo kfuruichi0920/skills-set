@@ -1,6 +1,0 @@
-interface:
-  display_name: "情報の可視化・スライド案"
-  short_description: "任意の入力情報から重要な軸を抽出し、可視化とスライド構成の案を比較"
-  default_prompt: "$decision-slides を使って、以下の情報から重要な軸を抽出し、適した可視化・スライド案を提案してください。"
-policy:
-  allow_implicit_invocation: true

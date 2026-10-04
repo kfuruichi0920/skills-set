@@ -1,0 +1,844 @@
+{
+  "schema_version": 1,
+  "source_basis": "ユーザー提供の分類・軸・手法候補を運用の選択枠組みに整理。公式規格への準拠や手法の完全実装を意味しない。",
+  "open_world": true,
+  "purposes": [
+    {
+      "id": "meaning",
+      "name": "意味・概念整理",
+      "question": "これは何か",
+      "axes": [
+        "identity",
+        "category",
+        "hierarchy",
+        "relation"
+      ],
+      "forms": [
+        "list",
+        "table",
+        "tree",
+        "graph"
+      ],
+      "methods": [
+        "用語集 / Glossary",
+        "Controlled Vocabulary",
+        "Taxonomy",
+        "Thesaurus",
+        "Ontology",
+        "Faceted Classification",
+        "Topic Map",
+        "Concept Map",
+        "Semantic Network",
+        "Knowledge Graph",
+        "Entity–Relationship Model",
+        "Domain Model",
+        "Conceptual Data Model",
+        "UML Class Diagram",
+        "SKOS",
+        "ISO 704に基づく用語・概念整理"
+      ],
+      "signals": "同義語・同名異義・定義の混在",
+      "prerequisites": "名称、定義、対象、用語の使用文脈"
+    },
+    {
+      "id": "grouping",
+      "name": "分類・グルーピング",
+      "question": "何と何が同類か",
+      "axes": [
+        "category",
+        "identity",
+        "confidence"
+      ],
+      "forms": [
+        "list",
+        "table",
+        "matrix",
+        "tree"
+      ],
+      "methods": [
+        "KJ法",
+        "Affinity Diagram",
+        "Card Sorting",
+        "MECE",
+        "Cluster Analysis",
+        "Tagging",
+        "Faceted Classification",
+        "Categorization",
+        "5W1H / 6W3H",
+        "What / Why / How分類",
+        "Fact / Opinion / Assumption分類",
+        "Must / Should / Could分類",
+        "Known / Unknown分類",
+        "Internal / External分類",
+        "Functional / Non-functional分類"
+      ],
+      "signals": "雑多な断片、共通する観点、複数のタグ",
+      "prerequisites": "情報単位、分類基準、例外・重複の扱い"
+    },
+    {
+      "id": "decomposition",
+      "name": "分解・階層化",
+      "question": "何から構成されるか",
+      "axes": [
+        "hierarchy",
+        "part_whole",
+        "purpose"
+      ],
+      "forms": [
+        "tree",
+        "list",
+        "graph"
+      ],
+      "methods": [
+        "WBS",
+        "OBS",
+        "CBS",
+        "RBS / Risk Breakdown Structure",
+        "Resource Breakdown Structure",
+        "PBS",
+        "System Breakdown Structure",
+        "Functional Breakdown Structure",
+        "Capability Breakdown",
+        "Logical Breakdown",
+        "Physical Breakdown",
+        "Logic Tree",
+        "Issue Tree",
+        "Why Tree",
+        "How Tree",
+        "What Tree",
+        "Goal Tree",
+        "Objective Tree",
+        "Mind Map",
+        "Outline",
+        "Hierarchical Task Analysis"
+      ],
+      "signals": "部分、上位・下位、作業・機能・物理構成",
+      "prerequisites": "分解対象、分解観点、親子関係"
+    },
+    {
+      "id": "comparison",
+      "name": "比較・位置付け",
+      "question": "何がどう違うか",
+      "axes": [
+        "category",
+        "quantity",
+        "location"
+      ],
+      "forms": [
+        "table",
+        "matrix",
+        "map",
+        "quantitative_chart"
+      ],
+      "methods": [
+        "Comparison Table",
+        "2×2 Matrix",
+        "Multi-dimensional Matrix",
+        "Benchmark Matrix",
+        "SWOT",
+        "PESTLE",
+        "BCG Matrix",
+        "Ansoff Matrix",
+        "Feature Comparison",
+        "Architecture Comparison",
+        "Technology Radar",
+        "Maturity Model",
+        "Heat Map",
+        "Bubble Chart",
+        "Radar Chart",
+        "Positioning Map"
+      ],
+      "signals": "複数対象と共通評価観点",
+      "prerequisites": "対象、比較観点、共通尺度またはカテゴリ"
+    },
+    {
+      "id": "relationships",
+      "name": "関係・依存整理",
+      "question": "何と何が関係するか",
+      "axes": [
+        "relation",
+        "dependency",
+        "trace"
+      ],
+      "forms": [
+        "graph",
+        "matrix"
+      ],
+      "methods": [
+        "Dependency Graph",
+        "Relationship Map",
+        "Network Diagram",
+        "Knowledge Graph",
+        "DSM / Design Structure Matrix",
+        "N² Diagram / N-Squared Chart",
+        "Dependency Matrix",
+        "Interface Matrix",
+        "CRUD Matrix",
+        "Interaction Matrix",
+        "Call Graph",
+        "Data Lineage",
+        "Dependency Map",
+        "Trace Graph",
+        "Package Dependency",
+        "Module Dependency"
+      ],
+      "signals": "多対多、依存、インターフェース、受け渡し",
+      "prerequisites": "関係元・先、関係種別、方向、条件"
+    },
+    {
+      "id": "timing",
+      "name": "時間・順序整理",
+      "question": "いつ・どの順に起きるか",
+      "axes": [
+        "time",
+        "sequence",
+        "dependency",
+        "event"
+      ],
+      "forms": [
+        "timeline",
+        "sequence",
+        "graph"
+      ],
+      "methods": [
+        "Timeline",
+        "Gantt Chart",
+        "Milestone Chart",
+        "Roadmap",
+        "Release Plan",
+        "PERT",
+        "CPM",
+        "Network Schedule",
+        "Sequence Diagram",
+        "Timing Diagram",
+        "Message Sequence Chart",
+        "Event Timeline",
+        "Project Calendar",
+        "Sprint Plan",
+        "Iteration Map"
+      ],
+      "signals": "時点、期間、先行後続、メッセージ順序",
+      "prerequisites": "時間の有無、順序、期間、依存"
+    },
+    {
+      "id": "process",
+      "name": "プロセス整理",
+      "question": "どう処理されるか",
+      "axes": [
+        "sequence",
+        "relation",
+        "responsibility",
+        "event"
+      ],
+      "forms": [
+        "flow",
+        "sequence",
+        "matrix"
+      ],
+      "methods": [
+        "Flowchart",
+        "BPMN",
+        "UML Activity Diagram",
+        "Swimlane",
+        "SIPOC",
+        "Value Stream Mapping",
+        "Data Flow Diagram",
+        "IDEF0",
+        "SADT",
+        "FFBD",
+        "eFFBD",
+        "Process Map",
+        "Service Blueprint",
+        "User Journey",
+        "Event Storming",
+        "Domain Storytelling",
+        "Workflow Diagram"
+      ],
+      "signals": "入力から活動を経て出力、分岐と受け渡し",
+      "prerequisites": "入力、活動、出力、役割、分岐条件"
+    },
+    {
+      "id": "state_events",
+      "name": "状態・イベント整理",
+      "question": "どの状態で何が起こるか",
+      "axes": [
+        "state",
+        "event",
+        "sequence"
+      ],
+      "forms": [
+        "state_model",
+        "matrix",
+        "table",
+        "sequence"
+      ],
+      "methods": [
+        "State Machine",
+        "State Transition Diagram",
+        "State Transition Table",
+        "UML State Machine",
+        "Event–State Matrix",
+        "Event–Condition–Action",
+        "Decision Table",
+        "Truth Table",
+        "Decision Tree",
+        "Petri Net",
+        "Timing Diagram",
+        "Statechart"
+      ],
+      "signals": "状態、イベント、条件、遷移、動作",
+      "prerequisites": "現状態、イベント、条件、動作、次状態"
+    },
+    {
+      "id": "causal_analysis",
+      "name": "因果・問題分析",
+      "question": "なぜ起きたか",
+      "axes": [
+        "cause",
+        "event",
+        "dependency",
+        "evidence",
+        "confidence"
+      ],
+      "forms": [
+        "tree",
+        "graph",
+        "argument"
+      ],
+      "methods": [
+        "5 Why",
+        "Ishikawa / Fishbone",
+        "Cause–Effect Diagram",
+        "Root Cause Analysis",
+        "Fault Tree",
+        "Event Tree",
+        "Causal Graph",
+        "DAG",
+        "Causal Loop Diagram",
+        "Influence Diagram",
+        "Kepner–Tregoe",
+        "Barrier Analysis",
+        "Change Analysis",
+        "Current Reality Tree",
+        "Cause–Effect Graph",
+        "System Dynamics",
+        "Causal Loop",
+        "Stock & Flow",
+        "Bayesian Network"
+      ],
+      "signals": "原因仮説、影響、循環、問題の連鎖",
+      "prerequisites": "出来事、原因候補、条件、証拠、反証"
+    },
+    {
+      "id": "risk_failure",
+      "name": "リスク・障害整理",
+      "question": "何が失敗し得るか",
+      "axes": [
+        "risk",
+        "cause",
+        "state",
+        "dependency",
+        "evidence"
+      ],
+      "forms": [
+        "table",
+        "tree",
+        "graph",
+        "matrix",
+        "argument"
+      ],
+      "methods": [
+        "Risk Register",
+        "RAID Log",
+        "Risk Matrix",
+        "Risk Breakdown Structure",
+        "Risk Heatmap",
+        "Risk Burndown",
+        "Bow-Tie",
+        "FMEA",
+        "FMECA",
+        "FTA",
+        "ETA",
+        "RBD",
+        "Markov Model",
+        "Reliability Block Diagram",
+        "HAZOP",
+        "STPA",
+        "STAMP",
+        "Safety Case",
+        "GSN",
+        "Hazard Log",
+        "FRAM",
+        "Threat Model",
+        "STRIDE",
+        "Attack Tree",
+        "Attack Graph",
+        "Misuse Case",
+        "Abuse Case",
+        "PASTA",
+        "LINDDUN",
+        "Threat Matrix"
+      ],
+      "signals": "故障、失敗、危険、脅威、サービス影響と制御",
+      "prerequisites": "対象、失敗・危険、原因、影響、条件、対策"
+    },
+    {
+      "id": "requirements_trace",
+      "name": "要求・トレース整理",
+      "question": "なぜ必要で、何で実現・検証するか",
+      "axes": [
+        "purpose",
+        "trace",
+        "relation",
+        "evidence"
+      ],
+      "forms": [
+        "matrix",
+        "graph",
+        "tree",
+        "argument"
+      ],
+      "methods": [
+        "Requirement Hierarchy",
+        "Requirements Traceability Matrix",
+        "V-model",
+        "Verification Cross Reference Matrix",
+        "Requirement × Test Matrix",
+        "Requirement × Design Matrix",
+        "Use Case",
+        "User Story",
+        "User Story Mapping",
+        "Acceptance Criteria",
+        "Gherkin",
+        "QFD",
+        "House of Quality",
+        "KAOS",
+        "i*",
+        "GRL",
+        "Goal Model",
+        "SysML Requirement Model",
+        "Traceability Graph"
+      ],
+      "signals": "要求、設計、実現、検証の対応",
+      "prerequisites": "要求ID、関係種別、設計・検証対象、根拠"
+    },
+    {
+      "id": "decision",
+      "name": "意思決定整理",
+      "question": "どれを選ぶべきか",
+      "axes": [
+        "purpose",
+        "quantity",
+        "risk",
+        "evidence",
+        "confidence"
+      ],
+      "forms": [
+        "matrix",
+        "table",
+        "argument",
+        "tree",
+        "quantitative_chart"
+      ],
+      "methods": [
+        "Decision Matrix",
+        "Weighted Scoring",
+        "AHP",
+        "ANP",
+        "MCDA",
+        "Pugh Matrix",
+        "Pairwise Comparison",
+        "Trade Study",
+        "Cost–Benefit Analysis",
+        "Decision Tree",
+        "Expected Value",
+        "Utility Analysis",
+        "Pareto Analysis",
+        "Sensitivity Analysis",
+        "Tornado Chart",
+        "Scenario Analysis",
+        "Monte Carlo Simulation",
+        "MoSCoW",
+        "WSJF",
+        "RICE",
+        "ICE",
+        "Kano",
+        "Cost of Delay",
+        "Value / Effort Matrix",
+        "ADR / Architecture Decision Record",
+        "Decision Log",
+        "Assumption Log",
+        "QOC / Questions–Options–Criteria"
+      ],
+      "signals": "選択肢、評価基準、トレードオフ、採否",
+      "prerequisites": "問い、選択肢、基準、評価根拠、決定状況"
+    },
+    {
+      "id": "responsibility",
+      "name": "責任・組織整理",
+      "question": "誰が何をするか",
+      "axes": [
+        "responsibility",
+        "hierarchy",
+        "relation"
+      ],
+      "forms": [
+        "matrix",
+        "tree",
+        "graph",
+        "map"
+      ],
+      "methods": [
+        "Organization Chart",
+        "OBS",
+        "RACI",
+        "RASCI",
+        "Responsibility Assignment Matrix",
+        "Stakeholder Map",
+        "Power–Interest Grid",
+        "Stakeholder Salience Model",
+        "Onion Diagram",
+        "Communication Matrix",
+        "Team Topology Map",
+        "Skills Matrix",
+        "Resource Matrix",
+        "Capability Matrix"
+      ],
+      "signals": "人・役割・作業・責任・連絡関係",
+      "prerequisites": "役割、作業、責任種別、組織・境界"
+    },
+    {
+      "id": "quantitative",
+      "name": "定量・管理整理",
+      "question": "状態は良いか悪いか",
+      "axes": [
+        "quantity",
+        "time",
+        "purpose",
+        "confidence"
+      ],
+      "forms": [
+        "quantitative_chart",
+        "table",
+        "tree"
+      ],
+      "methods": [
+        "KPI",
+        "KGI",
+        "CSF",
+        "GQM",
+        "Balanced Scorecard",
+        "KPI Tree",
+        "Dashboard",
+        "Scorecard",
+        "EVM",
+        "S-Curve",
+        "Burndown",
+        "Burnup",
+        "Cumulative Flow Diagram",
+        "Control Chart",
+        "Run Chart",
+        "Histogram",
+        "Pareto Chart",
+        "Scatter Plot",
+        "Box Plot",
+        "Heatmap",
+        "Resource Histogram",
+        "Capacity Chart",
+        "Defect Trend",
+        "Milestone Trend Analysis"
+      ],
+      "signals": "値、目標、実績、差、傾向、分布",
+      "prerequisites": "測定値、単位、期間、分母、目標・基準の有無"
+    },
+    {
+      "id": "strategy",
+      "name": "戦略・目的整理",
+      "question": "何のために何をするか",
+      "axes": [
+        "purpose",
+        "hierarchy",
+        "dependency",
+        "trace"
+      ],
+      "forms": [
+        "tree",
+        "graph",
+        "map",
+        "argument"
+      ],
+      "methods": [
+        "Vision → Mission → Goal → Objective",
+        "Goal Tree",
+        "Strategy Map",
+        "Balanced Scorecard",
+        "OKR",
+        "KPI Tree",
+        "Capability Map",
+        "Business Capability Map",
+        "Value Chain",
+        "Value Stream",
+        "Business Model Canvas",
+        "Lean Canvas",
+        "Impact Mapping",
+        "Opportunity Solution Tree",
+        "Theory of Change",
+        "Logic Model",
+        "Benefits Dependency Network",
+        "Wardley Map",
+        "Portfolio Map"
+      ],
+      "signals": "目的、成果、能力、施策、成果物の接続",
+      "prerequisites": "目的、期待成果、手段、前提、対応根拠"
+    },
+    {
+      "id": "explanation",
+      "name": "説明・論証整理",
+      "question": "どう説明すれば理解できるか",
+      "axes": [
+        "evidence",
+        "confidence",
+        "purpose",
+        "trace"
+      ],
+      "forms": [
+        "argument",
+        "list",
+        "table",
+        "graph"
+      ],
+      "methods": [
+        "Pyramid Principle",
+        "SCQA",
+        "PREP",
+        "Toulmin Model",
+        "Argument Map",
+        "IBIS",
+        "Claim–Evidence–Reasoning",
+        "Issue–Option–Decision",
+        "QOC",
+        "Overview → Detail",
+        "Progressive Disclosure",
+        "Abstraction Ladder",
+        "Layered Architecture Explanation",
+        "C4 Zoom-in",
+        "Context → Problem → Mechanism → Consequence",
+        "Before / After",
+        "As-Is / To-Be",
+        "Why / What / How"
+      ],
+      "signals": "読み手の問い、主張、証拠、留保、説明順序",
+      "prerequisites": "読み手、目的、要点、根拠、未確定事項"
+    }
+  ],
+  "axes": [
+    {
+      "id": "identity",
+      "name": "Identity",
+      "question": "何か",
+      "meaning": "対象の名前・定義・同一性"
+    },
+    {
+      "id": "category",
+      "name": "Category",
+      "question": "何の種類か",
+      "meaning": "同じ観点での分類・タグ"
+    },
+    {
+      "id": "hierarchy",
+      "name": "Hierarchy",
+      "question": "何に含まれるか",
+      "meaning": "上位と下位の包含・抽象化"
+    },
+    {
+      "id": "part_whole",
+      "name": "Part-whole",
+      "question": "何から構成されるか",
+      "meaning": "全体と部分の構成関係"
+    },
+    {
+      "id": "relation",
+      "name": "Relation",
+      "question": "何と関係するか",
+      "meaning": "関連・交換・対応の種類と向き"
+    },
+    {
+      "id": "dependency",
+      "name": "Dependency",
+      "question": "何に依存するか",
+      "meaning": "成立・動作に必要な前提"
+    },
+    {
+      "id": "sequence",
+      "name": "Sequence",
+      "question": "どの順序か",
+      "meaning": "先行・後続の論理順序"
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "question": "いつか",
+      "meaning": "時点・期間・時間尺度"
+    },
+    {
+      "id": "state",
+      "name": "State",
+      "question": "どの状態か",
+      "meaning": "継続する状態と状態遷移"
+    },
+    {
+      "id": "event",
+      "name": "Event",
+      "question": "何が起きたか",
+      "meaning": "変化の契機・出来事"
+    },
+    {
+      "id": "cause",
+      "name": "Cause",
+      "question": "なぜか",
+      "meaning": "原因と結果。仮説と裏付けを区別"
+    },
+    {
+      "id": "purpose",
+      "name": "Purpose",
+      "question": "何のためか",
+      "meaning": "目的・成果・達成手段"
+    },
+    {
+      "id": "responsibility",
+      "name": "Responsibility",
+      "question": "誰が担うか",
+      "meaning": "人・役割・活動の割り当て"
+    },
+    {
+      "id": "location",
+      "name": "Location",
+      "question": "どこか",
+      "meaning": "位置・境界・領域"
+    },
+    {
+      "id": "quantity",
+      "name": "Quantity",
+      "question": "どの程度か",
+      "meaning": "量・単位・尺度・分母"
+    },
+    {
+      "id": "risk",
+      "name": "Risk",
+      "question": "何が起こり得るか",
+      "meaning": "失敗・影響・予防・対処"
+    },
+    {
+      "id": "evidence",
+      "name": "Evidence",
+      "question": "根拠は何か",
+      "meaning": "主張を支える出所・観測・資料"
+    },
+    {
+      "id": "confidence",
+      "name": "Confidence",
+      "question": "どの程度確かか",
+      "meaning": "確実・推定・未確認とその根拠"
+    },
+    {
+      "id": "trace",
+      "name": "Trace",
+      "question": "どこからどこへ導出されたか",
+      "meaning": "入力・概念・要求・設計・検証・表現の対応"
+    }
+  ],
+  "forms": [
+    {
+      "id": "list",
+      "name": "List",
+      "meaning": "項目・要点・未分類事項を並べる",
+      "caution": "順序や優先度の意味を明示する"
+    },
+    {
+      "id": "table",
+      "name": "Table",
+      "meaning": "対象の属性を同じ項目で並べる",
+      "caution": "単位、空欄、不明値を区別する"
+    },
+    {
+      "id": "tree",
+      "name": "Tree",
+      "meaning": "階層や一つの切り口による分解を示す",
+      "caution": "多対多関係を親子へ押し込めない"
+    },
+    {
+      "id": "matrix",
+      "name": "Matrix",
+      "meaning": "二つ以上の観点を交差させる",
+      "caution": "セルの意味と観点の粒度を揃える"
+    },
+    {
+      "id": "graph",
+      "name": "Graph",
+      "meaning": "多対多の関連・依存を示す",
+      "caution": "関係の種類、向き、条件を明示する"
+    },
+    {
+      "id": "sequence",
+      "name": "Sequence",
+      "meaning": "順序と受け渡しを示す",
+      "caution": "論理順序を実時間と混同しない"
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "meaning": "時点・期間・スケジュールを示す",
+      "caution": "期間と依存関係を区別する"
+    },
+    {
+      "id": "state_model",
+      "name": "State Model",
+      "meaning": "状態・イベント・条件・動作・次状態を示す",
+      "caution": "処理手順と状態遷移を区別する"
+    },
+    {
+      "id": "flow",
+      "name": "Flow",
+      "meaning": "入力・処理・出力や流れる情報を示す",
+      "caution": "処理・データ・価値の流れを区別する"
+    },
+    {
+      "id": "map",
+      "name": "Spatial / Map",
+      "meaning": "位置・境界・領域・被覆を示す",
+      "caution": "概念上の配置を物理距離と混同しない"
+    },
+    {
+      "id": "quantitative_chart",
+      "name": "Quantitative Chart",
+      "meaning": "数値・分布・傾向を示す",
+      "caution": "数値・単位・比較尺度が必要"
+    },
+    {
+      "id": "argument",
+      "name": "Argument Structure",
+      "meaning": "問い・主張・根拠・留保・判断を示す",
+      "caution": "事実と解釈と意思決定を区別する"
+    }
+  ],
+  "qualifiers": [
+    "条件",
+    "例外",
+    "境界",
+    "粒度",
+    "方向",
+    "単位",
+    "期間",
+    "出所",
+    "不確実性"
+  ],
+  "selection_layers": [
+    "整理目的",
+    "情報の意味・整理軸",
+    "基本表現",
+    "必要な専門手法",
+    "読み手に合う説明方法",
+    "キャンバスと出力形式"
+  ],
+  "catalog_role": "既存61構造は基本表現を配置する際の参考。一覧にない方法、複合表現、独自構成を候補に含める。"
+}

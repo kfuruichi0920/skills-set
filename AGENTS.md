@@ -2,4 +2,4 @@
 
 思考はEnglish、応答は日本語とする。
 
-情報の可視化・スライド案の作成では、`.agents/skills/decision-slides/SKILL.md`を読み、入力の重要な軸と関係を整理してから表現を選ぶ。
+情報整理・可視化では、`.agents/skills/information-structuring/SKILL.md`を読み、入力の意味と関係を整理してから表現を選ぶ。スライドはキャンバスの一候補とし、既存カタログ外の整理方法・複合表現も検討する。整理根拠を補足資料として出力する。

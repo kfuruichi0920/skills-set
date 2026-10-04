@@ -123,4 +123,6 @@ Reviewer -> Reception: 結果を返す
 
 ## 確認と提出
 
+Draw.ioは[配置とコネクター検査](drawio-layout-check.md)を適用する。線・矢印・ラベルと図形間の余白を表示で点検し、問題を修正して再表示する。検査はproduction.mdの参照制限に従いoutput外で行う。
+
 図の目的、関係の名前・方向・条件、全体図と詳細図の対応、元情報IDを確認する。Markdownに図の説明とファイルへのリンクを置き、PlantUMLソース・Draw.io図・必要なプレビュー・TSV／CSV・整理根拠を同じ実行フォルダへ保存する。表示確認の方法はproduction.mdに従う。

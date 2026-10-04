@@ -20,6 +20,8 @@ $information-structuring
 
 ## 構成
 
+outputフォルダの内容は、ユーザーの明示指示がない限り参照しない。新しい成果物はoutput外で制作・検査し、検査後に保存する。Draw.ioは全ページのコネクター・ラベル・図形間の余白を表示で点検し、問題を修正して再確認する。
+
 整理目的 → 情報の意味と軸 → 基本表現 → 必要な専門手法 → 読み手に合う説明 → キャンバス。
 
 - [スキル](.agents/skills/information-structuring/SKILL.md)

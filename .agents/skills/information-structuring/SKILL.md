@@ -11,6 +11,8 @@ description: 雑多な文章・メモ・仕様・表・調査情報を整理し�
 
 ## 実行手順
 
+既存のoutputフォルダの内容は、ユーザーが参照を明示した対象以外は列挙・検索・読込み・プレビュー・再利用しない。[保存と参照の規則](references/production.md)に従い、新しい成果物の検査はoutput外で行い、検査後にoutputへ保存する。
+
 出力はMarkdownを優先し、補足図はシーケンス図にPlantUML、構造・配置図にDraw.ioを使う。大きな表・マトリクスはTSV（CSVも可）で添える。未指定なら[出力形式と保存規則](references/production.md)に従い、この組合せを推奨して希望を質問する。回答待ちの間は入力の整理を進め、形式に依存する制作は回答後に行う。
 
 1. [整理の工程](references/workflow.md)を読む。[根拠記録テンプレート](assets/rationale-template.md)の入力記録に質問原文と入力時刻を残す。その後、素材を出所付きの情報単位に分け、対象・定義・属性・関係・条件・確かさを整理する。
@@ -19,7 +21,7 @@ description: 雑多な文章・メモ・仕様・表・調査情報を整理し�
 4. [カタログから図解を選ぶ手順](references/catalog-selection.md)で各情報のまとまりを照合する。該当する[表現カタログ](references/catalog.md)の型と[構成図一覧](assets/catalog-gallery.html)の配置を確認し、候補の関係・前提・不足を比較する。[可視化の規則](references/visualization.md)でツールを選び、採用した構造・配置図をDraw.io、シーケンス図をPlantUMLで制作する。カタログ外・複合表現も候補に含める。
 5. Draw.io図は[テーマ選択と意味記号](references/diagram-themes.md)に従い、目的・読み手・内容からT01〜T10を選ぶ。図の型・テーマ・色形線の意味・配置を分けて記録する。[成果物テンプレート](assets/storyboard-template.md)で整理結果と配置を組み立て、確認した出力形式のファイルを制作する。
 6. [根拠記録テンプレート](assets/rationale-template.md)を使い、入力の出所 → 正規化した情報 → 検出軸 → 候補 → 採否理由 → 出力要素の対応を、別の補足資料として保存する。
-7. [制作と検証](references/production.md)に従い、作業対象のルートの`output/YYYYMMDD_HHMMSS_約20文字の日本語概要/`に、主成果物・図・整理根拠などの出力結果をまとめて保存し、リンクを提出する。
+7. [制作と検証](references/production.md)と[Draw.ioの配置検査](references/drawio-layout-check.md)に従い、図の表示でコネクターと余白を点検する。問題を修正して再確認した後、作業対象のルートの`output/YYYYMMDD_HHMMSS_約20文字の日本語概要/`へ成果物を保存し、リンクを提出する。
 
 ## 出力と完了条件
 

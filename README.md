@@ -2,6 +2,8 @@
 
 雑多な入力を整理し、適切な表現とその選択根拠を出力するスキル。スライドのフォーマットは、整理した情報を理解しやすく配置するキャンバスの一候補。
 
+画像や既存図に説明を追加する依頼では、原図を保持し、Draw.ioの別レイヤーに番号・引出線・吹き出し・強調・説明文を置く。画面キャプチャも対象とし、観測できる情報と推定を区別する。PlantUMLはNative／SVG／PNGを環境と用途に応じて選ぶ。
+
 - main: 基準となる版。
 - dev: スキルの改善と情報整理。
 
@@ -32,6 +34,7 @@ outputフォルダの内容は、ユーザーの明示指示がない限り参�
 - [可視化の選び方とASCII図の型](.agents/skills/information-structuring/references/visualization.md)
 - [カタログ照合から図制作までの選択手順](.agents/skills/information-structuring/references/catalog-selection.md)
 - [Draw.ioの10テーマ・意味記号・配置規則](.agents/skills/information-structuring/references/diagram-themes.md)
+- [既存図・PlantUML・画面キャプチャへの説明追加](.agents/skills/information-structuring/references/visual-annotation.md)
 - [61構造の配置参考](.agents/skills/information-structuring/assets/catalog-gallery.html)
 
 体系と既存カタログはいずれも閉じた選択肢にしない。新しい軸・整理方法・複合表現を、入力に必要な意味と関係から選べる。専門手法299項目は重複を含む候補索引であり、各手法の正式な分析手順を実装したものではない。

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "view_id": "view-orientation",
+  "purpose": "画面の主要領域を説明する",
+  "audience": "初めて利用する人",
+  "theme": "T01",
+  "source": {
+    "path": "source.svg",
+    "kind": "svg",
+    "width": 800,
+    "height": 480,
+    "version": "例示版",
+    "sha256": null,
+    "structured_source": null
+  },
+  "display": {
+    "x": 60,
+    "y": 80,
+    "width": 800,
+    "height": 480
+  },
+  "canvas": {
+    "width": 1220,
+    "height": 720
+  },
+  "annotations": [
+    {
+      "id": "ANN-001",
+      "number": "注1",
+      "type": "callout",
+      "target": {
+        "stable_id": null,
+        "label": "入力欄",
+        "text": "入力",
+        "semantic_role": "form",
+        "x": 0.1,
+        "y": 0.2,
+        "width": 0.4,
+        "height": 0.15
+      },
+      "anchor": {
+        "x": 0.3,
+        "y": 0.275
+      },
+      "label_position": {
+        "x": 1.1,
+        "y": 0.2
+      },
+      "title": "入力欄",
+      "description": "画面上の「入力」と表示された領域。入力後の処理は未記載。",
+      "importance": "primary",
+      "semantic": "primary",
+      "confidence": "high",
+      "evidence": [
+        {
+          "source_id": "IMG-001",
+          "observed_text": "入力",
+          "basis": "画像上の表示文字"
+        }
+      ],
+      "label_width": 260,
+      "label_height": 110
+    }
+  ],
+  "explanation_blocks": [
+    {
+      "text": "例示: 図内の注番号と図外の説明を対応させる。操作手順を表す番号ではない。",
+      "x": 60,
+      "y": 600,
+      "width": 1100,
+      "height": 45
+    }
+  ],
+  "legend": [
+    {
+      "text": "青: 注釈の主対象。破線の引出線: 説明との対応（データフローではない）。",
+      "x": 60,
+      "y": 650,
+      "width": 1100,
+      "height": 40
+    }
+  ]
+}

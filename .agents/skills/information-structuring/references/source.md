@@ -1,5 +1,7 @@
 # 出典情報
 
+既存図への説明追加は、ユーザー提示のVisual Annotation / Explanation仕様を取り込んだ。入力・モード・レイヤー・確かさ・正規化座標・IR・複数View・更新時の照合・視覚検査をvisual-annotation.mdへ収録する。[公式PlantUML挿入仕様](https://www.drawio.com/docs/manual/insert/insert_plantuml/)でNativeコンテナのソース編集と部分実装の制約、[画像挿入](https://www.drawio.com/docs/manual/insert/add-images/)と[レイヤー](https://www.drawio.com/docs/manual/layers/)で原画像と注釈の分離の参照先を確認した。Native対応は利用する環境ごとに検査する。
+
 Draw.ioの10テーマ、配色、選択順、意味記号と品質観点はユーザー提示のTheme Catalogを取り込んだ。diagram-themes.jsonに配色の正本、diagram-themes.mdに運用規則を収録する。[Draw.io公式style reference](https://www.drawio.com/docs/reference/diagram-generation/style-reference/)でstyle生成の参照先を確認した。これらは本スキルの作成用テーマであり、ブランドの正式テーマやDraw.ioの組込みテーマではない。
 
 ASCII図は、同じtechnical-writingの`references/ascii-diagrams.md`から、共通記号と8つの型（構成、層、包含、処理順、定義と実体、正本と派生、やり取り、レコード）を一般化し、visualization.mdへ収録した。切替先は本スキルの出力方針に合わせDraw.io等とする。元の資料への実行時依存はない。

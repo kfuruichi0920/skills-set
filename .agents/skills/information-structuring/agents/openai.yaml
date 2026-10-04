@@ -1,6 +1,6 @@
 interface:
   display_name: "情報整理・可視化"
-  short_description: "雑多な情報の意味と関係を整理し、適切な可視化とその選択根拠を出力"
+  short_description: "情報を整理・可視化し、既存図や画面にも説明を追加して選択根拠を出力"
   default_prompt: "$information-structuring を使って、以下の情報を整理・可視化し、整理軸と表現を選んだ根拠を補足資料として出力してください。"
 policy:
   allow_implicit_invocation: true

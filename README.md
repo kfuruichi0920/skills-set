@@ -14,7 +14,9 @@ $information-structuring
 素材: ここに文章・メモ・仕様・表などを貼る
 ```
 
-標準出力は、整理結果・候補比較・主案の可視化ラフと、別の補足Markdownによる整理根拠。目的が未指定の場合も仮定を示して進める。HTML・編集可能なPowerPoint・表などを指定した場合は、その形式で制作する。
+出力はMarkdownを優先する。補足図が必要ならDraw.ioを使い、大きな表・マトリクスはMarkdown表ではなくTSV（優先）／CSVにする。これらを主文書にリンクして組み合わせる。未指定時はこの構成を推奨して希望を質問し、HTMLスライドやテーブル中心、その他の明示指定にも従う。
+
+多少でも複雑な情報は、可能な限りスライド表現の配置や比較方法を参考にDraw.io等で可視化する。小さな階層・構造・処理順にはASCII図も使える。整理根拠は別の補足Markdownとして添え、成果物は`output/YYYYMMDD_HHMMSS_約20文字の日本語概要/`にまとめて保存する。目的が未指定の場合も仮定を示して整理を進める。
 
 ## 構成
 
@@ -25,6 +27,7 @@ $information-structuring
 - [選択規則](.agents/skills/information-structuring/references/selection-rules.md)
 - [整理根拠の補足様式](.agents/skills/information-structuring/assets/rationale-template.md)
 - [条件付き依存・状態モデルなどの適用例](.agents/skills/information-structuring/references/examples.md)
+- [可視化の選び方とASCII図の型](.agents/skills/information-structuring/references/visualization.md)
 - [61構造の配置参考](.agents/skills/information-structuring/assets/catalog-gallery.html)
 
 体系と既存カタログはいずれも閉じた選択肢にしない。新しい軸・整理方法・複合表現を、入力に必要な意味と関係から選べる。専門手法299項目は重複を含む候補索引であり、各手法の正式な分析手順を実装したものではない。

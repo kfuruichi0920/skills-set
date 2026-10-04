@@ -1,5 +1,7 @@
 # 出典情報
 
+Draw.ioの10テーマ、配色、選択順、意味記号と品質観点はユーザー提示のTheme Catalogを取り込んだ。diagram-themes.jsonに配色の正本、diagram-themes.mdに運用規則を収録する。[Draw.io公式style reference](https://www.drawio.com/docs/reference/diagram-generation/style-reference/)でstyle生成の参照先を確認した。これらは本スキルの作成用テーマであり、ブランドの正式テーマやDraw.ioの組込みテーマではない。
+
 ASCII図は、同じtechnical-writingの`references/ascii-diagrams.md`から、共通記号と8つの型（構成、層、包含、処理順、定義と実体、正本と派生、やり取り、レコード）を一般化し、visualization.mdへ収録した。切替先は本スキルの出力方針に合わせDraw.io等とする。元の資料への実行時依存はない。
 
 日本語の記述規則は、ユーザー指定の`C:/git/cdx/d2d/.agents/skills/technical-writing/SKILL.md`を参考に、正確性・一意性・検証可能性、用語の統一、記述の役割の分離、図と情報の意味境界を抽出した。D2D固有の文書配置・識別子体系・検査コマンドは適用しない。必要な規則はjapanese-writing.mdに記載してあり、実行時に元スキルを読む必要はない。

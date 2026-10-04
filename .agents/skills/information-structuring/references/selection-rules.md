@@ -31,6 +31,10 @@
 | 目的、成果、能力、施策、成果物 | purpose・dependency・trace | Goal Tree、Impact Map、Theory of Change、Strategy Map | 期待成果への接続は仮説か根拠付きかを区別 |
 | 問い、主張、根拠、反論、留保 | evidence・confidence・purpose | argument、IBIS、Toulmin、Claim–Evidence–Reasoning | 説明レイヤとして採用し、情報モデルの対応を保つ |
 
+## カタログの配置への接続
+
+基本表現を選んだ後、catalog-selection.mdの索引を各情報のまとまりへ適用する。専門手法名やgraph／tableの選択だけで止めず、同型並置・同位置比較・レーン・レイヤー・全体と拡大など、入力を読むための配置候補を選ぶ。図解対象の制作と省略条件は同書に従う。
+
 ## 専門手法の扱い
 
 専門手法を選ぶ理由は「名称が有名だから」ではなく、その方法固有の問い・関係・判定条件が必要だからとする。例えば、RACIは仕事と責任種別、FMEAは失敗と影響、RTMは要求と実現・検証対応を追加する。

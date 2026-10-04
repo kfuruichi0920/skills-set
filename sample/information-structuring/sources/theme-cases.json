@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "policy": "情報・配置・意味役割を保持し、テーマの配色だけを変更する。注釈例は原図レイヤーを変更しない。",
+  "cases": [
+    {
+      "base_id": "meaning",
+      "theme": "T09",
+      "reason": "調査で概念の定義を照合する読者向け"
+    },
+    {
+      "base_id": "grouping",
+      "theme": "T01",
+      "reason": "分類結果を技術文書へ記録する用途"
+    },
+    {
+      "base_id": "decomposition",
+      "theme": "T02",
+      "reason": "ソフトウェア設計者が部品の境界を確認する用途"
+    },
+    {
+      "base_id": "comparison",
+      "theme": "T09",
+      "reason": "方式の差を分析する読者向け"
+    },
+    {
+      "base_id": "relationships",
+      "theme": "T05",
+      "reason": "製品を特定しないクラウド化検討の概念構成"
+    },
+    {
+      "base_id": "relationships",
+      "theme": "T06",
+      "reason": "接続と通信経路を確認するインフラ担当向け"
+    },
+    {
+      "base_id": "relationships",
+      "theme": "T07",
+      "reason": "セキュリティレビューで既存の依存関係を確認する用途"
+    },
+    {
+      "base_id": "relationships",
+      "theme": "T08",
+      "reason": "システム全体の構造と接続を確認する用途"
+    },
+    {
+      "base_id": "timing",
+      "theme": "T04",
+      "reason": "経営層へ予定の全体像を説明する用途"
+    },
+    {
+      "base_id": "process",
+      "theme": "T03",
+      "reason": "プロジェクトで担当の受渡しを確認する用途"
+    },
+    {
+      "base_id": "state_events",
+      "theme": "T02",
+      "reason": "実装者が状態とイベント条件を確認する用途"
+    },
+    {
+      "base_id": "causal_analysis",
+      "theme": "T10",
+      "reason": "原因仮説をワークショップで検討する用途"
+    },
+    {
+      "base_id": "risk_failure",
+      "theme": "T03",
+      "reason": "プロジェクトでリスクと対策を管理する用途"
+    },
+    {
+      "base_id": "risk_failure",
+      "theme": "T09",
+      "reason": "脅威・影響・制御の対応を分析する用途"
+    },
+    {
+      "base_id": "requirements_trace",
+      "theme": "T08",
+      "reason": "システム設計レビューで要求の対応を追う用途"
+    },
+    {
+      "base_id": "decision",
+      "theme": "T09",
+      "reason": "選択肢の成立条件を分析する用途"
+    },
+    {
+      "base_id": "responsibility",
+      "theme": "T01",
+      "reason": "責任と受渡しを業務の技術文書へ記録する用途"
+    },
+    {
+      "base_id": "quantitative",
+      "theme": "T04",
+      "reason": "経営層へ指標と目標の差を報告する用途"
+    },
+    {
+      "base_id": "strategy",
+      "theme": "T03",
+      "reason": "目的と施策をプロジェクト計画へ接続する用途"
+    },
+    {
+      "base_id": "explanation",
+      "theme": "T04",
+      "reason": "判断の根拠と留保を経営層へ説明する用途"
+    },
+    {
+      "base_id": "type-02-1",
+      "theme": "T01",
+      "reason": "技術資料の要点を確認する用途"
+    },
+    {
+      "base_id": "type-02-1",
+      "theme": "T09",
+      "reason": "調査結果の要点を確認する用途"
+    },
+    {
+      "base_id": "type-11-1",
+      "theme": "T08",
+      "reason": "設計の分解構造を確認する用途"
+    },
+    {
+      "base_id": "type-11-1",
+      "theme": "T09",
+      "reason": "要因を分析する用途"
+    },
+    {
+      "base_id": "type-20-1",
+      "theme": "T01",
+      "reason": "変更内容を技術文書で説明する用途"
+    },
+    {
+      "base_id": "type-20-1",
+      "theme": "T03",
+      "reason": "プロジェクトの変更前後を確認する用途"
+    },
+    {
+      "base_id": "type-32-1",
+      "theme": "T09",
+      "reason": "二軸の判断材料を分析する用途"
+    },
+    {
+      "base_id": "type-32-1",
+      "theme": "T03",
+      "reason": "対応優先度をプロジェクトで検討する用途"
+    },
+    {
+      "base_id": "type-35-1",
+      "theme": "T01",
+      "reason": "工程と期間を技術文書へ記録する用途"
+    },
+    {
+      "base_id": "type-35-1",
+      "theme": "T04",
+      "reason": "予定の全体像を経営層へ説明する用途"
+    },
+    {
+      "base_id": "type-41-1",
+      "theme": "T02",
+      "reason": "ソフトウェアの層と責務を確認する用途"
+    },
+    {
+      "base_id": "type-41-1",
+      "theme": "T08",
+      "reason": "システム全体の層を確認する用途"
+    },
+    {
+      "base_id": "type-45-4",
+      "theme": "T09",
+      "reason": "仮説・根拠・成立条件を分析する用途"
+    },
+    {
+      "base_id": "type-45-4",
+      "theme": "T10",
+      "reason": "仮説をワークショップで検討する用途"
+    },
+    {
+      "base_id": "type-47-1",
+      "theme": "T01",
+      "reason": "業務フローを技術文書へ記録する用途"
+    },
+    {
+      "base_id": "type-47-1",
+      "theme": "T02",
+      "reason": "システムで実現する処理の流れを確認する用途"
+    },
+    {
+      "base_id": "type-48-1",
+      "theme": "T03",
+      "reason": "プロジェクトの関係者を確認する用途"
+    },
+    {
+      "base_id": "type-48-1",
+      "theme": "T10",
+      "reason": "関係者の役割をワークショップで検討する用途"
+    },
+    {
+      "base_id": "screen-orientation",
+      "theme": "T03",
+      "reason": "導入プロジェクトで画面の主要領域を説明する用途"
+    },
+    {
+      "base_id": "screen-orientation",
+      "theme": "T10",
+      "reason": "操作説明をワークショップで検討する用途"
+    },
+    {
+      "base_id": "plantuml-svg",
+      "theme": "T01",
+      "reason": "技術文書でメッセージの受渡しを説明する用途"
+    },
+    {
+      "base_id": "plantuml-svg",
+      "theme": "T04",
+      "reason": "経営層へ受渡しの要点を説明する用途"
+    },
+    {
+      "base_id": "native-annotation",
+      "theme": "T01",
+      "reason": "業務の責務を技術文書へ記録する用途"
+    },
+    {
+      "base_id": "native-annotation",
+      "theme": "T09",
+      "reason": "既存図の責務を分析する用途"
+    }
+  ]
+}

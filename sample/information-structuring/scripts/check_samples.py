@@ -55,6 +55,45 @@ def validate():
     for irpath in [BASE/'sources'/f'{mode}-ir.json' for mode in ['orientation','function','workflow','sequence','sequence-png']]:
         ir=json.loads(irpath.read_text(encoding='utf-8'))
         assert hashlib.sha256((irpath.parent/ir['source']['path']).read_bytes()).hexdigest()==ir['source']['sha256']
+    cases=json.loads((BASE/'sources/theme-cases.json').read_text(encoding='utf-8'))['cases']
+    variants=[s for s in manifest if s['category']=='theme_case']
+    expected={(case['base_id'],case['theme']) for case in cases}
+    assert {(s['base_id'],s['theme']) for s in variants}==expected and len(variants)==len(expected)
+    assert {s['base_id'] for s in variants if s['base_category']=='purpose'}=={s['id'] for s in framework['purposes']}
+    assert {s['theme'] for s in variants}=={s['id'] for s in themes},'All themes must occur in case variants'
+    def get_page(filename,identifier):
+        return ET.parse(BASE/filename).getroot().find(f"diagram[@id='{identifier}']")
+    def styles(value):
+        return dict(token.split('=',1) for token in value.split(';') if '=' in token)
+    colors={'fillColor','strokeColor','fontColor'}
+    for entry in variants:
+        base=get_page(entry['base_file'],entry['base_id']); variant=get_page(entry['file'],entry['id'])
+        assert {k:v for k,v in base.find('mxGraphModel').attrib.items() if k!='background'}=={k:v for k,v in variant.find('mxGraphModel').attrib.items() if k!='background'},'Canvas geometry changed'
+        original=base.findall('./mxGraphModel/root/mxCell'); changed={c.get('id'):c for c in variant.findall('./mxGraphModel/root/mxCell')}
+        assert {c.get('id') for c in original}==set(changed),entry['id']
+        changed_colors=False
+        for cell in original:
+            target=changed[cell.get('id')]
+            a=dict(cell.attrib); b=dict(target.attrib)
+            astyle=styles(a.pop('style','')); bstyle=styles(b.pop('style',''))
+            a['value']=a.get('value','').replace(entry['base_theme']+' |',entry['theme']+' |')
+            b['value']=b.get('value','')
+            assert a==b,(entry['id'],cell.get('id'),'Information or connectivity changed')
+            original_geometry=cell.find('mxGeometry'); target_geometry=target.find('mxGeometry')
+            if original_geometry is None:
+                assert target_geometry is None,(entry['id'],'Unexpected geometry')
+            else:
+                assert target_geometry is not None,(entry['id'],'Geometry missing')
+                assert canonical(original_geometry)==canonical(target_geometry),(entry['id'],'Layout changed')
+            assert {k:v for k,v in astyle.items() if k not in colors}=={k:v for k,v in bstyle.items() if k not in colors},(entry['id'],'Shape/line notation changed')
+            changed_colors |= any(astyle.get(k)!=bstyle.get(k) for k in colors)
+            if entry['base_category']=='annotation' and cell.get('parent')=='1':
+                assert astyle==bstyle,(entry['id'],'Source diagram recolored')
+        assert changed_colors,entry['id']
+        if entry['base_category']=='annotation' and entry['base_id']!='native-annotation':
+            irpath=BASE/'sources'/f"{entry['id']}-ir.json"; ir=json.loads(irpath.read_text(encoding='utf-8'))
+            assert ir['theme']==entry['theme']
+            assert hashlib.sha256((irpath.parent/ir['source']['path']).read_bytes()).hexdigest()==ir['source']['sha256']
     sys.path.insert(0,str(BASE/'scripts'))
     from build_annotation import validate as validate_ir
     bad=json.loads((BASE/'sources/orientation-ir.json').read_text(encoding='utf-8'))
@@ -101,6 +140,11 @@ if __name__=='__main__':
     parser.add_argument('--render',action='store_true')
     parser.add_argument('--drawio',default='C:/Program Files/draw.io/draw.io.exe')
     parser.add_argument('--page',action='append',default=[],help='Render only the specified changed page ID; repeat as needed')
+    parser.add_argument('--theme-cases',action='store_true',help='Render all added theme cases while retaining existing previews')
     args=parser.parse_args(); tasks=validate()
-    print(f'PASS: {len(tasks)} pages, coverage, retained tools, XML references, native source preservation and source hashes',flush=True)
-    if args.render: print(f'Rendered {len(render(tasks,args.drawio,args.page))} Draw.io pages',flush=True)
+    print(f'PASS: {len(tasks)} pages, coverage, retained tools, XML references, native source preservation, source hashes and theme-case equivalence',flush=True)
+    selected=args.page
+    if args.theme_cases:
+        if selected: parser.error('Choose --theme-cases or --page')
+        selected=[s['id'] for s in json.loads((BASE/'manifest.json').read_text(encoding='utf-8'))['samples'] if s['category']=='theme_case']
+    if args.render: print(f'Rendered {len(render(tasks,args.drawio,selected))} Draw.io pages',flush=True)

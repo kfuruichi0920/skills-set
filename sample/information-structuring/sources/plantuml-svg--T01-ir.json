@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "view_id": "plantuml-svg--T01",
+  "purpose": "PlantUMLシーケンス図を原図のまま説明する",
+  "audience": "初めて利用する人",
+  "theme": "T01",
+  "source": {
+    "path": "sequence.svg",
+    "kind": "svg",
+    "width": 293.0,
+    "height": 312.0,
+    "version": "架空の手順v1",
+    "sha256": "deb410ffaadfaa81182188eec3c9fee3e8ae5c0fc463ea0479640b502fb2a665",
+    "structured_source": "sequence.puml"
+  },
+  "display": {
+    "x": 60,
+    "y": 120,
+    "width": 293.0,
+    "height": 312.0
+  },
+  "canvas": {
+    "width": 1280,
+    "height": 850
+  },
+  "annotations": [
+    {
+      "id": "SEQ-01",
+      "number": "注1",
+      "type": "callout",
+      "title": "申請の受渡し",
+      "description": "利用者から受付へ申請を送る。意味は同梱のPlantUMLソースで確認できる。",
+      "target": {
+        "label": "申請を送る",
+        "text": "申請を送る",
+        "x": 0.17064846416382254,
+        "y": 0.29520673076923076,
+        "width": 0.22184300341296928,
+        "height": 0.07692307692307693
+      },
+      "anchor": {
+        "x": 0.2815699658703072,
+        "y": 0.29520673076923076
+      },
+      "label_position": {
+        "x": 1.204778156996587,
+        "y": 0.25
+      },
+      "label_width": 350,
+      "label_height": 120,
+      "confidence": "high",
+      "evidence": [
+        {
+          "basis": "sequence.pumlのメッセージ",
+          "observed_text": "申請を送る"
+        }
+      ],
+      "marker_position": {
+        "x": 0.051194539249146756,
+        "y": 0.33366826923076925
+      },
+      "leader_points": [
+        {
+          "x": 1.136518771331058,
+          "y": 0.29520673076923076
+        }
+      ]
+    }
+  ],
+  "explanation_blocks": [
+    {
+      "text": "Mode B: SVGを単一の原図として保持。元の.pumlを編集し再レンダリングする。注釈は別レイヤー。",
+      "x": 60,
+      "y": 482.0,
+      "width": 1150,
+      "height": 80
+    }
+  ],
+  "legend": [
+    {
+      "text": "破線の引出線は注釈との対応。シーケンス図の応答矢印とは区別する。",
+      "x": 60,
+      "y": 582.0,
+      "width": 1150,
+      "height": 60
+    }
+  ]
+}

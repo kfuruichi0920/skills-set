@@ -97,3 +97,47 @@ build_samples.pyでmanifest.jsonと同時に生成する。全て架空のデー
 | native-annotation | 編集可能な原図の保持 | annotation | T02 | [04-native-annotation.drawio](04-native-annotation.drawio) |
 | plantuml-svg | PlantUML原図への注釈 | annotation | T02 | [05-plantuml-annotation.drawio](05-plantuml-annotation.drawio) |
 | plantuml-png | PNG原図への注釈 | annotation | T02 | [06-plantuml-png-annotation.drawio](06-plantuml-png-annotation.drawio) |
+| meaning--T09 | 意味・概念整理 / T09 | theme_case | T09 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| grouping--T01 | 分類・グルーピング / T01 | theme_case | T01 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| decomposition--T02 | 分解・階層化 / T02 | theme_case | T02 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| comparison--T09 | 比較・位置付け / T09 | theme_case | T09 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| relationships--T05 | 関係・依存整理 / T05 | theme_case | T05 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| relationships--T06 | 関係・依存整理 / T06 | theme_case | T06 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| relationships--T07 | 関係・依存整理 / T07 | theme_case | T07 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| relationships--T08 | 関係・依存整理 / T08 | theme_case | T08 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| timing--T04 | 時間・順序整理 / T04 | theme_case | T04 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| process--T03 | プロセス整理 / T03 | theme_case | T03 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| state_events--T02 | 状態・イベント整理 / T02 | theme_case | T02 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| causal_analysis--T10 | 因果・問題分析 / T10 | theme_case | T10 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| risk_failure--T03 | リスク・障害整理 / T03 | theme_case | T03 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| risk_failure--T09 | リスク・障害整理 / T09 | theme_case | T09 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| requirements_trace--T08 | 要求・トレース整理 / T08 | theme_case | T08 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| decision--T09 | 意思決定整理 / T09 | theme_case | T09 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| responsibility--T01 | 責任・組織整理 / T01 | theme_case | T01 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| quantitative--T04 | 定量・管理整理 / T04 | theme_case | T04 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| strategy--T03 | 戦略・目的整理 / T03 | theme_case | T03 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| explanation--T04 | 説明・論証整理 / T04 | theme_case | T04 | [07-organizing-theme-cases.drawio](07-organizing-theme-cases.drawio) |
+| type-02-1--T01 | 要点サマリ / T01 | theme_case | T01 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-02-1--T09 | 要点サマリ / T09 | theme_case | T09 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-11-1--T08 | ロジックツリー / T08 | theme_case | T08 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-11-1--T09 | ロジックツリー / T09 | theme_case | T09 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-20-1--T01 | 同位置Before/After / T01 | theme_case | T01 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-20-1--T03 | 同位置Before/After / T03 | theme_case | T03 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-32-1--T09 | 2×2と判断ロジック / T09 | theme_case | T09 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-32-1--T03 | 2×2と判断ロジック / T03 | theme_case | T03 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-35-1--T01 | 期別スイムレーン / T01 | theme_case | T01 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-35-1--T04 | 期別スイムレーン / T04 | theme_case | T04 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-41-1--T02 | レイヤーマップ / T02 | theme_case | T02 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-41-1--T08 | レイヤーマップ / T08 | theme_case | T08 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-45-4--T09 | 論証テーブル（仮説検証形） / T09 | theme_case | T09 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-45-4--T10 | 論証テーブル（仮説検証形） / T10 | theme_case | T10 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-47-1--T01 | 業務フロー図 / T01 | theme_case | T01 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-47-1--T02 | 業務フロー図 / T02 | theme_case | T02 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-48-1--T03 | 関係者相関マップ / T03 | theme_case | T03 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| type-48-1--T10 | 関係者相関マップ / T10 | theme_case | T10 | [08-catalog-theme-cases.drawio](08-catalog-theme-cases.drawio) |
+| screen-orientation--T03 | 画面の主要領域 / T03 | theme_case | T03 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
+| screen-orientation--T10 | 画面の主要領域 / T10 | theme_case | T10 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
+| plantuml-svg--T01 | PlantUML原図への注釈 / T01 | theme_case | T01 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
+| plantuml-svg--T04 | PlantUML原図への注釈 / T04 | theme_case | T04 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
+| native-annotation--T01 | 編集可能な原図の保持 / T01 | theme_case | T01 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |
+| native-annotation--T09 | 編集可能な原図の保持 / T09 | theme_case | T09 | [09-annotation-theme-cases.drawio](09-annotation-theme-cases.drawio) |

@@ -1,5 +1,6 @@
 """Rebuild tracked Draw.io samples from the skill's current catalogs (no output reads)."""
 import base64
+import copy
 import json
 import re
 import shutil
@@ -20,6 +21,8 @@ from theme_styles import style, theme, THEMES
 from build_annotation import build as annotate
 
 MANIFEST = []
+CELL_ROLES = {}
+SAMPLE_BASES = {}
 
 
 class Page:
@@ -35,6 +38,7 @@ class Page:
         self.count += 1
         identifier = f'n{self.count}'
         cell = ET.SubElement(self.root, 'mxCell', id=identifier, value=value, vertex='1', parent='1', style=style(self.selected, shape=shape, semantic=role)+extra)
+        CELL_ROLES[cell] = dict(shape=shape, semantic=role)
         ET.SubElement(cell, 'mxGeometry', x=str(x), y=str(y), width=str(w), height=str(h), **{'as': 'geometry'})
         self.rects[identifier] = (x, y, w, h)
         return identifier
@@ -42,6 +46,7 @@ class Page:
     def line(self, a, b, label='', kind='flow', points=(), extra=''):
         self.count += 1
         cell = ET.SubElement(self.root, 'mxCell', id=f'e{self.count}', value=label, edge='1', parent='1', style=style(self.selected, connector=kind)+'labelBackgroundColor=#FFFFFF;'+extra)
+        CELL_ROLES[cell] = dict(connector=kind)
         geometry = ET.SubElement(cell, 'mxGeometry', relative='1', **{'as': 'geometry'})
         for endpoint, name in ((a, 'source'), (b, 'target')):
             if isinstance(endpoint, str):
@@ -69,6 +74,10 @@ def save(filename, pages, entries):
     ET.ElementTree(document).write(path, encoding='utf-8', xml_declaration=True)
     for entry in entries:
         MANIFEST.append(dict(file=filename, **entry))
+        page = next(page for page in pages if page.get('id') == entry['id'])
+        SAMPLE_BASES[entry['id']] = dict(
+            page=copy.deepcopy(page), entry=dict(file=filename, **entry),
+            roles={cell.get('id'): CELL_ROLES[cell] for cell in page.findall('./mxGraphModel/root/mxCell') if cell in CELL_ROLES})
 
 
 def purposes():
@@ -232,6 +241,7 @@ def catalogs():
             for cell in p.root.findall('mxCell'):
                 if 'shape=stencil(' in cell.get('style',''):
                     cell.set('style',style(selected,shape='decision')); cell.set('value','判定')
+                    CELL_ROLES[cell] = dict(shape='decision', semantic='neutral')
                 elif cell.get('value')=='判定' and 'shape=text' in cell.get('style',''):
                     cell.set('value','')
         def anchor(x,y):
@@ -386,6 +396,59 @@ note over User, Reviewer: 架空の手順。時間間隔は実時間を示さな
     (source_dir/'sequence-png-ir.json').write_text(json.dumps(ir,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
 
+def style_values(value):
+    return dict(token.split('=', 1) for token in value.split(';') if '=' in token)
+
+
+def theme_cases():
+    """Recolor known semantic roles without altering shapes, topology or geometry."""
+    configuration=json.loads((BASE/'sources/theme-cases.json').read_text(encoding='utf-8'))
+    groups={}; comparison=['# サンプル別のテーマ違い','','図内の情報・配置は同じ。読者・利用目的に応じた別テーマの例を示す。原図への注釈例は原図のスタイルを維持する。','']
+    previous=None
+    for case in configuration['cases']:
+        base=SAMPLE_BASES[case['base_id']]; entry=base['entry']; selected=case['theme']
+        if selected==entry['theme']: raise ValueError('Theme case must differ from its base')
+        identifier=case['base_id']+'--'+selected
+        name=entry['name']+' / '+selected
+        if case['base_id'] in {'screen-orientation','plantuml-svg'}:
+            irname='orientation-ir.json' if case['base_id']=='screen-orientation' else 'sequence-ir.json'
+            ir=json.loads((BASE/'sources'/irname).read_text(encoding='utf-8'))
+            ir.update(theme=selected,view_id=identifier)
+            source=BASE/'sources'/ir['source']['path']
+            with tempfile.TemporaryDirectory() as directory:
+                destination=Path(directory)/'theme.drawio'; annotate(ir,source,destination)
+                page=ET.parse(destination).getroot().find('diagram')
+            (BASE/'sources'/f'{identifier}-ir.json').write_text(json.dumps(ir,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+        else:
+            page=copy.deepcopy(base['page'])
+            model=page.find('mxGraphModel'); model.set('background',theme(selected)['palette'].get('canvas','#FFFFFF'))
+            for cell in model.findall('./root/mxCell'):
+                if entry['category']=='annotation' and cell.get('parent') not in {'10','20','30'}:
+                    continue
+                role=base['roles'].get(cell.get('id'))
+                if role is not None:
+                    original=style_values(cell.get('style',''))
+                    target=style_values(style(selected,**role))
+                    for key in ('fillColor','strokeColor','fontColor'):
+                        if key in target: original[key]=target[key]
+                    cell.set('style',';'.join(f'{key}={value}' for key,value in original.items())+';')
+                if cell.get('value'):
+                    cell.set('value',cell.get('value').replace(entry['theme']+' |',selected+' |'))
+        page.set('id',identifier); page.set('name',name)
+        category=entry['category']
+        filename={'purpose':'07-organizing-theme-cases.drawio','catalog':'08-catalog-theme-cases.drawio','annotation':'09-annotation-theme-cases.drawio'}[category]
+        new_entry=dict(id=identifier,category='theme_case',name=name,theme=selected,
+                       base_id=case['base_id'],base_file=entry['file'],base_theme=entry['theme'],
+                       base_category=category,reason=case['reason'])
+        groups.setdefault(filename,[]).append((page,new_entry))
+        if previous!=case['base_id']:
+            comparison.extend([f"## {entry['name']}（{case['base_id']}）",'',f"元サンプル: [{entry['theme']}]({entry['file']})。",'',f"![元テーマ {entry['theme']}](previews/{case['base_id']}.png)",''])
+            previous=case['base_id']
+        comparison.extend([f"### {selected}: {THEMES[selected]['name']}",'',case['reason']+'。', '',f"[Draw.ioのページ {identifier}]({filename})",'',f"![{name}](previews/{identifier}.png)",''])
+    for filename,items in groups.items(): save(filename,[page for page,_ in items],[entry for _,entry in items])
+    (BASE/'theme-cases.md').write_text('\n'.join(comparison).rstrip()+'\n',encoding='utf-8',newline='\n')
+
+
 def main():
     # Retain the tools used for generation alongside the tracked samples.
     for name in ['diagrams.py','theme_styles.py','build_annotation.py']:
@@ -393,6 +456,7 @@ def main():
     (BASE/'references').mkdir(exist_ok=True)
     shutil.copy2(SKILL/'references/diagram-themes.json', BASE/'references/diagram-themes.json')
     purposes(); catalogs(); themes(); annotations(); sequence()
+    theme_cases()
     (BASE/'manifest.json').write_text(json.dumps({'schema_version':1,'samples':MANIFEST},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     lines=['# サンプルの対応一覧','','build_samples.pyでmanifest.jsonと同時に生成する。全て架空のデータまたは配置参考。','','| ID | 名称 | 区分 | テーマ | ファイル |','| --- | --- | --- | --- | --- |']
     for item in MANIFEST:

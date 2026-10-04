@@ -1,0 +1,6 @@
+interface:
+  display_name: "意思決定スライド"
+  short_description: "打合せメモや仕様から、根拠を追える意思決定用スライドを設計・制作"
+  default_prompt: "$decision-slides を使って、以下の素材から読み手が判断できるスライド資料を作成してください。"
+policy:
+  allow_implicit_invocation: true

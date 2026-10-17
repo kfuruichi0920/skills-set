@@ -1,5 +1,24 @@
 # 情報整理・可視化
 
+## draw.io図面生成・公式XSD検証
+
+[drawio-generator](.agents/skills/drawio-generator/SKILL.md)は、自然言語・Markdown・装置/ノード/エッジ情報から新規の編集可能な`.drawio`を生成する独立スキル。非圧縮XMLを公式XSDと参照整合性で検証し、エージェントが最大3回修正・再検証する。コネクタは既定で両端矢印なし、明示された矢印は保持する。
+
+```text
+$drawio-generator
+制御装置、スイッチ、センサーを順にEthernetで接続した装置構成図を作成してください。
+```
+
+Python 3.10以上と`python -m pip install -r .agents/skills/drawio-generator/requirements.txt`が必要。同梱XSD・参照資料とインストール済みlxmlでオフライン利用できる。依存をオフライン導入する場合は対象OS/Python向けのwheelを事前取得し、`pip install --no-index --find-links <wheel-dir> -r .agents/skills/drawio-generator/requirements.txt`を使う。draw.ioエディターは表示・編集確認時だけ必要。
+
+- [検証器](.agents/skills/drawio-generator/scripts/validate.py)（`python .agents/skills/drawio-generator/scripts/validate.py <file.drawio> --json`）
+- [XSDの固定版・配布条件・再取得手順](.agents/skills/drawio-generator/schemas/README.md)
+- [正常系・異常系・修正再検証と編集確認の手順](.agents/skills/drawio-generator/tests/README.md)
+
+XSDと追加検査の合格は、図の意味・可読性・描画品質を保証しない。既存図面の差分編集、MCP、独自GUIは本スキルのPhase 1対象外。
+
+## 情報整理スキル
+
 雑多な入力を整理し、適切な表現とその選択根拠を出力するスキル。スライドのフォーマットは、整理した情報を理解しやすく配置するキャンバスの一候補。
 
 画像や既存図に説明を追加する依頼では、原図を保持し、Draw.ioの別レイヤーに番号・引出線・吹き出し・強調・説明文を置く。画面キャプチャも対象とし、観測できる情報と推定を区別する。PlantUMLはNative／SVG／PNGを環境と用途に応じて選ぶ。

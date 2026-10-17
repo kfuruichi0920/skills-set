@@ -1,0 +1,6 @@
+interface:
+  display_name: "draw.io図面生成・検証"
+  short_description: "編集可能なdraw.io XMLを生成し、公式XSDと参照整合性を検証"
+  default_prompt: "$drawio-generator を使って、以下の情報から編集可能な.drawio図面を新規生成し、公式XSDと参照整合性を検証してください。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/jgraph/drawio-mcp",
+  "commit": "e227b9ad530ac22d2a00066c7e6ac3b9583dba74",
+  "path": "shared/mxfile.xsd",
+  "url": "https://raw.githubusercontent.com/jgraph/drawio-mcp/e227b9ad530ac22d2a00066c7e6ac3b9583dba74/shared/mxfile.xsd",
+  "schema_version": "1.0",
+  "retrieved_on": "2026-10-17",
+  "license": "Apache-2.0",
+  "sha256": "905db85d4e8ebec0e91518cdd62982e0afb3f09ebdcaf9e6b1952957a606639a",
+  "modified": false
+}
